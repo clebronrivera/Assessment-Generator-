@@ -1,0 +1,154 @@
+{#
+Recall Scoring Generation Template
+Purpose: Generate sentence-based recall scoring guide
+Uses: Passage text
+#}
+
+You are creating a sentence-based recall scoring guide for reading comprehension assessment.
+
+## TASK
+Split the passage into sentences and create a recall scoring rubric with key ideas and keywords for each sentence.
+
+## PASSAGE
+{{ passage_text }}
+
+## GRADE LEVEL
+{{ grade }}
+
+## SCORING MODEL
+
+### Sentence-Based Scoring (0-1-2 Scale)
+
+For each sentence, the assessor will score:
+- **0 = Not recalled:** Student recalls nothing accurate from the sentence
+- **1 = Partial recall:** Student recalls some information but not majority of key ideas
+- **2 = Full recall:** Student recalls majority of key ideas with meaning mostly intact
+
+### Scoring Calculation
+- Max Points = 2 × Number of Sentences
+- Total Points = Sum of all sentence scores
+- Recall Percentage = (Total Points ÷ Max Points) × 100
+- Full Sentence Count = Number of sentences scored as 2
+
+## YOUR TASK
+
+For EACH sentence in the passage:
+
+1. **Extract the sentence exactly as written**
+2. **Identify 2-4 key ideas** (main information units in that sentence)
+3. **Generate 4-8 partial keywords** (specific words assessor can quickly check off)
+4. **Apply full recall rule:** "majority_of_key_ideas"
+
+## OUTPUT FORMAT
+
+```
+Sentence 1: [Exact sentence text]
+Key Ideas:
+- [Key idea 1]
+- [Key idea 2]
+- [Key idea 3]
+- [Key idea 4 if applicable]
+
+Partial Keywords: [word1], [word2], [word3], [word4], [word5], [word6], [word7], [word8]
+
+Full Recall Rule: Student must recall majority of key ideas (at least 2 out of 3, or 3 out of 4)
+
+---
+
+Sentence 2: [Exact sentence text]
+[... same format ...]
+```
+
+## EXAMPLE (Grade 2 Passage)
+
+```
+Sentence 1: Sam and Mia walked to the park after school.
+Key Ideas:
+- Sam and Mia (characters)
+- Walked to park (action and destination)
+- After school (timing)
+
+Partial Keywords: Sam, Mia, walked, park, school, after, together, went
+
+Full Recall Rule: Student must recall majority of key ideas (at least 2 out of 3)
+
+---
+
+Sentence 2: The sky was bright, and a cool wind moved the leaves.
+Key Ideas:
+- Sky was bright (weather/setting)
+- Cool wind (weather detail)
+- Wind moved leaves (action/detail)
+
+Partial Keywords: sky, bright, cool, wind, leaves, moved, blowing, weather
+
+Full Recall Rule: Student must recall majority of key ideas (at least 2 out of 3)
+```
+
+## KEY IDEA GUIDELINES
+
+**What makes a good key idea:**
+- ✅ Core information in the sentence
+- ✅ Specific enough to be checkable
+- ✅ Independent units of meaning
+- ✅ 2-4 per sentence (not too granular, not too broad)
+
+**Examples:**
+- Good: "Character felt nervous" 
+- Too vague: "Character had emotion"
+- Too specific: "Character's hands were shaking"
+
+## PARTIAL KEYWORD GUIDELINES
+
+**What makes good keywords:**
+- ✅ Specific nouns from the sentence
+- ✅ Key verbs that carry meaning
+- ✅ Important adjectives
+- ✅ Character names, place names
+- ✅ 4-8 per sentence
+
+**Purpose:** Allow assessor to quickly check off what student remembers without scoring full key ideas
+
+## GRADE APPROPRIATENESS
+
+For grade {{ grade }}:
+{% if grade in ["K", "1"] %}
+- Keep key ideas very simple and concrete
+- Use everyday vocabulary in keywords
+- Focus on who, what, where (not complex why)
+{% elif grade in ["2", "3"] %}
+- Key ideas can include simple relationships
+- Mix of concrete and simple abstract ideas
+- Can include basic cause-effect
+{% else %}
+- Key ideas can be more complex
+- Can include abstract concepts
+- Can require inference within sentence
+{% endif %}
+
+## CRITICAL REQUIREMENTS
+
+1. **Extract sentences exactly** - Do not modify or paraphrase
+2. **2-4 key ideas per sentence** - Not too many, not too few
+3. **4-8 keywords per sentence** - Quick reference for assessor
+4. **Majority rule** - Full recall = majority of key ideas present
+5. **Cover whole passage** - Every sentence gets this treatment
+6. **Grade-appropriate** - Match complexity to grade {{ grade }}
+
+## FINAL OUTPUT
+
+After all sentences, provide:
+
+```
+SCORING RUBRIC:
+- Score 0: Student recalls nothing accurate from the sentence
+- Score 1: Student recalls some accurate information but not majority of key ideas
+- Score 2: Student recalls majority of key ideas with meaning mostly intact
+
+SCORING FORMULAS:
+- Max Points: [2 × number of sentences]
+- Recall Percentage: (Total Points ÷ Max Points) × 100
+- Full Sentence Count: Count of sentences scored as 2
+```
+
+Now process the passage and create the sentence-based recall scoring guide:

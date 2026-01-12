@@ -1,0 +1,186 @@
+{#
+Comprehension Passage Generation Template
+Purpose: Generate passage from Passage Information Bank (PIB)
+Uses: Output from PIB template, Banks 1-4, 7
+#}
+
+You are an expert reading assessment passage writer creating a comprehension passage.
+
+## TASK
+Write a {{ genre }} passage that contains ALL required information from the Passage Information Bank (PIB).
+
+## STRICT CONSTRAINTS
+
+### Grade & Lexile
+- **Grade Level:** {{ grade }}
+- **Lexile Range:** {{ lexile_min }} to {{ lexile_max }}
+- **Target Lexile:** {{ lexile_midpoint }}
+- **Note:** Target vocabulary and syntax complexity for this Lexile
+
+### Word Count
+- **Target:** {{ word_count_average }} words
+- **Minimum:** {{ word_count_min }} words
+- **Maximum:** {{ word_count_max }} words
+- **Tolerance:** Must fall within this range
+
+### Structure & Format
+- **Genre:** {{ genre }}
+- **Text Structure:** {{ text_structure }}
+- **Paragraphs:** {{ paragraph_count }}
+{% if requires_text_features %}
+- **Text Features Required:** Yes (include headings and at least one organizational feature)
+{% else %}
+- **Text Features:** None
+{% endif %}
+{% if requires_picture %}
+- **Picture Support:** Single picture will accompany passage (describe scene for illustrator)
+{% endif %}
+
+## PASSAGE INFORMATION BANK (PIB)
+This is what MUST be in the passage:
+
+{{ pib_content }}
+
+## CONTENT REQUIREMENTS
+
+### You MUST Include:
+1. All content specified in the PIB
+2. Evidence that answers ALL {{ total_questions }} questions
+3. Natural integration of required vocabulary
+4. Clear structure matching {{ text_structure }}
+
+### Quality Standards:
+
+**Vocabulary:**
+- Appropriate for Lexile {{ lexile_midpoint }}
+- Grade {{ grade }} complexity
+- Context clues for challenging words
+- No words more than 1-2 grades above level
+
+**Sentence Structure:**
+- Varied length appropriate to grade
+- Clear, grammatically correct
+- Matches {{ text_structure }} organization
+
+**Content:**
+- Engaging and age-appropriate
+- Culturally sensitive and inclusive
+- Factually accurate (for nonfiction)
+- Coherent narrative flow (for narrative)
+
+{% if genre == "narrative" %}
+### Narrative Requirements:
+- Clear characters with consistent traits
+- Established setting
+- Logical plot progression
+- Age-appropriate conflict/situation
+- Satisfying resolution
+- Natural dialogue (if appropriate)
+{% elif genre == "nonfiction" %}
+### Nonfiction Requirements:
+- Clear topic introduction
+- Accurate, factual information
+- Logical organization
+- Domain-specific vocabulary with context
+- Evidence-based statements
+- Conclusion or summary
+{% endif %}
+
+{% if text_structure == "chronological" %}
+**Structure: Chronological**
+- Clear time sequence (first, then, next, finally)
+- Events in logical order
+- Time markers or transitions
+{% elif text_structure == "problem_solution" %}
+**Structure: Problem-Solution**
+- Clear problem statement
+- Attempts to solve (if appropriate)
+- Clear resolution
+- Signal words: problem, solution, decided, resolved
+{% elif text_structure == "cause_effect" %}
+**Structure: Cause-Effect**
+- Clear causal relationships
+- Effects follow logically from causes
+- Signal words: because, therefore, as a result, due to
+{% elif text_structure == "compare_contrast" %}
+**Structure: Compare-Contrast**
+- Clear similarities and differences
+- Parallel structure for comparison
+- Signal words: similar, different, both, however, while
+{% elif text_structure == "descriptive" %}
+**Structure: Descriptive**
+- Rich details about topic
+- Sensory information
+- Clear organization of details
+- Signal words: for example, such as, characteristics
+{% elif text_structure == "sequence" %}
+**Structure: Sequence**
+- Clear steps or stages
+- Logical progression
+- Signal words: first, second, next, finally
+{% endif %}
+
+{% if requires_text_features %}
+## TEXT FEATURES (GRADES 6+)
+
+You MUST include:
+1. **1-2 Headings** that organize content
+2. **One organizational feature** (choose one):
+   - Bulleted list (3-5 items)
+   - Numbered list (3-5 steps)
+   - Simple comparison (described in text)
+   - Timeline markers
+
+Example format:
+```
+[Heading 1]
+[Paragraph with content]
+
+[Heading 2]
+[Paragraph with content]
+[Bulleted list if appropriate]
+```
+{% endif %}
+
+{% if requires_picture %}
+## PICTURE DESCRIPTION (K-1)
+
+At the END of your passage, provide a picture description in this format:
+
+PICTURE FOR ILLUSTRATOR:
+[Simple, clear description of one scene showing main character(s) in setting with key object or action visible. One paragraph, concrete details, simple composition.]
+{% endif %}
+
+## OUTPUT FORMAT
+
+{% if not requires_picture and not requires_text_features %}
+Provide ONLY the passage text:
+- No title
+- No preamble
+- {{ paragraph_count }} paragraphs
+- {{ word_count_min }}-{{ word_count_max }} words
+{% else %}
+Provide the passage followed by special elements:
+
+[PASSAGE TEXT - {{ paragraph_count }} paragraphs, {{ word_count_min }}-{{ word_count_max }} words]
+
+{% if requires_picture %}
+---
+PICTURE FOR ILLUSTRATOR:
+[Description]
+{% endif %}
+{% endif %}
+
+## CRITICAL REMINDERS
+
+- ✅ Include ALL content from PIB
+- ✅ Support ALL {{ total_questions }} questions
+- ✅ Stay within {{ word_count_min }}-{{ word_count_max }} words
+- ✅ Match {{ text_structure }} structure
+- ✅ Use grade {{ grade }} vocabulary and syntax
+- ✅ Target Lexile {{ lexile_midpoint }}
+{% if requires_text_features %}
+- ✅ Include headings and organizational features
+{% endif %}
+
+BEGIN PASSAGE ({{ genre }}, {{ text_structure }}, {{ word_count_average }} words):

@@ -1,0 +1,112 @@
+{#
+Passage Information Bank (PIB) Conversion Template
+Purpose: Convert QRM into concrete passage content requirements
+Uses: Output from QRM template
+#}
+
+You are converting a Question Requirement Matrix (QRM) into a Passage Information Bank (PIB).
+
+## TASK
+Transform the question requirements into specific content that MUST appear in the passage.
+
+## INPUT (Question Requirement Matrix)
+{{ qrm_content }}
+
+## YOUR TASK
+
+Convert each question's "Evidence Needed" into concrete passage content requirements.
+
+## OUTPUT FORMAT
+
+Create a structured content guide with these sections:
+
+### REQUIRED CONTENT (Must Include)
+
+**Character Requirements:**
+- [List character traits, names, descriptions needed]
+
+**Setting Requirements:**
+- [List setting details needed]
+
+**Plot/Information Requirements:**
+- [List events, facts, or information needed]
+
+**Vocabulary Requirements:**
+- [List specific words that must appear with context]
+
+**Structure Requirements:**
+- [How information should be organized based on {{ text_structure }}]
+
+{% if requires_text_features %}
+**Text Feature Requirements:**
+- [Headings, lists, or organizational features needed]
+{% endif %}
+
+### CONTENT PLACEMENT
+
+**Opening (First 1-2 paragraphs):**
+- [What must be established early]
+
+**Middle:**
+- [What must be developed]
+
+**Conclusion:**
+- [What must be resolved or summarized]
+
+### EVIDENCE MAPPING
+
+For each question in the QRM, specify:
+Q[N]: [Question Type] → [Specific content that answers this in passage]
+
+## EXAMPLE CONVERSION
+
+QRM Question 3: "Why did the character feel nervous?"
+PIB Requirement: 
+- Show character's physical signs (fidgeting, looking around)
+- Establish unfamiliar situation (new place, first time doing something)
+- Do NOT directly state "nervous" - show through actions and context
+- Place in middle section after setting is established
+
+## RULES
+
+1. **Convert abstract requirements to concrete content**
+   - QRM: "Character motivation must be inferable"
+   - PIB: "Show character helping friend after friend helped them earlier"
+
+2. **Ensure information supports MULTIPLE questions where appropriate**
+   - Same scene can provide evidence for explicit AND implicit questions
+
+3. **Match text structure** ({{ text_structure }})
+   - Chronological: Clear time sequence
+   - Problem-solution: Establish problem, show resolution
+   - Cause-effect: Clear causal relationships
+   - Compare-contrast: Clear similarities and differences
+
+4. **Word count awareness**
+   - Target: {{ word_count_average }} words (range: {{ word_count_min }}-{{ word_count_max }})
+   - Don't require more content than fits in range
+
+5. **Grade appropriateness** ({{ grade }})
+   - Content complexity matches cognitive level
+   - Vocabulary within Lexile range ({{ lexile_min }}-{{ lexile_max }})
+
+6. **Lexile targeting**
+   - Use vocabulary and syntax appropriate for {{ lexile_midpoint }}
+
+{% if genre == "narrative" %}
+## NARRATIVE-SPECIFIC GUIDANCE
+- Clear beginning, middle, end
+- Identifiable characters
+- Setting establishment
+- Age-appropriate conflict/situation
+- Satisfying resolution
+{% elif genre == "nonfiction" %}
+## NONFICTION-SPECIFIC GUIDANCE
+- Clear topic introduction
+- Factual, accurate information
+- Logical organization
+- Domain-appropriate vocabulary
+- Conclusion or summary
+{% endif %}
+
+Now convert the QRM into a concrete Passage Information Bank:

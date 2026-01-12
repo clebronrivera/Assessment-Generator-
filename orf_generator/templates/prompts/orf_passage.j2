@@ -1,0 +1,94 @@
+{#
+ORF Passage Generation Prompt Template
+Purpose: Generate oral reading fluency passages for timed assessment
+Uses: Bank 1 (Lexile), Bank 2 (ORF Word Counts), Bank 5 (Form Requirements)
+#}
+
+You are an expert reading assessment passage writer specializing in Oral Reading Fluency (ORF) assessments.
+
+## TASK
+Generate a narrative passage for oral reading fluency assessment.
+
+## STRICT CONSTRAINTS - DO NOT DEVIATE
+
+### Grade & Lexile
+- **Grade Level:** {{ grade }}
+- **Lexile Range:** {{ lexile_min }} to {{ lexile_max }}
+- **Target Lexile:** {{ lexile_midpoint }}
+- **Lexile Note:** This is a TARGET for vocabulary and syntax complexity, not a computed score.
+
+### Word Count (CRITICAL)
+- **Target Word Count:** {{ target_word_count }} words
+- **Minimum Allowed:** {{ min_word_count }} words
+- **Maximum Allowed:** {{ max_word_count }} words
+- **Tolerance:** ±2 words only
+- **YOU MUST:** End the passage at a natural sentence boundary within this range
+
+### Passage Type
+- **Genre:** Narrative only (ORF passages are not designed for comprehension questions)
+- **Structure:** {{ structure }} (chronological, problem_solution, or sequence)
+- **Paragraphs:** 2-4 paragraphs
+- **Format:** Plain text, no title, no formatting
+
+### Content Requirements
+- **Appropriate for:** Grade {{ grade }} students reading aloud
+- **Reading Level:** Natural oral reading flow, grade-appropriate vocabulary
+- **Sentence Length:** Varied but manageable for grade level
+- **Decodability:** Use high-frequency words and grade-appropriate phonics patterns
+{% if topic_constraint %}
+- **Topic:** {{ topic_constraint }}
+{% endif %}
+{% if prohibited_content %}
+- **Prohibited:** {{ prohibited_content }}
+{% endif %}
+
+## QUALITY STANDARDS
+
+### Vocabulary
+- Use predominantly high-frequency words for grade {{ grade }}
+- Avoid words more than 1 grade level above target
+- Include some challenge words appropriate to Lexile range
+- Prioritize decodability for oral reading
+
+### Sentence Structure
+- Vary sentence length naturally
+- Use grade-appropriate syntax
+- Avoid overly complex embedded clauses
+- Ensure natural prosody opportunities (rhythm, phrasing)
+
+### Content
+- Engaging, age-appropriate topic
+- Clear narrative flow
+- Natural dialogue is acceptable unless prohibited
+- Culturally sensitive and inclusive
+- Positive themes appropriate for assessment context
+
+### Oral Reading Considerations
+- Natural phrase boundaries at punctuation
+- Opportunities for expression and intonation
+- Manageable multi-syllable words for grade level
+- Clear context clues for challenging words
+
+## OUTPUT REQUIREMENTS
+
+Provide ONLY the passage text with:
+- No title
+- No formatting (bold, italics, etc.)
+- No preamble or explanation
+- No word count in output (but ensure it meets requirements)
+- Natural paragraph breaks (2-4 paragraphs)
+- Proper punctuation for oral reading flow
+
+## EXAMPLE STRUCTURE (Grade 2, ~140 words)
+
+Paragraph 1 (50-60 words): Introduce character and setting
+Paragraph 2 (40-50 words): Present situation or action
+Paragraph 3 (40-50 words): Resolution or conclusion
+
+Remember: This passage is for ORAL READING FLUENCY, not comprehension. Focus on:
+- Natural flow for reading aloud
+- Appropriate pacing markers (punctuation)
+- Grade-level vocabulary and syntax
+- Exact word count within ±2 words of {{ target_word_count }}
+
+BEGIN PASSAGE ({{ target_word_count }} words, {{ lexile_min }}-{{ lexile_max }}):

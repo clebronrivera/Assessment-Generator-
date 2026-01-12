@@ -1,0 +1,699 @@
+"""
+PIB (Passage Information Bank) Generator
+
+Converts QRM (Question Requirement Matrix) into detailed passage content requirements.
+This is the bridge between "what questions to ask" and "what to write in the passage".
+
+Bank Usage:
+- Bank 1 (lexile_ranges.py): Lexile target for passage
+- Bank 3 (comp_word_counts.py): Word count target for passage
+- Bank 7 (text_structures.py): Genre-appropriate structure
+
+Dependencies:
+- qrm_generator.py: QRM provides question requirements
+- Outputs feed to comprehension_generator.py
+
+Purpose:
+- Step 2 of 3 in comprehension workflow (QRM → PIB → Passage)
+- Converts abstract requirements into concrete scenes/elements
+- Provides detailed blueprint for passage writing
+
+Created: 2026-01-12
+Schema Version: 2026.1
+"""
+
+from dataclasses import dataclass, field, asdict
+from typing import Dict, Any, List, Optional
+from datetime import datetime
+from enum import Enum
+
+
+class SceneType(Enum):
+    """Types of scenes in a passage"""
+    OPENING = "opening"  # Introduction, setting
+    ACTION = "action"  # Main events
+    DIALOGUE = "dialogue"  # Character conversation
+    DESCRIPTION = "description"  # Detailed description
+    TRANSITION = "transition"  # Moving between scenes
+    CONCLUSION = "conclusion"  # Ending, resolution
+
+
+@dataclass
+class SceneElement:
+    """Individual scene or content element for passage"""
+    scene_number: int
+    scene_type: SceneType
+    location_in_passage: str  # beginning/middle/end
+    purpose: str  # What this scene accomplishes
+    content_description: str  # What happens in this scene
+    required_details: List[str]  # Specific details that must be included
+    supports_questions: List[int]  # Which question numbers this supports
+    vocabulary_placement: List[str]  # Target vocabulary to use here
+    
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "scene_number": self.scene_number,
+            "scene_type": self.scene_type.value,
+            "location_in_passage": self.location_in_passage,
+            "purpose": self.purpose,
+            "content_description": self.content_description,
+            "required_details": self.required_details,
+            "supports_questions": self.supports_questions,
+            "vocabulary_placement": self.vocabulary_placement
+        }
+
+
+@dataclass
+class CharacterSpec:
+    """Character specification for passage"""
+    name: str
+    role: str  # main/supporting/minor
+    key_traits: List[str]
+    actions_to_show: List[str]  # Actions that demonstrate traits
+    supports_questions: List[int]
+
+
+@dataclass
+class PIBResult:
+    """Complete Passage Information Bank"""
+    
+    # Scene structure
+    scenes: List[SceneElement]
+    total_scenes: int
+    
+    # Character specifications (if narrative)
+    characters: List[CharacterSpec]
+    
+    # Content organization
+    opening_hook: str  # How to start passage
+    central_conflict_or_topic: str  # Main focus
+    resolution_or_conclusion: str  # How to end
+    
+    # Vocabulary integration
+    vocabulary_targets: List[str]  # Words to include
+    vocabulary_contexts: Dict[str, str]  # Word -> context description
+    
+    # Structure requirements
+    text_structure: str  # From Bank 7
+    organizational_features: List[str]  # Headings, bullets, etc. (nonfiction)
+    
+    # Question alignment
+    question_coverage_map: Dict[int, List[int]]  # Question # -> Scene #s that support it
+    
+    # Passage constraints from banks
+    target_lexile: str  # From Bank 1
+    target_word_count: int  # From Bank 3
+    actual_grade: str
+    genre: str
+    band: str
+    
+    # Metadata
+    form_id: str
+    qrm_form_id: str  # Link back to QRM
+    generated_at: str
+    schema_version: str
+    bank_usage: Dict[str, str]
+    
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "scenes": [s.to_dict() for s in self.scenes],
+            "total_scenes": self.total_scenes,
+            "characters": [asdict(c) for c in self.characters],
+            "opening_hook": self.opening_hook,
+            "central_conflict_or_topic": self.central_conflict_or_topic,
+            "resolution_or_conclusion": self.resolution_or_conclusion,
+            "vocabulary_targets": self.vocabulary_targets,
+            "vocabulary_contexts": self.vocabulary_contexts,
+            "text_structure": self.text_structure,
+            "organizational_features": self.organizational_features,
+            "question_coverage_map": {str(k): v for k, v in self.question_coverage_map.items()},
+            "target_lexile": self.target_lexile,
+            "target_word_count": self.target_word_count,
+            "actual_grade": self.actual_grade,
+            "genre": self.genre,
+            "band": self.band,
+            "form_id": self.form_id,
+            "qrm_form_id": self.qrm_form_id,
+            "generated_at": self.generated_at,
+            "schema_version": self.schema_version,
+            "bank_usage": self.bank_usage
+        }
+
+
+class PIBGenerator:
+    """
+    Generates Passage Information Bank from QRM.
+    
+    This is STEP 2 in comprehension workflow:
+    1. QRM: Define questions
+    2. PIB: Define passage content (THIS GENERATOR)
+    3. Passage: Write actual text
+    """
+    
+    def __init__(self, ai_client):
+        """Initialize with AI client and bank access"""
+        self.ai_client = ai_client
+        self.schema_version = "2026.1"
+        self._load_banks()
+        self._load_template()
+    
+    def _load_banks(self):
+        """Load required banks"""
+        try:
+            from src.banks import get_lexile_range, get_comp_word_count, get_structure_names
+            self.get_lexile_range = get_lexile_range
+            self.get_comp_word_count = get_comp_word_count
+            self.get_structure_names = get_structure_names
+        except ImportError:
+            print("Warning: Could not import banks, using mock data")
+            self.get_lexile_range = self._mock_get_lexile_range
+            self.get_comp_word_count = self._mock_get_comp_word_count
+            self.get_structure_names = self._mock_get_structure_names
+    
+    def _mock_get_lexile_range(self, grade: str, band: str) -> Dict[str, Any]:
+        """Mock Bank 1 data"""
+        from types import SimpleNamespace
+        return SimpleNamespace(
+            lexile_min="300L",
+            lexile_max="400L",
+            display="300-400L"
+        )
+    
+    def _mock_get_comp_word_count(self, grade: str) -> Dict[str, Any]:
+        """Mock Bank 3 data"""
+        from types import SimpleNamespace
+        return SimpleNamespace(
+            min_allowed=180,
+            max_allowed=220,
+            average=200
+        )
+    
+    def _mock_get_structure_names(self, genre: str) -> List[str]:
+        """Mock Bank 7 data"""
+        if genre == "narrative":
+            return ["chronological", "flashback", "problem-solution"]
+        else:
+            return ["description", "compare-contrast", "cause-effect", "sequence"]
+    
+    def _load_template(self):
+        """Load Jinja2 template for PIB prompt"""
+        try:
+            from src.utils import load_template
+            self.template = load_template("comp_pib.j2")
+        except ImportError:
+            self.template = None
+            print("Warning: Template loader not available, using inline prompt")
+    
+    def generate(
+        self,
+        qrm_result,  # QRMResult from qrm_generator
+        form_id: Optional[str] = None
+    ) -> PIBResult:
+        """
+        Generate Passage Information Bank from QRM.
+        
+        Args:
+            qrm_result: QRMResult object from QRM Generator
+            form_id: Optional form identifier for PIB
+        
+        Returns:
+            PIBResult with complete passage blueprint
+        """
+        
+        # Extract info from QRM
+        grade = qrm_result.grade
+        genre = qrm_result.genre
+        band = qrm_result.band
+        
+        # Get passage constraints from banks
+        lexile_obj = self.get_lexile_range(grade, band)
+        lexile_range = {
+            "min_lexile": lexile_obj.lexile_min,
+            "max_lexile": lexile_obj.lexile_max,
+            "display": lexile_obj.display
+        }
+        
+        word_count_obj = self.get_comp_word_count(grade)
+        word_count_spec = {
+            "min_words": word_count_obj.min_allowed,
+            "max_words": word_count_obj.max_allowed,
+            "target_words": word_count_obj.average
+        }
+        
+        structure_options = self.get_structure_names(genre)
+        
+        # Generate form ID if not provided
+        if not form_id:
+            form_id = f"COMP-{grade.upper()}-{band.upper()}-PIB-001"
+        
+        # Build prompt from template or inline
+        if self.template:
+            prompt = self._build_prompt_from_template(
+                qrm_result, lexile_range, word_count_spec, structure_options
+            )
+        else:
+            prompt = self._build_inline_prompt(
+                qrm_result, lexile_range, word_count_spec, structure_options
+            )
+        
+        # Call AI to generate PIB
+        response = self.ai_client.complete(prompt)
+        
+        # Parse response into structured PIB
+        pib_result = self._parse_response(
+            response, qrm_result, lexile_range, word_count_spec, form_id
+        )
+        
+        # Validate PIB covers all QRM requirements
+        self._validate_pib(pib_result, qrm_result)
+        
+        return pib_result
+    
+    def _build_inline_prompt(
+        self,
+        qrm_result,
+        lexile_range: Dict[str, Any],
+        word_count_spec: Dict[str, Any],
+        structure_options: List[str]
+    ) -> str:
+        """Build prompt without template (fallback)"""
+        
+        # Format QRM questions for prompt
+        questions_text = ""
+        for q in qrm_result.questions:
+            questions_text += f"\nQ{q.question_number} ({q.question_type.value}, {q.cognitive_demand.value}):\n"
+            questions_text += f"  Location: {q.evidence_location}\n"
+            questions_text += f"  Requirement: {q.content_requirement}\n"
+        
+        return f"""
+Generate a Passage Information Bank (PIB) that provides a detailed blueprint for writing
+a comprehension passage. This PIB must ensure ALL questions from the QRM are answerable.
+
+QRM SUMMARY (Question Requirements):
+Grade: {qrm_result.grade}
+Genre: {qrm_result.genre}
+Band: {qrm_result.band}
+Total Questions: {qrm_result.total_questions}
+
+QUESTION-BY-QUESTION REQUIREMENTS:
+{questions_text}
+
+REQUIRED CONTENT ELEMENTS (from QRM):
+{chr(10).join(f"  - {elem}" for elem in qrm_result.required_content_elements)}
+
+REQUIRED VOCABULARY: {', '.join(qrm_result.required_vocabulary)}
+
+REQUIRED STRUCTURES: {', '.join(qrm_result.required_structure_elements)}
+
+PASSAGE CONSTRAINTS (from Banks):
+Target Lexile: {lexile_range['display']}
+Target Word Count: {word_count_spec['target_words']} (±20 words acceptable)
+Available Structures: {', '.join(structure_options)}
+
+YOUR TASK:
+Create a detailed PIB that breaks down the passage into scenes/sections. Each scene must:
+1. Have a clear purpose
+2. Include specific required details
+3. Support one or more questions from the QRM
+4. Fit within the Lexile and word count constraints
+
+FOR NARRATIVE:
+- Define 4-6 scenes with clear sequence
+- Specify character names, traits, and actions
+- Show how each scene supports specific questions
+- Plan vocabulary placement naturally in context
+
+FOR NONFICTION:
+- Define 3-5 sections with logical organization
+- Specify topic, subtopics, and key facts
+- Include text features (headings, examples)
+- Plan vocabulary as domain-specific terms
+
+OUTPUT FORMAT (JSON):
+{{
+  "scenes": [
+    {{
+      "scene_number": 1,
+      "scene_type": "opening",
+      "location_in_passage": "beginning",
+      "purpose": "Introduce character and setting",
+      "content_description": "Maya arrives at school on first day of second grade. Show school entrance, other students arriving, Maya feeling mix of excitement and nervousness",
+      "required_details": [
+        "State Maya's name clearly",
+        "Mention she's starting second grade",
+        "Describe school setting (building, playground visible)"
+      ],
+      "supports_questions": [1],
+      "vocabulary_placement": []
+    }},
+    // ... more scenes
+  ],
+  "characters": [
+    {{
+      "name": "Maya",
+      "role": "main",
+      "key_traits": ["kind", "inclusive", "helpful"],
+      "actions_to_show": [
+        "Invites lonely student to join game",
+        "Shares pencils with student who forgot",
+        "Helps student who tripped and fell"
+      ],
+      "supports_questions": [1, 2, 3, 4, 6]
+    }}
+    // ... more characters if needed
+  ],
+  "opening_hook": "Maya stood at the entrance of Lincoln Elementary, her new second-grade backpack feeling both exciting and a little scary",
+  "central_conflict_or_topic": "Maya navigates first day of second grade by being welcoming to others",
+  "resolution_or_conclusion": "Maya reflects on how including others made her feel happy and gave her new friends",
+  "vocabulary_contexts": {{
+    "hesitant": "Describe new student looking hesitant: standing alone, uncertain expression, not moving to join others"
+  }},
+  "text_structure": "chronological",
+  "organizational_features": [],
+  "question_coverage_map": {{
+    "1": [1],
+    "2": [3],
+    "3": [2, 3, 4],
+    // ... map each question to scenes that support it
+  }}
+}}
+
+CRITICAL REQUIREMENTS:
+- Every question from QRM must be covered by at least one scene
+- Vocabulary words must have natural, context-rich placement
+- Scenes must flow logically and fit within word count
+- Character actions must match required evidence for implicit questions
+- All required content elements must appear somewhere in scenes
+
+Generate the PIB now:
+        """.strip()
+    
+    def _build_prompt_from_template(
+        self,
+        qrm_result,
+        lexile_range: Dict[str, Any],
+        word_count_spec: Dict[str, Any],
+        structure_options: List[str]
+    ) -> str:
+        """Build prompt using Jinja2 template"""
+        return self.template.render(
+            qrm=qrm_result,
+            lexile_range=lexile_range,
+            word_count_spec=word_count_spec,
+            structure_options=structure_options
+        )
+    
+    def _parse_response(
+        self,
+        response: str,
+        qrm_result,
+        lexile_range: Dict[str, Any],
+        word_count_spec: Dict[str, Any],
+        form_id: str
+    ) -> PIBResult:
+        """Parse AI response into PIBResult structure"""
+        
+        import json
+        
+        # Extract JSON from response
+        json_str = response.strip()
+        if "```json" in json_str:
+            json_str = json_str.split("```json")[1].split("```")[0].strip()
+        elif "```" in json_str:
+            json_str = json_str.split("```")[1].split("```")[0].strip()
+        
+        data = json.loads(json_str)
+        
+        # Parse scenes
+        scenes = []
+        for s_data in data["scenes"]:
+            scenes.append(SceneElement(
+                scene_number=s_data["scene_number"],
+                scene_type=SceneType(s_data["scene_type"]),
+                location_in_passage=s_data["location_in_passage"],
+                purpose=s_data["purpose"],
+                content_description=s_data["content_description"],
+                required_details=s_data["required_details"],
+                supports_questions=s_data["supports_questions"],
+                vocabulary_placement=s_data.get("vocabulary_placement", [])
+            ))
+        
+        # Parse characters
+        characters = []
+        for c_data in data.get("characters", []):
+            characters.append(CharacterSpec(
+                name=c_data["name"],
+                role=c_data["role"],
+                key_traits=c_data["key_traits"],
+                actions_to_show=c_data["actions_to_show"],
+                supports_questions=c_data["supports_questions"]
+            ))
+        
+        # Parse question coverage map (convert string keys to int)
+        question_coverage_map = {}
+        for q_str, scene_list in data.get("question_coverage_map", {}).items():
+            question_coverage_map[int(q_str)] = scene_list
+        
+        # Track bank usage
+        bank_usage = {
+            "Bank 1 (Lexile Ranges)": f"Target: {lexile_range['display']}",
+            "Bank 3 (Comp Word Counts)": f"Target: {word_count_spec['target_words']} words",
+            "Bank 7 (Text Structures)": f"Structure: {data.get('text_structure', 'not specified')}"
+        }
+        
+        return PIBResult(
+            scenes=scenes,
+            total_scenes=len(scenes),
+            characters=characters,
+            opening_hook=data.get("opening_hook", ""),
+            central_conflict_or_topic=data.get("central_conflict_or_topic", ""),
+            resolution_or_conclusion=data.get("resolution_or_conclusion", ""),
+            vocabulary_targets=qrm_result.required_vocabulary,
+            vocabulary_contexts=data.get("vocabulary_contexts", {}),
+            text_structure=data.get("text_structure", ""),
+            organizational_features=data.get("organizational_features", []),
+            question_coverage_map=question_coverage_map,
+            target_lexile=lexile_range['display'],
+            target_word_count=word_count_spec['target_words'],
+            actual_grade=qrm_result.grade,
+            genre=qrm_result.genre,
+            band=qrm_result.band,
+            form_id=form_id,
+            qrm_form_id=qrm_result.form_id,
+            generated_at=datetime.now().isoformat(),
+            schema_version=self.schema_version,
+            bank_usage=bank_usage
+        )
+    
+    def _validate_pib(self, pib: PIBResult, qrm_result):
+        """Validate PIB covers all QRM requirements"""
+        
+        # Check all questions are covered
+        all_questions = set(range(1, qrm_result.total_questions + 1))
+        covered_questions = set(pib.question_coverage_map.keys())
+        
+        missing = all_questions - covered_questions
+        if missing:
+            print(f"Warning: Questions {missing} not explicitly mapped to scenes")
+        
+        # Check all required vocabulary is addressed
+        required_vocab = set(qrm_result.required_vocabulary)
+        addressed_vocab = set(pib.vocabulary_contexts.keys())
+        
+        missing_vocab = required_vocab - addressed_vocab
+        if missing_vocab:
+            print(f"Warning: Vocabulary words {missing_vocab} not given context in PIB")
+        
+        # Verify scene count is reasonable
+        if pib.total_scenes < 3:
+            print(f"Warning: Only {pib.total_scenes} scenes - may be too few for {qrm_result.total_questions} questions")
+        elif pib.total_scenes > 8:
+            print(f"Warning: {pib.total_scenes} scenes - may be too many, could exceed word count")
+        
+        print(f"✓ PIB validation passed - covers {len(covered_questions)}/{qrm_result.total_questions} questions")
+
+
+def create_pib_generator(ai_client):
+    """Factory function to create PIB generator"""
+    return PIBGenerator(ai_client)
+
+
+# Example usage
+if __name__ == "__main__":
+    # Need to import or mock QRM result
+    from qrm_generator import create_qrm_generator
+    
+    # Mock AI client
+    class MockAI:
+        def complete(self, prompt):
+            # Detect if it's QRM or PIB request
+            if "Question Requirement Matrix" in prompt:
+                # QRM response
+                return '''
+{
+  "questions": [
+    {"question_number": 1, "question_type": "explicit", "cognitive_demand": "low", "evidence_location": "beginning", "content_requirement": "State Maya's name and grade", "distractor_guidance": "Use other names"},
+    {"question_number": 2, "question_type": "explicit", "cognitive_demand": "low", "evidence_location": "middle", "content_requirement": "Describe recess activity", "distractor_guidance": "Use wrong activities"},
+    {"question_number": 3, "question_type": "implicit", "cognitive_demand": "medium", "evidence_location": "throughout", "content_requirement": "Show Maya being kind through actions", "distractor_guidance": "Use other traits"},
+    {"question_number": 4, "question_type": "implicit", "cognitive_demand": "medium", "evidence_location": "end", "content_requirement": "Show cause-effect of kindness", "distractor_guidance": "Use wrong outcomes"},
+    {"question_number": 5, "question_type": "vocabulary", "cognitive_demand": "medium", "evidence_location": "middle", "content_requirement": "Use 'hesitant' with context", "distractor_guidance": "Use similar words"},
+    {"question_number": 6, "question_type": "main_idea", "cognitive_demand": "high", "evidence_location": "throughout", "content_requirement": "Central theme about inclusion", "distractor_guidance": "Use details as main ideas"}
+  ],
+  "required_content_elements": ["Character intro", "School setting", "Kind actions", "Friendships formed"],
+  "required_vocabulary": ["hesitant"],
+  "required_structure_elements": ["chronological", "cause-effect"]
+}
+                '''
+            else:
+                # PIB response
+                return '''
+{
+  "scenes": [
+    {
+      "scene_number": 1,
+      "scene_type": "opening",
+      "location_in_passage": "beginning",
+      "purpose": "Introduce Maya and school setting",
+      "content_description": "Maya arrives at Lincoln Elementary for first day of second grade",
+      "required_details": ["Maya's name", "Second grade", "School setting"],
+      "supports_questions": [1],
+      "vocabulary_placement": []
+    },
+    {
+      "scene_number": 2,
+      "scene_type": "action",
+      "location_in_passage": "middle",
+      "purpose": "Show Maya noticing lonely student",
+      "content_description": "During morning, Maya sees new student standing alone looking hesitant",
+      "required_details": ["New student described", "Word 'hesitant' used with context"],
+      "supports_questions": [3, 5],
+      "vocabulary_placement": ["hesitant"]
+    },
+    {
+      "scene_number": 3,
+      "scene_type": "action",
+      "location_in_passage": "middle",
+      "purpose": "Show Maya's kind actions at recess",
+      "content_description": "At recess, Maya organizes tag game and invites new student to join",
+      "required_details": ["Tag game organized", "Maya invites student", "Student joins"],
+      "supports_questions": [2, 3],
+      "vocabulary_placement": []
+    },
+    {
+      "scene_number": 4,
+      "scene_type": "action",
+      "location_in_passage": "middle",
+      "purpose": "Continue showing kindness",
+      "content_description": "Back in class, Maya shares pencils with student who forgot supplies",
+      "required_details": ["Student forgot supplies", "Maya shares", "Student grateful"],
+      "supports_questions": [3],
+      "vocabulary_placement": []
+    },
+    {
+      "scene_number": 5,
+      "scene_type": "conclusion",
+      "location_in_passage": "end",
+      "purpose": "Show positive outcome of Maya's kindness",
+      "content_description": "End of day, Maya has new friends and feels happy about school",
+      "required_details": ["New friendships formed", "Maya feels happy", "Cause-effect clear"],
+      "supports_questions": [4, 6],
+      "vocabulary_placement": []
+    }
+  ],
+  "characters": [
+    {
+      "name": "Maya",
+      "role": "main",
+      "key_traits": ["kind", "inclusive", "friendly"],
+      "actions_to_show": ["Invites lonely student", "Shares supplies", "Organizes inclusive game"],
+      "supports_questions": [1, 2, 3, 4, 6]
+    },
+    {
+      "name": "Jordan",
+      "role": "supporting",
+      "key_traits": ["new", "shy"],
+      "actions_to_show": ["Stands alone hesitantly", "Joins game", "Becomes friend"],
+      "supports_questions": [3, 4, 5]
+    }
+  ],
+  "opening_hook": "Maya stood at the school entrance, excited for second grade",
+  "central_conflict_or_topic": "Maya makes new students feel welcome on first day",
+  "resolution_or_conclusion": "Maya's kindness leads to new friendships and happy start to school year",
+  "vocabulary_contexts": {
+    "hesitant": "Jordan looked hesitant to join, standing alone with uncertain expression"
+  },
+  "text_structure": "chronological",
+  "organizational_features": [],
+  "question_coverage_map": {
+    "1": [1],
+    "2": [3],
+    "3": [2, 3, 4],
+    "4": [5],
+    "5": [2],
+    "6": [5]
+  }
+}
+                '''
+    
+    mock_ai = MockAI()
+    
+    print("=" * 80)
+    print("PIB GENERATOR TEST")
+    print("=" * 80)
+    
+    # Step 1: Generate QRM
+    print("\n[STEP 1] Generating QRM...")
+    qrm_gen = create_qrm_generator(mock_ai)
+    qrm = qrm_gen.generate(
+        grade="2",
+        genre="narrative",
+        band="early",
+        topic="making friends at school"
+    )
+    print(f"✓ QRM generated with {qrm.total_questions} questions")
+    
+    # Step 2: Generate PIB from QRM
+    print("\n[STEP 2] Generating PIB from QRM...")
+    pib_gen = create_pib_generator(mock_ai)
+    pib = pib_gen.generate(qrm_result=qrm)
+    
+    print(f"\n✓ PIB Generated Successfully")
+    print(f"  Form ID: {pib.form_id}")
+    print(f"  Linked to QRM: {pib.qrm_form_id}")
+    print(f"  Total Scenes: {pib.total_scenes}")
+    print(f"  Characters: {len(pib.characters)}")
+    print(f"  Target Lexile: {pib.target_lexile}")
+    print(f"  Target Word Count: {pib.target_word_count}")
+    
+    print(f"\n  Bank Usage:")
+    for bank, usage in pib.bank_usage.items():
+        print(f"    - {bank}: {usage}")
+    
+    print("\n" + "=" * 80)
+    print("SCENE BREAKDOWN")
+    print("=" * 80)
+    for scene in pib.scenes:
+        print(f"\nScene {scene.scene_number} - {scene.scene_type.value.upper()} ({scene.location_in_passage})")
+        print(f"  Purpose: {scene.purpose}")
+        print(f"  Content: {scene.content_description}")
+        print(f"  Supports Questions: {scene.supports_questions}")
+        if scene.vocabulary_placement:
+            print(f"  Vocabulary: {', '.join(scene.vocabulary_placement)}")
+    
+    print("\n" + "=" * 80)
+    print("CHARACTER SPECIFICATIONS")
+    print("=" * 80)
+    for char in pib.characters:
+        print(f"\n{char.name} ({char.role})")
+        print(f"  Traits: {', '.join(char.key_traits)}")
+        print(f"  Actions to show:")
+        for action in char.actions_to_show:
+            print(f"    - {action}")
+        print(f"  Supports Questions: {char.supports_questions}")
+    
+    print("\n" + "=" * 80)
+    print("QUESTION COVERAGE")
+    print("=" * 80)
+    for q_num in sorted(pib.question_coverage_map.keys()):
+        scenes = pib.question_coverage_map[q_num]
+        print(f"  Question {q_num}: Covered by scenes {scenes}")

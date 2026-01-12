@@ -1,0 +1,944 @@
+{
+  "version": "2026.1",
+  "banks": {
+    "lexile_ranges": [
+      {
+        "grade": "K",
+        "band": "early",
+        "lexile_min": "BR310L",
+        "lexile_max": "BR160L",
+        "basis": "Spring 25th-75th percentile"
+      },
+      {
+        "grade": "K",
+        "band": "late",
+        "lexile_min": "BR155L",
+        "lexile_max": "BR5L",
+        "basis": "Spring 25th-75th percentile"
+      },
+      {
+        "grade": "1",
+        "band": "early",
+        "lexile_min": "BR35L",
+        "lexile_max": "165L",
+        "basis": "Spring 25th-75th percentile"
+      },
+      {
+        "grade": "1",
+        "band": "late",
+        "lexile_min": "170L",
+        "lexile_max": "365L",
+        "basis": "Spring 25th-75th percentile"
+      },
+      {
+        "grade": "2",
+        "band": "early",
+        "lexile_min": "245L",
+        "lexile_max": "425L",
+        "basis": "Spring 25th-75th percentile"
+      },
+      {
+        "grade": "2",
+        "band": "late",
+        "lexile_min": "430L",
+        "lexile_max": "605L",
+        "basis": "Spring 25th-75th percentile"
+      },
+      {
+        "grade": "3",
+        "band": "early",
+        "lexile_min": "480L",
+        "lexile_max": "645L",
+        "basis": "Spring 25th-75th percentile"
+      },
+      {
+        "grade": "3",
+        "band": "late",
+        "lexile_min": "650L",
+        "lexile_max": "810L",
+        "basis": "Spring 25th-75th percentile"
+      },
+      {
+        "grade": "4",
+        "band": "early",
+        "lexile_min": "700L",
+        "lexile_max": "850L",
+        "basis": "Spring 25th-75th percentile"
+      },
+      {
+        "grade": "4",
+        "band": "late",
+        "lexile_min": "855L",
+        "lexile_max": "1005L",
+        "basis": "Spring 25th-75th percentile"
+      },
+      {
+        "grade": "5",
+        "band": "early",
+        "lexile_min": "795L",
+        "lexile_max": "945L",
+        "basis": "Spring 25th-75th percentile"
+      },
+      {
+        "grade": "5",
+        "band": "late",
+        "lexile_min": "950L",
+        "lexile_max": "1100L",
+        "basis": "Spring 25th-75th percentile"
+      },
+      {
+        "grade": "6",
+        "band": "early",
+        "lexile_min": "875L",
+        "lexile_max": "1025L",
+        "basis": "Spring 25th-75th percentile"
+      },
+      {
+        "grade": "6",
+        "band": "late",
+        "lexile_min": "1030L",
+        "lexile_max": "1180L",
+        "basis": "Spring 25th-75th percentile"
+      },
+      {
+        "grade": "7",
+        "band": "early",
+        "lexile_min": "940L",
+        "lexile_max": "1095L",
+        "basis": "Spring 25th-75th percentile"
+      },
+      {
+        "grade": "7",
+        "band": "late",
+        "lexile_min": "1100L",
+        "lexile_max": "1250L",
+        "basis": "Spring 25th-75th percentile"
+      },
+      {
+        "grade": "8",
+        "band": "early",
+        "lexile_min": "1000L",
+        "lexile_max": "1155L",
+        "basis": "Spring 25th-75th percentile"
+      },
+      {
+        "grade": "8",
+        "band": "late",
+        "lexile_min": "1160L",
+        "lexile_max": "1310L",
+        "basis": "Spring 25th-75th percentile"
+      },
+      {
+        "grade": "8+",
+        "band": "early",
+        "lexile_min": "1050L",
+        "lexile_max": "1250L",
+        "basis": "Spring 25th-75th percentile"
+      },
+      {
+        "grade": "8+",
+        "band": "late",
+        "lexile_min": "1255L",
+        "lexile_max": "1450L",
+        "basis": "Spring 25th-75th percentile"
+      }
+    ],
+    "orf_word_counts": [
+      {
+        "grade": "1",
+        "spring_wcpm_50th": 60,
+        "spring_wcpm_75th": 91,
+        "target_word_count": 110,
+        "basis": "Hasbrouck & Tindal 2017"
+      },
+      {
+        "grade": "2",
+        "spring_wcpm_50th": 100,
+        "spring_wcpm_75th": 124,
+        "target_word_count": 140,
+        "basis": "Hasbrouck & Tindal 2017"
+      },
+      {
+        "grade": "3",
+        "spring_wcpm_50th": 112,
+        "spring_wcpm_75th": 139,
+        "target_word_count": 150,
+        "basis": "Hasbrouck & Tindal 2017"
+      },
+      {
+        "grade": "4",
+        "spring_wcpm_50th": 133,
+        "spring_wcpm_75th": 160,
+        "target_word_count": 170,
+        "basis": "Hasbrouck & Tindal 2017"
+      },
+      {
+        "grade": "5",
+        "spring_wcpm_50th": 146,
+        "spring_wcpm_75th": 169,
+        "target_word_count": 180,
+        "basis": "Hasbrouck & Tindal 2017"
+      },
+      {
+        "grade": "6",
+        "spring_wcpm_50th": 146,
+        "spring_wcpm_75th": 173,
+        "target_word_count": 190,
+        "basis": "Hasbrouck & Tindal 2017"
+      },
+      {
+        "grade": "7",
+        "spring_wcpm_50th": 150,
+        "spring_wcpm_75th": 180,
+        "target_word_count": 200,
+        "basis": "Hasbrouck & Tindal 2017"
+      },
+      {
+        "grade": "8",
+        "spring_wcpm_50th": 155,
+        "spring_wcpm_75th": 185,
+        "target_word_count": 210,
+        "basis": "Hasbrouck & Tindal 2017"
+      }
+    ],
+    "comp_word_counts": [
+      {
+        "grade": "K",
+        "average_word_count": 50,
+        "allowed_range": "40-60",
+        "min_allowed": 40,
+        "max_allowed": 60,
+        "rationale": "Listening comprehension, single picture support, attention span"
+      },
+      {
+        "grade": "1",
+        "average_word_count": 75,
+        "allowed_range": "65-85",
+        "min_allowed": 65,
+        "max_allowed": 85,
+        "rationale": "Listening comprehension, developing vocabulary"
+      },
+      {
+        "grade": "2",
+        "average_word_count": 125,
+        "allowed_range": "110-140",
+        "min_allowed": 110,
+        "max_allowed": 140,
+        "rationale": "First independent comprehension grade"
+      },
+      {
+        "grade": "3",
+        "average_word_count": 175,
+        "allowed_range": "155-195",
+        "min_allowed": 155,
+        "max_allowed": 195,
+        "rationale": "Supports balanced explicit and implicit questions"
+      },
+      {
+        "grade": "4",
+        "average_word_count": 225,
+        "allowed_range": "200-250",
+        "min_allowed": 200,
+        "max_allowed": 250,
+        "rationale": "Introduces vocabulary and main idea items"
+      },
+      {
+        "grade": "5",
+        "average_word_count": 275,
+        "allowed_range": "245-305",
+        "min_allowed": 245,
+        "max_allowed": 305,
+        "rationale": "Sustains multi-question comprehension sets"
+      },
+      {
+        "grade": "6",
+        "average_word_count": 325,
+        "allowed_range": "290-360",
+        "min_allowed": 290,
+        "max_allowed": 360,
+        "rationale": "Supports text features and structure"
+      },
+      {
+        "grade": "7",
+        "average_word_count": 375,
+        "allowed_range": "335-415",
+        "min_allowed": 335,
+        "max_allowed": 415,
+        "rationale": "Enables inference across paragraphs"
+      },
+      {
+        "grade": "8",
+        "average_word_count": 425,
+        "allowed_range": "380-470",
+        "min_allowed": 380,
+        "max_allowed": 470,
+        "rationale": "Complex reasoning and multiple inference items"
+      },
+      {
+        "grade": "8+",
+        "average_word_count": 500,
+        "allowed_range": "450-550",
+        "min_allowed": 450,
+        "max_allowed": 550,
+        "rationale": "Secondary-level comprehension and analysis"
+      }
+    ],
+    "comprehension_blueprint": [
+      {
+        "grade": "K",
+        "text_access_mode": "listening",
+        "item_access_mode": "read_aloud",
+        "supports_allowed": "Single picture per passage",
+        "text_features_required": false,
+        "text_type": "narrative",
+        "example_themes": [
+          "Family",
+          "School",
+          "Animals",
+          "Daily routines"
+        ],
+        "lexile_range_note": "BR310L-BR5L",
+        "total_questions": 4,
+        "question_distribution": {
+          "explicit": 4
+        }
+      },
+      {
+        "grade": "1",
+        "text_access_mode": "listening",
+        "item_access_mode": "read_aloud",
+        "supports_allowed": "Single picture per passage",
+        "text_features_required": false,
+        "text_type": "narrative",
+        "example_themes": [
+          "Friends",
+          "Routines",
+          "Nature",
+          "Helping others"
+        ],
+        "lexile_range_note": "BR35L-365L",
+        "total_questions": 5,
+        "question_distribution": {
+          "explicit": 4,
+          "implicit": 1
+        }
+      },
+      {
+        "grade": "2",
+        "text_access_mode": "independent",
+        "item_access_mode": "student_reads",
+        "supports_allowed": "None",
+        "text_features_required": false,
+        "text_type": "narrative",
+        "example_themes": [
+          "Everyday problems",
+          "Helping others",
+          "Friendship",
+          "Community"
+        ],
+        "lexile_range_note": "245L-605L",
+        "total_questions": 6,
+        "question_distribution": {
+          "explicit": 4,
+          "implicit": 2
+        }
+      },
+      {
+        "grade": "3",
+        "text_access_mode": "independent",
+        "item_access_mode": "student_reads",
+        "supports_allowed": "None",
+        "text_features_required": false,
+        "text_type": "narrative_and_nonfiction",
+        "example_themes": [
+          "Community",
+          "Simple science topics",
+          "Historical figures",
+          "Problem-solving"
+        ],
+        "lexile_range_note": "480L-810L",
+        "total_questions": 8,
+        "question_distribution": {
+          "explicit": 4,
+          "implicit": 4
+        }
+      },
+      {
+        "grade": "4",
+        "text_access_mode": "independent",
+        "item_access_mode": "student_reads",
+        "supports_allowed": "None",
+        "text_features_required": false,
+        "text_type": "narrative_and_nonfiction",
+        "example_themes": [
+          "History",
+          "Problem solving",
+          "Scientific processes",
+          "Cultural topics"
+        ],
+        "lexile_range_note": "700L-1005L",
+        "total_questions": 10,
+        "question_distribution": {
+          "explicit": 4,
+          "implicit": 4,
+          "vocabulary": 2
+        }
+      },
+      {
+        "grade": "5",
+        "text_access_mode": "independent",
+        "item_access_mode": "student_reads",
+        "supports_allowed": "None",
+        "text_features_required": false,
+        "text_type": "narrative_and_nonfiction",
+        "example_themes": [
+          "Survival",
+          "Innovation",
+          "Exploration",
+          "Systems and structures"
+        ],
+        "lexile_range_note": "795L-1100L",
+        "total_questions": 12,
+        "question_distribution": {
+          "explicit": 4,
+          "implicit": 4,
+          "vocabulary": 2,
+          "main_idea": 2
+        }
+      },
+      {
+        "grade": "6",
+        "text_access_mode": "independent",
+        "item_access_mode": "student_reads",
+        "supports_allowed": "None",
+        "text_features_required": true,
+        "text_type": "primarily_nonfiction",
+        "example_themes": [
+          "Science",
+          "Social studies",
+          "Ecosystems",
+          "Historical analysis"
+        ],
+        "lexile_range_note": "875L-1180L",
+        "total_questions": 14,
+        "question_distribution": {
+          "explicit": 4,
+          "implicit": 4,
+          "vocabulary": 2,
+          "main_idea": 2,
+          "text_structure": 2
+        }
+      },
+      {
+        "grade": "7",
+        "text_access_mode": "independent",
+        "item_access_mode": "student_reads",
+        "supports_allowed": "None",
+        "text_features_required": true,
+        "text_type": "nonfiction_dominant",
+        "example_themes": [
+          "Argument",
+          "Systems",
+          "Scientific inquiry",
+          "Economic concepts"
+        ],
+        "lexile_range_note": "940L-1250L",
+        "total_questions": 16,
+        "question_distribution": {
+          "explicit": 4,
+          "implicit": 4,
+          "vocabulary": 2,
+          "main_idea": 2,
+          "text_structure": 2,
+          "inference_advanced": 2
+        }
+      },
+      {
+        "grade": "8",
+        "text_access_mode": "independent",
+        "item_access_mode": "student_reads",
+        "supports_allowed": "None",
+        "text_features_required": true,
+        "text_type": "nonfiction_dominant",
+        "example_themes": [
+          "Policy",
+          "Ethics",
+          "Analysis",
+          "Complex systems"
+        ],
+        "lexile_range_note": "1000L-1310L",
+        "total_questions": 18,
+        "question_distribution": {
+          "explicit": 4,
+          "implicit": 4,
+          "vocabulary": 2,
+          "main_idea": 2,
+          "text_structure": 2,
+          "inference_advanced": 4
+        }
+      },
+      {
+        "grade": "8+",
+        "text_access_mode": "independent",
+        "item_access_mode": "student_reads",
+        "supports_allowed": "None",
+        "text_features_required": true,
+        "text_type": "nonfiction_dominant",
+        "example_themes": [
+          "Policy analysis",
+          "Ethical dilemmas",
+          "Historical interpretation",
+          "Scientific research"
+        ],
+        "lexile_range_note": "1050L-1450L",
+        "total_questions": 18,
+        "question_distribution": {
+          "explicit": 4,
+          "implicit": 4,
+          "vocabulary": 2,
+          "main_idea": 2,
+          "text_structure": 2,
+          "inference_advanced": 4
+        }
+      }
+    ],
+    "form_requirements": {
+      "orf_requirements": [
+        {
+          "grade": "1",
+          "assessment_type": "orf",
+          "required_bands": [
+            "early",
+            "late"
+          ],
+          "genre_options": [
+            "narrative"
+          ],
+          "default_genre": "narrative",
+          "notes": "ORF passages are narrative-focused for natural oral reading flow"
+        },
+        {
+          "grade": "2",
+          "assessment_type": "orf",
+          "required_bands": [
+            "early",
+            "late"
+          ],
+          "genre_options": [
+            "narrative"
+          ],
+          "default_genre": "narrative",
+          "notes": "ORF passages are narrative-focused for natural oral reading flow"
+        },
+        {
+          "grade": "3",
+          "assessment_type": "orf",
+          "required_bands": [
+            "early",
+            "late"
+          ],
+          "genre_options": [
+            "narrative"
+          ],
+          "default_genre": "narrative",
+          "notes": "ORF passages are narrative-focused for natural oral reading flow"
+        },
+        {
+          "grade": "4",
+          "assessment_type": "orf",
+          "required_bands": [
+            "early",
+            "late"
+          ],
+          "genre_options": [
+            "narrative"
+          ],
+          "default_genre": "narrative",
+          "notes": "ORF passages are narrative-focused for natural oral reading flow"
+        },
+        {
+          "grade": "5",
+          "assessment_type": "orf",
+          "required_bands": [
+            "early",
+            "late"
+          ],
+          "genre_options": [
+            "narrative"
+          ],
+          "default_genre": "narrative",
+          "notes": "ORF passages are narrative-focused for natural oral reading flow"
+        },
+        {
+          "grade": "6",
+          "assessment_type": "orf",
+          "required_bands": [
+            "early",
+            "late"
+          ],
+          "genre_options": [
+            "narrative"
+          ],
+          "default_genre": "narrative",
+          "notes": "ORF passages are narrative-focused for natural oral reading flow"
+        },
+        {
+          "grade": "7",
+          "assessment_type": "orf",
+          "required_bands": [
+            "early",
+            "late"
+          ],
+          "genre_options": [
+            "narrative"
+          ],
+          "default_genre": "narrative",
+          "notes": "ORF passages are narrative-focused for natural oral reading flow"
+        },
+        {
+          "grade": "8",
+          "assessment_type": "orf",
+          "required_bands": [
+            "early",
+            "late"
+          ],
+          "genre_options": [
+            "narrative"
+          ],
+          "default_genre": "narrative",
+          "notes": "ORF passages are narrative-focused for natural oral reading flow"
+        }
+      ],
+      "comprehension_requirements": [
+        {
+          "grade": "K",
+          "assessment_type": "comprehension",
+          "required_bands": [
+            "early",
+            "late"
+          ],
+          "genre_options": [
+            "narrative"
+          ],
+          "default_genre": "narrative",
+          "notes": "Listening comprehension only, single picture support"
+        },
+        {
+          "grade": "1",
+          "assessment_type": "comprehension",
+          "required_bands": [
+            "early",
+            "late"
+          ],
+          "genre_options": [
+            "narrative"
+          ],
+          "default_genre": "narrative",
+          "notes": "Listening comprehension only, single picture support"
+        },
+        {
+          "grade": "2",
+          "assessment_type": "comprehension",
+          "required_bands": [
+            "early",
+            "late"
+          ],
+          "genre_options": [
+            "narrative"
+          ],
+          "default_genre": "narrative",
+          "notes": "First independent reading comprehension grade"
+        },
+        {
+          "grade": "3",
+          "assessment_type": "comprehension",
+          "required_bands": [
+            "early",
+            "late"
+          ],
+          "genre_options": [
+            "narrative",
+            "nonfiction",
+            "both"
+          ],
+          "default_genre": "narrative",
+          "notes": "Both narrative and nonfiction available; each band can have both genres"
+        },
+        {
+          "grade": "4",
+          "assessment_type": "comprehension",
+          "required_bands": [
+            "early",
+            "late"
+          ],
+          "genre_options": [
+            "narrative",
+            "nonfiction",
+            "both"
+          ],
+          "default_genre": "narrative",
+          "notes": "Both narrative and nonfiction available; each band can have both genres"
+        },
+        {
+          "grade": "5",
+          "assessment_type": "comprehension",
+          "required_bands": [
+            "early",
+            "late"
+          ],
+          "genre_options": [
+            "narrative",
+            "nonfiction",
+            "both"
+          ],
+          "default_genre": "narrative",
+          "notes": "Both narrative and nonfiction available; each band can have both genres"
+        },
+        {
+          "grade": "6",
+          "assessment_type": "comprehension",
+          "required_bands": [
+            "early",
+            "late"
+          ],
+          "genre_options": [
+            "narrative",
+            "nonfiction",
+            "both"
+          ],
+          "default_genre": "nonfiction",
+          "notes": "Primarily nonfiction; text features required"
+        },
+        {
+          "grade": "7",
+          "assessment_type": "comprehension",
+          "required_bands": [
+            "early",
+            "late"
+          ],
+          "genre_options": [
+            "narrative",
+            "nonfiction",
+            "both"
+          ],
+          "default_genre": "nonfiction",
+          "notes": "Nonfiction dominant; text features required"
+        },
+        {
+          "grade": "8",
+          "assessment_type": "comprehension",
+          "required_bands": [
+            "early",
+            "late"
+          ],
+          "genre_options": [
+            "narrative",
+            "nonfiction",
+            "both"
+          ],
+          "default_genre": "nonfiction",
+          "notes": "Nonfiction dominant; text features required"
+        },
+        {
+          "grade": "8+",
+          "assessment_type": "comprehension",
+          "required_bands": [
+            "early",
+            "late"
+          ],
+          "genre_options": [
+            "nonfiction"
+          ],
+          "default_genre": "nonfiction",
+          "notes": "High school: nonfiction only, historical or science topics, multi-paragraph"
+        }
+      ]
+    },
+    "answer_options": [
+      {
+        "grade_band": "K-1",
+        "num_options": 2,
+        "distractor_quality": "One clearly correct, one clearly incorrect",
+        "notes": "Can use picture-supported options for K; text only for grade 1"
+      },
+      {
+        "grade_band": "2-3",
+        "num_options": 3,
+        "distractor_quality": "Plausible distractors based on common misunderstandings",
+        "notes": "Distractors should be text-based and plausible but clearly incorrect"
+      },
+      {
+        "grade_band": "4-8+",
+        "num_options": 4,
+        "distractor_quality": "Three plausible distractors, one best answer",
+        "notes": "All options should be plausible; distractors reflect common errors"
+      }
+    ],
+    "text_structures": {
+      "narrative_structures": [
+        {
+          "structure": "chronological",
+          "genre": "narrative",
+          "description": "Events presented in time order from beginning to end",
+          "signal_words": [
+            "first",
+            "then",
+            "next",
+            "after",
+            "finally",
+            "later",
+            "before"
+          ],
+          "typical_use": "Stories with clear sequence of events",
+          "example_topics": [
+            "A day at the park",
+            "Learning to ride a bike",
+            "A family trip",
+            "Making a new friend"
+          ]
+        },
+        {
+          "structure": "problem_solution",
+          "genre": "narrative",
+          "description": "Character faces a problem and works to solve it",
+          "signal_words": [
+            "problem",
+            "solution",
+            "challenge",
+            "resolved",
+            "fixed",
+            "decided"
+          ],
+          "typical_use": "Stories with clear conflict and resolution",
+          "example_topics": [
+            "Lost pet found",
+            "Overcoming fear",
+            "Helping a friend",
+            "Solving a mystery"
+          ]
+        },
+        {
+          "structure": "sequence",
+          "genre": "narrative",
+          "description": "Specific steps or stages in order",
+          "signal_words": [
+            "first",
+            "second",
+            "step",
+            "stage",
+            "process"
+          ],
+          "typical_use": "How-to narratives or procedural stories",
+          "example_topics": [
+            "Learning a new skill",
+            "Following directions",
+            "Completing a project",
+            "Growing a garden"
+          ]
+        }
+      ],
+      "nonfiction_structures": [
+        {
+          "structure": "descriptive",
+          "genre": "nonfiction",
+          "description": "Provides details about a topic, person, place, or thing",
+          "signal_words": [
+            "for example",
+            "characteristics",
+            "such as",
+            "including",
+            "like"
+          ],
+          "typical_use": "Informational texts introducing a topic",
+          "example_topics": [
+            "Animal habitats",
+            "Types of weather",
+            "Parts of a plant",
+            "Historical landmarks"
+          ]
+        },
+        {
+          "structure": "cause_effect",
+          "genre": "nonfiction",
+          "description": "Shows how one event or action leads to another",
+          "signal_words": [
+            "because",
+            "therefore",
+            "as a result",
+            "consequently",
+            "due to",
+            "if...then"
+          ],
+          "typical_use": "Scientific processes or historical events",
+          "example_topics": [
+            "Water cycle",
+            "Erosion",
+            "Migration patterns",
+            "Climate effects"
+          ]
+        },
+        {
+          "structure": "compare_contrast",
+          "genre": "nonfiction",
+          "description": "Shows similarities and differences between two or more things",
+          "signal_words": [
+            "similar",
+            "different",
+            "both",
+            "however",
+            "while",
+            "unlike",
+            "in contrast"
+          ],
+          "typical_use": "Analyzing relationships between concepts",
+          "example_topics": [
+            "Desert vs. rainforest",
+            "Past vs. present",
+            "Two historical figures",
+            "Different ecosystems"
+          ]
+        },
+        {
+          "structure": "problem_solution",
+          "genre": "nonfiction",
+          "description": "Presents a problem and explains how it was or could be solved",
+          "signal_words": [
+            "problem",
+            "solution",
+            "challenge",
+            "addressed",
+            "resolved",
+            "improved"
+          ],
+          "typical_use": "Social issues, scientific challenges, historical problems",
+          "example_topics": [
+            "Conservation efforts",
+            "Medical breakthroughs",
+            "Engineering solutions",
+            "Community improvements"
+          ]
+        },
+        {
+          "structure": "sequence",
+          "genre": "nonfiction",
+          "description": "Events or steps in chronological or logical order",
+          "signal_words": [
+            "first",
+            "next",
+            "then",
+            "finally",
+            "stages",
+            "process"
+          ],
+          "typical_use": "Historical timelines, scientific processes, how things work",
+          "example_topics": [
+            "Life cycle",
+            "Historical timeline",
+            "Scientific method",
+            "Manufacturing process"
+          ]
+        }
+      ]
+    }
+  }
+}
