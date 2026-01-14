@@ -85,11 +85,11 @@ class ORFAssessorMaterialsGenerator:
     def _mock_get_orf_target(self, grade: str) -> Dict[str, Any]:
         """Mock bank data for testing without imports"""
         mock_data = {
-            "1": {"wcpm_fall": 20, "wcpm_winter": 40, "wcpm_spring": 60, "target_words": 100},
-            "2": {"wcpm_fall": 50, "wcpm_winter": 70, "wcpm_spring": 90, "target_words": 150},
-            "3": {"wcpm_fall": 70, "wcpm_winter": 90, "wcpm_spring": 110, "target_words": 200},
+            "1": {"spring_wcpm_50th": 60, "spring_wcpm_75th": 91, "target_words": 110},
+            "2": {"spring_wcpm_50th": 100, "spring_wcpm_75th": 124, "target_words": 140},
+            "3": {"spring_wcpm_50th": 112, "spring_wcpm_75th": 139, "target_words": 150},
         }
-        return mock_data.get(grade, {"wcpm_fall": 70, "wcpm_winter": 90, "wcpm_spring": 110, "target_words": 200})
+        return mock_data.get(grade, {"spring_wcpm_50th": 112, "spring_wcpm_75th": 139, "target_words": 150})
     
     def generate(
         self,
@@ -124,9 +124,8 @@ class ORFAssessorMaterialsGenerator:
             grade, passage_word_count, orf_spec, form_id
         )
         wcpm_benchmark = {
-            "fall": orf_spec["wcpm_fall"],
-            "winter": orf_spec["wcpm_winter"],
-            "spring": orf_spec["wcpm_spring"]
+            "50th_percentile": getattr(orf_spec, 'spring_wcpm_50th', None) or orf_spec.get("spring_wcpm_50th") if isinstance(orf_spec, dict) else orf_spec.spring_wcpm_50th,
+            "75th_percentile": getattr(orf_spec, 'spring_wcpm_75th', None) or orf_spec.get("spring_wcpm_75th") if isinstance(orf_spec, dict) else orf_spec.spring_wcpm_75th
         }
         accuracy_calculation = self._generate_accuracy_calculation(passage_word_count)
         prosody_rubric = self._generate_prosody_rubric()
@@ -268,9 +267,8 @@ ASSESSMENT VALIDITY:
     ) -> str:
         """Generate complete scoring sheet with calculations"""
         
-        wcpm_fall = orf_spec["wcpm_fall"]
-        wcpm_winter = orf_spec["wcpm_winter"]
-        wcpm_spring = orf_spec["wcpm_spring"]
+        wcpm_50th = getattr(orf_spec, 'spring_wcpm_50th', None) or orf_spec.get("spring_wcpm_50th") if isinstance(orf_spec, dict) else orf_spec.spring_wcpm_50th
+        wcpm_75th = getattr(orf_spec, 'spring_wcpm_75th', None) or orf_spec.get("spring_wcpm_75th") if isinstance(orf_spec, dict) else orf_spec.spring_wcpm_75th
         
         return f"""
 ═══════════════════════════════════════════════════════════════
@@ -316,9 +314,9 @@ Formula: (Words Read - Errors) / Words Read × 100
 BENCHMARK COMPARISON (Grade {grade})
 ═══════════════════════════════════════════════════════════════
 
-Fall Target:    {wcpm_fall} WCPM    Student: ________ WCPM
-Winter Target:  {wcpm_winter} WCPM    Student: ________ WCPM  
-Spring Target:  {wcpm_spring} WCPM    Student: ________ WCPM
+Fall Target:    {wcpm_50th} WCPM (50th percentile)    Student: ________ WCPM
+Winter Target:  {wcpm_75th} WCPM (75th percentile)    Student: ________ WCPM  
+Spring Target:  {wcpm_75th} WCPM (75th percentile)    Student: ________ WCPM
 
 Performance Level (check one):
 □ Above Benchmark (exceeds target by 10+ WCPM)

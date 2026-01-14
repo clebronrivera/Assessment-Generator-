@@ -120,27 +120,31 @@
 
 ### Phase 2C: Question & Recall Generators (Week 5)
 
-- [ ] Build Question Generator
-  - **Depends On:** Banks 4, 6 ✅
-  - **Will Create:** `src/generators/question_generator.py`
-  - **Template:** `templates/prompts/questions.j2` (already exists ✅)
-  - **Priority:** HIGH
-  - **Subtasks:**
-    - [ ] Implement question type logic (explicit, implicit, vocabulary, etc.)
-    - [ ] Implement distractor generation with plausibility scoring
-    - [ ] Add evidence locator tracking
-    - [ ] Validate answer options by grade (use Bank 6)
+- [✅] Build Question Generator (Completed: 2026-01-12 11:52)
+  - **Depends On:** Banks 4, 6 ✅; QRM, PIB, Passage generators ✅
+  - **File:** `src/generators/question_generator.py` ✅
+  - **Documentation:** `docs/QUESTION_GENERATOR_README.md` ✅
+  - **Status:** Production ready - Complete 4-step workflow operational
+  - **Features:**
+    - AI-driven question generation from QRM + passage
+    - Bank 6 validation (3 options K-2, 4 options 3+)
+    - Plausible distractor generation with QRM guidance
+    - Evidence tracking with exact passage quotes
+    - Complete answer key generation
+    - Question type and cognitive demand validation
 
-- [ ] Build Recall Scoring Generator
-  - **Depends On:** Bank 4 ✅
-  - **Will Create:** `src/generators/recall_generator.py`
-  - **Template:** `templates/prompts/recall_scoring.j2` (already exists ✅)
-  - **Priority:** MEDIUM
-  - **Subtasks:**
-    - [ ] Implement sentence splitting (preserve exact text)
-    - [ ] Generate key ideas per sentence (2-4)
-    - [ ] Generate partial keywords (4-8)
-    - [ ] Create scoring rubric output (0-1-2 scale)
+- [✅] Build Recall Scoring Generator (Completed: 2026-01-12 13:06)
+  - **Depends On:** Bank 4 ✅; Comprehension Passage Generator ✅
+  - **File:** `src/generators/recall_scoring_generator.py` ✅
+  - **Documentation:** `docs/RECALL_SCORING_GENERATOR_README.md` ✅
+  - **Status:** Production ready - Phase 2C COMPLETE
+  - **Features:**
+    - Sentence-by-sentence scoring templates
+    - Key ideas identification (2-4 per sentence)
+    - Partial credit keywords (4-8 per sentence)
+    - 0-1-2 point rubric per sentence
+    - Example student responses for each score level
+    - Complete recall assessment templates
 
 ---
 

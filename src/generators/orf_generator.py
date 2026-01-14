@@ -41,7 +41,7 @@ class ORFGenerator:
         prompt = self.template_loader.render("orf_passage.j2", **specs)
         
         # Generate passage
-        passage_text = self.ai_client.generate(prompt)
+        passage_text = self.ai_client.complete(prompt)
         
         # Validate
         validation_results = self._validate_passage(passage_text, specs)

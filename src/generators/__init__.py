@@ -32,6 +32,21 @@ from .comprehension_passage_generator import (
     PassageValidation,
     create_comprehension_passage_generator
 )
+from .question_generator import (
+    QuestionGenerator,
+    QuestionGeneratorResult,
+    Question,
+    AnswerOption,
+    AnswerKey,
+    create_question_generator
+)
+from .recall_scoring_generator import (
+    RecallScoringGenerator,
+    RecallScoringGuide,
+    SentenceScoring,
+    KeyIdea,
+    create_recall_scoring_generator
+)
 
 __all__ = [
     'BaseGenerator',
@@ -56,4 +71,15 @@ __all__ = [
     'ComprehensionPassageResult',
     'PassageValidation',
     'create_comprehension_passage_generator',
+    'QuestionGenerator',
+    'QuestionGeneratorResult',
+    'Question',
+    'AnswerOption',
+    'AnswerKey',
+    'create_question_generator',
+    'RecallScoringGenerator',
+    'RecallScoringGuide',
+    'SentenceScoring',
+    'KeyIdea',
+    'create_recall_scoring_generator',
 ]

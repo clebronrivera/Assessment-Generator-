@@ -1,4 +1,194 @@
+## [2026-01-12 13:06] - Task: Integrate Recall Scoring Generator
+
+### Task Reference
+**From:** Phase 2C - Question & Recall Generators
+**Task:** Build Recall Scoring Generator
+**Status:** ✅ COMPLETE - PHASE 2C COMPLETE
+**Related Tasks:** Comprehension Passage Generator (prerequisite)
+
+### Changes Made
+**Files Created:**
+- `src/generators/recall_scoring_generator.py` - Generates recall scoring templates from passages (597 lines)
+- `docs/RECALL_SCORING_GENERATOR_README.md` - Complete documentation with examples and API reference
+
+**Files Modified:**
+- `src/generators/__init__.py` - Added Recall Scoring Generator exports (5 new exports: RecallScoringGenerator, RecallScoringGuide, SentenceScoring, KeyIdea, create_recall_scoring_generator)
+- `TASK_LIST.md` - Marked Recall Scoring Generator as complete, Phase 2C now 100% complete
+
+**Files Deleted:**
+- `question_generator.py` (root) - Removed duplicate (identical to src/generators/ version)
+
+### Key Decisions
+1. **Decision:** Implement sentence-by-sentence scoring with 0-1-2 rubric
+   **Rationale:** Research-aligned approach for oral/written recall assessments
+   **Impact:** Phase 2C COMPLETE - All comprehension components operational
+   **Bank Usage:** Bank 4 (via passage metadata)
+   **Anti-Drift Check:** ✅ Follows established patterns from other generators
+
+2. **Decision:** Include partial credit keywords (4-8 per sentence)
+   **Rationale:** Allows objective scoring even with paraphrasing
+   **Impact:** Reduces assessor bias, increases scoring consistency
+   **Anti-Drift Check:** ✅ Objective criteria from passage analysis
+
+3. **Decision:** Provide example student responses for each score level
+   **Rationale:** Helps assessors calibrate scoring
+   **Impact:** Improves inter-rater reliability
+   **Anti-Drift Check:** ✅ Enhances assessment quality
+
+### Anti-Drift Validation
+- ✅ Task exists in TASK_LIST.md (Phase 2C)
+- ✅ All data pulled from passage (no hardcoded scoring criteria)
+- ✅ No hardcoded values introduced
+- ✅ Follows established patterns (dataclasses, validation, bank logging)
+- ✅ Dependencies verified complete (Passage Generator ✅)
+
+### Bank Usage Report
+**Banks Referenced:**
+- Bank 4 (Comprehension Blueprint): Via passage metadata for grade-appropriate expectations
+
+**Bank Functions Called:**
+- None directly - uses passage metadata from Comprehension Passage Generator
+
+**New Bank Needs Identified:**
+- [None] - Existing banks are sufficient
+
+### Code Changes Summary
+```python
+# Complete recall scoring workflow
+passage = passage_gen.generate(qrm_result=qrm, pib_result=pib)
+recall_scoring = recall_gen.generate(passage_result=passage)
+
+# Result: Complete scoring template
+# - 9 sentences analyzed
+# - 18 max points (9 × 2)
+# - Key ideas, keywords, rubrics for each sentence
+# - Example responses for 0, 1, 2 points
+```
+
+### Testing & Validation
+- **Complete Workflow Test:** Successfully generated scoring template for 9-sentence passage
+- **Sentence Analysis:** Correctly identified key ideas and partial keywords
+- **Rubric Generation:** Clear 0-1-2 criteria for each sentence
+- **Example Responses:** Realistic student responses for each score level
+
+### New Tasks Identified
+None - Phase 2C is COMPLETE
+
+### Next Steps
+- Phase 3: User Interface & Workflow
+- Phase 5: Assessment Packaging (combine all components into PDF)
+- Phase 6: Generate sample assessments for all grades
+
+### Technical Debt / Future Considerations
+- Template loading still using inline prompts (src.utils import issue)
+- Could add automated scoring using NLP/AI
+- Could integrate with digital assessment platforms
+
+### Notes & Warnings
+- **✅ PHASE 2C COMPLETE:** All comprehension generators operational
+- **Complete Workflow:** QRM → PIB → Passage → Questions → Recall Scoring
+- **Ready for:** Assessment packaging and educator distribution
+
+**🎉 MAJOR MILESTONE: Complete comprehension assessment system operational!**
+
+---
+
+## [2026-01-12 11:52] - Task: Integrate Question Generator
+
+
+### Task Reference
+**From:** Phase 2C - Question & Recall Generators
+**Task:** Build Question Generator
+**Status:** ✅ COMPLETE
+**Related Tasks:** QRM Generator (prerequisite), PIB Generator (prerequisite), Passage Generator (prerequisite)
+
+### Changes Made
+**Files Created:**
+- `src/generators/question_generator.py` - Generates multiple choice questions from QRM and passage (715 lines)
+- `docs/QUESTION_GENERATOR_README.md` - Complete documentation with examples and API reference
+
+**Files Modified:**
+- `src/generators/__init__.py` - Added Question Generator exports (6 new exports: QuestionGenerator, QuestionGeneratorResult, Question, AnswerOption, AnswerKey, create_question_generator)
+- `TASK_LIST.md` - Marked Question Generator as complete
+
+### Key Decisions
+1. **Decision:** Implement complete 4-step workflow (QRM→PIB→Passage→Questions)
+   **Rationale:** Final step in comprehension assessment creation
+   **Impact:** Phase 2C partially complete - can now generate complete assessments
+   **Bank Usage:** Banks 4 (via QRM), 6 (answer options)
+   **Anti-Drift Check:** ✅ Follows established patterns from QRM/PIB/Passage generators
+
+2. **Decision:** Use Bank 6 for grade-appropriate answer options
+   **Rationale:** K-2 students need fewer choices (3 vs 4)
+   **Impact:** Questions automatically adapt to grade level
+   **Anti-Drift Check:** ✅ Bank-driven, no hardcoded option counts
+
+3. **Decision:** Include evidence tracking with exact quotes
+   **Rationale:** Educators need to verify answer correctness
+   **Impact:** Complete answer key with passage evidence
+   **Anti-Drift Check:** ✅ Enhances validation and transparency
+
+### Anti-Drift Validation
+- ✅ Task exists in TASK_LIST.md (Phase 2C)
+- ✅ All data pulled from existing banks (Bank 6 for answer options, Bank 4 via QRM)
+- ✅ No hardcoded values introduced
+- ✅ Follows established patterns (dataclasses, validation, bank logging)
+- ✅ Dependencies verified complete (QRM, PIB, Passage generators all ✅)
+
+### Bank Usage Report
+**Banks Referenced:**
+- Bank 4 (Comprehension Blueprint): Via QRM for question specifications
+- Bank 6 (Answer Options): Number of answer choices by grade (3 for K-2, 4 for 3+)
+
+**Bank Functions Called:**
+- `get_num_options(grade)` - Returns 3 or 4 based on grade level
+
+**New Bank Needs Identified:**
+- [None] - Existing banks are sufficient
+
+### Code Changes Summary
+```python
+# Complete 4-step workflow
+qrm = qrm_gen.generate(grade="2", genre="narrative", band="early")
+pib = pib_gen.generate(qrm_result=qrm)
+passage = passage_gen.generate(qrm_result=qrm, pib_result=pib)
+questions = question_gen.generate(qrm_result=qrm, passage_result=passage)
+
+# Result: Complete assessment with questions and answer key
+# - 6 questions (from QRM)
+# - 3 answer options each (from Bank 6 for Grade 2)
+# - Complete answer key with evidence
+# - Ready for packaging
+```
+
+### Testing & Validation
+- **Complete Workflow Test:** Successfully generated 6 questions with 3 answer options
+- **Bank Validation:** Correctly used Bank 6 for Grade 2 (3 options)
+- **QRM Alignment:** Question types and cognitive demands matched QRM specifications
+- **Evidence Tracking:** All questions include evidence location and exact passage quotes
+
+### New Tasks Identified
+1. Build Recall Scoring Generator - Next in Phase 2C - Medium Priority
+
+### Next Steps
+- Implement Recall Scoring Generator (Phase 2C)
+- Create assessment packaging system (Phase 5)
+- Generate sample assessments for all grades (Phase 6)
+
+### Technical Debt / Future Considerations
+- Template loading still using inline prompts (src.utils import issue)
+- Could add automated distractor quality scoring
+- Could implement question difficulty calibration
+
+### Notes & Warnings
+- **✅ PHASE 2C PARTIALLY COMPLETE:** Question Generator operational
+- **Complete Workflow:** QRM → PIB → Passage → Questions all working
+- **Ready for:** Assessment packaging and educator distribution
+
+---
+
 ## [2026-01-12 09:46] - Task: Verification Audit of Comprehension Workflow
+
 
 ### Task Reference
 **From:** Phase 4 - Validation & Quality Checks

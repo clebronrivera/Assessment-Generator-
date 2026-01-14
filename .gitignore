@@ -74,3 +74,6 @@ logs/
 
 # Project-specific
 audit_results.json
+
+# Working documentation (not for commit)
+working_docs/

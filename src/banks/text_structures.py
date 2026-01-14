@@ -4,7 +4,7 @@ Defines available text structures and their characteristics for narrative and no
 """
 
 from dataclasses import dataclass
-from typing import Literal
+from typing import Literal, Optional
 from enum import Enum
 
 
@@ -185,7 +185,7 @@ _NONFICTION_LOOKUP = {s.structure: s for s in NONFICTION_STRUCTURES}
 def get_structure_definition(
     structure: str, 
     genre: str
-) -> StructureDefinition | None:
+) -> Optional[StructureDefinition]:
     """
     Get structure definition for a specific structure and genre.
     
