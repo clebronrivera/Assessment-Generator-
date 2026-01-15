@@ -1,0 +1,1407 @@
+{
+  "metadata": {
+    "package_id": "COMP-PKG-5-20260115-071953",
+    "assessment_type": "comprehension",
+    "grade": "5",
+    "band": "late",
+    "genre": "nonfiction",
+    "created_at": "2026-01-15T07:19:53.091926",
+    "schema_version": "2026.1",
+    "component_forms": {
+      "passage": "COMP-5-LATE-001",
+      "qrm": "COMP-5-LATE-QRM-1768479255618-9104",
+      "pib": "COMP-5-LATE-PIB-001",
+      "questions": "COMP-5-LATE-QUESTIONS-001",
+      "recall_scoring": "RECALL-COMP-5-LATE-001"
+    },
+    "banks_used": [
+      "Bank 6 (Answer Options)",
+      "Bank 7 (Text Structures)",
+      "Bank 3 (Comp Word Counts)",
+      "Bank 1 (Lexile Ranges)",
+      "Bank 4 (Comprehension Blueprint)"
+    ],
+    "stats": {
+      "passage_word_count": 237,
+      "lexile_target": "950L-1100L",
+      "total_questions": 12,
+      "total_points_questions": 12,
+      "total_sentences_recall": 14,
+      "total_points_recall": 28,
+      "components_included": 5
+    }
+  },
+  "package_type": "comprehension",
+  "ready_for_use": true,
+  "qrm": {
+    "questions": [
+      {
+        "question_number": 1,
+        "question_type": "explicit",
+        "cognitive_demand": "low",
+        "evidence_location": "beginning",
+        "content_requirement": "Passage must state the main subject of the nonfiction text in the first paragraph",
+        "distractor_guidance": "Use other topics related to the main subject; use topics totally unrelated to the main subject"
+      },
+      {
+        "question_number": 2,
+        "question_type": "explicit",
+        "cognitive_demand": "medium",
+        "evidence_location": "middle",
+        "content_requirement": "Passage must provide at least one specific detail or fact related to the main subject",
+        "distractor_guidance": "Use facts that could be plausible but are not stated in the text; use facts from different parts of the text"
+      },
+      {
+        "question_number": 3,
+        "question_type": "explicit",
+        "cognitive_demand": "high",
+        "evidence_location": "end",
+        "content_requirement": "Passage must state a final conclusion or summarizing statement about the main subject",
+        "distractor_guidance": "Use other conclusions that could be drawn from the text but are not explicitly stated; use unrelated conclusions"
+      },
+      {
+        "question_number": 4,
+        "question_type": "implicit",
+        "cognitive_demand": "low",
+        "evidence_location": "beginning",
+        "content_requirement": "Passage must imply the importance or relevance of the main subject",
+        "distractor_guidance": "Use importance or relevance related to other topics in the text; use importance or relevance not supported by the text"
+      },
+      {
+        "question_number": 5,
+        "question_type": "implicit",
+        "cognitive_demand": "medium",
+        "evidence_location": "middle",
+        "content_requirement": "Passage must imply a cause-effect relationship related to the main subject",
+        "distractor_guidance": "Use cause-effect relationships that could be plausible but are not implied in the text; use cause-effect relationships from different parts of the text"
+      },
+      {
+        "question_number": 6,
+        "question_type": "vocabulary",
+        "cognitive_demand": "medium",
+        "evidence_location": "beginning",
+        "content_requirement": "Passage must contain the word 'resilient' in a context that helps to infer its meaning",
+        "distractor_guidance": "Use definitions that could be plausible based on the context but are incorrect; use definitions unrelated to the context"
+      },
+      {
+        "question_number": 7,
+        "question_type": "main_idea",
+        "cognitive_demand": "high",
+        "evidence_location": "end",
+        "content_requirement": "Passage should come to a clear conclusion or summarizing statement that captures the main idea",
+        "distractor_guidance": "Use main ideas that could be plausible based on the text but are not the main idea; use main ideas that are unrelated to the text"
+      },
+      {
+        "question_number": 8,
+        "question_type": "explicit",
+        "cognitive_demand": "medium",
+        "evidence_location": "middle",
+        "content_requirement": "Passage must provide a fact or detail that shows a change or development in the main subject",
+        "distractor_guidance": "Use changes or developments that could be plausible but are not stated in the text; use changes or developments unrelated to the main subject"
+      },
+      {
+        "question_number": 9,
+        "question_type": "implicit",
+        "cognitive_demand": "high",
+        "evidence_location": "end",
+        "content_requirement": "Passage must imply a future prediction or potential outcome related to the main subject",
+        "distractor_guidance": "Use predictions or outcomes that could be plausible but are not implied in the text; use predictions or outcomes unrelated to the main subject"
+      },
+      {
+        "question_number": 10,
+        "question_type": "vocabulary",
+        "cognitive_demand": "low",
+        "evidence_location": "middle",
+        "content_requirement": "Passage must contain the word 'abundant' in a context that helps to infer its meaning",
+        "distractor_guidance": "Use definitions that could be plausible based on the context but are incorrect; use definitions unrelated to the context"
+      },
+      {
+        "question_number": 11,
+        "question_type": "implicit",
+        "cognitive_demand": "medium",
+        "evidence_location": "beginning",
+        "content_requirement": "Passage must imply the reason or purpose for the main subject's actions or existence",
+        "distractor_guidance": "Use reasons or purposes that could be plausible but are not implied in the text; use reasons or purposes unrelated to the main subject"
+      },
+      {
+        "question_number": 12,
+        "question_type": "main_idea",
+        "cognitive_demand": "high",
+        "evidence_location": "entire text",
+        "content_requirement": "Passage should have a clear, consistent focus that allows for a main idea to be inferred",
+        "distractor_guidance": "Use main ideas that could be plausible based on parts of the text but are not the main idea; use main ideas that are unrelated to the text"
+      }
+    ],
+    "total_questions": 12,
+    "type_distribution": {
+      "explicit": 4,
+      "implicit": 4,
+      "vocabulary": 2,
+      "main_idea": 2
+    },
+    "cognitive_distribution": {
+      "low": 3,
+      "medium": 5,
+      "high": 4
+    },
+    "evidence_distribution": {
+      "beginning": 4,
+      "middle": 4,
+      "end": 3,
+      "entire text": 1
+    },
+    "required_content_elements": [
+      "Introduction of main subject",
+      "Specific detail or fact related to main subject",
+      "Conclusion or summarizing statement about main subject",
+      "Implication of importance or relevance of main subject",
+      "Implication of a cause-effect relationship related to main subject",
+      "Fact or detail that shows a change or development in main subject",
+      "Implication of a future prediction or potential outcome related to main subject",
+      "Reason or purpose for main subject's actions or existence"
+    ],
+    "required_vocabulary": [
+      "resilient",
+      "abundant"
+    ],
+    "required_structure_elements": [
+      "Introduction, body, conclusion structure",
+      "Cause-effect relationship"
+    ],
+    "grade": "5",
+    "genre": "nonfiction",
+    "band": "late",
+    "form_id": "COMP-5-LATE-QRM-1768479255618-9104",
+    "generated_at": "2026-01-15T07:15:10.360625",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 4 (Comprehension Blueprint)": "Grade 5 question specifications"
+    }
+  },
+  "pib": {
+    "scenes": [
+      {
+        "scene_number": 1,
+        "scene_type": "opening",
+        "location_in_passage": "beginning",
+        "purpose": "Introduce the main subject and its importance",
+        "content_description": "The passage opens with an introduction to the main subject - the resilience of rainforests. The section touches upon the reasons for their existence and their role in maintaining the earth's climate.",
+        "required_details": [
+          "Introduction of the main subject: Resilience of Rainforests",
+          "Implication of the importance of Rainforests",
+          "Implication of the reason for Rainforests' existence"
+        ],
+        "supports_questions": [
+          1,
+          4,
+          11
+        ],
+        "vocabulary_placement": [
+          "resilient"
+        ]
+      },
+      {
+        "scene_number": 2,
+        "scene_type": "description",
+        "location_in_passage": "middle",
+        "purpose": "Describe details and facts related to the main subject",
+        "content_description": "This section will provide specific details and facts about rainforests, focusing on their abundant biodiversity and how it has changed over time due to various factors, demonstrating a cause-effect relationship.",
+        "required_details": [
+          "Specific detail or fact related to the main subject: Biodiversity in Rainforests",
+          "Fact showing a change in the main subject: Change in Biodiversity over time",
+          "Implication of a cause-effect relationship related to the main subject: Factors causing change in biodiversity"
+        ],
+        "supports_questions": [
+          2,
+          5,
+          8,
+          10
+        ],
+        "vocabulary_placement": [
+          "abundant"
+        ]
+      },
+      {
+        "scene_number": 3,
+        "scene_type": "conclusion",
+        "location_in_passage": "end",
+        "purpose": "Present a summarizing statement and future prediction",
+        "content_description": "The final section concludes by summarizing the resilience of rainforests and their role in preserving biodiversity. It also implies a prediction about the future state of rainforests if current trends continue.",
+        "required_details": [
+          "Conclusion or summarizing statement about the main subject",
+          "Implication of a future prediction related to the main subject"
+        ],
+        "supports_questions": [
+          3,
+          7,
+          9,
+          12
+        ],
+        "vocabulary_placement": []
+      }
+    ],
+    "total_scenes": 3,
+    "characters": [],
+    "opening_hook": "",
+    "central_conflict_or_topic": "",
+    "resolution_or_conclusion": "",
+    "vocabulary_targets": [
+      "resilient",
+      "abundant"
+    ],
+    "vocabulary_contexts": {
+      "resilient": "Describe the resilience of rainforests in the face of climate change and deforestation",
+      "abundant": "Depict the abundant species diversity found in rainforests"
+    },
+    "text_structure": "descriptive",
+    "organizational_features": [
+      "Headings for each section",
+      "Factual details and examples in the description section"
+    ],
+    "question_coverage_map": {
+      "1": [
+        1
+      ],
+      "2": [
+        2
+      ],
+      "3": [
+        3
+      ],
+      "4": [
+        1
+      ],
+      "5": [
+        2
+      ],
+      "6": [
+        1
+      ],
+      "7": [
+        3
+      ],
+      "8": [
+        2
+      ],
+      "9": [
+        3
+      ],
+      "10": [
+        2
+      ],
+      "11": [
+        1
+      ],
+      "12": [
+        1,
+        2,
+        3
+      ]
+    },
+    "target_lexile": "950L-1100L",
+    "target_word_count": 275,
+    "actual_grade": "5",
+    "genre": "nonfiction",
+    "band": "late",
+    "form_id": "COMP-5-LATE-PIB-001",
+    "qrm_form_id": "COMP-5-LATE-QRM-1768479255618-9104",
+    "generated_at": "2026-01-15T07:16:06.725611",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 1 (Lexile Ranges)": "Target: 950L-1100L",
+      "Bank 3 (Comp Word Counts)": "Target: 275 words",
+      "Bank 7 (Text Structures)": "Structure: descriptive"
+    }
+  },
+  "passage": {
+    "passage_text": "In the heart of our planet, there exist resilient warriors: the rainforests. These green giants, sprawled across the continents, play an essential role in maintaining the Earth's climate. Their existence, a testament to their ability to withstand and adapt to changes, is a crucial aspect of our planet's health.\n\nRainforests are a bustling hub of life, boasting an abundant array of species. From the towering kapok trees to the tiny poison dart frogs, every creature plays a vital part in the intricate web of biodiversity. However, over time, human activities and climate change have altered this diversity. Deforestation has led to the loss of many species, while climate change has forced others to adapt or migrate, shifting the balance of life within these forests.\n\nDespite these challenges, rainforests continue to persevere. They regenerate and adapt, showcasing their resilience and underlining their significance in preserving biodiversity. However, the question remains: Can this resilience stand up against the mounting pressures? If current trends continue, we may see a different face of the rainforests, one that may struggle to sustain its diverse inhabitants.\n\nIn this struggle for survival, the resilience of rainforests presents a glimmer of hope. Yet, it serves as a stark reminder of the need for sustainable practices to keep these green giants thriving. The tale of the resilient rainforests is one of change and survival, a story that must continue for the sake of our planet's future.",
+    "passage_title": "Title: The Resilient Rainforests: A Tale of Survival and Change",
+    "grade": "5",
+    "genre": "nonfiction",
+    "band": "late",
+    "form_id": "COMP-5-LATE-001",
+    "actual_word_count": 237,
+    "target_word_count": 275,
+    "target_lexile": "950L-1100L",
+    "total_questions": 12,
+    "question_coverage_verified": true,
+    "text_structure": "descriptive",
+    "vocabulary_words": [
+      "resilient",
+      "abundant"
+    ],
+    "vocabulary_verified": true,
+    "validation": {
+      "word_count_valid": false,
+      "word_count_actual": 237,
+      "word_count_target": 275,
+      "word_count_acceptable_range": [
+        255,
+        295
+      ],
+      "lexile_target": "950L-1100L",
+      "lexile_note": "Lexile cannot be automatically validated (requires external tool)",
+      "vocabulary_present": true,
+      "vocabulary_found": [
+        "resilient",
+        "abundant"
+      ],
+      "vocabulary_missing": [],
+      "scenes_covered": true,
+      "scenes_expected": 3,
+      "scenes_identifiable": 4,
+      "validation_passed": false,
+      "warnings": [
+        "Word count 237 outside acceptable range 255-295"
+      ]
+    },
+    "qrm_form_id": "COMP-5-LATE-QRM-1768479255618-9104",
+    "pib_form_id": "COMP-5-LATE-PIB-001",
+    "generated_at": "2026-01-15T07:16:41.507521",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 1 (Lexile Ranges)": "Target: 950L-1100L",
+      "Bank 3 (Comp Word Counts)": "Target: 275 words",
+      "Bank 7 (Text Structures)": "Structure: descriptive"
+    }
+  },
+  "questions": {
+    "questions": [
+      {
+        "question_number": 1,
+        "question_text": "What is the main subject of the passage?",
+        "question_type": "explicit",
+        "cognitive_demand": "CognitiveDemand.LOW",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "The resilience of rainforests and their importance to the planet",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "The life cycle of the poison dart frogs",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "The process of deforestation",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "The growth of kapok trees",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "beginning",
+        "evidence_text": "In the heart of our planet, there exist resilient warriors: the rainforests.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 2,
+        "question_text": "What disturbances have altered the diversity of rainforests over time?",
+        "question_type": "explicit",
+        "cognitive_demand": "CognitiveDemand.MEDIUM",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Human activities and climate change",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Natural disasters and animal migration",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "Soil erosion and lack of sunlight",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "Air pollution and overpopulation",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "However, over time, human activities and climate change have altered this diversity.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 3,
+        "question_text": "What is the primary message portrayed about rainforests in the passage?",
+        "question_type": "explicit",
+        "cognitive_demand": "CognitiveDemand.HIGH",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Rainforests are resilient ecosystems that play a crucial role in biodiversity, but they face significant threats from human activities and need sustainable practices for their survival.",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Rainforests are primarily home to a variety of species, including kapok trees and poison dart frogs.",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "Deforestation has enhanced the biodiversity within rainforests.",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          },
+          {
+            "letter": "D",
+            "text": "Rainforests are unaffected by climate change due to their resilience.",
+            "is_correct": false,
+            "distractor_type": "detail"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "end",
+        "evidence_text": "In this struggle for survival, the resilience of rainforests presents a glimmer of hope. Yet, it serves as a stark reminder of the need for sustainable practices to keep these green giants thriving. The tale of the resilient rainforests is one of change and survival, a story that must continue for the sake of our planet's future.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 4,
+        "question_text": "Why are the rainforests considered crucial for our planet?",
+        "question_type": "implicit",
+        "cognitive_demand": "CognitiveDemand.LOW",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "They maintain the Earth's climate and preserve biodiversity.",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "They are the only home for poison dart frogs.",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "They provide wood for human activities.",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "They attract tourists and generate revenue.",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "beginning",
+        "evidence_text": "These green giants, sprawled across the continents, play an essential role in maintaining the Earth's climate. Their existence, a testament to their ability to withstand and adapt to changes, is a crucial aspect of our planet's health.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 5,
+        "question_text": "What has been the impact of human activities and climate change on the biodiversity of rainforests?",
+        "question_type": "implicit",
+        "cognitive_demand": "CognitiveDemand.MEDIUM",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "They have led to the loss of many species and forced others to adapt or migrate",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "They have increased the number of species in the rainforest",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "They have made the rainforests more resilient",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "They have had no impact on the biodiversity of rainforests",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "However, over time, human activities and climate change have altered this diversity. Deforestation has led to the loss of many species, while climate change has forced others to adapt or migrate, shifting the balance of life within these forests.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 6,
+        "question_text": "In the context of the passage, what does the word 'resilient' most likely mean?",
+        "question_type": "vocabulary",
+        "cognitive_demand": "CognitiveDemand.MEDIUM",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "able to withstand or recover quickly from difficult conditions",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "capable of being stretched or expanded",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "having a rough or harsh texture",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "lacking the ability to adapt to change",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "beginning",
+        "evidence_text": "In the heart of our planet, there exist resilient warriors: the rainforests. These green giants, sprawled across the continents, play an essential role in maintaining the Earth's climate. Their existence, a testament to their ability to withstand and adapt to changes, is a crucial aspect of our planet's health.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 7,
+        "question_text": "What is the main idea of the passage?",
+        "question_type": "main_idea",
+        "cognitive_demand": "CognitiveDemand.HIGH",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "The rainforests are resilient ecosystems crucial for biodiversity, but they face significant challenges due to human activities and climate change",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Deforestation is the only threat to rainforests",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "Kapok trees and poison dart frogs are the most important species in the rainforest",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "Rainforests are incapable of adapting to changes",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "end",
+        "evidence_text": "The tale of the resilient rainforests is one of change and survival, a story that must continue for the sake of our planet's future.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 8,
+        "question_text": "What changes have affected the biodiversity of the rainforests?",
+        "question_type": "explicit",
+        "cognitive_demand": "CognitiveDemand.MEDIUM",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Deforestation and climate change",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Invasive species and disease",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "Natural disasters and overpopulation",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "Pollution and urbanization",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "However, over time, human activities and climate change have altered this diversity. Deforestation has led to the loss of many species, while climate change has forced others to adapt or migrate, shifting the balance of life within these forests.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 9,
+        "question_text": "What is a potential future outcome for the rainforests if current trends continue?",
+        "question_type": "implicit",
+        "cognitive_demand": "CognitiveDemand.HIGH",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "They may struggle to sustain their diverse inhabitants",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "They will completely disappear from the Earth",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "They will expand to cover more areas",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "They will become barren and lifeless",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "end",
+        "evidence_text": "If current trends continue, we may see a different face of the rainforests, one that may struggle to sustain its diverse inhabitants.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 10,
+        "question_text": "What does the word 'abundant' mean in the context of the passage?",
+        "question_type": "vocabulary",
+        "cognitive_demand": "CognitiveDemand.LOW",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "plentiful or in large quantities",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "scarce or limited",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          },
+          {
+            "letter": "C",
+            "text": "dangerous or harmful",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "D",
+            "text": "tiny or small",
+            "is_correct": false,
+            "distractor_type": "detail"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "Rainforests are a bustling hub of life, boasting an abundant array of species.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 11,
+        "question_text": "Why are rainforests considered important for our planet?",
+        "question_type": "implicit",
+        "cognitive_demand": "CognitiveDemand.MEDIUM",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "They help in maintaining the Earth's climate and preserving biodiversity",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "They are home to the tallest trees in the world",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "They produce all the oxygen we breathe",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "They are the primary source for human food supply",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "beginning",
+        "evidence_text": "These green giants, sprawled across the continents, play an essential role in maintaining the Earth's climate. Their existence, a testament to their ability to withstand and adapt to changes, is a crucial aspect of our planet's health.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 12,
+        "question_text": "What is the main idea of the passage?",
+        "question_type": "main_idea",
+        "cognitive_demand": "CognitiveDemand.HIGH",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Rainforests are resilient ecosystems crucial for Earth's biodiversity, but they face significant challenges due to human activities and climate change.",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Rainforests are home to the kapok trees and poison dart frogs.",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "C",
+            "text": "Deforestation is the only threat to rainforests.",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          },
+          {
+            "letter": "D",
+            "text": "Climate change has no impact on the biodiversity of rainforests.",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "entire text",
+        "evidence_text": "In the heart of our planet, there exist resilient warriors: the rainforests. These green giants, sprawled across the continents, play an essential role in maintaining the Earth's climate. Their existence, a testament to their ability to withstand and adapt to changes, is a crucial aspect of our planet's health. Rainforests are a bustling hub of life, boasting an abundant array of species. From the towering kapok trees to the tiny poison dart frogs, every creature plays a vital part in the intricate web of biodiversity. However, over time, human activities and climate change have altered this diversity. Deforestation has led to the loss of many species, while climate change has forced others to adapt or migrate, shifting the balance of life within these forests.",
+        "points_possible": 1
+      }
+    ],
+    "total_questions": 12,
+    "answer_key": {
+      "questions": [
+        {
+          "question_number": 1,
+          "question_text": "What is the main subject of the passage?",
+          "question_type": "explicit",
+          "cognitive_demand": "CognitiveDemand.LOW",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "The resilience of rainforests and their importance to the planet",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "The life cycle of the poison dart frogs",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "The process of deforestation",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "The growth of kapok trees",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "beginning",
+          "evidence_text": "In the heart of our planet, there exist resilient warriors: the rainforests.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 2,
+          "question_text": "What disturbances have altered the diversity of rainforests over time?",
+          "question_type": "explicit",
+          "cognitive_demand": "CognitiveDemand.MEDIUM",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Human activities and climate change",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Natural disasters and animal migration",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "Soil erosion and lack of sunlight",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "Air pollution and overpopulation",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "However, over time, human activities and climate change have altered this diversity.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 3,
+          "question_text": "What is the primary message portrayed about rainforests in the passage?",
+          "question_type": "explicit",
+          "cognitive_demand": "CognitiveDemand.HIGH",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Rainforests are resilient ecosystems that play a crucial role in biodiversity, but they face significant threats from human activities and need sustainable practices for their survival.",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Rainforests are primarily home to a variety of species, including kapok trees and poison dart frogs.",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "Deforestation has enhanced the biodiversity within rainforests.",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            },
+            {
+              "letter": "D",
+              "text": "Rainforests are unaffected by climate change due to their resilience.",
+              "is_correct": false,
+              "distractor_type": "detail"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "end",
+          "evidence_text": "In this struggle for survival, the resilience of rainforests presents a glimmer of hope. Yet, it serves as a stark reminder of the need for sustainable practices to keep these green giants thriving. The tale of the resilient rainforests is one of change and survival, a story that must continue for the sake of our planet's future.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 4,
+          "question_text": "Why are the rainforests considered crucial for our planet?",
+          "question_type": "implicit",
+          "cognitive_demand": "CognitiveDemand.LOW",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "They maintain the Earth's climate and preserve biodiversity.",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "They are the only home for poison dart frogs.",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "They provide wood for human activities.",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "They attract tourists and generate revenue.",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "beginning",
+          "evidence_text": "These green giants, sprawled across the continents, play an essential role in maintaining the Earth's climate. Their existence, a testament to their ability to withstand and adapt to changes, is a crucial aspect of our planet's health.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 5,
+          "question_text": "What has been the impact of human activities and climate change on the biodiversity of rainforests?",
+          "question_type": "implicit",
+          "cognitive_demand": "CognitiveDemand.MEDIUM",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "They have led to the loss of many species and forced others to adapt or migrate",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "They have increased the number of species in the rainforest",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "They have made the rainforests more resilient",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "They have had no impact on the biodiversity of rainforests",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "However, over time, human activities and climate change have altered this diversity. Deforestation has led to the loss of many species, while climate change has forced others to adapt or migrate, shifting the balance of life within these forests.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 6,
+          "question_text": "In the context of the passage, what does the word 'resilient' most likely mean?",
+          "question_type": "vocabulary",
+          "cognitive_demand": "CognitiveDemand.MEDIUM",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "able to withstand or recover quickly from difficult conditions",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "capable of being stretched or expanded",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "having a rough or harsh texture",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "lacking the ability to adapt to change",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "beginning",
+          "evidence_text": "In the heart of our planet, there exist resilient warriors: the rainforests. These green giants, sprawled across the continents, play an essential role in maintaining the Earth's climate. Their existence, a testament to their ability to withstand and adapt to changes, is a crucial aspect of our planet's health.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 7,
+          "question_text": "What is the main idea of the passage?",
+          "question_type": "main_idea",
+          "cognitive_demand": "CognitiveDemand.HIGH",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "The rainforests are resilient ecosystems crucial for biodiversity, but they face significant challenges due to human activities and climate change",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Deforestation is the only threat to rainforests",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "Kapok trees and poison dart frogs are the most important species in the rainforest",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "Rainforests are incapable of adapting to changes",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "end",
+          "evidence_text": "The tale of the resilient rainforests is one of change and survival, a story that must continue for the sake of our planet's future.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 8,
+          "question_text": "What changes have affected the biodiversity of the rainforests?",
+          "question_type": "explicit",
+          "cognitive_demand": "CognitiveDemand.MEDIUM",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Deforestation and climate change",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Invasive species and disease",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "Natural disasters and overpopulation",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "Pollution and urbanization",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "However, over time, human activities and climate change have altered this diversity. Deforestation has led to the loss of many species, while climate change has forced others to adapt or migrate, shifting the balance of life within these forests.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 9,
+          "question_text": "What is a potential future outcome for the rainforests if current trends continue?",
+          "question_type": "implicit",
+          "cognitive_demand": "CognitiveDemand.HIGH",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "They may struggle to sustain their diverse inhabitants",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "They will completely disappear from the Earth",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "They will expand to cover more areas",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "They will become barren and lifeless",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "end",
+          "evidence_text": "If current trends continue, we may see a different face of the rainforests, one that may struggle to sustain its diverse inhabitants.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 10,
+          "question_text": "What does the word 'abundant' mean in the context of the passage?",
+          "question_type": "vocabulary",
+          "cognitive_demand": "CognitiveDemand.LOW",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "plentiful or in large quantities",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "scarce or limited",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            },
+            {
+              "letter": "C",
+              "text": "dangerous or harmful",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "D",
+              "text": "tiny or small",
+              "is_correct": false,
+              "distractor_type": "detail"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "Rainforests are a bustling hub of life, boasting an abundant array of species.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 11,
+          "question_text": "Why are rainforests considered important for our planet?",
+          "question_type": "implicit",
+          "cognitive_demand": "CognitiveDemand.MEDIUM",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "They help in maintaining the Earth's climate and preserving biodiversity",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "They are home to the tallest trees in the world",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "They produce all the oxygen we breathe",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "They are the primary source for human food supply",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "beginning",
+          "evidence_text": "These green giants, sprawled across the continents, play an essential role in maintaining the Earth's climate. Their existence, a testament to their ability to withstand and adapt to changes, is a crucial aspect of our planet's health.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 12,
+          "question_text": "What is the main idea of the passage?",
+          "question_type": "main_idea",
+          "cognitive_demand": "CognitiveDemand.HIGH",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Rainforests are resilient ecosystems crucial for Earth's biodiversity, but they face significant challenges due to human activities and climate change.",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Rainforests are home to the kapok trees and poison dart frogs.",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "C",
+              "text": "Deforestation is the only threat to rainforests.",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            },
+            {
+              "letter": "D",
+              "text": "Climate change has no impact on the biodiversity of rainforests.",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "entire text",
+          "evidence_text": "In the heart of our planet, there exist resilient warriors: the rainforests. These green giants, sprawled across the continents, play an essential role in maintaining the Earth's climate. Their existence, a testament to their ability to withstand and adapt to changes, is a crucial aspect of our planet's health. Rainforests are a bustling hub of life, boasting an abundant array of species. From the towering kapok trees to the tiny poison dart frogs, every creature plays a vital part in the intricate web of biodiversity. However, over time, human activities and climate change have altered this diversity. Deforestation has led to the loss of many species, while climate change has forced others to adapt or migrate, shifting the balance of life within these forests.",
+          "points_possible": 1
+        }
+      ],
+      "total_questions": 12,
+      "total_points": 12,
+      "answer_key_summary": {
+        "1": "A",
+        "2": "A",
+        "3": "A",
+        "4": "A",
+        "5": "A",
+        "6": "A",
+        "7": "A",
+        "8": "A",
+        "9": "A",
+        "10": "A",
+        "11": "A",
+        "12": "A"
+      }
+    },
+    "grade": "5",
+    "genre": "nonfiction",
+    "band": "late",
+    "form_id": "COMP-5-LATE-QUESTIONS-001",
+    "type_distribution": {
+      "explicit": 4,
+      "implicit": 4,
+      "vocabulary": 2,
+      "main_idea": 2
+    },
+    "cognitive_distribution": {
+      "CognitiveDemand.LOW": 3,
+      "CognitiveDemand.MEDIUM": 5,
+      "CognitiveDemand.HIGH": 4
+    },
+    "qrm_form_id": "COMP-5-LATE-QRM-1768479255618-9104",
+    "passage_form_id": "COMP-5-LATE-001",
+    "num_answer_options": 4,
+    "generated_at": "2026-01-15T07:18:40.408983",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 4 (Comprehension Blueprint)": "Via QRM for question specifications",
+      "Bank 6 (Answer Options)": "Grade 5 → 4 answer options"
+    }
+  },
+  "recall_scoring": {
+    "total_sentences": 14,
+    "max_total_points": 28,
+    "sentences": [
+      {
+        "sentence_number": 1,
+        "sentence_text": "In the heart of our planet, there exist resilient warriors: the rainforests",
+        "character_name": "rainforests",
+        "key_detail": "exist as resilient warriors",
+        "scoring_note": "2 pts: rainforests + exist as resilient warriors | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 2,
+        "sentence_text": "These green giants, sprawled across the continents, play an essential role in maintaining the Earth's climate",
+        "character_name": "green giants (rainforests)",
+        "key_detail": "maintain Earth's climate",
+        "scoring_note": "2 pts: green giants (rainforests) + maintain Earth's climate | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 3,
+        "sentence_text": "Their existence, a testament to their ability to withstand and adapt to changes, is a crucial aspect of our planet's health",
+        "character_name": "Their (rainforests)",
+        "key_detail": "able to withstand and adapt to changes",
+        "scoring_note": "2 pts: Their (rainforests) + able to withstand and adapt to changes | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 4,
+        "sentence_text": "Rainforests are a bustling hub of life, boasting an abundant array of species",
+        "character_name": "Rainforests",
+        "key_detail": "bustling hub with abundant species",
+        "scoring_note": "2 pts: Rainforests + bustling hub with abundant species | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 5,
+        "sentence_text": "From the towering kapok trees to the tiny poison dart frogs, every creature plays a vital part in the intricate web of biodiversity",
+        "character_name": "every creature",
+        "key_detail": "plays vital part in biodiversity",
+        "scoring_note": "2 pts: every creature + plays vital part in biodiversity | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 6,
+        "sentence_text": "However, over time, human activities and climate change have altered this diversity",
+        "character_name": "human activities and climate change",
+        "key_detail": "have altered biodiversity",
+        "scoring_note": "2 pts: human activities and climate change + have altered biodiversity | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 7,
+        "sentence_text": "Deforestation has led to the loss of many species, while climate change has forced others to adapt or migrate, shifting the balance of life within these forests",
+        "character_name": "deforestation and climate change",
+        "key_detail": "caused loss of species, forced adaptation",
+        "scoring_note": "2 pts: deforestation and climate change + caused loss of species, forced adaptation | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 8,
+        "sentence_text": "Despite these challenges, rainforests continue to persevere",
+        "character_name": "rainforests",
+        "key_detail": "continue to persevere",
+        "scoring_note": "2 pts: rainforests + continue to persevere | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 9,
+        "sentence_text": "They regenerate and adapt, showcasing their resilience and underlining their significance in preserving biodiversity",
+        "character_name": "They (rainforests)",
+        "key_detail": "regenerate, adapt, preserve biodiversity",
+        "scoring_note": "2 pts: They (rainforests) + regenerate, adapt, preserve biodiversity | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 10,
+        "sentence_text": "However, the question remains: Can this resilience stand up against the mounting pressures",
+        "character_name": "this resilience",
+        "key_detail": "question of standing up to pressures",
+        "scoring_note": "2 pts: this resilience + question of standing up to pressures | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 11,
+        "sentence_text": "If current trends continue, we may see a different face of the rainforests, one that may struggle to sustain its diverse inhabitants",
+        "character_name": "rainforests",
+        "key_detail": "might struggle to sustain inhabitants",
+        "scoring_note": "2 pts: rainforests + might struggle to sustain inhabitants | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 12,
+        "sentence_text": "In this struggle for survival, the resilience of rainforests presents a glimmer of hope",
+        "character_name": "resilience of rainforests",
+        "key_detail": "presents a glimmer of hope",
+        "scoring_note": "2 pts: resilience of rainforests + presents a glimmer of hope | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 13,
+        "sentence_text": "Yet, it serves as a stark reminder of the need for sustainable practices to keep these green giants thriving",
+        "character_name": "it (resilience of rainforests)",
+        "key_detail": "reminder of need for sustainable practices",
+        "scoring_note": "2 pts: it (resilience of rainforests) + reminder of need for sustainable practices | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 14,
+        "sentence_text": "The tale of the resilient rainforests is one of change and survival, a story that must continue for the sake of our planet's future",
+        "character_name": "resilient rainforests",
+        "key_detail": "tale of change and survival",
+        "scoring_note": "2 pts: resilient rainforests + tale of change and survival | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      }
+    ],
+    "general_instructions": "For each sentence, award 2 points if student recalls BOTH the character and key detail, 1 point for either one, 0 points for neither. Allow paraphrasing.",
+    "passage_title": "Title: The Resilient Rainforests: A Tale of Survival and Change",
+    "grade": "5",
+    "genre": "nonfiction",
+    "form_id": "RECALL-COMP-5-LATE-001",
+    "passage_form_id": "COMP-5-LATE-001",
+    "created_at": "2026-01-15T07:19:53.086365",
+    "schema_version": "2026.1"
+  }
+}
