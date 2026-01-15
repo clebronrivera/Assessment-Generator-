@@ -179,10 +179,11 @@ class QRMGenerator:
         genre: str,
         band: str,
         topic: Optional[str] = None,
-        form_id: Optional[str] = None
+        form_id: Optional[str] = None,
+        max_retries: int = 3
     ) -> QRMResult:
         """
-        Generate Question Requirement Matrix.
+        Generate Question Requirement Matrix with retry logic.
         
         Args:
             grade: Grade level (K-8+)
@@ -190,6 +191,7 @@ class QRMGenerator:
             band: "early" or "late"
             topic: Optional topic guidance (e.g., "animals", "space")
             form_id: Optional form identifier
+            max_retries: Maximum number of retry attempts (default: 3)
         
         Returns:
             QRMResult with complete question specifications
@@ -212,28 +214,44 @@ class QRMGenerator:
             rng = random.randint(1000, 9999)
             form_id = f"COMP-{grade.upper()}-{band.upper()}-QRM-{ts}-{rng}"
         
-        # Build prompt from template or inline
-        if self.template:
-            prompt = self._build_prompt_from_template(
-                grade, genre, band, topic, blueprint
-            )
-        else:
-            prompt = self._build_inline_prompt(
-                grade, genre, band, topic, blueprint
-            )
-        
-        # Call AI to generate QRM
-        response = self.ai_client.complete(prompt)
-        
-        # Parse response into structured QRM
-        qrm_result = self._parse_response(
-            response, grade, genre, band, form_id, blueprint
-        )
-        
-        # Validate QRM meets bank requirements
-        self._validate_qrm(qrm_result, blueprint)
-        
-        return qrm_result
+        # Retry loop
+        last_error = None
+        for attempt in range(max_retries):
+            try:
+                # Build prompt from template or inline
+                if self.template:
+                    prompt = self._build_prompt_from_template(
+                        grade, genre, band, topic, blueprint, last_error
+                    )
+                else:
+                    prompt = self._build_inline_prompt(
+                        grade, genre, band, topic, blueprint, last_error
+                    )
+                
+                # Call AI to generate QRM
+                response = self.ai_client.complete(prompt)
+                
+                # Parse response into structured QRM
+                qrm_result = self._parse_response(
+                    response, grade, genre, band, form_id, blueprint
+                )
+                
+                # Validate QRM meets bank requirements
+                self._validate_qrm(qrm_result, blueprint)
+                
+                # Success!
+                if attempt > 0:
+                    print(f"✓ QRM generated successfully on attempt {attempt + 1}")
+                return qrm_result
+                
+            except ValueError as e:
+                last_error = str(e)
+                if attempt < max_retries - 1:
+                    print(f"⚠ Attempt {attempt + 1} failed: {last_error}")
+                    print(f"  Retrying... ({attempt + 2}/{max_retries})")
+                else:
+                    print(f"❌ All {max_retries} attempts failed")
+                    raise
     
     def _build_inline_prompt(
         self,
@@ -241,11 +259,21 @@ class QRMGenerator:
         genre: str,
         band: str,
         topic: Optional[str],
-        blueprint: Dict[str, Any]
+        blueprint: Dict[str, Any],
+        last_error: Optional[str] = None
     ) -> str:
         """Build prompt without template (fallback)"""
         
         topic_guidance = f"\nTopic: {topic}" if topic else ""
+        
+        error_feedback = ""
+        if last_error:
+            error_feedback = f"""
+⚠️ PREVIOUS ATTEMPT FAILED WITH ERROR:
+{last_error}
+
+PLEASE FIX THIS ERROR IN YOUR RESPONSE. Pay special attention to matching the EXACT counts specified in the distributions above.
+"""
         
         return f"""
 Generate a Question Requirement Matrix (QRM) for a comprehension assessment.
@@ -257,7 +285,7 @@ Band: {band}{topic_guidance}
 Total Questions: {blueprint['total_questions']}
 Question Type Distribution: {blueprint['question_types']}
 Cognitive Demand Distribution: {blueprint['cognitive_demands']}
-
+{error_feedback}
 YOUR TASK:
 Create a detailed plan for {blueprint['total_questions']} questions that will test 
 comprehension of a passage that hasn't been written yet. For each question, specify:
@@ -306,7 +334,8 @@ Generate the QRM now:
         genre: str,
         band: str,
         topic: Optional[str],
-        blueprint: Dict[str, Any]
+        blueprint: Dict[str, Any],
+        last_error: Optional[str] = None
     ) -> str:
         """Build prompt using Jinja2 template"""
         return self.template.render(
@@ -314,7 +343,8 @@ Generate the QRM now:
             genre=genre,
             band=band,
             topic=topic,
-            blueprint=blueprint
+            blueprint=blueprint,
+            last_error=last_error
         )
     
     def _parse_response(

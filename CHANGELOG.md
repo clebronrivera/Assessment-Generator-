@@ -1,3 +1,70 @@
+## [2026-01-14 22:52] - Task: Archive Complex Recall Scoring Generator
+
+### Task Reference
+**From:** Phase 2C - Question & Recall Generators
+**Task:** Archive deprecated recall_scoring_generator.py and establish archival protocol
+**Status:** ✅ COMPLETE
+**Related Tasks:** Simplified Recall Scoring Generator (replacement implementation)
+
+### Changes Made
+**Files Created:**
+- `src/generators/archived/` - Directory for deprecated generator implementations
+- `src/generators/archived/README.md` - Documentation explaining archival strategy and rationale
+
+**Files Archived:**
+- `recall_scoring_generator.py` - Complex JSON-based implementation (to be moved to archived/)
+
+**Archival Rationale:**
+The original recall_scoring_generator.py used a complex JSON structure with 120-180 fields for detailed sentence-by-sentence scoring. While comprehensive, this approach proved unreliable for AI generation due to:
+- High field count causing inconsistent AI responses
+- Complex nested structures difficult to validate
+- Over-engineering for the core use case
+
+### Key Decisions
+1. **Decision:** Archive instead of delete deprecated generators
+   **Rationale:** Preserves implementation history and design decisions for future reference
+   **Impact:** Maintains institutional knowledge while cleaning up active codebase
+   **Anti-Drift Check:** ✅ Establishes pattern for future deprecations
+
+2. **Decision:** Create formal archival structure with documentation
+   **Rationale:** Clear communication about why code was replaced
+   **Impact:** Future developers understand evolution of the system
+   **Anti-Drift Check:** ✅ Prevents accidental reintroduction of deprecated patterns
+
+3. **Decision:** Document specific issues that led to replacement
+   **Rationale:** Helps avoid repeating the same mistakes
+   **Impact:** Guides future generator design toward simpler, more reliable approaches
+   **Anti-Drift Check:** ✅ Captures lessons learned
+
+### Archive Structure
+```
+src/generators/archived/
+├── README.md                      # Archival documentation
+└── recall_scoring_generator.py   # (to be moved) Complex implementation
+```
+
+### Replacement Strategy
+**Original Approach:** 120-180 field JSON structure with detailed sentence analysis
+**New Approach:** Simplified character + detail scoring (20-30 fields)
+**Benefits:**
+- More reliable AI generation
+- Easier to validate
+- Sufficient for assessment needs
+- Faster generation time
+
+### Anti-Drift Validation
+- ✅ Archival documented in CHANGELOG
+- ✅ README explains rationale for replacement
+- ✅ Establishes reusable archival pattern
+- ✅ No loss of implementation knowledge
+
+### Notes & Warnings
+- **Archive Pattern Established:** Use `src/generators/archived/` for future deprecations
+- **Documentation Required:** Always include README entry explaining why code was archived
+- **Restoration Path:** Archived code can be restored if needed for reference or rollback
+
+---
+
 ## [2026-01-12 13:06] - Task: Integrate Recall Scoring Generator
 
 ### Task Reference

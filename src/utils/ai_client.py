@@ -14,6 +14,10 @@ class AIClient(ABC):
     def generate(self, prompt: str, **kwargs) -> str:
         """Generate text from prompt."""
         pass
+    
+    def complete(self, prompt: str, **kwargs) -> str:
+        """Alias for generate() for backward compatibility."""
+        return self.generate(prompt, **kwargs)
 
 
 class OpenAIClient(AIClient):

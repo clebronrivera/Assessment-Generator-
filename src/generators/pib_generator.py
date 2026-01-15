@@ -26,6 +26,7 @@ from dataclasses import dataclass, field, asdict
 from typing import Dict, Any, List, Optional
 from datetime import datetime
 from enum import Enum
+import json
 
 
 class SceneType(Enum):
@@ -207,14 +208,16 @@ class PIBGenerator:
     def generate(
         self,
         qrm_result,  # QRMResult from qrm_generator
-        form_id: Optional[str] = None
+        form_id: Optional[str] = None,
+        max_retries: int = 3
     ) -> PIBResult:
         """
-        Generate Passage Information Bank from QRM.
+        Generate Passage Information Bank from QRM with retry logic.
         
         Args:
             qrm_result: QRMResult object from QRM Generator
             form_id: Optional form identifier for PIB
+            max_retries: Maximum number of retry attempts (default: 3)
         
         Returns:
             PIBResult with complete passage blueprint
@@ -246,35 +249,52 @@ class PIBGenerator:
         if not form_id:
             form_id = f"COMP-{grade.upper()}-{band.upper()}-PIB-001"
         
-        # Build prompt from template or inline
-        if self.template:
-            prompt = self._build_prompt_from_template(
-                qrm_result, lexile_range, word_count_spec, structure_options
-            )
-        else:
-            prompt = self._build_inline_prompt(
-                qrm_result, lexile_range, word_count_spec, structure_options
-            )
-        
-        # Call AI to generate PIB
-        response = self.ai_client.complete(prompt)
-        
-        # Parse response into structured PIB
-        pib_result = self._parse_response(
-            response, qrm_result, lexile_range, word_count_spec, form_id
-        )
-        
-        # Validate PIB covers all QRM requirements
-        self._validate_pib(pib_result, qrm_result)
-        
-        return pib_result
+        # Retry loop
+        last_error = None
+        for attempt in range(max_retries):
+            try:
+                # Build prompt from template or inline
+                if self.template:
+                    prompt = self._build_prompt_from_template(
+                        qrm_result, lexile_range, word_count_spec, structure_options, last_error
+                    )
+                else:
+                    prompt = self._build_inline_prompt(
+                        qrm_result, lexile_range, word_count_spec, structure_options, last_error
+                    )
+                
+                # Call AI to generate PIB
+                response = self.ai_client.complete(prompt)
+                
+                # Parse response into structured PIB
+                pib_result = self._parse_response(
+                    response, qrm_result, lexile_range, word_count_spec, form_id
+                )
+                
+                # Validate PIB covers all QRM requirements
+                self._validate_pib(pib_result, qrm_result)
+                
+                # Success!
+                if attempt > 0:
+                    print(f"✓ PIB generated successfully on attempt {attempt + 1}")
+                return pib_result
+                
+            except (ValueError, KeyError, json.JSONDecodeError) as e:
+                last_error = str(e)
+                if attempt < max_retries - 1:
+                    print(f"⚠ Attempt {attempt + 1} failed: {last_error}")
+                    print(f"  Retrying... ({attempt + 2}/{max_retries})")
+                else:
+                    print(f"❌ All {max_retries} attempts failed")
+                    raise
     
     def _build_inline_prompt(
         self,
         qrm_result,
         lexile_range: Dict[str, Any],
         word_count_spec: Dict[str, Any],
-        structure_options: List[str]
+        structure_options: List[str],
+        last_error: Optional[str] = None
     ) -> str:
         """Build prompt without template (fallback)"""
         
@@ -284,6 +304,15 @@ class PIBGenerator:
             questions_text += f"\nQ{q.question_number} ({q.question_type.value}, {q.cognitive_demand.value}):\n"
             questions_text += f"  Location: {q.evidence_location}\n"
             questions_text += f"  Requirement: {q.content_requirement}\n"
+        
+        error_feedback = ""
+        if last_error:
+            error_feedback = f"""
+⚠️ PREVIOUS ATTEMPT FAILED WITH ERROR:
+{last_error}
+
+PLEASE FIX THIS ERROR. Valid scene_type values are: "opening", "action", "dialogue", "description", "transition", "conclusion"
+"""
         
         return f"""
 Generate a Passage Information Bank (PIB) that provides a detailed blueprint for writing
@@ -309,6 +338,7 @@ PASSAGE CONSTRAINTS (from Banks):
 Target Lexile: {lexile_range['display']}
 Target Word Count: {word_count_spec['target_words']} (±20 words acceptable)
 Available Structures: {', '.join(structure_options)}
+{error_feedback}
 
 YOUR TASK:
 Create a detailed PIB that breaks down the passage into scenes/sections. Each scene must:
@@ -393,14 +423,16 @@ Generate the PIB now:
         qrm_result,
         lexile_range: Dict[str, Any],
         word_count_spec: Dict[str, Any],
-        structure_options: List[str]
+        structure_options: List[str],
+        last_error: Optional[str] = None
     ) -> str:
         """Build prompt using Jinja2 template"""
         return self.template.render(
             qrm=qrm_result,
             lexile_range=lexile_range,
             word_count_spec=word_count_spec,
-            structure_options=structure_options
+            structure_options=structure_options,
+            last_error=last_error
         )
     
     def _parse_response(

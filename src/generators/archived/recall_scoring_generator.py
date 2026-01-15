@@ -24,6 +24,7 @@ Schema Version: 2026.1
 from dataclasses import dataclass, asdict
 from typing import Dict, Any, List, Optional
 from datetime import datetime
+import json
 
 
 @dataclass
@@ -121,14 +122,16 @@ class RecallScoringGenerator:
     def generate(
         self,
         passage_result,  # From Comprehension Passage Generator
-        form_id: Optional[str] = None
+        form_id: Optional[str] = None,
+        max_retries: int = 3
     ) -> RecallScoringGuide:
         """
-        Generate recall scoring template from passage.
+        Generate recall scoring template from passage with retry logic.
         
         Args:
             passage_result: ComprehensionPassageResult from Passage Generator
             form_id: Optional form identifier
+            max_retries: Maximum number of retry attempts (default: 3)
         
         Returns:
             RecallScoringGuide with complete scoring template
@@ -141,25 +144,41 @@ class RecallScoringGenerator:
         # Split passage into sentences
         sentences = self._split_into_sentences(passage_result.passage_text)
         
-        # Build prompt
-        if self.template:
-            prompt = self._build_prompt_from_template(
-                passage_result, sentences
-            )
-        else:
-            prompt = self._build_inline_prompt(
-                passage_result, sentences
-            )
-        
-        # Call AI to generate scoring guide
-        response = self.ai_client.complete(prompt)
-        
-        # Parse response into structured scoring guide
-        scoring_guide = self._parse_response(
-            response, passage_result, sentences, form_id
-        )
-        
-        return scoring_guide
+        # Retry loop
+        last_error = None
+        for attempt in range(1, max_retries + 1):
+            try:
+                # Build prompt
+                if self.template:
+                    prompt = self._build_prompt_from_template(
+                        passage_result, sentences, last_error
+                    )
+                else:
+                    prompt = self._build_inline_prompt(
+                        passage_result, sentences, last_error
+                    )
+                
+                # Call AI to generate scoring guide
+                response = self.ai_client.complete(prompt)
+                
+                # Parse response into structured scoring guide
+                scoring_guide = self._parse_response(
+                    response, passage_result, sentences, form_id
+                )
+                
+                # Success!
+                if attempt > 1:
+                    print(f"✓ Recall scoring generated successfully on attempt {attempt}")
+                return scoring_guide
+                
+            except (json.JSONDecodeError, KeyError, ValueError) as e:
+                last_error = str(e)
+                if attempt < max_retries:
+                    print(f"⚠ Attempt {attempt} failed: {last_error}")
+                    print(f"  Retrying... ({attempt + 1}/{max_retries})")
+                else:
+                    print(f"❌ All {max_retries} attempts failed")
+                    raise
     
     def _split_into_sentences(self, passage_text: str) -> List[str]:
         """Split passage into individual sentences"""
@@ -177,7 +196,8 @@ class RecallScoringGenerator:
     def _build_inline_prompt(
         self,
         passage_result,
-        sentences: List[str]
+        sentences: List[str],
+        last_error: Optional[str] = None
     ) -> str:
         """Build prompt without template (fallback)"""
         
@@ -185,6 +205,16 @@ class RecallScoringGenerator:
         sentences_text = ""
         for i, sent in enumerate(sentences, 1):
             sentences_text += f"\nSentence {i}: {sent}\n"
+        
+        error_feedback = ""
+        if last_error:
+            error_feedback = f"""
+
+⚠️ PREVIOUS ATTEMPT FAILED WITH ERROR:
+{last_error}
+
+PLEASE FIX THIS ERROR. Ensure your JSON is valid and complete. Do not include trailing commas or comments in JSON.
+"""
         
         return f"""
 Generate a recall scoring template for this comprehension passage.
@@ -196,6 +226,7 @@ PASSAGE TEXT:
 
 SENTENCES TO SCORE ({len(sentences)} total):
 {sentences_text}
+{error_feedback}
 
 TASK:
 Create a detailed scoring guide for each sentence. For EACH sentence, identify:
@@ -277,12 +308,14 @@ Generate the recall scoring guide now:
     def _build_prompt_from_template(
         self,
         passage_result,
-        sentences: List[str]
+        sentences: List[str],
+        last_error: Optional[str] = None
     ) -> str:
         """Build prompt using Jinja2 template"""
         return self.template.render(
             passage=passage_result,
-            sentences=sentences
+            sentences=sentences,
+            last_error=last_error
         )
     
     def _parse_response(
@@ -293,8 +326,6 @@ Generate the recall scoring guide now:
         form_id: str
     ) -> RecallScoringGuide:
         """Parse AI response into RecallScoringGuide structure"""
-        
-        import json
         
         # Extract JSON from response
         json_str = response.strip()

@@ -1,0 +1,863 @@
+{
+  "metadata": {
+    "package_id": "COMP-PKG-2-20260114-230352",
+    "assessment_type": "comprehension",
+    "grade": "2",
+    "band": "early",
+    "genre": "narrative",
+    "created_at": "2026-01-14T23:03:52.004622",
+    "schema_version": "2026.1",
+    "component_forms": {
+      "passage": "COMP-2-EARLY-001",
+      "qrm": "COMP-2-EARLY-QRM-1768449617158-6362",
+      "pib": "COMP-2-EARLY-PIB-001",
+      "questions": "COMP-2-EARLY-QUESTIONS-001",
+      "recall_scoring": "RECALL-COMP-2-EARLY-001"
+    },
+    "banks_used": [
+      "Bank 7 (Text Structures)",
+      "Bank 3 (Comp Word Counts)",
+      "Bank 4 (Comprehension Blueprint)",
+      "Bank 1 (Lexile Ranges)",
+      "Bank 6 (Answer Options)"
+    ],
+    "stats": {
+      "passage_word_count": 120,
+      "lexile_target": "245L-425L",
+      "total_questions": 6,
+      "total_points_questions": 6,
+      "total_sentences_recall": 17,
+      "total_points_recall": 34,
+      "components_included": 5
+    }
+  },
+  "package_type": "comprehension",
+  "ready_for_use": true,
+  "qrm": {
+    "questions": [
+      {
+        "question_number": 1,
+        "question_type": "explicit",
+        "cognitive_demand": "low",
+        "evidence_location": "beginning",
+        "content_requirement": "Passage must introduce the main character's favorite toy in the first paragraph.",
+        "distractor_guidance": "Use other objects mentioned in the passage; use synonyms of the correct answer"
+      },
+      {
+        "question_number": 2,
+        "question_type": "explicit",
+        "cognitive_demand": "low",
+        "evidence_location": "middle",
+        "content_requirement": "Passage must describe a problem the main character encounters with their favorite toy.",
+        "distractor_guidance": "Use other problems that could logically occur; use other problems mentioned in the passage"
+      },
+      {
+        "question_number": 3,
+        "question_type": "explicit",
+        "cognitive_demand": "medium",
+        "evidence_location": "middle",
+        "content_requirement": "Passage must contain a dialogue where the main character asks for help to solve the problem.",
+        "distractor_guidance": "Use other dialogues from the passage; use other characters who might be asked for help"
+      },
+      {
+        "question_number": 4,
+        "question_type": "explicit",
+        "cognitive_demand": "medium",
+        "evidence_location": "end",
+        "content_requirement": "Passage must state the solution to the problem.",
+        "distractor_guidance": "Use other possible solutions that were rejected; use solutions to other problems mentioned in the passage"
+      },
+      {
+        "question_number": 5,
+        "question_type": "implicit",
+        "cognitive_demand": "medium",
+        "evidence_location": "middle",
+        "content_requirement": "Passage must describe the main character's feelings when facing the problem through their actions and dialogues.",
+        "distractor_guidance": "Use other emotions that could logically be inferred; use emotions of other characters in the passage"
+      },
+      {
+        "question_number": 6,
+        "question_type": "implicit",
+        "cognitive_demand": "low",
+        "evidence_location": "end",
+        "content_requirement": "Passage must imply the main character's feelings after the problem is solved through their actions and dialogues.",
+        "distractor_guidance": "Use other emotions that could logically be inferred; use emotions of other characters in the passage"
+      }
+    ],
+    "total_questions": 6,
+    "type_distribution": {
+      "explicit": 4,
+      "implicit": 2
+    },
+    "cognitive_distribution": {
+      "low": 3,
+      "medium": 3
+    },
+    "evidence_distribution": {
+      "beginning": 1,
+      "middle": 3,
+      "end": 2
+    },
+    "required_content_elements": [
+      "Introduction of main character's favorite toy",
+      "Problem encountered with the toy",
+      "Dialogue of main character asking for help",
+      "Solution to the problem",
+      "Main character's reactions and feelings"
+    ],
+    "required_vocabulary": [],
+    "required_structure_elements": [
+      "chronological sequence",
+      "problem-solution structure"
+    ],
+    "grade": "2",
+    "genre": "narrative",
+    "band": "early",
+    "form_id": "COMP-2-EARLY-QRM-1768449617158-6362",
+    "generated_at": "2026-01-14T23:00:49.280294",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 4 (Comprehension Blueprint)": "Grade 2 question specifications"
+    }
+  },
+  "pib": {
+    "scenes": [
+      {
+        "scene_number": 1,
+        "scene_type": "opening",
+        "location_in_passage": "beginning",
+        "purpose": "Introduce the main character and her favorite toy",
+        "content_description": "The main character, Lily, is introduced playing with her favorite toy, a stuffed bunny named Bun-Bun, in her bedroom.",
+        "required_details": [
+          "State Lily's name",
+          "Introduce Bun-Bun, Lily's favorite toy"
+        ],
+        "supports_questions": [
+          1
+        ],
+        "vocabulary_placement": []
+      },
+      {
+        "scene_number": 2,
+        "scene_type": "action",
+        "location_in_passage": "middle",
+        "purpose": "Lily encounters a problem with her favorite toy",
+        "content_description": "While playing, Lily accidentally rips Bun-Bun's ear. She is very upset and worried.",
+        "required_details": [
+          "Describe the problem: Bun-Bun's ripped ear",
+          "Show Lily's reaction to the problem"
+        ],
+        "supports_questions": [
+          2,
+          5
+        ],
+        "vocabulary_placement": []
+      },
+      {
+        "scene_number": 3,
+        "scene_type": "dialogue",
+        "location_in_passage": "middle",
+        "purpose": "Lily asks for help to solve the problem",
+        "content_description": "Lily runs to her mother, holding Bun-Bun, and asks for help to fix Bun-Bun's ear.",
+        "required_details": [
+          "Lily's dialogue asking for help"
+        ],
+        "supports_questions": [
+          3,
+          5
+        ],
+        "vocabulary_placement": []
+      },
+      {
+        "scene_number": 4,
+        "scene_type": "action",
+        "location_in_passage": "end",
+        "purpose": "The problem is solved",
+        "content_description": "Lily's mother sews Bun-Bun's ear back on, fixing the toy.",
+        "required_details": [
+          "Describe the solution: Bun-Bun's ear is sewn back on"
+        ],
+        "supports_questions": [
+          4
+        ],
+        "vocabulary_placement": []
+      },
+      {
+        "scene_number": 5,
+        "scene_type": "conclusion",
+        "location_in_passage": "end",
+        "purpose": "Show Lily's feelings after the problem is solved",
+        "content_description": "Lily is relieved and happy, hugging Bun-Bun tightly and thanking her mother.",
+        "required_details": [
+          "Show Lily's reaction after the problem is solved"
+        ],
+        "supports_questions": [
+          6
+        ],
+        "vocabulary_placement": []
+      }
+    ],
+    "total_scenes": 5,
+    "characters": [
+      {
+        "name": "Lily",
+        "role": "main",
+        "key_traits": [
+          "caring",
+          "worried",
+          "relieved"
+        ],
+        "actions_to_show": [
+          "Lily playing with Bun-Bun",
+          "Lily reacting to Bun-Bun's ripped ear",
+          "Lily asking her mother for help",
+          "Lily being relieved and happy after Bun-Bun is fixed"
+        ],
+        "supports_questions": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "opening_hook": "Lily sat on the floor of her room, happily playing with her favorite toy, a stuffed bunny named Bun-Bun",
+    "central_conflict_or_topic": "Lily's favorite toy rips and she must get it fixed",
+    "resolution_or_conclusion": "Lily's mother fixes Bun-Bun and Lily is relieved and happy",
+    "vocabulary_targets": [],
+    "vocabulary_contexts": {},
+    "text_structure": "chronological",
+    "organizational_features": [],
+    "question_coverage_map": {
+      "1": [
+        1
+      ],
+      "2": [
+        2
+      ],
+      "3": [
+        3
+      ],
+      "4": [
+        4
+      ],
+      "5": [
+        2,
+        3
+      ],
+      "6": [
+        5
+      ]
+    },
+    "target_lexile": "245L-425L",
+    "target_word_count": 125,
+    "actual_grade": "2",
+    "genre": "narrative",
+    "band": "early",
+    "form_id": "COMP-2-EARLY-PIB-001",
+    "qrm_form_id": "COMP-2-EARLY-QRM-1768449617158-6362",
+    "generated_at": "2026-01-14T23:02:13.186289",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 1 (Lexile Ranges)": "Target: 245L-425L",
+      "Bank 3 (Comp Word Counts)": "Target: 125 words",
+      "Bank 7 (Text Structures)": "Structure: chronological"
+    }
+  },
+  "passage": {
+    "passage_text": "Lily was in her room, playing with her favorite toy, a stuffed bunny named Bun-Bun. She loved Bun-Bun very much. Suddenly, while playing, Bun-Bun's ear ripped. Lily gasped. She felt very upset and worried.\n\nHolding the ripped toy, Lily rushed to her mother. \"Mom, Bun-Bun's ear is ripped. Can you help me fix it?\" she asked, tears welling in her eyes.\n\nHer mother nodded and quickly fetched her sewing kit. Carefully, she sewed Bun-Bun's ear back on. Lily watched nervously.\n\nWhen her mother finished, she handed Bun-Bun back to Lily. The bunny's ear was fixed! Lily hugged Bun-Bun tightly, feeling relieved. \"Thank you, mom,\" she said, her face lighting up with joy. Lily was happy again, and so was Bun-Bun.",
+    "passage_title": "Title: Lily and the Torn Bunny Ear",
+    "grade": "2",
+    "genre": "narrative",
+    "band": "early",
+    "form_id": "COMP-2-EARLY-001",
+    "actual_word_count": 120,
+    "target_word_count": 125,
+    "target_lexile": "245L-425L",
+    "total_questions": 6,
+    "question_coverage_verified": true,
+    "text_structure": "chronological",
+    "vocabulary_words": [],
+    "vocabulary_verified": true,
+    "validation": {
+      "word_count_valid": true,
+      "word_count_actual": 120,
+      "word_count_target": 125,
+      "word_count_acceptable_range": [
+        105,
+        145
+      ],
+      "lexile_target": "245L-425L",
+      "lexile_note": "Lexile cannot be automatically validated (requires external tool)",
+      "vocabulary_present": true,
+      "vocabulary_found": [],
+      "vocabulary_missing": [],
+      "scenes_covered": true,
+      "scenes_expected": 5,
+      "scenes_identifiable": 4,
+      "validation_passed": true,
+      "warnings": []
+    },
+    "qrm_form_id": "COMP-2-EARLY-QRM-1768449617158-6362",
+    "pib_form_id": "COMP-2-EARLY-PIB-001",
+    "generated_at": "2026-01-14T23:02:29.469205",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 1 (Lexile Ranges)": "Target: 245L-425L",
+      "Bank 3 (Comp Word Counts)": "Target: 125 words",
+      "Bank 7 (Text Structures)": "Structure: chronological"
+    }
+  },
+  "questions": {
+    "questions": [
+      {
+        "question_number": 1,
+        "question_text": "What is Lily's favorite toy?",
+        "question_type": "explicit",
+        "cognitive_demand": "LOW",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "A stuffed bunny named Bun-Bun",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "A sewing kit",
+            "is_correct": false,
+            "distractor_type": "object_confusion"
+          },
+          {
+            "letter": "C",
+            "text": "Her mother",
+            "is_correct": false,
+            "distractor_type": "character_confusion"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "beginning",
+        "evidence_text": "Lily was in her room, playing with her favorite toy, a stuffed bunny named Bun-Bun.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 2,
+        "question_text": "What problem does Lily encounter with Bun-Bun?",
+        "question_type": "explicit",
+        "cognitive_demand": "LOW",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Bun-Bun's ear ripped",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Bun-Bun got lost",
+            "is_correct": false,
+            "distractor_type": "problem_confusion"
+          },
+          {
+            "letter": "C",
+            "text": "Bun-Bun's color faded",
+            "is_correct": false,
+            "distractor_type": "problem_confusion"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "Suddenly, while playing, Bun-Bun's ear ripped.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 3,
+        "question_text": "Who does Lily ask for help to fix Bun-Bun?",
+        "question_type": "explicit",
+        "cognitive_demand": "MEDIUM",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Her mother",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Her father",
+            "is_correct": false,
+            "distractor_type": "character_confusion"
+          },
+          {
+            "letter": "C",
+            "text": "Her brother",
+            "is_correct": false,
+            "distractor_type": "character_confusion"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "Holding the ripped toy, Lily rushed to her mother.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 4,
+        "question_text": "How is Bun-Bun's problem solved?",
+        "question_type": "explicit",
+        "cognitive_demand": "MEDIUM",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Lily's mother sews Bun-Bun's ear back on",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Lily glues Bun-Bun's ear back on",
+            "is_correct": false,
+            "distractor_type": "solution_confusion"
+          },
+          {
+            "letter": "C",
+            "text": "They buy a new Bun-Bun",
+            "is_correct": false,
+            "distractor_type": "solution_confusion"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "end",
+        "evidence_text": "Her mother nodded and quickly fetched her sewing kit. Carefully, she sewed Bun-Bun's ear back on.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 5,
+        "question_text": "How does Lily feel when Bun-Bun's ear rips?",
+        "question_type": "implicit",
+        "cognitive_demand": "MEDIUM",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Upset and worried",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Angry and frustrated",
+            "is_correct": false,
+            "distractor_type": "emotion_confusion"
+          },
+          {
+            "letter": "C",
+            "text": "Happy and excited",
+            "is_correct": false,
+            "distractor_type": "emotion_confusion"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "Lily gasped. She felt very upset and worried.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 6,
+        "question_text": "How does Lily feel after Bun-Bun's ear is fixed?",
+        "question_type": "implicit",
+        "cognitive_demand": "LOW",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Relieved and happy",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Sad and disappointed",
+            "is_correct": false,
+            "distractor_type": "emotion_confusion"
+          },
+          {
+            "letter": "C",
+            "text": "Angry and frustrated",
+            "is_correct": false,
+            "distractor_type": "emotion_confusion"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "end",
+        "evidence_text": "Lily hugged Bun-Bun tightly, feeling relieved. 'Thank you, mom,' she said, her face lighting up with joy.",
+        "points_possible": 1
+      }
+    ],
+    "total_questions": 6,
+    "answer_key": {
+      "questions": [
+        {
+          "question_number": 1,
+          "question_text": "What is Lily's favorite toy?",
+          "question_type": "explicit",
+          "cognitive_demand": "LOW",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "A stuffed bunny named Bun-Bun",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "A sewing kit",
+              "is_correct": false,
+              "distractor_type": "object_confusion"
+            },
+            {
+              "letter": "C",
+              "text": "Her mother",
+              "is_correct": false,
+              "distractor_type": "character_confusion"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "beginning",
+          "evidence_text": "Lily was in her room, playing with her favorite toy, a stuffed bunny named Bun-Bun.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 2,
+          "question_text": "What problem does Lily encounter with Bun-Bun?",
+          "question_type": "explicit",
+          "cognitive_demand": "LOW",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Bun-Bun's ear ripped",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Bun-Bun got lost",
+              "is_correct": false,
+              "distractor_type": "problem_confusion"
+            },
+            {
+              "letter": "C",
+              "text": "Bun-Bun's color faded",
+              "is_correct": false,
+              "distractor_type": "problem_confusion"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "Suddenly, while playing, Bun-Bun's ear ripped.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 3,
+          "question_text": "Who does Lily ask for help to fix Bun-Bun?",
+          "question_type": "explicit",
+          "cognitive_demand": "MEDIUM",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Her mother",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Her father",
+              "is_correct": false,
+              "distractor_type": "character_confusion"
+            },
+            {
+              "letter": "C",
+              "text": "Her brother",
+              "is_correct": false,
+              "distractor_type": "character_confusion"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "Holding the ripped toy, Lily rushed to her mother.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 4,
+          "question_text": "How is Bun-Bun's problem solved?",
+          "question_type": "explicit",
+          "cognitive_demand": "MEDIUM",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Lily's mother sews Bun-Bun's ear back on",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Lily glues Bun-Bun's ear back on",
+              "is_correct": false,
+              "distractor_type": "solution_confusion"
+            },
+            {
+              "letter": "C",
+              "text": "They buy a new Bun-Bun",
+              "is_correct": false,
+              "distractor_type": "solution_confusion"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "end",
+          "evidence_text": "Her mother nodded and quickly fetched her sewing kit. Carefully, she sewed Bun-Bun's ear back on.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 5,
+          "question_text": "How does Lily feel when Bun-Bun's ear rips?",
+          "question_type": "implicit",
+          "cognitive_demand": "MEDIUM",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Upset and worried",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Angry and frustrated",
+              "is_correct": false,
+              "distractor_type": "emotion_confusion"
+            },
+            {
+              "letter": "C",
+              "text": "Happy and excited",
+              "is_correct": false,
+              "distractor_type": "emotion_confusion"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "Lily gasped. She felt very upset and worried.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 6,
+          "question_text": "How does Lily feel after Bun-Bun's ear is fixed?",
+          "question_type": "implicit",
+          "cognitive_demand": "LOW",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Relieved and happy",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Sad and disappointed",
+              "is_correct": false,
+              "distractor_type": "emotion_confusion"
+            },
+            {
+              "letter": "C",
+              "text": "Angry and frustrated",
+              "is_correct": false,
+              "distractor_type": "emotion_confusion"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "end",
+          "evidence_text": "Lily hugged Bun-Bun tightly, feeling relieved. 'Thank you, mom,' she said, her face lighting up with joy.",
+          "points_possible": 1
+        }
+      ],
+      "total_questions": 6,
+      "total_points": 6,
+      "answer_key_summary": {
+        "1": "A",
+        "2": "A",
+        "3": "A",
+        "4": "A",
+        "5": "A",
+        "6": "A"
+      }
+    },
+    "grade": "2",
+    "genre": "narrative",
+    "band": "early",
+    "form_id": "COMP-2-EARLY-QUESTIONS-001",
+    "type_distribution": {
+      "explicit": 4,
+      "implicit": 2
+    },
+    "cognitive_distribution": {
+      "LOW": 3,
+      "MEDIUM": 3
+    },
+    "qrm_form_id": "COMP-2-EARLY-QRM-1768449617158-6362",
+    "passage_form_id": "COMP-2-EARLY-001",
+    "num_answer_options": 3,
+    "generated_at": "2026-01-14T23:03:11.048737",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 4 (Comprehension Blueprint)": "Via QRM for question specifications",
+      "Bank 6 (Answer Options)": "Grade 2 → 3 answer options"
+    }
+  },
+  "recall_scoring": {
+    "total_sentences": 17,
+    "max_total_points": 34,
+    "sentences": [
+      {
+        "sentence_number": 1,
+        "sentence_text": "Lily was in her room, playing with her favorite toy, a stuffed bunny named Bun-Bun",
+        "character_name": "Lily",
+        "key_detail": "Playing with Bun-Bun in her room",
+        "scoring_note": "2 pts: Lily + Playing with Bun-Bun | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 2,
+        "sentence_text": "She loved Bun-Bun very much",
+        "character_name": "She (Lily)",
+        "key_detail": "Loved Bun-Bun very much",
+        "scoring_note": "2 pts: She (Lily) + Loved Bun-Bun | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 3,
+        "sentence_text": "Suddenly, while playing, Bun-Bun's ear ripped",
+        "character_name": "Bun-Bun",
+        "key_detail": "Ear ripped while playing",
+        "scoring_note": "2 pts: Bun-Bun + Ear ripped | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 4,
+        "sentence_text": "Lily gasped",
+        "character_name": "Lily",
+        "key_detail": "Gasped",
+        "scoring_note": "2 pts: Lily + Gasped | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 5,
+        "sentence_text": "She felt very upset and worried",
+        "character_name": "She (Lily)",
+        "key_detail": "Felt upset and worried",
+        "scoring_note": "2 pts: She (Lily) + Felt upset | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 6,
+        "sentence_text": "Holding the ripped toy, Lily rushed to her mother",
+        "character_name": "Lily",
+        "key_detail": "Rushed to mother with ripped toy",
+        "scoring_note": "2 pts: Lily + Rushed to mother | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 7,
+        "sentence_text": "\"Mom, Bun-Bun's ear is ripped",
+        "character_name": "Bun-Bun",
+        "key_detail": "Ear is ripped",
+        "scoring_note": "2 pts: Bun-Bun + Ear ripped | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 8,
+        "sentence_text": "Can you help me fix it",
+        "character_name": "Me (Lily)",
+        "key_detail": "Asks for help to fix ear",
+        "scoring_note": "2 pts: Me (Lily) + Asks for help | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 9,
+        "sentence_text": "\" she asked, tears welling in her eyes",
+        "character_name": "She (Lily)",
+        "key_detail": "Tears welling in eyes",
+        "scoring_note": "2 pts: She (Lily) + Tears in eyes | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 10,
+        "sentence_text": "Her mother nodded and quickly fetched her sewing kit",
+        "character_name": "Mother",
+        "key_detail": "Fetched sewing kit",
+        "scoring_note": "2 pts: Mother + Fetched sewing kit | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 11,
+        "sentence_text": "Carefully, she sewed Bun-Bun's ear back on",
+        "character_name": "She (Mother)",
+        "key_detail": "Sewed Bun-Bun's ear back on",
+        "scoring_note": "2 pts: She (Mother) + Sewed Bun-Bun's ear | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 12,
+        "sentence_text": "Lily watched nervously",
+        "character_name": "Lily",
+        "key_detail": "Watched nervously",
+        "scoring_note": "2 pts: Lily + Watched nervously | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 13,
+        "sentence_text": "When her mother finished, she handed Bun-Bun back to Lily",
+        "character_name": "Mother",
+        "key_detail": "Handed fixed Bun-Bun to Lily",
+        "scoring_note": "2 pts: Mother + Handed Bun-Bun to Lily | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 14,
+        "sentence_text": "The bunny's ear was fixed",
+        "character_name": "Bun-Bun",
+        "key_detail": "Ear was fixed",
+        "scoring_note": "2 pts: Bun-Bun + Ear was fixed | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 15,
+        "sentence_text": "Lily hugged Bun-Bun tightly, feeling relieved",
+        "character_name": "Lily",
+        "key_detail": "Hugged Bun-Bun, felt relieved",
+        "scoring_note": "2 pts: Lily + Hugged Bun-Bun | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 16,
+        "sentence_text": "\"Thank you, mom,\" she said, her face lighting up with joy",
+        "character_name": "She (Lily)",
+        "key_detail": "Thanked mom, felt joy",
+        "scoring_note": "2 pts: She (Lily) + Thanked mom | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 17,
+        "sentence_text": "Lily was happy again, and so was Bun-Bun",
+        "character_name": "Lily, Bun-Bun",
+        "key_detail": "Both were happy again",
+        "scoring_note": "2 pts: Lily, Bun-Bun + Both happy | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      }
+    ],
+    "general_instructions": "For each sentence, award 2 points if student recalls BOTH the character and key detail, 1 point for either one, 0 points for neither. Allow paraphrasing.",
+    "passage_title": "Title: Lily and the Torn Bunny Ear",
+    "grade": "2",
+    "genre": "narrative",
+    "form_id": "RECALL-COMP-2-EARLY-001",
+    "passage_form_id": "COMP-2-EARLY-001",
+    "created_at": "2026-01-14T23:03:52.004263",
+    "schema_version": "2026.1"
+  }
+}
