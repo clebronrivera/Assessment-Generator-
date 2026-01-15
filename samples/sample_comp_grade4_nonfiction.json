@@ -1,0 +1,1276 @@
+{
+  "metadata": {
+    "package_id": "COMP-PKG-4-20260115-142041",
+    "assessment_type": "comprehension",
+    "grade": "4",
+    "band": "early",
+    "genre": "nonfiction",
+    "created_at": "2026-01-15T14:20:41.534910",
+    "schema_version": "2026.1",
+    "component_forms": {
+      "passage": "COMP-4-EARLY-001",
+      "qrm": "COMP-4-EARLY-QRM-1768504563258-6997",
+      "pib": "COMP-4-EARLY-PIB-001",
+      "questions": "COMP-4-EARLY-QUESTIONS-001",
+      "recall_scoring": "RECALL-COMP-4-EARLY-001"
+    },
+    "banks_used": [
+      "Bank 7 (Text Structures)",
+      "Bank 4 (Comprehension Blueprint)",
+      "Bank 6 (Answer Options)",
+      "Bank 3 (Comp Word Counts)",
+      "Bank 1 (Lexile Ranges)"
+    ],
+    "stats": {
+      "passage_word_count": 230,
+      "lexile_target": "700L-850L",
+      "total_questions": 10,
+      "total_points_questions": 10,
+      "total_sentences_recall": 18,
+      "total_points_recall": 36,
+      "components_included": 5
+    }
+  },
+  "package_type": "comprehension",
+  "ready_for_use": true,
+  "qrm": {
+    "questions": [
+      {
+        "question_number": 1,
+        "question_type": "explicit",
+        "cognitive_demand": "low",
+        "evidence_location": "beginning",
+        "content_requirement": "Passage must state the main topic and its significance in the first paragraph",
+        "distractor_guidance": "Use other topics introduced later in the passage or less significant aspects of the main topic"
+      },
+      {
+        "question_number": 2,
+        "question_type": "implicit",
+        "cognitive_demand": "medium",
+        "evidence_location": "beginning",
+        "content_requirement": "Passage should include some facts that hint at possible challenges or obstacles related to the main topic",
+        "distractor_guidance": "Present wrong challenges not hinted in the passage or not related to the topic"
+      },
+      {
+        "question_number": 3,
+        "question_type": "vocabulary",
+        "cognitive_demand": "high",
+        "evidence_location": "middle",
+        "content_requirement": "Use the word 'resilient' in a context that illustrates its meaning",
+        "distractor_guidance": "Provide synonyms that do not fit the context or antonyms"
+      },
+      {
+        "question_number": 4,
+        "question_type": "explicit",
+        "cognitive_demand": "medium",
+        "evidence_location": "middle",
+        "content_requirement": "Describe a specific event or situation related to the main topic",
+        "distractor_guidance": "Use other events described in the passage or invent plausible but incorrect events"
+      },
+      {
+        "question_number": 5,
+        "question_type": "implicit",
+        "cognitive_demand": "high",
+        "evidence_location": "middle",
+        "content_requirement": "Passage should show but not directly tell how characters or people are affected by the event",
+        "distractor_guidance": "Suggest incorrect effects or effects that are only possible, not inferred from the facts"
+      },
+      {
+        "question_number": 6,
+        "question_type": "explicit",
+        "cognitive_demand": "low",
+        "evidence_location": "middle",
+        "content_requirement": "Provide a clear cause-effect relationship for an event",
+        "distractor_guidance": "Offer unrelated causes or effects from other parts of the passage"
+      },
+      {
+        "question_number": 7,
+        "question_type": "vocabulary",
+        "cognitive_demand": "medium",
+        "evidence_location": "end",
+        "content_requirement": "Use the word 'abundant' in a context that clearly shows its meaning",
+        "distractor_guidance": "Provide synonyms that do not fit the context or antonyms"
+      },
+      {
+        "question_number": 8,
+        "question_type": "explicit",
+        "cognitive_demand": "medium",
+        "evidence_location": "end",
+        "content_requirement": "Clearly state the conclusion or final outcome related to the main topic",
+        "distractor_guidance": "Give wrong conclusions or outcomes from other parts of the passage"
+      },
+      {
+        "question_number": 9,
+        "question_type": "implicit",
+        "cognitive_demand": "high",
+        "evidence_location": "end",
+        "content_requirement": "Passage should suggest but not directly state the implications of the conclusion or outcome",
+        "distractor_guidance": "Suggest implications not supported by the facts or that contradict them"
+      },
+      {
+        "question_number": 10,
+        "question_type": "implicit",
+        "cognitive_demand": "low",
+        "evidence_location": "throughout",
+        "content_requirement": "Passage should have a consistent tone or perspective on the main topic",
+        "distractor_guidance": "Offer tones or perspectives not found in the passage or only present in parts of it"
+      }
+    ],
+    "total_questions": 10,
+    "type_distribution": {
+      "explicit": 4,
+      "implicit": 4,
+      "vocabulary": 2
+    },
+    "cognitive_distribution": {
+      "low": 3,
+      "medium": 4,
+      "high": 3
+    },
+    "evidence_distribution": {
+      "beginning": 2,
+      "middle": 4,
+      "end": 3,
+      "throughout": 1
+    },
+    "required_content_elements": [
+      "Main topic introduction and significance",
+      "Facts hinting at possible challenges",
+      "Specific event related to the main topic",
+      "Effects of event on characters or people",
+      "Cause-effect relationship for an event",
+      "Conclusion or final outcome",
+      "Implications of conclusion"
+    ],
+    "required_vocabulary": [
+      "resilient",
+      "abundant"
+    ],
+    "required_structure_elements": [
+      "chronological sequence",
+      "cause-effect relationship"
+    ],
+    "grade": "4",
+    "genre": "nonfiction",
+    "band": "early",
+    "form_id": "COMP-4-EARLY-QRM-1768504563258-6997",
+    "generated_at": "2026-01-15T14:16:42.537201",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 4 (Comprehension Blueprint)": "Grade 4 question specifications"
+    }
+  },
+  "pib": {
+    "scenes": [
+      {
+        "scene_number": 1,
+        "scene_type": "opening",
+        "location_in_passage": "beginning",
+        "purpose": "Introduce the main topic and its significance",
+        "content_description": "Introduction to the importance and role of bees in the ecosystem as pollinators",
+        "required_details": [
+          "State the main topic clearly - bees and their role",
+          "Highlight the significance of bees in pollination"
+        ],
+        "supports_questions": [
+          1
+        ],
+        "vocabulary_placement": []
+      },
+      {
+        "scene_number": 2,
+        "scene_type": "description",
+        "location_in_passage": "beginning",
+        "purpose": "Describe the challenges faced by bees",
+        "content_description": "Discussion of various factors affecting bee populations such as pesticides, habitat loss, and disease",
+        "required_details": [
+          "List specific challenges faced by bees",
+          "Hint at the potential impact of these challenges on the ecosystem"
+        ],
+        "supports_questions": [
+          2
+        ],
+        "vocabulary_placement": []
+      },
+      {
+        "scene_number": 3,
+        "scene_type": "description",
+        "location_in_passage": "middle",
+        "purpose": "Describe a specific event and show its effect",
+        "content_description": "Describe a sudden disease outbreak in a bee colony and its impact on the bees and the surrounding flora",
+        "required_details": [
+          "Describe the disease outbreak in detail",
+          "Show the impact on the bees and the surrounding flora"
+        ],
+        "supports_questions": [
+          4,
+          5,
+          6
+        ],
+        "vocabulary_placement": [
+          "resilient"
+        ]
+      },
+      {
+        "scene_number": 4,
+        "scene_type": "conclusion",
+        "location_in_passage": "end",
+        "purpose": "State the conclusion and suggest implications",
+        "content_description": "Discuss the recovery of the bee population and the return of balance in the ecosystem, and hint at the potential consequences if bees were absent",
+        "required_details": [
+          "Describe the recovery of the bee population",
+          "State the return of balance in the ecosystem",
+          "Suggest the potential consequences if bees were absent"
+        ],
+        "supports_questions": [
+          8,
+          9
+        ],
+        "vocabulary_placement": [
+          "abundant"
+        ]
+      }
+    ],
+    "total_scenes": 4,
+    "characters": [],
+    "opening_hook": "",
+    "central_conflict_or_topic": "",
+    "resolution_or_conclusion": "The recovery of the bee population and the return of balance in the ecosystem",
+    "vocabulary_targets": [
+      "resilient",
+      "abundant"
+    ],
+    "vocabulary_contexts": {
+      "resilient": "Describe the bees' ability to recover from the disease outbreak",
+      "abundant": "Describe the return of the once abundant flowers and fruits after the bee population recovers"
+    },
+    "text_structure": "cause_effect",
+    "organizational_features": [
+      "headings",
+      "diagrams"
+    ],
+    "question_coverage_map": {
+      "1": [
+        1
+      ],
+      "2": [
+        2
+      ],
+      "3": [
+        3
+      ],
+      "4": [
+        3
+      ],
+      "5": [
+        3
+      ],
+      "6": [
+        3
+      ],
+      "7": [
+        4
+      ],
+      "8": [
+        4
+      ],
+      "9": [
+        4
+      ],
+      "10": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "target_lexile": "700L-850L",
+    "target_word_count": 225,
+    "actual_grade": "4",
+    "genre": "nonfiction",
+    "band": "early",
+    "form_id": "COMP-4-EARLY-PIB-001",
+    "qrm_form_id": "COMP-4-EARLY-QRM-1768504563258-6997",
+    "generated_at": "2026-01-15T14:18:05.064867",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 1 (Lexile Ranges)": "Target: 700L-850L",
+      "Bank 3 (Comp Word Counts)": "Target: 225 words",
+      "Bank 7 (Text Structures)": "Structure: cause_effect"
+    }
+  },
+  "passage": {
+    "passage_text": "Bees, small but mighty, play a crucial role in our ecosystem. They are vital pollinators, transferring pollen from one flower to another, which allows plants to produce fruits and seeds. Without bees, our gardens and orchards would be much less colorful and bountiful.\n\nHowever, these buzzing heroes face significant challenges. Pesticides, habitat loss, and diseases are just a few of the threats that bees encounter every day. These problems can reduce bee populations and, in turn, affect the ecosystem, as fewer bees mean less pollination.\n\nOne year, a sudden disease swept through a bee colony. The bees, usually so resilient, were severely affected. The colony dwindled, and the surrounding plants, once vibrant and full of life, began to struggle. Without the bees, flowers were not being pollinated, leading to fewer fruits.\n\nBut bees are resilient creatures. Slowly, the bee population started to recover. As the bees returned, so did the balance in the ecosystem. The flowers and trees once again became abundant with fruits, a clear sign of the bees' crucial role.\n\nThis experience shows us the potential consequences if bees were absent. We depend on bees for the pollination of many of the foods we eat daily. Without their hard work, our plates would be less colorful and our ecosystem less diverse. So, let's be grateful for our buzzing heroes and protect them for the health of our ecosystem.",
+    "passage_title": "Title: The Buzzing Heroes: Bees and Our Ecosystem",
+    "grade": "4",
+    "genre": "nonfiction",
+    "band": "early",
+    "form_id": "COMP-4-EARLY-001",
+    "actual_word_count": 230,
+    "target_word_count": 225,
+    "target_lexile": "700L-850L",
+    "total_questions": 10,
+    "question_coverage_verified": true,
+    "text_structure": "cause_effect",
+    "vocabulary_words": [
+      "resilient",
+      "abundant"
+    ],
+    "vocabulary_verified": true,
+    "validation": {
+      "word_count_valid": true,
+      "word_count_actual": 230,
+      "word_count_target": 225,
+      "word_count_acceptable_range": [
+        205,
+        245
+      ],
+      "lexile_target": "700L-850L",
+      "lexile_note": "Lexile cannot be automatically validated (requires external tool)",
+      "vocabulary_present": true,
+      "vocabulary_found": [
+        "resilient",
+        "abundant"
+      ],
+      "vocabulary_missing": [],
+      "scenes_covered": true,
+      "scenes_expected": 4,
+      "scenes_identifiable": 5,
+      "validation_passed": true,
+      "warnings": []
+    },
+    "qrm_form_id": "COMP-4-EARLY-QRM-1768504563258-6997",
+    "pib_form_id": "COMP-4-EARLY-PIB-001",
+    "generated_at": "2026-01-15T14:18:14.791479",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 1 (Lexile Ranges)": "Target: 700L-850L",
+      "Bank 3 (Comp Word Counts)": "Target: 225 words",
+      "Bank 7 (Text Structures)": "Structure: cause_effect"
+    }
+  },
+  "questions": {
+    "questions": [
+      {
+        "question_number": 1,
+        "question_text": "What is the crucial role bees play in our ecosystem?",
+        "question_type": "literal",
+        "cognitive_demand": "CognitiveDemand.LOW",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "They pollinate flowers, enabling plants to produce fruits and seeds",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "They produce honey for other animals to eat",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "They protect gardens from harmful insects",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "They prey on small insects and help control their population",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "beginning",
+        "evidence_text": "Bees, small but mighty, play a crucial role in our ecosystem. They are vital pollinators, transferring pollen from one flower to another, which allows plants to produce fruits and seeds.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 2,
+        "question_text": "What are some of the challenges that bees face as mentioned in the passage?",
+        "question_type": "inferential",
+        "cognitive_demand": "CognitiveDemand.MEDIUM",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Pesticides, habitat loss, and diseases",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Air pollution and global warming",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "Natural predators and food shortage",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "Overpopulation and lack of sunlight",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "beginning",
+        "evidence_text": "Pesticides, habitat loss, and diseases are just a few of the threats that bees encounter every day.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 3,
+        "question_text": "In the context of the passage, what does the term 'resilient' mean?",
+        "question_type": "vocabulary",
+        "cognitive_demand": "CognitiveDemand.HIGH",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "able to recover quickly from difficult conditions",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "able to remain unchanged",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "unable to withstand pressure",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          },
+          {
+            "letter": "D",
+            "text": "able to cause changes",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "But bees are resilient creatures. Slowly, the bee population started to recover.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 4,
+        "question_text": "What happened to the plants when a disease significantly affected a bee colony one year?",
+        "question_type": "literal",
+        "cognitive_demand": "CognitiveDemand.MEDIUM",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "The plants began to struggle and produced fewer fruits",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "The plants became more colorful and bountiful",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          },
+          {
+            "letter": "C",
+            "text": "The plants were not affected",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "D",
+            "text": "The plants started to produce more seeds",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "The bees, usually so resilient, were severely affected. The colony dwindled, and the surrounding plants, once vibrant and full of life, began to struggle. Without the bees, flowers were not being pollinated, leading to fewer fruits.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 5,
+        "question_text": "What is a likely consequence if the bee population continues to decline?",
+        "question_type": "inferential",
+        "cognitive_demand": "CognitiveDemand.HIGH",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "There would be fewer fruits and seeds due to lack of pollination",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "There would be an increase in other insect populations",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "Plants would develop a different method of pollination",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "There would be more flowers due to lack of pollination",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "Without bees, our gardens and orchards would be much less colorful and bountiful. These problems can reduce bee populations and, in turn, affect the ecosystem, as fewer bees mean less pollination. Without the bees, flowers were not being pollinated, leading to fewer fruits.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 6,
+        "question_text": "What happened to the plants when a disease severely affected a bee colony?",
+        "question_type": "literal",
+        "cognitive_demand": "CognitiveDemand.LOW",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "The plants began to struggle and produced fewer fruits.",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "The plants were not affected by the disease.",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "The plants grew larger due to less competition for resources.",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "The plants became more colorful and bountiful.",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "The colony dwindled, and the surrounding plants, once vibrant and full of life, began to struggle. Without the bees, flowers were not being pollinated, leading to fewer fruits.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 7,
+        "question_text": "What does the word 'abundant' imply in the context of the passage?",
+        "question_type": "vocabulary",
+        "cognitive_demand": "CognitiveDemand.MEDIUM",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Plentiful or abundant",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Scarce",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          },
+          {
+            "letter": "C",
+            "text": "Tiny",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "D",
+            "text": "Satisfactory",
+            "is_correct": false,
+            "distractor_type": "detail"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "end",
+        "evidence_text": "The flowers and trees once again became abundant with fruits, a clear sign of the bees' crucial role.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 8,
+        "question_text": "What is the final outcome of the passage?",
+        "question_type": "literal",
+        "cognitive_demand": "CognitiveDemand.MEDIUM",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "We should be grateful for bees and protect them for the health of our ecosystem.",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Bees are not important to the ecosystem.",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          },
+          {
+            "letter": "C",
+            "text": "All bee populations are in decline due to pesticides and diseases.",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "The plants did not recover after the bee population declined.",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "end",
+        "evidence_text": "So, let's be grateful for our buzzing heroes and protect them for the health of our ecosystem.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 9,
+        "question_text": "What could be a potential consequence of a continued decrease in bee populations?",
+        "question_type": "inferential",
+        "cognitive_demand": "CognitiveDemand.HIGH",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Our food sources might become less diverse and colorful",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Bees would evolve to become more resilient to diseases",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "Other insects will take over the pollination process",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "The ecosystem will become more diverse",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "end",
+        "evidence_text": "We depend on bees for the pollination of many of the foods we eat daily. Without their hard work, our plates would be less colorful and our ecosystem less diverse.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 10,
+        "question_text": "What is the tone of the passage regarding bees and their role in our ecosystem?",
+        "question_type": "inferential",
+        "cognitive_demand": "CognitiveDemand.LOW",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Appreciative and concerned",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Indifferent and uninterested",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          },
+          {
+            "letter": "C",
+            "text": "Disdainful and critical",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          },
+          {
+            "letter": "D",
+            "text": "Skeptical and questioning",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "throughout",
+        "evidence_text": "Bees, small but mighty, play a crucial role in our ecosystem...However, these buzzing heroes face significant challenges...Without the bees, flowers were not being pollinated, leading to fewer fruits...But bees are resilient creatures...So, let's be grateful for our buzzing heroes and protect them for the health of our ecosystem.",
+        "points_possible": 1
+      }
+    ],
+    "total_questions": 10,
+    "answer_key": {
+      "questions": [
+        {
+          "question_number": 1,
+          "question_text": "What is the crucial role bees play in our ecosystem?",
+          "question_type": "literal",
+          "cognitive_demand": "CognitiveDemand.LOW",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "They pollinate flowers, enabling plants to produce fruits and seeds",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "They produce honey for other animals to eat",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "They protect gardens from harmful insects",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "They prey on small insects and help control their population",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "beginning",
+          "evidence_text": "Bees, small but mighty, play a crucial role in our ecosystem. They are vital pollinators, transferring pollen from one flower to another, which allows plants to produce fruits and seeds.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 2,
+          "question_text": "What are some of the challenges that bees face as mentioned in the passage?",
+          "question_type": "inferential",
+          "cognitive_demand": "CognitiveDemand.MEDIUM",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Pesticides, habitat loss, and diseases",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Air pollution and global warming",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "Natural predators and food shortage",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "Overpopulation and lack of sunlight",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "beginning",
+          "evidence_text": "Pesticides, habitat loss, and diseases are just a few of the threats that bees encounter every day.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 3,
+          "question_text": "In the context of the passage, what does the term 'resilient' mean?",
+          "question_type": "vocabulary",
+          "cognitive_demand": "CognitiveDemand.HIGH",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "able to recover quickly from difficult conditions",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "able to remain unchanged",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "unable to withstand pressure",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            },
+            {
+              "letter": "D",
+              "text": "able to cause changes",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "But bees are resilient creatures. Slowly, the bee population started to recover.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 4,
+          "question_text": "What happened to the plants when a disease significantly affected a bee colony one year?",
+          "question_type": "literal",
+          "cognitive_demand": "CognitiveDemand.MEDIUM",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "The plants began to struggle and produced fewer fruits",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "The plants became more colorful and bountiful",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            },
+            {
+              "letter": "C",
+              "text": "The plants were not affected",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "D",
+              "text": "The plants started to produce more seeds",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "The bees, usually so resilient, were severely affected. The colony dwindled, and the surrounding plants, once vibrant and full of life, began to struggle. Without the bees, flowers were not being pollinated, leading to fewer fruits.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 5,
+          "question_text": "What is a likely consequence if the bee population continues to decline?",
+          "question_type": "inferential",
+          "cognitive_demand": "CognitiveDemand.HIGH",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "There would be fewer fruits and seeds due to lack of pollination",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "There would be an increase in other insect populations",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "Plants would develop a different method of pollination",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "There would be more flowers due to lack of pollination",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "Without bees, our gardens and orchards would be much less colorful and bountiful. These problems can reduce bee populations and, in turn, affect the ecosystem, as fewer bees mean less pollination. Without the bees, flowers were not being pollinated, leading to fewer fruits.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 6,
+          "question_text": "What happened to the plants when a disease severely affected a bee colony?",
+          "question_type": "literal",
+          "cognitive_demand": "CognitiveDemand.LOW",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "The plants began to struggle and produced fewer fruits.",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "The plants were not affected by the disease.",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "The plants grew larger due to less competition for resources.",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "The plants became more colorful and bountiful.",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "The colony dwindled, and the surrounding plants, once vibrant and full of life, began to struggle. Without the bees, flowers were not being pollinated, leading to fewer fruits.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 7,
+          "question_text": "What does the word 'abundant' imply in the context of the passage?",
+          "question_type": "vocabulary",
+          "cognitive_demand": "CognitiveDemand.MEDIUM",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Plentiful or abundant",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Scarce",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            },
+            {
+              "letter": "C",
+              "text": "Tiny",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "D",
+              "text": "Satisfactory",
+              "is_correct": false,
+              "distractor_type": "detail"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "end",
+          "evidence_text": "The flowers and trees once again became abundant with fruits, a clear sign of the bees' crucial role.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 8,
+          "question_text": "What is the final outcome of the passage?",
+          "question_type": "literal",
+          "cognitive_demand": "CognitiveDemand.MEDIUM",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "We should be grateful for bees and protect them for the health of our ecosystem.",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Bees are not important to the ecosystem.",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            },
+            {
+              "letter": "C",
+              "text": "All bee populations are in decline due to pesticides and diseases.",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "The plants did not recover after the bee population declined.",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "end",
+          "evidence_text": "So, let's be grateful for our buzzing heroes and protect them for the health of our ecosystem.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 9,
+          "question_text": "What could be a potential consequence of a continued decrease in bee populations?",
+          "question_type": "inferential",
+          "cognitive_demand": "CognitiveDemand.HIGH",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Our food sources might become less diverse and colorful",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Bees would evolve to become more resilient to diseases",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "Other insects will take over the pollination process",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "The ecosystem will become more diverse",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "end",
+          "evidence_text": "We depend on bees for the pollination of many of the foods we eat daily. Without their hard work, our plates would be less colorful and our ecosystem less diverse.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 10,
+          "question_text": "What is the tone of the passage regarding bees and their role in our ecosystem?",
+          "question_type": "inferential",
+          "cognitive_demand": "CognitiveDemand.LOW",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Appreciative and concerned",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Indifferent and uninterested",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            },
+            {
+              "letter": "C",
+              "text": "Disdainful and critical",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            },
+            {
+              "letter": "D",
+              "text": "Skeptical and questioning",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "throughout",
+          "evidence_text": "Bees, small but mighty, play a crucial role in our ecosystem...However, these buzzing heroes face significant challenges...Without the bees, flowers were not being pollinated, leading to fewer fruits...But bees are resilient creatures...So, let's be grateful for our buzzing heroes and protect them for the health of our ecosystem.",
+          "points_possible": 1
+        }
+      ],
+      "total_questions": 10,
+      "total_points": 10,
+      "answer_key_summary": {
+        "1": "A",
+        "2": "A",
+        "3": "A",
+        "4": "A",
+        "5": "A",
+        "6": "A",
+        "7": "A",
+        "8": "A",
+        "9": "A",
+        "10": "A"
+      }
+    },
+    "grade": "4",
+    "genre": "nonfiction",
+    "band": "early",
+    "form_id": "COMP-4-EARLY-QUESTIONS-001",
+    "type_distribution": {
+      "literal": 4,
+      "inferential": 4,
+      "vocabulary": 2
+    },
+    "cognitive_distribution": {
+      "CognitiveDemand.LOW": 3,
+      "CognitiveDemand.MEDIUM": 4,
+      "CognitiveDemand.HIGH": 3
+    },
+    "qrm_form_id": "COMP-4-EARLY-QRM-1768504563258-6997",
+    "passage_form_id": "COMP-4-EARLY-001",
+    "num_answer_options": 4,
+    "generated_at": "2026-01-15T14:19:57.396717",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 4 (Comprehension Blueprint)": "Via QRM for question specifications",
+      "Bank 6 (Answer Options)": "Grade 4 → 4 answer options"
+    }
+  },
+  "recall_scoring": {
+    "total_sentences": 18,
+    "max_total_points": 36,
+    "sentences": [
+      {
+        "sentence_number": 1,
+        "sentence_text": "Bees, small but mighty, play a crucial role in our ecosystem",
+        "character_name": "Bees",
+        "key_detail": "Play crucial role in ecosystem",
+        "scoring_note": "2 pts: Bees + crucial role | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 2,
+        "sentence_text": "They are vital pollinators, transferring pollen from one flower to another, which allows plants to produce fruits and seeds",
+        "character_name": "They (Bees)",
+        "key_detail": "Bees transfer pollen, enable fruit/seed production",
+        "scoring_note": "2 pts: They (Bees) + pollen transfer | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 3,
+        "sentence_text": "Without bees, our gardens and orchards would be much less colorful and bountiful",
+        "character_name": "Bees",
+        "key_detail": "Their absence would affect gardens/orchards",
+        "scoring_note": "2 pts: Bees + effect on gardens/orchards | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 4,
+        "sentence_text": "However, these buzzing heroes face significant challenges",
+        "character_name": "These (Bees)",
+        "key_detail": "Bees face significant challenges",
+        "scoring_note": "2 pts: These (Bees) + face challenges | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 5,
+        "sentence_text": "Pesticides, habitat loss, and diseases are just a few of the threats that bees encounter every day",
+        "character_name": "Bees",
+        "key_detail": "Bees face threats like pesticides, habitat loss, diseases",
+        "scoring_note": "2 pts: Bees + threats they face | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 6,
+        "sentence_text": "These problems can reduce bee populations and, in turn, affect the ecosystem, as fewer bees mean less pollination",
+        "character_name": "These problems",
+        "key_detail": "Reduce bee populations, affect pollination and ecosystem",
+        "scoring_note": "2 pts: These problems + effect on bees, ecosystem | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 7,
+        "sentence_text": "One year, a sudden disease swept through a bee colony",
+        "character_name": "Disease",
+        "key_detail": "Swept through a bee colony",
+        "scoring_note": "2 pts: Disease + affected bee colony | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 8,
+        "sentence_text": "The bees, usually so resilient, were severely affected",
+        "character_name": "Bees",
+        "key_detail": "Bees were severely affected",
+        "scoring_note": "2 pts: Bees + severely affected | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 9,
+        "sentence_text": "The colony dwindled, and the surrounding plants, once vibrant and full of life, began to struggle",
+        "character_name": "Colony, Surrounding plants",
+        "key_detail": "Colony dwindled, plants began to struggle",
+        "scoring_note": "2 pts: Colony/Plants + colony dwindling/plants struggling | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 10,
+        "sentence_text": "Without the bees, flowers were not being pollinated, leading to fewer fruits",
+        "character_name": "Bees",
+        "key_detail": "Without bees, fewer flowers pollinated and fruits",
+        "scoring_note": "2 pts: Bees + less pollination and fruits | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 11,
+        "sentence_text": "But bees are resilient creatures",
+        "character_name": "Bees",
+        "key_detail": "Bees are resilient",
+        "scoring_note": "2 pts: Bees + resilience | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 12,
+        "sentence_text": "Slowly, the bee population started to recover",
+        "character_name": "Bee population",
+        "key_detail": "Started to recover",
+        "scoring_note": "2 pts: Bee population + recovery | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 13,
+        "sentence_text": "As the bees returned, so did the balance in the ecosystem",
+        "character_name": "Bees",
+        "key_detail": "Return of bees restored ecosystem balance",
+        "scoring_note": "2 pts: Bees + restored ecosystem | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 14,
+        "sentence_text": "The flowers and trees once again became abundant with fruits, a clear sign of the bees' crucial role",
+        "character_name": "Flowers and trees",
+        "key_detail": "Became abundant with fruits due to bees",
+        "scoring_note": "2 pts: Flowers/Trees + became fruitful due to bees | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 15,
+        "sentence_text": "This experience shows us the potential consequences if bees were absent",
+        "character_name": "Experience",
+        "key_detail": "Shows consequences of bees' absence",
+        "scoring_note": "2 pts: Experience + shows consequences of bees' absence | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 16,
+        "sentence_text": "We depend on bees for the pollination of many of the foods we eat daily",
+        "character_name": "We",
+        "key_detail": "Depend on bees for food pollination",
+        "scoring_note": "2 pts: We + dependence on bees for pollination | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 17,
+        "sentence_text": "Without their hard work, our plates would be less colorful and our ecosystem less diverse",
+        "character_name": "Their (Bees)",
+        "key_detail": "Without bees, less colorful plates, less diverse ecosystem",
+        "scoring_note": "2 pts: Their (Bees) + effect on plates and ecosystem | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 18,
+        "sentence_text": "So, let's be grateful for our buzzing heroes and protect them for the health of our ecosystem",
+        "character_name": "Our buzzing heroes (Bees)",
+        "key_detail": "Need to be grateful and protect bees",
+        "scoring_note": "2 pts: Our buzzing heroes (Bees) + need for gratitude and protection | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      }
+    ],
+    "general_instructions": "For each sentence, award 2 points if student recalls BOTH the character and key detail, 1 point for either one, 0 points for neither. Allow paraphrasing.",
+    "passage_title": "Title: The Buzzing Heroes: Bees and Our Ecosystem",
+    "grade": "4",
+    "genre": "nonfiction",
+    "form_id": "RECALL-COMP-4-EARLY-001",
+    "passage_form_id": "COMP-4-EARLY-001",
+    "created_at": "2026-01-15T14:20:41.534700",
+    "schema_version": "2026.1"
+  }
+}

@@ -1,0 +1,1261 @@
+{
+  "metadata": {
+    "package_id": "COMP-PKG-4-20260115-140553",
+    "assessment_type": "comprehension",
+    "grade": "4",
+    "band": "early",
+    "genre": "narrative",
+    "created_at": "2026-01-15T14:05:53.967204",
+    "schema_version": "2026.1",
+    "component_forms": {
+      "passage": "COMP-4-EARLY-001",
+      "qrm": "COMP-4-EARLY-QRM-1768503594183-3342",
+      "pib": "COMP-4-EARLY-PIB-001",
+      "questions": "COMP-4-EARLY-QUESTIONS-001",
+      "recall_scoring": "RECALL-COMP-4-EARLY-001"
+    },
+    "banks_used": [
+      "Bank 3 (Comp Word Counts)",
+      "Bank 6 (Answer Options)",
+      "Bank 7 (Text Structures)",
+      "Bank 1 (Lexile Ranges)",
+      "Bank 4 (Comprehension Blueprint)"
+    ],
+    "stats": {
+      "passage_word_count": 210,
+      "lexile_target": "700L-850L",
+      "total_questions": 10,
+      "total_points_questions": 10,
+      "total_sentences_recall": 14,
+      "total_points_recall": 28,
+      "components_included": 5
+    }
+  },
+  "package_type": "comprehension",
+  "ready_for_use": true,
+  "qrm": {
+    "questions": [
+      {
+        "question_number": 1,
+        "question_type": "explicit",
+        "cognitive_demand": "low",
+        "evidence_location": "beginning",
+        "content_requirement": "The passage must introduce a character and their significant trait in the first few lines",
+        "distractor_guidance": "Use traits of other characters or unrelated traits"
+      },
+      {
+        "question_number": 2,
+        "question_type": "explicit",
+        "cognitive_demand": "medium",
+        "evidence_location": "beginning",
+        "content_requirement": "The passage must describe the setting (place and time)",
+        "distractor_guidance": "Use descriptions of other places or times mentioned in the passage"
+      },
+      {
+        "question_number": 3,
+        "question_type": "explicit",
+        "cognitive_demand": "high",
+        "evidence_location": "middle",
+        "content_requirement": "The passage must present a problem or conflict involving the main character",
+        "distractor_guidance": "Use other events or problems mentioned in the passage"
+      },
+      {
+        "question_number": 4,
+        "question_type": "explicit",
+        "cognitive_demand": "medium",
+        "evidence_location": "end",
+        "content_requirement": "The passage must state how the problem was resolved",
+        "distractor_guidance": "Use other solutions or outcomes mentioned in the passage"
+      },
+      {
+        "question_number": 5,
+        "question_type": "implicit",
+        "cognitive_demand": "low",
+        "evidence_location": "middle",
+        "content_requirement": "The passage must imply a cause-effect relationship between two events",
+        "distractor_guidance": "Use other events from the passage that are not directly related"
+      },
+      {
+        "question_number": 6,
+        "question_type": "implicit",
+        "cognitive_demand": "medium",
+        "evidence_location": "middle",
+        "content_requirement": "The passage must describe an event that allows for inferring a character's feeling or motivation",
+        "distractor_guidance": "Use other feelings or motivations that could be inferred from different events"
+      },
+      {
+        "question_number": 7,
+        "question_type": "implicit",
+        "cognitive_demand": "high",
+        "evidence_location": "end",
+        "content_requirement": "The passage must offer clues to infer a lesson or moral from the story",
+        "distractor_guidance": "Use other possible lessons or morals that can be inferred from unrelated details"
+      },
+      {
+        "question_number": 8,
+        "question_type": "implicit",
+        "cognitive_demand": "high",
+        "evidence_location": "throughout",
+        "content_requirement": "The passage must include a recurring theme or pattern, allowing for inference",
+        "distractor_guidance": "Use other themes or patterns that could be misinterpreted from the passage"
+      },
+      {
+        "question_number": 9,
+        "question_type": "vocabulary",
+        "cognitive_demand": "low",
+        "evidence_location": "beginning",
+        "content_requirement": "The passage must use the word 'resilient' in a context that allows definition inference",
+        "distractor_guidance": "Use synonyms, antonyms, or unrelated words as options"
+      },
+      {
+        "question_number": 10,
+        "question_type": "vocabulary",
+        "cognitive_demand": "medium",
+        "evidence_location": "end",
+        "content_requirement": "The passage must use the word 'abundant' in a context that allows definition inference",
+        "distractor_guidance": "Use synonyms, antonyms, or unrelated words as options"
+      }
+    ],
+    "total_questions": 10,
+    "type_distribution": {
+      "explicit": 4,
+      "implicit": 4,
+      "vocabulary": 2
+    },
+    "cognitive_distribution": {
+      "low": 3,
+      "medium": 4,
+      "high": 3
+    },
+    "evidence_distribution": {
+      "beginning": 3,
+      "middle": 3,
+      "end": 3,
+      "throughout": 1
+    },
+    "required_content_elements": [
+      "Introduction of character and their significant trait",
+      "Description of the setting (time and place)",
+      "Presentation of a problem or conflict",
+      "Resolution of the problem",
+      "Cause-effect relationship",
+      "Implicit character's feeling or motivation",
+      "Inferred lesson or moral",
+      "Recurring theme or pattern"
+    ],
+    "required_vocabulary": [
+      "resilient",
+      "abundant"
+    ],
+    "required_structure_elements": [
+      "chronological sequence",
+      "cause-effect relationship"
+    ],
+    "grade": "4",
+    "genre": "narrative",
+    "band": "early",
+    "form_id": "COMP-4-EARLY-QRM-1768503594183-3342",
+    "generated_at": "2026-01-15T14:00:48.648735",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 4 (Comprehension Blueprint)": "Grade 4 question specifications"
+    }
+  },
+  "pib": {
+    "scenes": [
+      {
+        "scene_number": 1,
+        "scene_type": "opening",
+        "location_in_passage": "beginning",
+        "purpose": "Introduce character and setting",
+        "content_description": "Introduce character Lily, a resilient girl always ready for an adventure. Describe the setting as a sunny afternoon in the park.",
+        "required_details": [
+          "Introduce Lily's significant trait (resilient)",
+          "Describe the setting of the park in the afternoon"
+        ],
+        "supports_questions": [
+          1,
+          2,
+          9
+        ],
+        "vocabulary_placement": [
+          "resilient"
+        ]
+      },
+      {
+        "scene_number": 2,
+        "scene_type": "action",
+        "location_in_passage": "middle",
+        "purpose": "Present the problem",
+        "content_description": "Lily finds a lost puppy in the park and decides to help it find its way home.",
+        "required_details": [
+          "Presentation of the problem (lost puppy)"
+        ],
+        "supports_questions": [
+          3
+        ],
+        "vocabulary_placement": []
+      },
+      {
+        "scene_number": 3,
+        "scene_type": "action",
+        "location_in_passage": "middle",
+        "purpose": "Show the cause-effect relationship",
+        "content_description": "Lily's decision to help the puppy leads to a series of adventures, including asking people in the park and local shelters.",
+        "required_details": [
+          "Describe the series of events (adventures) resulting from Lily's decision"
+        ],
+        "supports_questions": [
+          5,
+          6
+        ],
+        "vocabulary_placement": []
+      },
+      {
+        "scene_number": 4,
+        "scene_type": "conclusion",
+        "location_in_passage": "end",
+        "purpose": "Resolve the problem and infer a lesson",
+        "content_description": "Lily finally finds the puppy's owner, feeling happy and accomplished. The story ends with the abundance of gratitude from the owner and Lily's realization about the importance of helping others.",
+        "required_details": [
+          "Resolution of the problem (puppy returned to owner)",
+          "Describe the owner's abundant gratitude",
+          "Present Lily's realization (lesson)"
+        ],
+        "supports_questions": [
+          4,
+          7,
+          10
+        ],
+        "vocabulary_placement": [
+          "abundant"
+        ]
+      }
+    ],
+    "total_scenes": 4,
+    "characters": [
+      {
+        "name": "Lily",
+        "role": "main",
+        "key_traits": [
+          "resilient"
+        ],
+        "actions_to_show": [
+          "Decides to help the lost puppy",
+          "Asks people in the park and visits local shelters",
+          "Return the puppy to its owner"
+        ],
+        "supports_questions": [
+          1,
+          3,
+          4,
+          6
+        ]
+      }
+    ],
+    "opening_hook": "On a sunny afternoon, resilient Lily was eager for an adventure at the park.",
+    "central_conflict_or_topic": "Lily finds a lost puppy and decides to help it find its way home.",
+    "resolution_or_conclusion": "With the puppy safely returned and the owner's abundant gratitude, Lily realized the joy in helping others.",
+    "vocabulary_targets": [
+      "resilient",
+      "abundant"
+    ],
+    "vocabulary_contexts": {
+      "resilient": "Describe Lily as resilient in the face of the challenge of finding the puppy's home.",
+      "abundant": "Describe the owner's gratitude as abundant when the puppy is returned."
+    },
+    "text_structure": "chronological",
+    "organizational_features": [],
+    "question_coverage_map": {
+      "1": [
+        1
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        2
+      ],
+      "4": [
+        4
+      ],
+      "5": [
+        3
+      ],
+      "6": [
+        3
+      ],
+      "7": [
+        4
+      ],
+      "8": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "9": [
+        1
+      ],
+      "10": [
+        4
+      ]
+    },
+    "target_lexile": "700L-850L",
+    "target_word_count": 225,
+    "actual_grade": "4",
+    "genre": "narrative",
+    "band": "early",
+    "form_id": "COMP-4-EARLY-PIB-001",
+    "qrm_form_id": "COMP-4-EARLY-QRM-1768503594183-3342",
+    "generated_at": "2026-01-15T14:02:23.930036",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 1 (Lexile Ranges)": "Target: 700L-850L",
+      "Bank 3 (Comp Word Counts)": "Target: 225 words",
+      "Bank 7 (Text Structures)": "Structure: chronological"
+    }
+  },
+  "passage": {
+    "passage_text": "On a sunny afternoon, in the welcoming, vibrant park, resilient Lily was prepared for an adventure. The sun was shining brightly, casting a warm glow on the happy families playing and the trees swaying in the breeze.\n\nDuring her exploration, Lily discovered a small, lost puppy, it was shaking and whimpering with fear. Without hesitation, Lily decided to help the little puppy find its way home. Her heart was filled with determination to solve this problem.\n\nLily's decision led her on a series of exciting adventures. She courageously asked the people in the park if they recognized the lost puppy, and even visited the local shelters, hoping to find the puppy's owner. She showed her resilience as she persisted in her mission, not letting any setbacks discourage her.\n\nFinally, after much searching, Lily found the puppy's grateful owner. The woman's face lit up with joy and relief, and she thanked Lily with an abundant amount of gratitude. Lily felt a warm surge of happiness and accomplishment. The puppy was home safe, and she had made a difference. Standing there, bathed in the woman's abundant thankfulness, Lily realized the joy of helping others. This sunny afternoon had turned into a memorable adventure, teaching her a valuable lesson about kindness and perseverance.",
+    "passage_title": "Title: Lily's Sunny Adventure",
+    "grade": "4",
+    "genre": "narrative",
+    "band": "early",
+    "form_id": "COMP-4-EARLY-001",
+    "actual_word_count": 210,
+    "target_word_count": 225,
+    "target_lexile": "700L-850L",
+    "total_questions": 10,
+    "question_coverage_verified": true,
+    "text_structure": "chronological",
+    "vocabulary_words": [
+      "resilient",
+      "abundant"
+    ],
+    "vocabulary_verified": true,
+    "validation": {
+      "word_count_valid": true,
+      "word_count_actual": 210,
+      "word_count_target": 225,
+      "word_count_acceptable_range": [
+        205,
+        245
+      ],
+      "lexile_target": "700L-850L",
+      "lexile_note": "Lexile cannot be automatically validated (requires external tool)",
+      "vocabulary_present": true,
+      "vocabulary_found": [
+        "resilient",
+        "abundant"
+      ],
+      "vocabulary_missing": [],
+      "scenes_covered": true,
+      "scenes_expected": 4,
+      "scenes_identifiable": 4,
+      "validation_passed": true,
+      "warnings": []
+    },
+    "qrm_form_id": "COMP-4-EARLY-QRM-1768503594183-3342",
+    "pib_form_id": "COMP-4-EARLY-PIB-001",
+    "generated_at": "2026-01-15T14:02:39.641524",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 1 (Lexile Ranges)": "Target: 700L-850L",
+      "Bank 3 (Comp Word Counts)": "Target: 225 words",
+      "Bank 7 (Text Structures)": "Structure: chronological"
+    }
+  },
+  "questions": {
+    "questions": [
+      {
+        "question_number": 1,
+        "question_text": "What significant trait does Lily show in the passage?",
+        "question_type": "literal",
+        "cognitive_demand": "CognitiveDemand.LOW",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Resilience",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Fear",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "Anger",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "Indifference",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "beginning",
+        "evidence_text": "On a sunny afternoon, in the welcoming, vibrant park, resilient Lily was prepared for an adventure.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 2,
+        "question_text": "Where and when did Lily's adventure take place?",
+        "question_type": "literal",
+        "cognitive_demand": "CognitiveDemand.MEDIUM",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "In a vibrant park on a sunny afternoon",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "At the local shelter in the morning",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "In a deserted park at night",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "At the puppy's home during sunset",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "beginning",
+        "evidence_text": "On a sunny afternoon, in the welcoming, vibrant park, resilient Lily was prepared for an adventure.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 3,
+        "question_text": "What did Lily do to try and find the lost puppy's owner?",
+        "question_type": "literal",
+        "cognitive_demand": "CognitiveDemand.HIGH",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "She asked people in the park and visited local shelters",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "She left the puppy in the park hoping the owner would find it",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "She took the puppy to the police station",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "She ignored the puppy and continued her adventure",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "She courageously asked the people in the park if they recognized the lost puppy, and even visited the local shelters, hoping to find the puppy's owner.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 4,
+        "question_text": "How was the problem of the lost puppy resolved in the story?",
+        "question_type": "literal",
+        "cognitive_demand": "CognitiveDemand.MEDIUM",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Lily found the puppy's owner",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Lily adopted the puppy",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "Lily left the puppy at a local shelter",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "The puppy found its own way home",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "end",
+        "evidence_text": "Finally, after much searching, Lily found the puppy's grateful owner.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 5,
+        "question_text": "What was the result of Lily's determination to help the lost puppy?",
+        "question_type": "inferential",
+        "cognitive_demand": "CognitiveDemand.LOW",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "She found the puppy's owner",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "She adopted the puppy",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "She started working in a local shelter",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "She left the puppy in the park",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "Finally, after much searching, Lily found the puppy's grateful owner.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 6,
+        "question_text": "What motivates Lily to help the lost puppy?",
+        "question_type": "inferential",
+        "cognitive_demand": "CognitiveDemand.MEDIUM",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Her desire to make a difference and solve problems",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Her love for adventures",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "Her fear of the puppy being alone",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "Her need for recognition from others",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "Without hesitation, Lily decided to help the little puppy find its way home. Her heart was filled with determination to solve this problem.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 7,
+        "question_text": "What valuable lesson did Lily learn from her adventure in the park?",
+        "question_type": "inferential",
+        "cognitive_demand": "CognitiveDemand.HIGH",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "The joy of helping others and the importance of perseverance",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "The importance of asking for help when you need it",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "The significance of exploring new places",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "The need to avoid stray animals",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "end",
+        "evidence_text": "Standing there, bathed in the woman's abundant thankfulness, Lily realized the joy of helping others. This sunny afternoon had turned into a memorable adventure, teaching her a valuable lesson about kindness and perseverance.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 8,
+        "question_text": "What is the most significant lesson Lily learned from her adventure?",
+        "question_type": "inferential",
+        "cognitive_demand": "CognitiveDemand.HIGH",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "The joy of helping others",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "The importance of asking for help",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "The value of exploring new places",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "The necessity of owning a pet",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "throughout",
+        "evidence_text": "On a sunny afternoon, in the welcoming, vibrant park, resilient Lily was prepared for an adventure...Standing there, bathed in the woman's abundant thankfulness, Lily realized the joy of helping others. This sunny afternoon had turned into a memorable adventure, teaching her a valuable lesson about kindness and perseverance.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 9,
+        "question_text": "Based on the passage, what does the word 'resilient' most likely mean?",
+        "question_type": "vocabulary",
+        "cognitive_demand": "CognitiveDemand.LOW",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Persistent and determined",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Nervous and hesitant",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          },
+          {
+            "letter": "C",
+            "text": "Happy and cheerful",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "D",
+            "text": "Quiet and shy",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "beginning",
+        "evidence_text": "resilient Lily was prepared for an adventure",
+        "points_possible": 1
+      },
+      {
+        "question_number": 10,
+        "question_text": "What does the word 'abundant' mean in the context of the passage?",
+        "question_type": "vocabulary",
+        "cognitive_demand": "CognitiveDemand.MEDIUM",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Plentiful",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Scanty",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          },
+          {
+            "letter": "C",
+            "text": "Hidden",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "D",
+            "text": "Complex",
+            "is_correct": false,
+            "distractor_type": "unrelated"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "end",
+        "evidence_text": "Standing there, bathed in the woman's abundant thankfulness, Lily realized the joy of helping others.",
+        "points_possible": 1
+      }
+    ],
+    "total_questions": 10,
+    "answer_key": {
+      "questions": [
+        {
+          "question_number": 1,
+          "question_text": "What significant trait does Lily show in the passage?",
+          "question_type": "literal",
+          "cognitive_demand": "CognitiveDemand.LOW",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Resilience",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Fear",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "Anger",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "Indifference",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "beginning",
+          "evidence_text": "On a sunny afternoon, in the welcoming, vibrant park, resilient Lily was prepared for an adventure.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 2,
+          "question_text": "Where and when did Lily's adventure take place?",
+          "question_type": "literal",
+          "cognitive_demand": "CognitiveDemand.MEDIUM",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "In a vibrant park on a sunny afternoon",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "At the local shelter in the morning",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "In a deserted park at night",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "At the puppy's home during sunset",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "beginning",
+          "evidence_text": "On a sunny afternoon, in the welcoming, vibrant park, resilient Lily was prepared for an adventure.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 3,
+          "question_text": "What did Lily do to try and find the lost puppy's owner?",
+          "question_type": "literal",
+          "cognitive_demand": "CognitiveDemand.HIGH",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "She asked people in the park and visited local shelters",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "She left the puppy in the park hoping the owner would find it",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "She took the puppy to the police station",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "She ignored the puppy and continued her adventure",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "She courageously asked the people in the park if they recognized the lost puppy, and even visited the local shelters, hoping to find the puppy's owner.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 4,
+          "question_text": "How was the problem of the lost puppy resolved in the story?",
+          "question_type": "literal",
+          "cognitive_demand": "CognitiveDemand.MEDIUM",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Lily found the puppy's owner",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Lily adopted the puppy",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "Lily left the puppy at a local shelter",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "The puppy found its own way home",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "end",
+          "evidence_text": "Finally, after much searching, Lily found the puppy's grateful owner.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 5,
+          "question_text": "What was the result of Lily's determination to help the lost puppy?",
+          "question_type": "inferential",
+          "cognitive_demand": "CognitiveDemand.LOW",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "She found the puppy's owner",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "She adopted the puppy",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "She started working in a local shelter",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "She left the puppy in the park",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "Finally, after much searching, Lily found the puppy's grateful owner.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 6,
+          "question_text": "What motivates Lily to help the lost puppy?",
+          "question_type": "inferential",
+          "cognitive_demand": "CognitiveDemand.MEDIUM",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Her desire to make a difference and solve problems",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Her love for adventures",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "Her fear of the puppy being alone",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "Her need for recognition from others",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "Without hesitation, Lily decided to help the little puppy find its way home. Her heart was filled with determination to solve this problem.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 7,
+          "question_text": "What valuable lesson did Lily learn from her adventure in the park?",
+          "question_type": "inferential",
+          "cognitive_demand": "CognitiveDemand.HIGH",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "The joy of helping others and the importance of perseverance",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "The importance of asking for help when you need it",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "The significance of exploring new places",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "The need to avoid stray animals",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "end",
+          "evidence_text": "Standing there, bathed in the woman's abundant thankfulness, Lily realized the joy of helping others. This sunny afternoon had turned into a memorable adventure, teaching her a valuable lesson about kindness and perseverance.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 8,
+          "question_text": "What is the most significant lesson Lily learned from her adventure?",
+          "question_type": "inferential",
+          "cognitive_demand": "CognitiveDemand.HIGH",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "The joy of helping others",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "The importance of asking for help",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "The value of exploring new places",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "The necessity of owning a pet",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "throughout",
+          "evidence_text": "On a sunny afternoon, in the welcoming, vibrant park, resilient Lily was prepared for an adventure...Standing there, bathed in the woman's abundant thankfulness, Lily realized the joy of helping others. This sunny afternoon had turned into a memorable adventure, teaching her a valuable lesson about kindness and perseverance.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 9,
+          "question_text": "Based on the passage, what does the word 'resilient' most likely mean?",
+          "question_type": "vocabulary",
+          "cognitive_demand": "CognitiveDemand.LOW",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Persistent and determined",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Nervous and hesitant",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            },
+            {
+              "letter": "C",
+              "text": "Happy and cheerful",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "D",
+              "text": "Quiet and shy",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "beginning",
+          "evidence_text": "resilient Lily was prepared for an adventure",
+          "points_possible": 1
+        },
+        {
+          "question_number": 10,
+          "question_text": "What does the word 'abundant' mean in the context of the passage?",
+          "question_type": "vocabulary",
+          "cognitive_demand": "CognitiveDemand.MEDIUM",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Plentiful",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Scanty",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            },
+            {
+              "letter": "C",
+              "text": "Hidden",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "D",
+              "text": "Complex",
+              "is_correct": false,
+              "distractor_type": "unrelated"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "end",
+          "evidence_text": "Standing there, bathed in the woman's abundant thankfulness, Lily realized the joy of helping others.",
+          "points_possible": 1
+        }
+      ],
+      "total_questions": 10,
+      "total_points": 10,
+      "answer_key_summary": {
+        "1": "A",
+        "2": "A",
+        "3": "A",
+        "4": "A",
+        "5": "A",
+        "6": "A",
+        "7": "A",
+        "8": "A",
+        "9": "A",
+        "10": "A"
+      }
+    },
+    "grade": "4",
+    "genre": "narrative",
+    "band": "early",
+    "form_id": "COMP-4-EARLY-QUESTIONS-001",
+    "type_distribution": {
+      "literal": 4,
+      "inferential": 4,
+      "vocabulary": 2
+    },
+    "cognitive_distribution": {
+      "CognitiveDemand.LOW": 3,
+      "CognitiveDemand.MEDIUM": 4,
+      "CognitiveDemand.HIGH": 3
+    },
+    "qrm_form_id": "COMP-4-EARLY-QRM-1768503594183-3342",
+    "passage_form_id": "COMP-4-EARLY-001",
+    "num_answer_options": 4,
+    "generated_at": "2026-01-15T14:04:54.360162",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 4 (Comprehension Blueprint)": "Via QRM for question specifications",
+      "Bank 6 (Answer Options)": "Grade 4 → 4 answer options"
+    }
+  },
+  "recall_scoring": {
+    "total_sentences": 14,
+    "max_total_points": 28,
+    "sentences": [
+      {
+        "sentence_number": 1,
+        "sentence_text": "On a sunny afternoon, in the welcoming, vibrant park, resilient Lily was prepared for an adventure",
+        "character_name": "Lily",
+        "key_detail": "Prepared for an adventure",
+        "scoring_note": "2 pts: Lily + Prepared for an adventure | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 2,
+        "sentence_text": "The sun was shining brightly, casting a warm glow on the happy families playing and the trees swaying in the breeze",
+        "character_name": "Sun",
+        "key_detail": "Shining brightly, casting a warm glow",
+        "scoring_note": "2 pts: Sun + Shining brightly, casting a warm glow | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 3,
+        "sentence_text": "During her exploration, Lily discovered a small, lost puppy, it was shaking and whimpering with fear",
+        "character_name": "Lily",
+        "key_detail": "Discovered a small, lost puppy",
+        "scoring_note": "2 pts: Lily + Discovered a small, lost puppy | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 4,
+        "sentence_text": "Without hesitation, Lily decided to help the little puppy find its way home",
+        "character_name": "Lily",
+        "key_detail": "Decided to help the lost puppy",
+        "scoring_note": "2 pts: Lily + Decided to help the lost puppy | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 5,
+        "sentence_text": "Her heart was filled with determination to solve this problem",
+        "character_name": "Her (Lily)",
+        "key_detail": "Heart filled with determination",
+        "scoring_note": "2 pts: Her (Lily) + Heart filled with determination | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 6,
+        "sentence_text": "Lily's decision led her on a series of exciting adventures",
+        "character_name": "Lily",
+        "key_detail": "Lily's decision led to adventures",
+        "scoring_note": "2 pts: Lily + Lily's decision led to adventures | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 7,
+        "sentence_text": "She courageously asked the people in the park if they recognized the lost puppy, and even visited the local shelters, hoping to find the puppy's owner",
+        "character_name": "She (Lily)",
+        "key_detail": "Asked people and visited shelters",
+        "scoring_note": "2 pts: She (Lily) + Asked people and visited shelters | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 8,
+        "sentence_text": "She showed her resilience as she persisted in her mission, not letting any setbacks discourage her",
+        "character_name": "She (Lily)",
+        "key_detail": "Persisted in mission despite setbacks",
+        "scoring_note": "2 pts: She (Lily) + Persisted in mission despite setbacks | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 9,
+        "sentence_text": "Finally, after much searching, Lily found the puppy's grateful owner",
+        "character_name": "Lily",
+        "key_detail": "Found the puppy's owner",
+        "scoring_note": "2 pts: Lily + Found the puppy's owner | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 10,
+        "sentence_text": "The woman's face lit up with joy and relief, and she thanked Lily with an abundant amount of gratitude",
+        "character_name": "The woman",
+        "key_detail": "Thanked Lily with gratitude",
+        "scoring_note": "2 pts: The woman + Thanked Lily with gratitude | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 11,
+        "sentence_text": "Lily felt a warm surge of happiness and accomplishment",
+        "character_name": "Lily",
+        "key_detail": "Felt happiness and accomplishment",
+        "scoring_note": "2 pts: Lily + Felt happiness and accomplishment | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 12,
+        "sentence_text": "The puppy was home safe, and she had made a difference",
+        "character_name": "The puppy, She (Lily)",
+        "key_detail": "Puppy was safe, Lily made a difference",
+        "scoring_note": "2 pts: The puppy, She (Lily) + Puppy was safe, Lily made a difference | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 13,
+        "sentence_text": "Standing there, bathed in the woman's abundant thankfulness, Lily realized the joy of helping others",
+        "character_name": "Lily",
+        "key_detail": "Realized the joy of helping others",
+        "scoring_note": "2 pts: Lily + Realized the joy of helping others | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 14,
+        "sentence_text": "This sunny afternoon had turned into a memorable adventure, teaching her a valuable lesson about kindness and perseverance",
+        "character_name": "Her (Lily)",
+        "key_detail": "Learned about kindness and perseverance",
+        "scoring_note": "2 pts: Her (Lily) + Learned about kindness and perseverance | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      }
+    ],
+    "general_instructions": "For each sentence, award 2 points if student recalls BOTH the character and key detail, 1 point for either one, 0 points for neither. Allow paraphrasing.",
+    "passage_title": "Title: Lily's Sunny Adventure",
+    "grade": "4",
+    "genre": "narrative",
+    "form_id": "RECALL-COMP-4-EARLY-001",
+    "passage_form_id": "COMP-4-EARLY-001",
+    "created_at": "2026-01-15T14:05:53.966785",
+    "schema_version": "2026.1"
+  }
+}

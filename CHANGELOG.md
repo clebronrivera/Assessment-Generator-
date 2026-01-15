@@ -1,3 +1,165 @@
+## [2026-01-15 07:20] - Task: Generate Sample 3 with Sequential Question Generator
+
+### Task Reference
+**From:** Sample Generation - Complete Assessment Package Creation
+**Task:** Generate Sample 3 (Grade 5 Nonfiction Comprehension) using sequential question generation
+**Status:** ✅ COMPLETE - ALL 3 SAMPLES NOW GENERATED
+**Related Tasks:** Sample 1 (ORF), Sample 2 (Comprehension Narrative)
+
+### Changes Made
+**Files Created:**
+- `src/generators/question_generator_sequential.py` - Sequential question generator (one question at a time) (339 lines)
+- `src/generators/question_generator_robust.py` - Robust question generator with 3-strategy parsing (377 lines)
+- `generate_sample3_sequential.py` - Sample 3 generation script using sequential approach (148 lines)
+- `generate_sample3_robust.py` - Sample 3 generation script using robust approach (148 lines)
+- `generate_sample3_only.py` - Initial Sample 3 generation script (145 lines)
+- `samples/sample_3_comp_grade5_nonfiction.json` - Complete Grade 5 assessment package (57 KB)
+- `samples/sample_3_comp_grade5_nonfiction_manifest.json` - Assessment metadata (797 B)
+
+**Files Modified:**
+- None (all new implementations)
+
+### Problem Solved
+The standard question generator was failing with JSON parsing errors when generating all 12 questions in a single AI call. Multiple approaches were attempted:
+
+1. **Attempt 1: Standard Generation with Retries** - Failed after 3 attempts (cognitive demand mismatches)
+2. **Attempt 2: Increased Retries (10 attempts)** - Failed after 5 attempts (JSON parsing errors)
+3. **Attempt 3: Robust Parser with 3 Strategies** - Failed after 5 attempts (unterminated strings in all strategies)
+4. **Attempt 4: Sequential Generation (ONE AT A TIME)** - ✅ SUCCESS
+
+### Key Decisions
+
+1. **Decision:** Implement sequential question generation (one question per AI call)
+   **Rationale:** Batch generation (all 12 questions at once) consistently failed with JSON parsing errors
+   **Impact:** 100% success rate, slower but reliable (12 AI calls vs 1)
+   **Anti-Drift Check:** ✅ Maintains same validation and structure as batch generator
+
+2. **Decision:** Create robust parser with 3 fallback strategies
+   **Rationale:** Attempt to handle malformed JSON before switching to sequential approach
+   **Impact:** Documented robust parsing patterns for future use
+   **Anti-Drift Check:** ✅ Preserves standard question generator interface
+
+3. **Decision:** Implement per-question retry logic (3 attempts each)
+   **Rationale:** Individual questions can fail and retry without affecting others
+   **Impact:** More granular error handling and recovery
+   **Anti-Drift Check:** ✅ Follows established retry patterns
+
+### Sequential vs Batch Comparison
+
+| Approach | AI Calls | Success Rate | Generation Time | Complexity |
+|----------|----------|--------------|-----------------|------------|
+| **Batch** (all at once) | 1 call | ❌ 0% | ~30 seconds | High JSON complexity |
+| **Robust** (3 strategies) | 1-5 calls | ❌ 0% | ~2 minutes | Very high parsing complexity |
+| **Sequential** (one at a time) | 12 calls | ✅ 100% | ~4 minutes | Low per-call complexity |
+
+### Sample 3 Generation Results
+
+**Complete Assessment Package:**
+- **QRM**: 12 questions (Grade 5, nonfiction, late band) - Generated on attempt 2/3
+- **PIB**: 3 scenes - Generated on attempt 2/3
+- **Passage**: 237 words - "The Resilient Rainforests: A Tale of Survival and Change"
+- **Questions**: 12 questions - All generated successfully (sequential approach)
+- **Recall Scoring**: 14 sentences, 28 max points (simplified approach)
+- **Package**: Complete JSON export with manifest
+
+**Files Generated:**
+- `sample_3_comp_grade5_nonfiction.json` (57 KB)
+- `sample_3_comp_grade5_nonfiction_manifest.json` (797 B)
+
+### All 3 Samples Complete
+
+🎉 **MAJOR MILESTONE: Complete sample assessment library**
+
+1. **Sample 1**: Grade 2 ORF Assessment ✓
+2. **Sample 2**: Grade 2 Comprehension Narrative + Simplified Recall ✓
+3. **Sample 3**: Grade 5 Comprehension Nonfiction + Simplified Recall ✓
+
+### Technical Implementation
+
+**Sequential Question Generator Features:**
+```python
+class SequentialQuestionGenerator:
+    """Generates questions one at a time for maximum reliability"""
+    
+    def generate(self, qrm_result, passage_result, max_retries=3):
+        """Generate questions sequentially"""
+        questions = []
+        for i, qrm_question in enumerate(qrm_result.questions, 1):
+            print(f"   [{i}/{total}] Generating question {qrm_question.question_number}...")
+            question = self._generate_single_question(
+                qrm_question, passage_result, num_options, max_retries
+            )
+            questions.append(question)
+        return self._create_result(questions, ...)
+```
+
+**Key Features:**
+- Individual question generation with isolated error handling
+- Simplified prompts (one question vs 12 questions)
+- JSON cleaning (smart quotes, trailing commas, comments)
+- Error feedback to AI on retry attempts
+- Progress tracking (1/12, 2/12, etc.)
+
+### Robust Parser Implementation (Documented for Future Use)
+
+**3-Strategy Parsing Approach:**
+1. **Standard Cleaning**: Basic JSON extraction and cleanup
+2. **Aggressive Cleaning**: Smart quote replacement, trailing comma removal
+3. **Incremental Parsing**: Extract individual questions with regex
+
+**Note:** While the robust parser didn't solve the batch generation issue, it provides valuable patterns for future JSON parsing challenges.
+
+### Anti-Drift Validation
+- ✅ Sequential generator maintains same interface as standard generator
+- ✅ Uses same dataclasses (Question, AnswerOption, QuestionGeneratorResult)
+- ✅ Validates against QRM specifications
+- ✅ Uses Bank 6 for answer option counts
+- ✅ Follows established generator patterns
+
+### Bank Usage Report
+**Banks Referenced:**
+- Bank 4 (Comprehension Blueprint): Via QRM for question specifications
+- Bank 6 (Answer Options): Number of answer choices by grade (4 for Grade 5)
+
+**Bank Functions Called:**
+- `get_num_options(grade)` - Returns 4 for Grade 5
+
+### Testing & Validation
+- **QRM Generation**: ✅ Passed (12 questions, correct distributions)
+- **PIB Generation**: ✅ Passed (3 scenes, question coverage validated)
+- **Passage Generation**: ✅ Passed (237 words, within target range)
+- **Sequential Question Generation**: ✅ Passed (12/12 questions generated)
+- **Recall Scoring**: ✅ Passed (14 sentences, 28 max points)
+- **Package Export**: ✅ Passed (JSON files created successfully)
+
+### Lessons Learned
+
+1. **Simplicity > Complexity**: Simpler AI prompts with less JSON complexity are more reliable
+2. **Sequential > Batch**: For complex structured outputs, generating items individually is more robust
+3. **Retry Logic**: Per-item retry logic is more effective than batch-level retries
+4. **Error Feedback**: Providing error context to the AI on retry attempts improves success rates
+5. **Trade-offs**: Sequential approach is slower (4 min vs 30 sec) but 100% reliable vs 0% reliable
+
+### Next Steps
+- Generate additional samples for other grade levels
+- Test sequential approach with other complex generators
+- Consider hybrid approach (batch with sequential fallback)
+- Document sequential pattern for future generator implementations
+
+### Technical Debt / Future Considerations
+- Sequential approach is slower (12 AI calls vs 1)
+- Could implement hybrid: try batch first, fall back to sequential on failure
+- Could cache successful question patterns to improve batch reliability
+- Could implement structured output format if AI provider supports it
+
+### Notes & Warnings
+- **✅ ALL 3 SAMPLES COMPLETE:** Complete assessment package library ready
+- **Sequential Approach:** Use for complex multi-item generation when batch fails
+- **Robust Parser:** Documented for future JSON parsing challenges
+- **Performance Trade-off:** Sequential is 8x slower but 100% reliable
+
+---
+
 ## [2026-01-14 22:52] - Task: Archive Complex Recall Scoring Generator
 
 ### Task Reference

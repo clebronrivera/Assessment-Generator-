@@ -1,0 +1,1702 @@
+{
+  "metadata": {
+    "package_id": "COMP-PKG-6-20260115-141315",
+    "assessment_type": "comprehension",
+    "grade": "6",
+    "band": "late",
+    "genre": "narrative",
+    "created_at": "2026-01-15T14:13:15.269891",
+    "schema_version": "2026.1",
+    "component_forms": {
+      "passage": "COMP-6-LATE-001",
+      "qrm": "COMP-6-LATE-QRM-1768503974126-2799",
+      "pib": "COMP-6-LATE-PIB-001",
+      "questions": "COMP-6-LATE-QUESTIONS-001",
+      "recall_scoring": "RECALL-COMP-6-LATE-001"
+    },
+    "banks_used": [
+      "Bank 4 (Comprehension Blueprint)",
+      "Bank 3 (Comp Word Counts)",
+      "Bank 6 (Answer Options)",
+      "Bank 7 (Text Structures)",
+      "Bank 1 (Lexile Ranges)"
+    ],
+    "stats": {
+      "passage_word_count": 291,
+      "lexile_target": "1030L-1180L",
+      "total_questions": 14,
+      "total_points_questions": 14,
+      "total_sentences_recall": 21,
+      "total_points_recall": 42,
+      "components_included": 5
+    }
+  },
+  "package_type": "comprehension",
+  "ready_for_use": true,
+  "qrm": {
+    "questions": [
+      {
+        "question_number": 1,
+        "question_type": "explicit",
+        "cognitive_demand": "low",
+        "evidence_location": "beginning",
+        "content_requirement": "Passage must state the main character's name and initial problem in the first paragraph",
+        "distractor_guidance": "Use other character names from the passage; use different problems not stated in the passage"
+      },
+      {
+        "question_number": 2,
+        "question_type": "implicit",
+        "cognitive_demand": "medium",
+        "evidence_location": "beginning",
+        "content_requirement": "Passage must describe the main character's reaction to the initial problem, from which their feelings can be inferred",
+        "distractor_guidance": "Use emotions that are plausible but not supported by the text"
+      },
+      {
+        "question_number": 3,
+        "question_type": "text_structure",
+        "cognitive_demand": "medium",
+        "evidence_location": "beginning to middle",
+        "content_requirement": "Passage must have a clear sequence of events that lead up to the climax",
+        "distractor_guidance": "Use events that are included in the passage but out of sequence"
+      },
+      {
+        "question_number": 4,
+        "question_type": "vocabulary",
+        "cognitive_demand": "low",
+        "evidence_location": "middle",
+        "content_requirement": "Passage must use the term 'resilient' in a context that allows its meaning to be inferred",
+        "distractor_guidance": "Use synonyms or antonyms that are plausible but not supported by the text"
+      },
+      {
+        "question_number": 5,
+        "question_type": "explicit",
+        "cognitive_demand": "medium",
+        "evidence_location": "middle",
+        "content_requirement": "Passage must explicitly state a key action the main character took to solve the problem",
+        "distractor_guidance": "Use actions that are plausible but not stated in the passage"
+      },
+      {
+        "question_number": 6,
+        "question_type": "implicit",
+        "cognitive_demand": "high",
+        "evidence_location": "middle to end",
+        "content_requirement": "Passage must provide details that allow inference of a secondary character's motivation",
+        "distractor_guidance": "Use motivations that are plausible but not supported by the text"
+      },
+      {
+        "question_number": 7,
+        "question_type": "main_idea",
+        "cognitive_demand": "high",
+        "evidence_location": "whole passage",
+        "content_requirement": "Passage must have a clear theme or central idea",
+        "distractor_guidance": "Use themes that are plausible but not supported by the text"
+      },
+      {
+        "question_number": 8,
+        "question_type": "main_idea",
+        "cognitive_demand": "medium",
+        "evidence_location": "end",
+        "content_requirement": "Passage must conclude with resolution of the problem and its impact on the main character",
+        "distractor_guidance": "Use impacts that are plausible but not stated in the passage"
+      },
+      {
+        "question_number": 9,
+        "question_type": "explicit",
+        "cognitive_demand": "high",
+        "evidence_location": "end",
+        "content_requirement": "Passage must explicitly state the final outcome of the story",
+        "distractor_guidance": "Use outcomes that are plausible but not stated in the passage"
+      },
+      {
+        "question_number": 10,
+        "question_type": "vocabulary",
+        "cognitive_demand": "medium",
+        "evidence_location": "end",
+        "content_requirement": "Passage must use the term 'abundant' in a context that allows its meaning to be inferred",
+        "distractor_guidance": "Use synonyms or antonyms that are plausible but not supported by the text"
+      },
+      {
+        "question_number": 11,
+        "question_type": "implicit",
+        "cognitive_demand": "medium",
+        "evidence_location": "end",
+        "content_requirement": "Passage must provide enough information to infer the main character's feelings about the outcome",
+        "distractor_guidance": "Use emotions that are plausible but not supported by the text"
+      },
+      {
+        "question_number": 12,
+        "question_type": "explicit",
+        "cognitive_demand": "low",
+        "evidence_location": "middle",
+        "content_requirement": "Passage must explicitly state a key event that happened in the middle of the story",
+        "distractor_guidance": "Use events that are plausible but not stated in the passage"
+      },
+      {
+        "question_number": 13,
+        "question_type": "text_structure",
+        "cognitive_demand": "high",
+        "evidence_location": "whole passage",
+        "content_requirement": "Passage must use flashback or foreshadowing that impacts the plot",
+        "distractor_guidance": "Use instances of flashback or foreshadowing that are plausible but not stated in the passage"
+      },
+      {
+        "question_number": 14,
+        "question_type": "implicit",
+        "cognitive_demand": "high",
+        "evidence_location": "whole passage",
+        "content_requirement": "Passage must include subtle hints about a secondary character's personality traits",
+        "distractor_guidance": "Use traits that are plausible but not supported by the text"
+      }
+    ],
+    "total_questions": 14,
+    "type_distribution": {
+      "explicit": 4,
+      "implicit": 4,
+      "text_structure": 2,
+      "vocabulary": 2,
+      "main_idea": 2
+    },
+    "cognitive_distribution": {
+      "low": 3,
+      "medium": 6,
+      "high": 5
+    },
+    "evidence_distribution": {
+      "beginning": 2,
+      "beginning to middle": 1,
+      "middle": 3,
+      "middle to end": 1,
+      "whole passage": 3,
+      "end": 4
+    },
+    "required_content_elements": [
+      "Introduction of main character and their problem",
+      "Clear sequence of events leading to climax",
+      "Resolution of problem and its impact on the main character",
+      "Explicit statement of final outcome",
+      "Description of secondary character's personality traits"
+    ],
+    "required_vocabulary": [
+      "resilient",
+      "abundant"
+    ],
+    "required_structure_elements": [
+      "sequence of events",
+      "flashback or foreshadowing"
+    ],
+    "grade": "6",
+    "genre": "narrative",
+    "band": "late",
+    "form_id": "COMP-6-LATE-QRM-1768503974126-2799",
+    "generated_at": "2026-01-15T14:07:18.678693",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 4 (Comprehension Blueprint)": "Grade 6 question specifications"
+    }
+  },
+  "pib": {
+    "scenes": [
+      {
+        "scene_number": 1,
+        "scene_type": "opening",
+        "location_in_passage": "beginning",
+        "purpose": "Introduce main character and his problem",
+        "content_description": "Introduce Jake, a sixth-grader, who just moved to a new city and is finding it hard to make new friends. He misses his old friends terribly.",
+        "required_details": [
+          "State Jake's name and grade",
+          "Mention his problem - difficulty in making new friends"
+        ],
+        "supports_questions": [
+          1,
+          2
+        ],
+        "vocabulary_placement": []
+      },
+      {
+        "scene_number": 2,
+        "scene_type": "action",
+        "location_in_passage": "beginning to middle",
+        "purpose": "Describe Jake's efforts to solve his problem",
+        "content_description": "Jake realises he needs to be resilient and takes a proactive approach to make friends. He joins a local basketball team, attends neighborhood events, and volunteers at a local library.",
+        "required_details": [
+          "Jake's actions to solve the problem",
+          "Use of the term 'resilient'"
+        ],
+        "supports_questions": [
+          3,
+          4,
+          5,
+          12
+        ],
+        "vocabulary_placement": [
+          "resilient"
+        ]
+      },
+      {
+        "scene_number": 3,
+        "scene_type": "description",
+        "location_in_passage": "middle to end",
+        "purpose": "Introduction and description of a secondary character",
+        "content_description": "Introduce Lucy, a friendly and popular girl in Jake's class who notices Jake's efforts and decides to help him.",
+        "required_details": [
+          "Introduction of Lucy",
+          "Lucy's decision to help Jake"
+        ],
+        "supports_questions": [
+          6,
+          14
+        ],
+        "vocabulary_placement": []
+      },
+      {
+        "scene_number": 4,
+        "scene_type": "action",
+        "location_in_passage": "middle to end",
+        "purpose": "Show Lucy's actions and their impact",
+        "content_description": "Lucy invites Jake to a party she's hosting. At the party, Jake meets many of his classmates and starts to form friendships.",
+        "required_details": [
+          "Lucy's action to solve Jake's problem",
+          "Result of Lucy's action"
+        ],
+        "supports_questions": [
+          6,
+          8,
+          9
+        ],
+        "vocabulary_placement": []
+      },
+      {
+        "scene_number": 5,
+        "scene_type": "conclusion",
+        "location_in_passage": "end",
+        "purpose": "Conclude the story with the resolution of Jake's problem",
+        "content_description": "Jake now has an abundant number of friends in his new city and is happy. He is grateful to Lucy for her help.",
+        "required_details": [
+          "Resolution of Jake's problem",
+          "Use of the term 'abundant'"
+        ],
+        "supports_questions": [
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "vocabulary_placement": [
+          "abundant"
+        ]
+      }
+    ],
+    "total_scenes": 5,
+    "characters": [
+      {
+        "name": "Jake",
+        "role": "main",
+        "key_traits": [
+          "lonely",
+          "proactive",
+          "resilient"
+        ],
+        "actions_to_show": [
+          "Joins a basketball team",
+          "Attends neighborhood events",
+          "Volunteers at a local library"
+        ],
+        "supports_questions": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          8,
+          11
+        ]
+      },
+      {
+        "name": "Lucy",
+        "role": "secondary",
+        "key_traits": [
+          "friendly",
+          "helpful",
+          "popular"
+        ],
+        "actions_to_show": [
+          "Notices Jake's efforts",
+          "Decides to help Jake",
+          "Invites Jake to her party"
+        ],
+        "supports_questions": [
+          6,
+          8,
+          9,
+          14
+        ]
+      }
+    ],
+    "opening_hook": "Jake, a sixth-grader, stood alone in the bustling schoolyard of his new school in the heart of the city.",
+    "central_conflict_or_topic": "Jake's struggle to make new friends after moving to a new city.",
+    "resolution_or_conclusion": "With Lucy's help, Jake now has abundant friends and is no longer lonely.",
+    "vocabulary_targets": [
+      "resilient",
+      "abundant"
+    ],
+    "vocabulary_contexts": {
+      "resilient": "Despite feeling lonely, Jake knew he had to be resilient and make an effort to make new friends.",
+      "abundant": "Thanks to Lucy's help and his own efforts, Jake now had an abundant number of friends."
+    },
+    "text_structure": "chronological",
+    "organizational_features": [],
+    "question_coverage_map": {
+      "1": [
+        1
+      ],
+      "2": [
+        1
+      ],
+      "3": [
+        2
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        2
+      ],
+      "6": [
+        3,
+        4
+      ],
+      "7": [
+        5
+      ],
+      "8": [
+        4,
+        5
+      ],
+      "9": [
+        5
+      ],
+      "10": [
+        5
+      ],
+      "11": [
+        5
+      ],
+      "12": [
+        2
+      ],
+      "13": [],
+      "14": [
+        3
+      ]
+    },
+    "target_lexile": "1030L-1180L",
+    "target_word_count": 325,
+    "actual_grade": "6",
+    "genre": "narrative",
+    "band": "late",
+    "form_id": "COMP-6-LATE-PIB-001",
+    "qrm_form_id": "COMP-6-LATE-QRM-1768503974126-2799",
+    "generated_at": "2026-01-15T14:08:36.133870",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 1 (Lexile Ranges)": "Target: 1030L-1180L",
+      "Bank 3 (Comp Word Counts)": "Target: 325 words",
+      "Bank 7 (Text Structures)": "Structure: chronological"
+    }
+  },
+  "passage": {
+    "passage_text": "Jake, a sixth-grader, stood alone in the bustling schoolyard of his new school, located in the heart of the city. He had just moved to this unfamiliar place and was struggling to make new friends. The loneliness was overwhelming as he missed his old friends terribly.\n\nDespite feeling lonely, Jake knew he had to be resilient. He decided he had to take a proactive approach to make friends in his new surroundings. He joined a local basketball team, attended neighborhood events, and even volunteered at a local library. Each of these steps were small but significant efforts in his quest to feel less alone.\n\nMeanwhile, Lucy, a popular and friendly girl in Jake's class, noticed his efforts to integrate. She admired Jake's resilience and decided to lend him a helping hand. Her friendly nature and popularity among classmates made her the perfect person to bridge the gap between Jake and the rest of the class.\n\nSeizing an opportunity, Lucy invited Jake to a party she was hosting. Jake was nervous but excited. At the party, Lucy made sure to introduce Jake to many of his classmates. Jake found himself having actual fun, laughing, and engaging in conversations with his peers. This event marked the beginning of many friendships for Jake.\n\nOver time, Jake's friend circle grew. Thanks to Lucy's help and his own efforts, he now had an abundant number of friends. He was no longer the lonely new kid in the city. He felt a sense of belonging and was genuinely happy. He was grateful to Lucy for her help in his journey of making friends in the new city. The resilience he had shown in overcoming his loneliness turned his unfamiliar surroundings into a place he could call home.",
+    "passage_title": "Title: \"New City, New Friends\"",
+    "grade": "6",
+    "genre": "narrative",
+    "band": "late",
+    "form_id": "COMP-6-LATE-001",
+    "actual_word_count": 291,
+    "target_word_count": 325,
+    "target_lexile": "1030L-1180L",
+    "total_questions": 14,
+    "question_coverage_verified": true,
+    "text_structure": "chronological",
+    "vocabulary_words": [
+      "resilient",
+      "abundant"
+    ],
+    "vocabulary_verified": true,
+    "validation": {
+      "word_count_valid": false,
+      "word_count_actual": 291,
+      "word_count_target": 325,
+      "word_count_acceptable_range": [
+        305,
+        345
+      ],
+      "lexile_target": "1030L-1180L",
+      "lexile_note": "Lexile cannot be automatically validated (requires external tool)",
+      "vocabulary_present": true,
+      "vocabulary_found": [
+        "resilient",
+        "abundant"
+      ],
+      "vocabulary_missing": [],
+      "scenes_covered": true,
+      "scenes_expected": 5,
+      "scenes_identifiable": 5,
+      "validation_passed": false,
+      "warnings": [
+        "Word count 291 outside acceptable range 305-345"
+      ]
+    },
+    "qrm_form_id": "COMP-6-LATE-QRM-1768503974126-2799",
+    "pib_form_id": "COMP-6-LATE-PIB-001",
+    "generated_at": "2026-01-15T14:09:17.016728",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 1 (Lexile Ranges)": "Target: 1030L-1180L",
+      "Bank 3 (Comp Word Counts)": "Target: 325 words",
+      "Bank 7 (Text Structures)": "Structure: chronological"
+    }
+  },
+  "questions": {
+    "questions": [
+      {
+        "question_number": 1,
+        "question_text": "What is the main problem that Jake, a sixth-grader, is facing after moving to a new school in the city?",
+        "question_type": "literal",
+        "cognitive_demand": "CognitiveDemand.LOW",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "He is struggling to make new friends",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "He is having difficulty with his studies",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "He is having trouble finding his way around the new city",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "D",
+            "text": "He is being bullied by his classmates",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "beginning",
+        "evidence_text": "Jake, a sixth-grader, stood alone in the bustling schoolyard of his new school, located in the heart of the city. He had just moved to this unfamiliar place and was struggling to make new friends.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 2,
+        "question_text": "How did Jake initially react to feeling lonely at his new school?",
+        "question_type": "inferential",
+        "cognitive_demand": "CognitiveDemand.MEDIUM",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "He decided to take proactive steps to make friends",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "He chose to ignore his feelings and focus on his studies",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "He confronted his classmates about not including him",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "He asked his parents to move back to their old town",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "beginning",
+        "evidence_text": "Despite feeling lonely, Jake knew he had to be resilient. He decided he had to take a proactive approach to make friends in his new surroundings. He joined a local basketball team, attended neighborhood events, and even volunteered at a local library.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 3,
+        "question_text": "What is the correct sequence of events in Jake's journey to make friends at his new school?",
+        "question_type": "text_structure",
+        "cognitive_demand": "CognitiveDemand.MEDIUM",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Jake feels lonely, takes steps to make friends, Lucy notices and helps him, Jake starts making friends",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Lucy helps Jake, Jake feels lonely, Jake starts making friends, Jake takes steps to make friends",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "Jake starts making friends, Lucy helps Jake, Jake feels lonely, Jake takes steps to make friends",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "Jake takes steps to make friends, Jake starts making friends, Lucy helps Jake, Jake feels lonely",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "beginning to middle",
+        "evidence_text": "Jake, a sixth-grader, stood alone in the bustling schoolyard of his new school... He decided he had to take a proactive approach to make friends in his new surroundings... Meanwhile, Lucy, a popular and friendly girl in Jake's class, noticed his efforts to integrate... This event marked the beginning of many friendships for Jake.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 4,
+        "question_text": "What does the term 'resilient' most likely mean in the context of this passage?",
+        "question_type": "vocabulary",
+        "cognitive_demand": "CognitiveDemand.LOW",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Being able to recover quickly from difficulties",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Being alone and isolated",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          },
+          {
+            "letter": "C",
+            "text": "Being popular among classmates",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "Being knowledgeable about many subjects",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "Despite feeling lonely, Jake knew he had to be resilient. He decided he had to take a proactive approach to make friends in his new surroundings.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 5,
+        "question_text": "What did Jake do to try and make new friends in his new city?",
+        "question_type": "literal",
+        "cognitive_demand": "CognitiveDemand.MEDIUM",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "He joined a local basketball team, attended neighborhood events, and volunteered at a local library",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "He started a new club at school",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "He started working at a local coffee shop",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "He kept to himself and avoided social events",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "He joined a local basketball team, attended neighborhood events, and even volunteered at a local library. Each of these steps were small but significant efforts in his quest to feel less alone.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 6,
+        "question_text": "Why did Lucy decide to help Jake make friends in his new school?",
+        "question_type": "inferential",
+        "cognitive_demand": "CognitiveDemand.HIGH",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "She admired Jake's resilience and noticed his efforts to integrate",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "She was assigned by the teacher to help Jake",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "She was Jake's neighbor and felt obliged to help him",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "She wanted to increase her own popularity",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle to end",
+        "evidence_text": "Lucy, a popular and friendly girl in Jake's class, noticed his efforts to integrate. She admired Jake's resilience and decided to lend him a helping hand.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 7,
+        "question_text": "What is the main idea of the passage?",
+        "question_type": "main_idea",
+        "cognitive_demand": "CognitiveDemand.HIGH",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Jake uses resilience and takes proactive steps to overcome loneliness and make friends in his new city.",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Jake is an exceptional basketball player who is new to city.",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "Lucy is a popular girl who helps new kids adjust to the city life.",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "Jake struggles with loneliness and could not make any friends in his new city.",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "whole passage",
+        "evidence_text": "Jake, a sixth-grader, stood alone in the bustling schoolyard of his new school, located in the heart of the city...Despite feeling lonely, Jake knew he had to be resilient...He joined a local basketball team, attended neighborhood events, and even volunteered at a local library...Meanwhile, Lucy, a popular and friendly girl in Jake's class, noticed his efforts to integrate...Seizing an opportunity, Lucy invited Jake to a party she was hosting...Over time, Jake's friend circle grew...He was grateful to Lucy for her help in his journey of making friends in the new city.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 8,
+        "question_text": "What was the impact of Jake's resilience and Lucy's help on his situation in the new city?",
+        "question_type": "main_idea",
+        "cognitive_demand": "CognitiveDemand.MEDIUM",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Jake made many friends and no longer felt lonely",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Jake became the most popular kid in his class",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "Jake started to miss his old friends less",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "Jake decided to move back to his old city",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "end",
+        "evidence_text": "Over time, Jake's friend circle grew. Thanks to Lucy's help and his own efforts, he now had an abundant number of friends. He was no longer the lonely new kid in the city. He felt a sense of belonging and was genuinely happy.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 9,
+        "question_text": "What was the final outcome for Jake in his new school?",
+        "question_type": "literal",
+        "cognitive_demand": "CognitiveDemand.HIGH",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Jake made many friends and felt a sense of belonging in his new city.",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Jake became the most popular student in his new school.",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "Jake decided to move back to his old city due to loneliness.",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "Jake remained lonely and struggled to make friends in his new school.",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "end",
+        "evidence_text": "Over time, Jake's friend circle grew. Thanks to Lucy's help and his own efforts, he now had an abundant number of friends. He was no longer the lonely new kid in the city. He felt a sense of belonging and was genuinely happy.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 10,
+        "question_text": "What does the word 'abundant' mean in the context of this passage?",
+        "question_type": "vocabulary",
+        "cognitive_demand": "CognitiveDemand.MEDIUM",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "a large number",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "a small number",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          },
+          {
+            "letter": "C",
+            "text": "a decreasing number",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "D",
+            "text": "an average number",
+            "is_correct": false,
+            "distractor_type": "detail"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "end",
+        "evidence_text": "Thanks to Lucy's help and his own efforts, he now had an abundant number of friends.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 11,
+        "question_text": "How did Jake feel after making new friends in the city?",
+        "question_type": "inferential",
+        "cognitive_demand": "CognitiveDemand.MEDIUM",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Happy and grateful",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Scared and anxious",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "Angry and frustrated",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "D",
+            "text": "Indifferent and detached",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "end",
+        "evidence_text": "He felt a sense of belonging and was genuinely happy. He was grateful to Lucy for her help in his journey of making friends in the new city.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 12,
+        "question_text": "What significant event happened in the middle of the story?",
+        "question_type": "literal",
+        "cognitive_demand": "CognitiveDemand.LOW",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Lucy invited Jake to a party she was hosting",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Jake joined a football team",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "Jake moved back to his old city",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "Lucy moved away from the city",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "Seizing an opportunity, Lucy invited Jake to a party she was hosting.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 13,
+        "question_text": "Which statement best describes the structure of the text?",
+        "question_type": "text_structure",
+        "cognitive_demand": "CognitiveDemand.HIGH",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "The text outlines a sequential series of events leading to Jake's integration into his new school.",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "The text uses a flashback to show how Jake had many friends in his old school.",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "The text foreshadows Jake's popularity in his new school from the beginning.",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "D",
+            "text": "The text presents events in a non-linear fashion, jumping back and forth between past and present.",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "whole passage",
+        "evidence_text": "Jake, a sixth-grader, stood alone in the bustling schoolyard of his new school, located in the heart of the city. He had just moved to this unfamiliar place and was struggling to make new friends. The loneliness was overwhelming as he missed his old friends terribly. Despite feeling lonely, Jake knew he had to be resilient. He decided he had to take a proactive approach to make friends in his new surroundings. He joined a local basketball team, attended neighborhood events, and even volunteered at a local library. Each of these steps were small but significant efforts in his quest to feel less alone. Meanwhile, Lucy, a popular and friendly girl in Jake's class, noticed his efforts to integrate. She admired Jake's resilience and decided to lend him a helping hand. Her friendly nature and popularity among classmates made her the perfect person to bridge the gap between Jake and the rest of the class. Seizing an opportunity, Lucy invited Jake to a party she was hosting. Jake was nervous but excited. At the party, Lucy made sure to introduce Jake to many of his classmates. Jake found himself having actual fun, laughing, and engaging in conversations with his peers. This event marked the beginning of many friendships for Jake. Over time, Jake's friend circle grew. Thanks to Lucy's help and his own efforts, he now had an abundant number of friends. He was no longer the lonely new kid in the city. He felt a sense of belonging and was genuinely happy. He was grateful to Lucy for her help in his journey of making friends in the new city. The resilience he had shown in overcoming his loneliness turned his unfamiliar surroundings into a place he could call home.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 14,
+        "question_text": "Based on the passage, what can be inferred about Lucy's personality?",
+        "question_type": "inferential",
+        "cognitive_demand": "CognitiveDemand.HIGH",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "She is friendly and helpful",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "She is introverted and shy",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          },
+          {
+            "letter": "C",
+            "text": "She is competitive and aggressive",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "D",
+            "text": "She is indifferent and uncaring",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "whole passage",
+        "evidence_text": "Lucy, a popular and friendly girl in Jake's class, noticed his efforts to integrate. She admired Jake's resilience and decided to lend him a helping hand. Her friendly nature and popularity among classmates made her the perfect person to bridge the gap between Jake and the rest of the class.",
+        "points_possible": 1
+      }
+    ],
+    "total_questions": 14,
+    "answer_key": {
+      "questions": [
+        {
+          "question_number": 1,
+          "question_text": "What is the main problem that Jake, a sixth-grader, is facing after moving to a new school in the city?",
+          "question_type": "literal",
+          "cognitive_demand": "CognitiveDemand.LOW",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "He is struggling to make new friends",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "He is having difficulty with his studies",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "He is having trouble finding his way around the new city",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "D",
+              "text": "He is being bullied by his classmates",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "beginning",
+          "evidence_text": "Jake, a sixth-grader, stood alone in the bustling schoolyard of his new school, located in the heart of the city. He had just moved to this unfamiliar place and was struggling to make new friends.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 2,
+          "question_text": "How did Jake initially react to feeling lonely at his new school?",
+          "question_type": "inferential",
+          "cognitive_demand": "CognitiveDemand.MEDIUM",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "He decided to take proactive steps to make friends",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "He chose to ignore his feelings and focus on his studies",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "He confronted his classmates about not including him",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "He asked his parents to move back to their old town",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "beginning",
+          "evidence_text": "Despite feeling lonely, Jake knew he had to be resilient. He decided he had to take a proactive approach to make friends in his new surroundings. He joined a local basketball team, attended neighborhood events, and even volunteered at a local library.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 3,
+          "question_text": "What is the correct sequence of events in Jake's journey to make friends at his new school?",
+          "question_type": "text_structure",
+          "cognitive_demand": "CognitiveDemand.MEDIUM",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Jake feels lonely, takes steps to make friends, Lucy notices and helps him, Jake starts making friends",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Lucy helps Jake, Jake feels lonely, Jake starts making friends, Jake takes steps to make friends",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "Jake starts making friends, Lucy helps Jake, Jake feels lonely, Jake takes steps to make friends",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "Jake takes steps to make friends, Jake starts making friends, Lucy helps Jake, Jake feels lonely",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "beginning to middle",
+          "evidence_text": "Jake, a sixth-grader, stood alone in the bustling schoolyard of his new school... He decided he had to take a proactive approach to make friends in his new surroundings... Meanwhile, Lucy, a popular and friendly girl in Jake's class, noticed his efforts to integrate... This event marked the beginning of many friendships for Jake.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 4,
+          "question_text": "What does the term 'resilient' most likely mean in the context of this passage?",
+          "question_type": "vocabulary",
+          "cognitive_demand": "CognitiveDemand.LOW",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Being able to recover quickly from difficulties",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Being alone and isolated",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            },
+            {
+              "letter": "C",
+              "text": "Being popular among classmates",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "Being knowledgeable about many subjects",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "Despite feeling lonely, Jake knew he had to be resilient. He decided he had to take a proactive approach to make friends in his new surroundings.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 5,
+          "question_text": "What did Jake do to try and make new friends in his new city?",
+          "question_type": "literal",
+          "cognitive_demand": "CognitiveDemand.MEDIUM",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "He joined a local basketball team, attended neighborhood events, and volunteered at a local library",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "He started a new club at school",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "He started working at a local coffee shop",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "He kept to himself and avoided social events",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "He joined a local basketball team, attended neighborhood events, and even volunteered at a local library. Each of these steps were small but significant efforts in his quest to feel less alone.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 6,
+          "question_text": "Why did Lucy decide to help Jake make friends in his new school?",
+          "question_type": "inferential",
+          "cognitive_demand": "CognitiveDemand.HIGH",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "She admired Jake's resilience and noticed his efforts to integrate",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "She was assigned by the teacher to help Jake",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "She was Jake's neighbor and felt obliged to help him",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "She wanted to increase her own popularity",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle to end",
+          "evidence_text": "Lucy, a popular and friendly girl in Jake's class, noticed his efforts to integrate. She admired Jake's resilience and decided to lend him a helping hand.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 7,
+          "question_text": "What is the main idea of the passage?",
+          "question_type": "main_idea",
+          "cognitive_demand": "CognitiveDemand.HIGH",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Jake uses resilience and takes proactive steps to overcome loneliness and make friends in his new city.",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Jake is an exceptional basketball player who is new to city.",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "Lucy is a popular girl who helps new kids adjust to the city life.",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "Jake struggles with loneliness and could not make any friends in his new city.",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "whole passage",
+          "evidence_text": "Jake, a sixth-grader, stood alone in the bustling schoolyard of his new school, located in the heart of the city...Despite feeling lonely, Jake knew he had to be resilient...He joined a local basketball team, attended neighborhood events, and even volunteered at a local library...Meanwhile, Lucy, a popular and friendly girl in Jake's class, noticed his efforts to integrate...Seizing an opportunity, Lucy invited Jake to a party she was hosting...Over time, Jake's friend circle grew...He was grateful to Lucy for her help in his journey of making friends in the new city.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 8,
+          "question_text": "What was the impact of Jake's resilience and Lucy's help on his situation in the new city?",
+          "question_type": "main_idea",
+          "cognitive_demand": "CognitiveDemand.MEDIUM",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Jake made many friends and no longer felt lonely",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Jake became the most popular kid in his class",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "Jake started to miss his old friends less",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "Jake decided to move back to his old city",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "end",
+          "evidence_text": "Over time, Jake's friend circle grew. Thanks to Lucy's help and his own efforts, he now had an abundant number of friends. He was no longer the lonely new kid in the city. He felt a sense of belonging and was genuinely happy.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 9,
+          "question_text": "What was the final outcome for Jake in his new school?",
+          "question_type": "literal",
+          "cognitive_demand": "CognitiveDemand.HIGH",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Jake made many friends and felt a sense of belonging in his new city.",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Jake became the most popular student in his new school.",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "Jake decided to move back to his old city due to loneliness.",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "Jake remained lonely and struggled to make friends in his new school.",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "end",
+          "evidence_text": "Over time, Jake's friend circle grew. Thanks to Lucy's help and his own efforts, he now had an abundant number of friends. He was no longer the lonely new kid in the city. He felt a sense of belonging and was genuinely happy.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 10,
+          "question_text": "What does the word 'abundant' mean in the context of this passage?",
+          "question_type": "vocabulary",
+          "cognitive_demand": "CognitiveDemand.MEDIUM",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "a large number",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "a small number",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            },
+            {
+              "letter": "C",
+              "text": "a decreasing number",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "D",
+              "text": "an average number",
+              "is_correct": false,
+              "distractor_type": "detail"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "end",
+          "evidence_text": "Thanks to Lucy's help and his own efforts, he now had an abundant number of friends.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 11,
+          "question_text": "How did Jake feel after making new friends in the city?",
+          "question_type": "inferential",
+          "cognitive_demand": "CognitiveDemand.MEDIUM",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Happy and grateful",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Scared and anxious",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "Angry and frustrated",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "D",
+              "text": "Indifferent and detached",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "end",
+          "evidence_text": "He felt a sense of belonging and was genuinely happy. He was grateful to Lucy for her help in his journey of making friends in the new city.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 12,
+          "question_text": "What significant event happened in the middle of the story?",
+          "question_type": "literal",
+          "cognitive_demand": "CognitiveDemand.LOW",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Lucy invited Jake to a party she was hosting",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Jake joined a football team",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "Jake moved back to his old city",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "Lucy moved away from the city",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "Seizing an opportunity, Lucy invited Jake to a party she was hosting.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 13,
+          "question_text": "Which statement best describes the structure of the text?",
+          "question_type": "text_structure",
+          "cognitive_demand": "CognitiveDemand.HIGH",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "The text outlines a sequential series of events leading to Jake's integration into his new school.",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "The text uses a flashback to show how Jake had many friends in his old school.",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "The text foreshadows Jake's popularity in his new school from the beginning.",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "D",
+              "text": "The text presents events in a non-linear fashion, jumping back and forth between past and present.",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "whole passage",
+          "evidence_text": "Jake, a sixth-grader, stood alone in the bustling schoolyard of his new school, located in the heart of the city. He had just moved to this unfamiliar place and was struggling to make new friends. The loneliness was overwhelming as he missed his old friends terribly. Despite feeling lonely, Jake knew he had to be resilient. He decided he had to take a proactive approach to make friends in his new surroundings. He joined a local basketball team, attended neighborhood events, and even volunteered at a local library. Each of these steps were small but significant efforts in his quest to feel less alone. Meanwhile, Lucy, a popular and friendly girl in Jake's class, noticed his efforts to integrate. She admired Jake's resilience and decided to lend him a helping hand. Her friendly nature and popularity among classmates made her the perfect person to bridge the gap between Jake and the rest of the class. Seizing an opportunity, Lucy invited Jake to a party she was hosting. Jake was nervous but excited. At the party, Lucy made sure to introduce Jake to many of his classmates. Jake found himself having actual fun, laughing, and engaging in conversations with his peers. This event marked the beginning of many friendships for Jake. Over time, Jake's friend circle grew. Thanks to Lucy's help and his own efforts, he now had an abundant number of friends. He was no longer the lonely new kid in the city. He felt a sense of belonging and was genuinely happy. He was grateful to Lucy for her help in his journey of making friends in the new city. The resilience he had shown in overcoming his loneliness turned his unfamiliar surroundings into a place he could call home.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 14,
+          "question_text": "Based on the passage, what can be inferred about Lucy's personality?",
+          "question_type": "inferential",
+          "cognitive_demand": "CognitiveDemand.HIGH",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "She is friendly and helpful",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "She is introverted and shy",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            },
+            {
+              "letter": "C",
+              "text": "She is competitive and aggressive",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "D",
+              "text": "She is indifferent and uncaring",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "whole passage",
+          "evidence_text": "Lucy, a popular and friendly girl in Jake's class, noticed his efforts to integrate. She admired Jake's resilience and decided to lend him a helping hand. Her friendly nature and popularity among classmates made her the perfect person to bridge the gap between Jake and the rest of the class.",
+          "points_possible": 1
+        }
+      ],
+      "total_questions": 14,
+      "total_points": 14,
+      "answer_key_summary": {
+        "1": "A",
+        "2": "A",
+        "3": "A",
+        "4": "A",
+        "5": "A",
+        "6": "A",
+        "7": "A",
+        "8": "A",
+        "9": "A",
+        "10": "A",
+        "11": "A",
+        "12": "A",
+        "13": "A",
+        "14": "A"
+      }
+    },
+    "grade": "6",
+    "genre": "narrative",
+    "band": "late",
+    "form_id": "COMP-6-LATE-QUESTIONS-001",
+    "type_distribution": {
+      "literal": 4,
+      "inferential": 4,
+      "text_structure": 2,
+      "vocabulary": 2,
+      "main_idea": 2
+    },
+    "cognitive_distribution": {
+      "CognitiveDemand.LOW": 3,
+      "CognitiveDemand.MEDIUM": 6,
+      "CognitiveDemand.HIGH": 5
+    },
+    "qrm_form_id": "COMP-6-LATE-QRM-1768503974126-2799",
+    "passage_form_id": "COMP-6-LATE-001",
+    "num_answer_options": 4,
+    "generated_at": "2026-01-15T14:12:12.816164",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 4 (Comprehension Blueprint)": "Via QRM for question specifications",
+      "Bank 6 (Answer Options)": "Grade 6 → 4 answer options"
+    }
+  },
+  "recall_scoring": {
+    "total_sentences": 21,
+    "max_total_points": 42,
+    "sentences": [
+      {
+        "sentence_number": 1,
+        "sentence_text": "Jake, a sixth-grader, stood alone in the bustling schoolyard of his new school, located in the heart of the city",
+        "character_name": "Jake",
+        "key_detail": "Stands alone in new school's schoolyard",
+        "scoring_note": "2 pts: Jake + stands alone | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 2,
+        "sentence_text": "He had just moved to this unfamiliar place and was struggling to make new friends",
+        "character_name": "He (Jake)",
+        "key_detail": "Just moved, struggling to make friends",
+        "scoring_note": "2 pts: He (Jake) + moved & struggling to make friends | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 3,
+        "sentence_text": "The loneliness was overwhelming as he missed his old friends terribly",
+        "character_name": "He (Jake)",
+        "key_detail": "Feels overwhelmed and misses old friends",
+        "scoring_note": "2 pts: He (Jake) + feels overwhelmed & misses friends | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 4,
+        "sentence_text": "Despite feeling lonely, Jake knew he had to be resilient",
+        "character_name": "Jake",
+        "key_detail": "Feels lonely but decides to be resilient",
+        "scoring_note": "2 pts: Jake + feels lonely but resilient | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 5,
+        "sentence_text": "He decided he had to take a proactive approach to make friends in his new surroundings",
+        "character_name": "He (Jake)",
+        "key_detail": "Decides to be proactive to make friends",
+        "scoring_note": "2 pts: He (Jake) + decides to be proactive | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 6,
+        "sentence_text": "He joined a local basketball team, attended neighborhood events, and even volunteered at a local library",
+        "character_name": "He (Jake)",
+        "key_detail": "Joins team, attends events, volunteers",
+        "scoring_note": "2 pts: He (Jake) + joins team, attends events, volunteers | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 7,
+        "sentence_text": "Each of these steps were small but significant efforts in his quest to feel less alone",
+        "character_name": "His (Jake's)",
+        "key_detail": "Steps are small yet significant efforts",
+        "scoring_note": "2 pts: His (Jake's) + small yet significant efforts | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 8,
+        "sentence_text": "Meanwhile, Lucy, a popular and friendly girl in Jake's class, noticed his efforts to integrate",
+        "character_name": "Lucy",
+        "key_detail": "Notices Jake's efforts to integrate",
+        "scoring_note": "2 pts: Lucy + notices Jake's efforts | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 9,
+        "sentence_text": "She admired Jake's resilience and decided to lend him a helping hand",
+        "character_name": "She (Lucy)",
+        "key_detail": "Admires Jake's resilience, helps him",
+        "scoring_note": "2 pts: She (Lucy) + admires Jake, helps him | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 10,
+        "sentence_text": "Her friendly nature and popularity among classmates made her the perfect person to bridge the gap between Jake and the rest of the class",
+        "character_name": "Her (Lucy)",
+        "key_detail": "Perfect person to bridge Jake and class",
+        "scoring_note": "2 pts: Her (Lucy) + perfect person to bridge gap | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 11,
+        "sentence_text": "Seizing an opportunity, Lucy invited Jake to a party she was hosting",
+        "character_name": "Lucy",
+        "key_detail": "Invites Jake to a party",
+        "scoring_note": "2 pts: Lucy + invites Jake to party | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 12,
+        "sentence_text": "Jake was nervous but excited",
+        "character_name": "Jake",
+        "key_detail": "Feels nervous but excited",
+        "scoring_note": "2 pts: Jake + feels nervous but excited | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 13,
+        "sentence_text": "At the party, Lucy made sure to introduce Jake to many of his classmates",
+        "character_name": "Lucy",
+        "key_detail": "Introduces Jake to classmates at party",
+        "scoring_note": "2 pts: Lucy + introduces Jake to classmates | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 14,
+        "sentence_text": "Jake found himself having actual fun, laughing, and engaging in conversations with his peers",
+        "character_name": "Jake",
+        "key_detail": "Has fun, laughs, converses at party",
+        "scoring_note": "2 pts: Jake + has fun, laughs, converses | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 15,
+        "sentence_text": "This event marked the beginning of many friendships for Jake",
+        "character_name": "Jake",
+        "key_detail": "Event marks beginning of many friendships",
+        "scoring_note": "2 pts: Jake + beginning of friendships | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 16,
+        "sentence_text": "Over time, Jake's friend circle grew",
+        "character_name": "Jake",
+        "key_detail": "Friend circle grows over time",
+        "scoring_note": "2 pts: Jake + friend circle grows | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 17,
+        "sentence_text": "Thanks to Lucy's help and his own efforts, he now had an abundant number of friends",
+        "character_name": "He (Jake)",
+        "key_detail": "Has abundant friends due to Lucy's help",
+        "scoring_note": "2 pts: He (Jake) + abundant friends due to Lucy | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 18,
+        "sentence_text": "He was no longer the lonely new kid in the city",
+        "character_name": "He (Jake)",
+        "key_detail": "No longer lonely in the city",
+        "scoring_note": "2 pts: He (Jake) + no longer lonely | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 19,
+        "sentence_text": "He felt a sense of belonging and was genuinely happy",
+        "character_name": "He (Jake)",
+        "key_detail": "Feels belonging and genuine happiness",
+        "scoring_note": "2 pts: He (Jake) + feels belonging & happiness | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 20,
+        "sentence_text": "He was grateful to Lucy for her help in his journey of making friends in the new city",
+        "character_name": "He (Jake)",
+        "key_detail": "Grateful to Lucy for help making friends",
+        "scoring_note": "2 pts: He (Jake) + grateful to Lucy | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 21,
+        "sentence_text": "The resilience he had shown in overcoming his loneliness turned his unfamiliar surroundings into a place he could call home",
+        "character_name": "He (Jake)",
+        "key_detail": "Resilience changes unfamiliar place into home",
+        "scoring_note": "2 pts: He (Jake) + resilience makes place home | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      }
+    ],
+    "general_instructions": "For each sentence, award 2 points if student recalls BOTH the character and key detail, 1 point for either one, 0 points for neither. Allow paraphrasing.",
+    "passage_title": "Title: \"New City, New Friends\"",
+    "grade": "6",
+    "genre": "narrative",
+    "form_id": "RECALL-COMP-6-LATE-001",
+    "passage_form_id": "COMP-6-LATE-001",
+    "created_at": "2026-01-15T14:13:15.269551",
+    "schema_version": "2026.1"
+  }
+}

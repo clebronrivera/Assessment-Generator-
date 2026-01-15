@@ -1,0 +1,966 @@
+{
+  "metadata": {
+    "package_id": "COMP-PKG-3-20260115-100757",
+    "assessment_type": "comprehension",
+    "grade": "3",
+    "band": "early",
+    "genre": "narrative",
+    "created_at": "2026-01-15T10:07:57.533069",
+    "schema_version": "2026.1",
+    "component_forms": {
+      "passage": "COMP-3-EARLY-001",
+      "qrm": "COMP-3-EARLY-QRM-1768489478220-8441",
+      "pib": "COMP-3-EARLY-PIB-001",
+      "questions": "COMP-3-EARLY-QUESTIONS-001",
+      "recall_scoring": "RECALL-COMP-3-EARLY-001"
+    },
+    "banks_used": [
+      "Bank 6 (Answer Options)",
+      "Bank 4 (Comprehension Blueprint)",
+      "Bank 3 (Comp Word Counts)",
+      "Bank 7 (Text Structures)",
+      "Bank 1 (Lexile Ranges)"
+    ],
+    "stats": {
+      "passage_word_count": 166,
+      "lexile_target": "480L-645L",
+      "total_questions": 8,
+      "total_points_questions": 8,
+      "total_sentences_recall": 13,
+      "total_points_recall": 26,
+      "components_included": 5
+    }
+  },
+  "package_type": "comprehension",
+  "ready_for_use": true,
+  "qrm": {
+    "questions": [
+      {
+        "question_number": 1,
+        "question_type": "explicit",
+        "cognitive_demand": "low",
+        "evidence_location": "beginning",
+        "content_requirement": "Passage must state the main character's name and a physical description in the first paragraph",
+        "distractor_guidance": "Use physical descriptions of other characters from the passage; use common names that are not in the story"
+      },
+      {
+        "question_number": 2,
+        "question_type": "explicit",
+        "cognitive_demand": "low",
+        "evidence_location": "middle",
+        "content_requirement": "Passage must state the main problem or conflict in the story",
+        "distractor_guidance": "Use minor problems or conflicts from the story; use possible problems that are not stated in the story"
+      },
+      {
+        "question_number": 3,
+        "question_type": "implicit",
+        "cognitive_demand": "medium",
+        "evidence_location": "middle",
+        "content_requirement": "Passage must provide a scene where the main character shows a specific emotion but does not name it",
+        "distractor_guidance": "Use other emotions the character experiences; use emotions that are not relevant to the scene"
+      },
+      {
+        "question_number": 4,
+        "question_type": "explicit",
+        "cognitive_demand": "medium",
+        "evidence_location": "end",
+        "content_requirement": "Passage must state the resolution of the main conflict or problem",
+        "distractor_guidance": "Use resolutions of minor conflicts from the story; use possible resolutions that are not stated in the story"
+      },
+      {
+        "question_number": 5,
+        "question_type": "implicit",
+        "cognitive_demand": "medium",
+        "evidence_location": "beginning",
+        "content_requirement": "Passage must describe the setting in detail without directly stating where it is",
+        "distractor_guidance": "Use other locations mentioned in the story; use common locations that are not in the story"
+      },
+      {
+        "question_number": 6,
+        "question_type": "explicit",
+        "cognitive_demand": "high",
+        "evidence_location": "middle",
+        "content_requirement": "Passage must include a dialogue where the main character reveals a secret",
+        "distractor_guidance": "Use other secrets or information revealed in the story; use possible secrets that are not stated in the story"
+      },
+      {
+        "question_number": 7,
+        "question_type": "implicit",
+        "cognitive_demand": "high",
+        "evidence_location": "end",
+        "content_requirement": "Passage must show the main character's change in perspective or growth without directly stating it",
+        "distractor_guidance": "Use other character's growth; use growth or changes that are not relevant to the character"
+      },
+      {
+        "question_number": 8,
+        "question_type": "implicit",
+        "cognitive_demand": "low",
+        "evidence_location": "beginning",
+        "content_requirement": "Passage must hint at the main character's motivation or goal without directly stating it",
+        "distractor_guidance": "Use other character's goals; use goals that are not relevant to the character"
+      }
+    ],
+    "total_questions": 8,
+    "type_distribution": {
+      "explicit": 4,
+      "implicit": 4
+    },
+    "cognitive_distribution": {
+      "low": 3,
+      "medium": 3,
+      "high": 2
+    },
+    "evidence_distribution": {
+      "beginning": 3,
+      "middle": 3,
+      "end": 2
+    },
+    "required_content_elements": [
+      "Character introduction with name and physical description",
+      "Detailed setting description",
+      "Main conflict or problem",
+      "Resolution of the main conflict or problem",
+      "Emotion scene",
+      "Dialogue revealing a secret",
+      "Character growth or change in perspective",
+      "Character motivation or goal"
+    ],
+    "required_vocabulary": [],
+    "required_structure_elements": [
+      "chronological sequence",
+      "cause-effect relationship"
+    ],
+    "grade": "3",
+    "genre": "narrative",
+    "band": "early",
+    "form_id": "COMP-3-EARLY-QRM-1768489478220-8441",
+    "generated_at": "2026-01-15T10:05:13.695219",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 4 (Comprehension Blueprint)": "Grade 3 question specifications"
+    }
+  },
+  "pib": {
+    "scenes": [
+      {
+        "scene_number": 1,
+        "scene_type": "opening",
+        "location_in_passage": "beginning",
+        "purpose": "Introduce main character and setting",
+        "content_description": "The story starts with Sam, a tall kid with curly hair, waking up early in the morning. His room is filled with science posters and robot models, hinting at his love for robotics.",
+        "required_details": [
+          "State Sam's name and physical description",
+          "Describe Sam's room filled with science and robot paraphernalia"
+        ],
+        "supports_questions": [
+          1,
+          5,
+          8
+        ],
+        "vocabulary_placement": []
+      },
+      {
+        "scene_number": 2,
+        "scene_type": "action",
+        "location_in_passage": "middle",
+        "purpose": "Introduce the main problem",
+        "content_description": "Sam heads to school and learns about the upcoming Science Fair. He is excited but also nervous as he has never participated in a fair before.",
+        "required_details": [
+          "State the main problem: Sam's nervousness about participating in the Science Fair"
+        ],
+        "supports_questions": [
+          2,
+          3
+        ],
+        "vocabulary_placement": []
+      },
+      {
+        "scene_number": 3,
+        "scene_type": "dialogue",
+        "location_in_passage": "middle",
+        "purpose": "Reveal a secret",
+        "content_description": "In a conversation with his best friend, Sam reveals that he has been working on a special robot for the past few months.",
+        "required_details": [
+          "Sam reveals his secret about the special robot"
+        ],
+        "supports_questions": [
+          6
+        ],
+        "vocabulary_placement": []
+      },
+      {
+        "scene_number": 4,
+        "scene_type": "action",
+        "location_in_passage": "end",
+        "purpose": "Resolve the main conflict",
+        "content_description": "Sam gathers his courage, finishes his robot, and presents it at the Science Fair. His robot is a hit, and he wins the first prize.",
+        "required_details": [
+          "State the resolution of the main conflict: Sam's success at the Science Fair"
+        ],
+        "supports_questions": [
+          4,
+          7
+        ],
+        "vocabulary_placement": []
+      }
+    ],
+    "total_scenes": 4,
+    "characters": [
+      {
+        "name": "Sam",
+        "role": "main",
+        "key_traits": [
+          "intelligent",
+          "creative",
+          "determined"
+        ],
+        "actions_to_show": [
+          "Sam working on his robot",
+          "Sam presenting his robot at the Science Fair",
+          "Sam receiving the first prize"
+        ],
+        "supports_questions": [
+          1,
+          2,
+          3,
+          4,
+          6,
+          7,
+          8
+        ]
+      }
+    ],
+    "opening_hook": "Sam woke up early in the morning, his room bathed in the soft glow of the rising sun. His tall frame was dwarfed by the towering science posters and robot models that decorated his room.",
+    "central_conflict_or_topic": "Sam's nervousness about participating in the upcoming Science Fair",
+    "resolution_or_conclusion": "Despite his initial nervousness, Sam's determination and passion for robotics help him succeed at the Science Fair.",
+    "vocabulary_targets": [],
+    "vocabulary_contexts": {},
+    "text_structure": "chronological",
+    "organizational_features": [],
+    "question_coverage_map": {
+      "1": [
+        1
+      ],
+      "2": [
+        2
+      ],
+      "3": [
+        2
+      ],
+      "4": [
+        4
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        3
+      ],
+      "7": [
+        4
+      ],
+      "8": [
+        1
+      ]
+    },
+    "target_lexile": "480L-645L",
+    "target_word_count": 175,
+    "actual_grade": "3",
+    "genre": "narrative",
+    "band": "early",
+    "form_id": "COMP-3-EARLY-PIB-001",
+    "qrm_form_id": "COMP-3-EARLY-QRM-1768489478220-8441",
+    "generated_at": "2026-01-15T10:06:07.704884",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 1 (Lexile Ranges)": "Target: 480L-645L",
+      "Bank 3 (Comp Word Counts)": "Target: 175 words",
+      "Bank 7 (Text Structures)": "Structure: chronological"
+    }
+  },
+  "passage": {
+    "passage_text": "Sam, a tall boy with curly hair, woke up early, his room aglow with the rising sun. Surrounded by towering science posters and intricate robot models, his enthusiasm for robotics was clear.\n\nAt school, Sam learned about the upcoming Science Fair. He was thrilled, yet nervous. He had never participated in a fair before, and the thought of it made his stomach churn.\n\nLater, while talking with his best friend, Sam shared a secret. \"I've been working on a special robot for months,\" he confessed, a spark of excitement in his eyes.\n\nIn the following weeks, Sam worked tirelessly on his robot. His determination drove him past his nervousness. Finally, at the Science Fair, Sam displayed his masterpiece. His robot was an instant crowd-pleaser, impressing the judges and earning him the first prize.\n\nDespite his initial apprehension, Sam's creativity, intelligence, and love for robotics led him to victory. His special robot wasn't just a Science Fair project, it was a symbol of his determination and passion.",
+    "passage_title": "Title: Sam's Robotics Triumph",
+    "grade": "3",
+    "genre": "narrative",
+    "band": "early",
+    "form_id": "COMP-3-EARLY-001",
+    "actual_word_count": 166,
+    "target_word_count": 175,
+    "target_lexile": "480L-645L",
+    "total_questions": 8,
+    "question_coverage_verified": true,
+    "text_structure": "chronological",
+    "vocabulary_words": [],
+    "vocabulary_verified": true,
+    "validation": {
+      "word_count_valid": true,
+      "word_count_actual": 166,
+      "word_count_target": 175,
+      "word_count_acceptable_range": [
+        155,
+        195
+      ],
+      "lexile_target": "480L-645L",
+      "lexile_note": "Lexile cannot be automatically validated (requires external tool)",
+      "vocabulary_present": true,
+      "vocabulary_found": [],
+      "vocabulary_missing": [],
+      "scenes_covered": true,
+      "scenes_expected": 4,
+      "scenes_identifiable": 5,
+      "validation_passed": true,
+      "warnings": []
+    },
+    "qrm_form_id": "COMP-3-EARLY-QRM-1768489478220-8441",
+    "pib_form_id": "COMP-3-EARLY-PIB-001",
+    "generated_at": "2026-01-15T10:06:19.241243",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 1 (Lexile Ranges)": "Target: 480L-645L",
+      "Bank 3 (Comp Word Counts)": "Target: 175 words",
+      "Bank 7 (Text Structures)": "Structure: chronological"
+    }
+  },
+  "questions": {
+    "questions": [
+      {
+        "question_number": 1,
+        "question_text": "What is the main character's name and physical description?",
+        "question_type": "explicit",
+        "cognitive_demand": "low",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Sam, a tall boy with curly hair",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Sam, a short boy with straight hair",
+            "is_correct": false,
+            "distractor_type": "physical_description"
+          },
+          {
+            "letter": "C",
+            "text": "Tom, a tall boy with curly hair",
+            "is_correct": false,
+            "distractor_type": "name_confusion"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "beginning",
+        "evidence_text": "Sam, a tall boy with curly hair, woke up early, his room aglow with the rising sun.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 2,
+        "question_text": "What is the main problem or conflict in the story?",
+        "question_type": "explicit",
+        "cognitive_demand": "low",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Sam is nervous about participating in the Science Fair.",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Sam is worried about his robot not working.",
+            "is_correct": false,
+            "distractor_type": "possible_problem"
+          },
+          {
+            "letter": "C",
+            "text": "Sam is afraid he won't wake up early enough.",
+            "is_correct": false,
+            "distractor_type": "minor_problem"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "He had never participated in a fair before, and the thought of it made his stomach churn.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 3,
+        "question_text": "What emotion does Sam show when he shares his secret with his friend?",
+        "question_type": "implicit",
+        "cognitive_demand": "medium",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Excitement",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Fear",
+            "is_correct": false,
+            "distractor_type": "other_emotion"
+          },
+          {
+            "letter": "C",
+            "text": "Sadness",
+            "is_correct": false,
+            "distractor_type": "irrelevant_emotion"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "\"I've been working on a special robot for months,\" he confessed, a spark of excitement in his eyes.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 4,
+        "question_text": "What is the resolution of the main conflict or problem?",
+        "question_type": "explicit",
+        "cognitive_demand": "medium",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Sam's robot impresses the judges and earns him the first prize.",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Sam's robot breaks down at the last minute.",
+            "is_correct": false,
+            "distractor_type": "possible_resolution"
+          },
+          {
+            "letter": "C",
+            "text": "Sam decides not to participate in the Science Fair.",
+            "is_correct": false,
+            "distractor_type": "minor_resolution"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "end",
+        "evidence_text": "His robot was an instant crowd-pleaser, impressing the judges and earning him the first prize.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 5,
+        "question_text": "Where is Sam when he wakes up early?",
+        "question_type": "implicit",
+        "cognitive_demand": "medium",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "In his room",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "At school",
+            "is_correct": false,
+            "distractor_type": "other_location"
+          },
+          {
+            "letter": "C",
+            "text": "In a library",
+            "is_correct": false,
+            "distractor_type": "common_location"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "beginning",
+        "evidence_text": "Sam, a tall boy with curly hair, woke up early, his room aglow with the rising sun.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 6,
+        "question_text": "What secret does Sam reveal to his best friend?",
+        "question_type": "explicit",
+        "cognitive_demand": "high",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "He has been working on a special robot for months.",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "He is scared of robots.",
+            "is_correct": false,
+            "distractor_type": "other_secret"
+          },
+          {
+            "letter": "C",
+            "text": "He doesn't want to participate in the Science Fair.",
+            "is_correct": false,
+            "distractor_type": "possible_secret"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "\"I've been working on a special robot for months,\" he confessed, a spark of excitement in his eyes.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 7,
+        "question_text": "How does Sam's perspective change by the end of the story?",
+        "question_type": "implicit",
+        "cognitive_demand": "high",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "He becomes confident and proud of his work.",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "He decides he no longer likes robotics.",
+            "is_correct": false,
+            "distractor_type": "other_character_growth"
+          },
+          {
+            "letter": "C",
+            "text": "He becomes more nervous and unsure.",
+            "is_correct": false,
+            "distractor_type": "irrelevant_change"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "end",
+        "evidence_text": "His robot was an instant crowd-pleaser, impressing the judges and earning him the first prize.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 8,
+        "question_text": "What is Sam's main motivation at the beginning of the story?",
+        "question_type": "implicit",
+        "cognitive_demand": "low",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "His love for robotics",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "His desire to be popular",
+            "is_correct": false,
+            "distractor_type": "other_character_goal"
+          },
+          {
+            "letter": "C",
+            "text": "His wish to earn money",
+            "is_correct": false,
+            "distractor_type": "irrelevant_goal"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "beginning",
+        "evidence_text": "Surrounded by towering science posters and intricate robot models, his enthusiasm for robotics was clear.",
+        "points_possible": 1
+      }
+    ],
+    "total_questions": 8,
+    "answer_key": {
+      "questions": [
+        {
+          "question_number": 1,
+          "question_text": "What is the main character's name and physical description?",
+          "question_type": "explicit",
+          "cognitive_demand": "low",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Sam, a tall boy with curly hair",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Sam, a short boy with straight hair",
+              "is_correct": false,
+              "distractor_type": "physical_description"
+            },
+            {
+              "letter": "C",
+              "text": "Tom, a tall boy with curly hair",
+              "is_correct": false,
+              "distractor_type": "name_confusion"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "beginning",
+          "evidence_text": "Sam, a tall boy with curly hair, woke up early, his room aglow with the rising sun.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 2,
+          "question_text": "What is the main problem or conflict in the story?",
+          "question_type": "explicit",
+          "cognitive_demand": "low",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Sam is nervous about participating in the Science Fair.",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Sam is worried about his robot not working.",
+              "is_correct": false,
+              "distractor_type": "possible_problem"
+            },
+            {
+              "letter": "C",
+              "text": "Sam is afraid he won't wake up early enough.",
+              "is_correct": false,
+              "distractor_type": "minor_problem"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "He had never participated in a fair before, and the thought of it made his stomach churn.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 3,
+          "question_text": "What emotion does Sam show when he shares his secret with his friend?",
+          "question_type": "implicit",
+          "cognitive_demand": "medium",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Excitement",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Fear",
+              "is_correct": false,
+              "distractor_type": "other_emotion"
+            },
+            {
+              "letter": "C",
+              "text": "Sadness",
+              "is_correct": false,
+              "distractor_type": "irrelevant_emotion"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "\"I've been working on a special robot for months,\" he confessed, a spark of excitement in his eyes.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 4,
+          "question_text": "What is the resolution of the main conflict or problem?",
+          "question_type": "explicit",
+          "cognitive_demand": "medium",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Sam's robot impresses the judges and earns him the first prize.",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Sam's robot breaks down at the last minute.",
+              "is_correct": false,
+              "distractor_type": "possible_resolution"
+            },
+            {
+              "letter": "C",
+              "text": "Sam decides not to participate in the Science Fair.",
+              "is_correct": false,
+              "distractor_type": "minor_resolution"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "end",
+          "evidence_text": "His robot was an instant crowd-pleaser, impressing the judges and earning him the first prize.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 5,
+          "question_text": "Where is Sam when he wakes up early?",
+          "question_type": "implicit",
+          "cognitive_demand": "medium",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "In his room",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "At school",
+              "is_correct": false,
+              "distractor_type": "other_location"
+            },
+            {
+              "letter": "C",
+              "text": "In a library",
+              "is_correct": false,
+              "distractor_type": "common_location"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "beginning",
+          "evidence_text": "Sam, a tall boy with curly hair, woke up early, his room aglow with the rising sun.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 6,
+          "question_text": "What secret does Sam reveal to his best friend?",
+          "question_type": "explicit",
+          "cognitive_demand": "high",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "He has been working on a special robot for months.",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "He is scared of robots.",
+              "is_correct": false,
+              "distractor_type": "other_secret"
+            },
+            {
+              "letter": "C",
+              "text": "He doesn't want to participate in the Science Fair.",
+              "is_correct": false,
+              "distractor_type": "possible_secret"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "\"I've been working on a special robot for months,\" he confessed, a spark of excitement in his eyes.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 7,
+          "question_text": "How does Sam's perspective change by the end of the story?",
+          "question_type": "implicit",
+          "cognitive_demand": "high",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "He becomes confident and proud of his work.",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "He decides he no longer likes robotics.",
+              "is_correct": false,
+              "distractor_type": "other_character_growth"
+            },
+            {
+              "letter": "C",
+              "text": "He becomes more nervous and unsure.",
+              "is_correct": false,
+              "distractor_type": "irrelevant_change"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "end",
+          "evidence_text": "His robot was an instant crowd-pleaser, impressing the judges and earning him the first prize.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 8,
+          "question_text": "What is Sam's main motivation at the beginning of the story?",
+          "question_type": "implicit",
+          "cognitive_demand": "low",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "His love for robotics",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "His desire to be popular",
+              "is_correct": false,
+              "distractor_type": "other_character_goal"
+            },
+            {
+              "letter": "C",
+              "text": "His wish to earn money",
+              "is_correct": false,
+              "distractor_type": "irrelevant_goal"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "beginning",
+          "evidence_text": "Surrounded by towering science posters and intricate robot models, his enthusiasm for robotics was clear.",
+          "points_possible": 1
+        }
+      ],
+      "total_questions": 8,
+      "total_points": 8,
+      "answer_key_summary": {
+        "1": "A",
+        "2": "A",
+        "3": "A",
+        "4": "A",
+        "5": "A",
+        "6": "A",
+        "7": "A",
+        "8": "A"
+      }
+    },
+    "grade": "3",
+    "genre": "narrative",
+    "band": "early",
+    "form_id": "COMP-3-EARLY-QUESTIONS-001",
+    "type_distribution": {
+      "explicit": 4,
+      "implicit": 4
+    },
+    "cognitive_distribution": {
+      "low": 3,
+      "medium": 3,
+      "high": 2
+    },
+    "qrm_form_id": "COMP-3-EARLY-QRM-1768489478220-8441",
+    "passage_form_id": "COMP-3-EARLY-001",
+    "num_answer_options": 3,
+    "generated_at": "2026-01-15T10:07:08.524843",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 4 (Comprehension Blueprint)": "Via QRM for question specifications",
+      "Bank 6 (Answer Options)": "Grade 3 → 3 answer options"
+    }
+  },
+  "recall_scoring": {
+    "total_sentences": 13,
+    "max_total_points": 26,
+    "sentences": [
+      {
+        "sentence_number": 1,
+        "sentence_text": "Sam, a tall boy with curly hair, woke up early, his room aglow with the rising sun",
+        "character_name": "Sam",
+        "key_detail": "Woke up early, room lit by sun",
+        "scoring_note": "2 pts: Sam + woke up early | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 2,
+        "sentence_text": "Surrounded by towering science posters and intricate robot models, his enthusiasm for robotics was clear",
+        "character_name": "Sam",
+        "key_detail": "Enthusiasm for robotics was clear",
+        "scoring_note": "2 pts: Sam + enthusiasm for robotics | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 3,
+        "sentence_text": "At school, Sam learned about the upcoming Science Fair",
+        "character_name": "Sam",
+        "key_detail": "Learned about upcoming Science Fair",
+        "scoring_note": "2 pts: Sam + learned about Science Fair | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 4,
+        "sentence_text": "He was thrilled, yet nervous",
+        "character_name": "Sam",
+        "key_detail": "Felt thrilled and nervous",
+        "scoring_note": "2 pts: Sam + felt thrilled and nervous | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 5,
+        "sentence_text": "He had never participated in a fair before, and the thought of it made his stomach churn",
+        "character_name": "Sam",
+        "key_detail": "Never participated in a fair before",
+        "scoring_note": "2 pts: Sam + never participated in fair | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 6,
+        "sentence_text": "Later, while talking with his best friend, Sam shared a secret",
+        "character_name": "Sam",
+        "key_detail": "Shared a secret with friend",
+        "scoring_note": "2 pts: Sam + shared a secret | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 7,
+        "sentence_text": "\"I've been working on a special robot for months,\" he confessed, a spark of excitement in his eyes",
+        "character_name": "Sam",
+        "key_detail": "Working on a special robot for months",
+        "scoring_note": "2 pts: Sam + working on special robot | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 8,
+        "sentence_text": "In the following weeks, Sam worked tirelessly on his robot",
+        "character_name": "Sam",
+        "key_detail": "Worked tirelessly on his robot",
+        "scoring_note": "2 pts: Sam + worked tirelessly on robot | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 9,
+        "sentence_text": "His determination drove him past his nervousness",
+        "character_name": "Sam",
+        "key_detail": "Determination drove him past nervousness",
+        "scoring_note": "2 pts: Sam + determination drove him | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 10,
+        "sentence_text": "Finally, at the Science Fair, Sam displayed his masterpiece",
+        "character_name": "Sam",
+        "key_detail": "Displayed his masterpiece at Science Fair",
+        "scoring_note": "2 pts: Sam + displayed masterpiece | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 11,
+        "sentence_text": "His robot was an instant crowd-pleaser, impressing the judges and earning him the first prize",
+        "character_name": "Sam",
+        "key_detail": "Robot impressed judges, won first prize",
+        "scoring_note": "2 pts: Sam + robot won first prize | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 12,
+        "sentence_text": "Despite his initial apprehension, Sam's creativity, intelligence, and love for robotics led him to victory",
+        "character_name": "Sam",
+        "key_detail": "Creativity, intelligence, love for robotics led to victory",
+        "scoring_note": "2 pts: Sam + led to victory | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 13,
+        "sentence_text": "His special robot wasn't just a Science Fair project, it was a symbol of his determination and passion",
+        "character_name": "Sam",
+        "key_detail": "Robot symbol of his determination and passion",
+        "scoring_note": "2 pts: Sam + robot symbol of determination, passion | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      }
+    ],
+    "general_instructions": "For each sentence, award 2 points if student recalls BOTH the character and key detail, 1 point for either one, 0 points for neither. Allow paraphrasing.",
+    "passage_title": "Title: Sam's Robotics Triumph",
+    "grade": "3",
+    "genre": "narrative",
+    "form_id": "RECALL-COMP-3-EARLY-001",
+    "passage_form_id": "COMP-3-EARLY-001",
+    "created_at": "2026-01-15T10:07:57.532818",
+    "schema_version": "2026.1"
+  }
+}

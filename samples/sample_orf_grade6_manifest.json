@@ -1,0 +1,24 @@
+{
+  "package_id": "ORF-PKG-6-20260115-103729",
+  "package_type": "orf",
+  "created_at": "2026-01-15T10:37:29.479910",
+  "grade": "6",
+  "band": "late",
+  "schema_version": "2026.1",
+  "components": [
+    "passage",
+    "assessor_materials"
+  ],
+  "component_count": 2,
+  "banks_used": [
+    "Bank 2 (ORF Word Counts)"
+  ],
+  "statistics": {
+    "passage_word_count": 203,
+    "wcpm_50th_percentile": 146,
+    "wcpm_75th_percentile": 173,
+    "lexile_target": "N/A",
+    "assessor_components": 7
+  },
+  "ready_for_use": true
+}

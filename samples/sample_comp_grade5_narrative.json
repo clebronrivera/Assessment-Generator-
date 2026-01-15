@@ -1,0 +1,1500 @@
+{
+  "metadata": {
+    "package_id": "COMP-PKG-5-20260115-141256",
+    "assessment_type": "comprehension",
+    "grade": "5",
+    "band": "late",
+    "genre": "narrative",
+    "created_at": "2026-01-15T14:12:56.325657",
+    "schema_version": "2026.1",
+    "component_forms": {
+      "passage": "COMP-5-LATE-001",
+      "qrm": "COMP-5-LATE-QRM-1768503964267-5368",
+      "pib": "COMP-5-LATE-PIB-001",
+      "questions": "COMP-5-LATE-QUESTIONS-001",
+      "recall_scoring": "RECALL-COMP-5-LATE-001"
+    },
+    "banks_used": [
+      "Bank 7 (Text Structures)",
+      "Bank 3 (Comp Word Counts)",
+      "Bank 6 (Answer Options)",
+      "Bank 4 (Comprehension Blueprint)",
+      "Bank 1 (Lexile Ranges)"
+    ],
+    "stats": {
+      "passage_word_count": 256,
+      "lexile_target": "950L-1100L",
+      "total_questions": 12,
+      "total_points_questions": 12,
+      "total_sentences_recall": 21,
+      "total_points_recall": 42,
+      "components_included": 5
+    }
+  },
+  "package_type": "comprehension",
+  "ready_for_use": true,
+  "qrm": {
+    "questions": [
+      {
+        "question_number": 1,
+        "question_type": "explicit",
+        "cognitive_demand": "low",
+        "evidence_location": "beginning",
+        "content_requirement": "Passage must introduce the main character's name and a key attribute in the first paragraph",
+        "distractor_guidance": "Use other character names from the passage; use attributes that do not apply to the main character"
+      },
+      {
+        "question_number": 2,
+        "question_type": "explicit",
+        "cognitive_demand": "medium",
+        "evidence_location": "middle",
+        "content_requirement": "Passage must describe a significant event that happens to the main character",
+        "distractor_guidance": "Use details from other events in the passage"
+      },
+      {
+        "question_number": 3,
+        "question_type": "explicit",
+        "cognitive_demand": "medium",
+        "evidence_location": "end",
+        "content_requirement": "Passage must state how the main character reacts to the climax/ending",
+        "distractor_guidance": "Use reactions that do not match the character's emotions or situation"
+      },
+      {
+        "question_number": 4,
+        "question_type": "explicit",
+        "cognitive_demand": "high",
+        "evidence_location": "middle",
+        "content_requirement": "Passage must include a dialogue between characters that reveals a plot point",
+        "distractor_guidance": "Use dialogue from other parts of the story that do not reveal plot points"
+      },
+      {
+        "question_number": 5,
+        "question_type": "implicit",
+        "cognitive_demand": "low",
+        "evidence_location": "beginning",
+        "content_requirement": "Passage must describe a character's actions that suggest their personality",
+        "distractor_guidance": "Use traits that do not align with the described actions"
+      },
+      {
+        "question_number": 6,
+        "question_type": "implicit",
+        "cognitive_demand": "medium",
+        "evidence_location": "middle",
+        "content_requirement": "Passage must include a problem that the main character must overcome",
+        "distractor_guidance": "Use solutions not aligned with the problem or character's abilities"
+      },
+      {
+        "question_number": 7,
+        "question_type": "implicit",
+        "cognitive_demand": "high",
+        "evidence_location": "end",
+        "content_requirement": "Passage must hint at a consequence or result of the main character's decision",
+        "distractor_guidance": "Use consequences not logically connected to the decision"
+      },
+      {
+        "question_number": 8,
+        "question_type": "implicit",
+        "cognitive_demand": "high",
+        "evidence_location": "throughout",
+        "content_requirement": "Passage must include details that allow the reader to infer the story's theme",
+        "distractor_guidance": "Use themes that do not fit the details provided in the passage"
+      },
+      {
+        "question_number": 9,
+        "question_type": "vocabulary",
+        "cognitive_demand": "low",
+        "evidence_location": "beginning",
+        "content_requirement": "Passage must use the word 'resilient' in a context that reveals its meaning",
+        "distractor_guidance": "Use synonyms that are close but not exact"
+      },
+      {
+        "question_number": 10,
+        "question_type": "vocabulary",
+        "cognitive_demand": "medium",
+        "evidence_location": "middle",
+        "content_requirement": "Passage must use the word 'abundant' in a context that reveals its meaning",
+        "distractor_guidance": "Use antonyms or unrelated words"
+      },
+      {
+        "question_number": 11,
+        "question_type": "main_idea",
+        "cognitive_demand": "medium",
+        "evidence_location": "throughout",
+        "content_requirement": "Passage must have a clear central theme or message",
+        "distractor_guidance": "Use minor ideas or themes that are present but not central"
+      },
+      {
+        "question_number": 12,
+        "question_type": "main_idea",
+        "cognitive_demand": "high",
+        "evidence_location": "throughout",
+        "content_requirement": "Passage must have a plot that supports the main idea",
+        "distractor_guidance": "Use plot points that are not directly related to the main idea"
+      }
+    ],
+    "total_questions": 12,
+    "type_distribution": {
+      "explicit": 4,
+      "implicit": 4,
+      "vocabulary": 2,
+      "main_idea": 2
+    },
+    "cognitive_distribution": {
+      "low": 3,
+      "medium": 5,
+      "high": 4
+    },
+    "evidence_distribution": {
+      "beginning": 3,
+      "middle": 4,
+      "end": 2,
+      "throughout": 3
+    },
+    "required_content_elements": [
+      "Introduction of main character with name and key attribute",
+      "Significant event happening to the main character",
+      "Main character's reaction to the climax/ending",
+      "A dialogue revealing a plot point",
+      "Character actions that suggest personality",
+      "Problem that the main character must overcome",
+      "Consequence of the main character's decision",
+      "Details inferring the story's theme"
+    ],
+    "required_vocabulary": [
+      "resilient",
+      "abundant"
+    ],
+    "required_structure_elements": [
+      "chronological sequence",
+      "cause-effect relationship"
+    ],
+    "grade": "5",
+    "genre": "narrative",
+    "band": "late",
+    "form_id": "COMP-5-LATE-QRM-1768503964267-5368",
+    "generated_at": "2026-01-15T14:08:34.588904",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 4 (Comprehension Blueprint)": "Grade 5 question specifications"
+    }
+  },
+  "pib": {
+    "scenes": [
+      {
+        "scene_number": 1,
+        "scene_type": "opening",
+        "location_in_passage": "beginning",
+        "purpose": "Introduce main character and setting",
+        "content_description": "Introduce Jake, a resilient young boy who recently moved to a new town. Jake is seen exploring his new environment and trying to make friends",
+        "required_details": [
+          "State Jake's name and his key attribute (resilient)",
+          "Describe Jake's action of exploring and his attempts to make friends"
+        ],
+        "supports_questions": [
+          1,
+          5,
+          9
+        ],
+        "vocabulary_placement": [
+          "resilient"
+        ]
+      },
+      {
+        "scene_number": 2,
+        "scene_type": "action",
+        "location_in_passage": "middle",
+        "purpose": "Introduce conflict",
+        "content_description": "Narrate a significant event where Jake finds an abandoned park with a damaged playground. Jake decides to repair the playground as a way to make friends",
+        "required_details": [
+          "Describe the abandoned park and the damaged playground",
+          "State Jake's decision to repair the playground"
+        ],
+        "supports_questions": [
+          2,
+          4,
+          6,
+          10
+        ],
+        "vocabulary_placement": [
+          "abundant"
+        ]
+      },
+      {
+        "scene_number": 3,
+        "scene_type": "action",
+        "location_in_passage": "middle",
+        "purpose": "Progress the plot",
+        "content_description": "Provide a dialogue between Jake and his parents about his plan. His parents caution him about the significant task but Jake insists on going ahead with it",
+        "required_details": [
+          "Present a dialogue between Jake and his parents",
+          "Reveal Jake's persistence"
+        ],
+        "supports_questions": [
+          4
+        ],
+        "vocabulary_placement": []
+      },
+      {
+        "scene_number": 4,
+        "scene_type": "action",
+        "location_in_passage": "end",
+        "purpose": "Resolve the conflict and conclude the story",
+        "content_description": "Show Jake's successful effort in repairing the playground. He manages to gather abundant resources and helpers. His actions attract other children and they all end up having a great time at the playground",
+        "required_details": [
+          "Describe Jake's successful effort and the process of gathering resources",
+          "Narrate the arrival of other children and their reaction"
+        ],
+        "supports_questions": [
+          3,
+          7,
+          8,
+          11,
+          12
+        ],
+        "vocabulary_placement": []
+      }
+    ],
+    "total_scenes": 4,
+    "characters": [
+      {
+        "name": "Jake",
+        "role": "main",
+        "key_traits": [
+          "resilient",
+          "resourceful",
+          "friendly"
+        ],
+        "actions_to_show": [
+          "Jake explores his new environment",
+          "Jake decides to repair the playground",
+          "Jake gathers resources and helpers",
+          "Jake interacts with the other children"
+        ],
+        "supports_questions": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
+    ],
+    "opening_hook": "Jake, a resilient young boy, looked around his new town with a sense of wonder and determination",
+    "central_conflict_or_topic": "Jake's attempt to make friends in his new town by repairing an abandoned playground",
+    "resolution_or_conclusion": "Jake's efforts pay off as his actions attract other children and they all end up having a great time at the playground",
+    "vocabulary_targets": [
+      "resilient",
+      "abundant"
+    ],
+    "vocabulary_contexts": {
+      "resilient": "Describe Jake's resilience in adapting to his new environment and facing the task of repairing the playground",
+      "abundant": "Describe the abundant resources Jake manages to gather for repairing the playground"
+    },
+    "text_structure": "chronological",
+    "organizational_features": [],
+    "question_coverage_map": {
+      "1": [
+        1
+      ],
+      "2": [
+        2
+      ],
+      "3": [
+        4
+      ],
+      "4": [
+        3
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        2
+      ],
+      "7": [
+        4
+      ],
+      "8": [
+        4
+      ],
+      "9": [
+        1
+      ],
+      "10": [
+        2
+      ],
+      "11": [
+        4
+      ],
+      "12": [
+        4
+      ]
+    },
+    "target_lexile": "950L-1100L",
+    "target_word_count": 275,
+    "actual_grade": "5",
+    "genre": "narrative",
+    "band": "late",
+    "form_id": "COMP-5-LATE-PIB-001",
+    "qrm_form_id": "COMP-5-LATE-QRM-1768503964267-5368",
+    "generated_at": "2026-01-15T14:09:23.143998",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 1 (Lexile Ranges)": "Target: 950L-1100L",
+      "Bank 3 (Comp Word Counts)": "Target: 275 words",
+      "Bank 7 (Text Structures)": "Structure: chronological"
+    }
+  },
+  "passage": {
+    "passage_text": "Jake, a resilient young boy, gazed at his new surroundings with wonder and determination. Having recently moved to a new town, he eagerly explored his neighborhood, hoping to make friends with the local kids.\n\nOne day, Jake stumbled upon an abandoned park with a damaged playground. The rusty swings creaked in the wind and the slide was covered in a thick layer of grime. Despite its disrepair, Jake saw potential in the playground. He decided to repair it, believing it could be a great way to make friends.\n\nThat evening, Jake discussed his plan with his parents. \"This is a big task, Jake,\" his father warned. His mother added, \"And you'll need help.\" But Jake was adamant. \"I can do it,\" he asserted. His resilience shone through his unwavering determination.\n\nOver the next few days, Jake worked tirelessly. He managed to gather abundant resources from around town and even rallied a few helpers. Bit by bit, the playground transformed. The rusty swings now glowed with a fresh coat of paint, and the slide gleamed under the sun.\n\nWord spread about the revamped playground, and soon, children flocked to see it. Their faces lit up at the sight of the once-abandoned playground, now a vibrant space filled with laughter and joy. Jake's efforts had paid off. Not only did he breathe new life into the playground, but he also made plenty of new friends in the process. His resourcefulness and resilience had turned a desolate park into a haven of happiness for children in his new town.",
+    "passage_title": "\"Jake's Playground Project\"",
+    "grade": "5",
+    "genre": "narrative",
+    "band": "late",
+    "form_id": "COMP-5-LATE-001",
+    "actual_word_count": 256,
+    "target_word_count": 275,
+    "target_lexile": "950L-1100L",
+    "total_questions": 12,
+    "question_coverage_verified": true,
+    "text_structure": "chronological",
+    "vocabulary_words": [
+      "resilient",
+      "abundant"
+    ],
+    "vocabulary_verified": true,
+    "validation": {
+      "word_count_valid": true,
+      "word_count_actual": 256,
+      "word_count_target": 275,
+      "word_count_acceptable_range": [
+        255,
+        295
+      ],
+      "lexile_target": "950L-1100L",
+      "lexile_note": "Lexile cannot be automatically validated (requires external tool)",
+      "vocabulary_present": true,
+      "vocabulary_found": [
+        "resilient",
+        "abundant"
+      ],
+      "vocabulary_missing": [],
+      "scenes_covered": true,
+      "scenes_expected": 4,
+      "scenes_identifiable": 5,
+      "validation_passed": true,
+      "warnings": []
+    },
+    "qrm_form_id": "COMP-5-LATE-QRM-1768503964267-5368",
+    "pib_form_id": "COMP-5-LATE-PIB-001",
+    "generated_at": "2026-01-15T14:09:39.389821",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 1 (Lexile Ranges)": "Target: 950L-1100L",
+      "Bank 3 (Comp Word Counts)": "Target: 275 words",
+      "Bank 7 (Text Structures)": "Structure: chronological"
+    }
+  },
+  "questions": {
+    "questions": [
+      {
+        "question_number": 1,
+        "question_text": "What is the name of the resilient young boy who recently moved to a new town?",
+        "question_type": "literal",
+        "cognitive_demand": "CognitiveDemand.LOW",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Jake",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "John",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "James",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "Jeff",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "beginning",
+        "evidence_text": "Jake, a resilient young boy, gazed at his new surroundings with wonder and determination. Having recently moved to a new town, he eagerly explored his neighborhood, hoping to make friends with the local kids.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 2,
+        "question_text": "What does Jake do to the abandoned playground he found in his new town?",
+        "question_type": "literal",
+        "cognitive_demand": "CognitiveDemand.MEDIUM",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "He repairs and revamps it",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "He tears it down",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          },
+          {
+            "letter": "C",
+            "text": "He ignores it",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "D",
+            "text": "He reports it to the local authorities",
+            "is_correct": false,
+            "distractor_type": "detail"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "Despite its disrepair, Jake saw potential in the playground. He decided to repair it, believing it could be a great way to make friends. Over the next few days, Jake worked tirelessly. He managed to gather abundant resources from around town and even rallied a few helpers. Bit by bit, the playground transformed.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 3,
+        "question_text": "How did Jake react to the success of his project?",
+        "question_type": "literal",
+        "cognitive_demand": "CognitiveDemand.MEDIUM",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "He was happy as he made plenty of new friends",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "He was disappointed that the playground was not perfect",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          },
+          {
+            "letter": "C",
+            "text": "He was indifferent because he expected this outcome",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "D",
+            "text": "He was sad because he missed his old friends",
+            "is_correct": false,
+            "distractor_type": "detail"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "end",
+        "evidence_text": "Jake's efforts had paid off. Not only did he breathe new life into the playground, but he also made plenty of new friends in the process.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 4,
+        "question_text": "Why did Jake decide to repair the damaged playground?",
+        "question_type": "literal",
+        "cognitive_demand": "CognitiveDemand.HIGH",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "He believed it could be a great way to make friends.",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "He wanted to show his parents he could accomplish a big task.",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "He was asked to by the local kids.",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "He was bored and needed something to occupy his time.",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "He decided to repair it, believing it could be a great way to make friends.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 5,
+        "question_text": "What character traits does Jake display in this passage?",
+        "question_type": "inferential",
+        "cognitive_demand": "CognitiveDemand.LOW",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Resilience, determination and resourcefulness",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Shyness, laziness and fear",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "Arrogance, selfishness and impatience",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "Indifference, passivity and lack of initiative",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "beginning",
+        "evidence_text": "Jake, a resilient young boy, gazed at his new surroundings with wonder and determination. He decided to repair it, believing it could be a great way to make friends. Over the next few days, Jake worked tirelessly. He managed to gather abundant resources from around town and even rallied a few helpers.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 6,
+        "question_text": "What can one infer about Jake's character from his interaction with the abandoned park?",
+        "question_type": "inferential",
+        "cognitive_demand": "CognitiveDemand.MEDIUM",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Jake is resourceful and resilient.",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Jake is afraid of taking on big projects.",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          },
+          {
+            "letter": "C",
+            "text": "Jake dislikes physical labor.",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          },
+          {
+            "letter": "D",
+            "text": "Jake prefers to work alone.",
+            "is_correct": false,
+            "distractor_type": "detail"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "That evening, Jake discussed his plan with his parents. His resilience shone through his unwavering determination. Over the next few days, Jake worked tirelessly. He managed to gather abundant resources from around town and even rallied a few helpers.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 7,
+        "question_text": "What was the result of Jake's decision to repair the playground?",
+        "question_type": "inferential",
+        "cognitive_demand": "CognitiveDemand.HIGH",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "He made new friends and turned the park into a happy place for kids",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "He was appointed as the mayor of the town",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "He became the owner of the park",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "He was expelled from the town",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "end",
+        "evidence_text": "Not only did he breathe new life into the playground, but he also made plenty of new friends in the process. His resourcefulness and resilience had turned a desolate park into a haven of happiness for children in his new town.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 8,
+        "question_text": "What is the main theme of the story?",
+        "question_type": "inferential",
+        "cognitive_demand": "CognitiveDemand.HIGH",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "The power of resilience and resourcefulness in overcoming challenges and creating positive outcomes",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "The importance of maintaining public parks and playgrounds",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "The dangers of exploring abandoned places",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "The need for adult supervision in children's activities",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "throughout",
+        "evidence_text": "Jake, a resilient young boy, gazed at his new surroundings with wonder and determination. He decided to repair it, believing it could be a great way to make friends. Over the next few days, Jake worked tirelessly. He managed to gather abundant resources from around town and even rallied a few helpers. Not only did he breathe new life into the playground, but he also made plenty of new friends in the process. His resourcefulness and resilience had turned a desolate park into a haven of happiness for children in his new town.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 9,
+        "question_text": "What does the word 'resilient' mean as used in the context of this passage?",
+        "question_type": "vocabulary",
+        "cognitive_demand": "CognitiveDemand.LOW",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Able to withstand or recover quickly from difficult conditions",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Able to find one's way quickly",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "Able to easily understand complex ideas",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "Unable to recover quickly from difficult conditions",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "beginning",
+        "evidence_text": "Jake, a resilient young boy, gazed at his new surroundings with wonder and determination. Having recently moved to a new town, he eagerly explored his neighborhood, hoping to make friends with the local kids.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 10,
+        "question_text": "What does the word 'abundant' mean in the context of this passage?",
+        "question_type": "vocabulary",
+        "cognitive_demand": "CognitiveDemand.MEDIUM",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "plentiful",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "scarce",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          },
+          {
+            "letter": "C",
+            "text": "tiny",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "D",
+            "text": "heavy",
+            "is_correct": false,
+            "distractor_type": "unrelated"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "He managed to gather abundant resources from around town",
+        "points_possible": 1
+      },
+      {
+        "question_number": 11,
+        "question_text": "What is the main idea of the passage?",
+        "question_type": "main_idea",
+        "cognitive_demand": "CognitiveDemand.MEDIUM",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Jake's resilience and resourcefulness help him to revitalize an abandoned park and make friends in his new town.",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Jake moves to a new town and misses his old friends.",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "Jake's parents are skeptical about his plans to renovate an old park.",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "Jake's efforts to improve the park are unsuccessful.",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "throughout",
+        "evidence_text": "Jake, a resilient young boy, gazed at his new surroundings with wonder and determination...He decided to repair it, believing it could be a great way to make friends...Over the next few days, Jake worked tirelessly...Not only did he breathe new life into the playground, but he also made plenty of new friends in the process. His resourcefulness and resilience had turned a desolate park into a haven of happiness for children in his new town.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 12,
+        "question_text": "What is the main idea of the passage?",
+        "question_type": "main_idea",
+        "cognitive_demand": "CognitiveDemand.HIGH",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Jake's resilience and resourcefulness helped him turn an abandoned park into a haven of happiness, thereby making new friends.",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Jake's parents were concerned about his plan to repair the playground.",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "The playground was in a state of disrepair with rusty swings and a grimy slide.",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "Jake, after moving to a new town, struggled to make friends.",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "throughout",
+        "evidence_text": "Jake, a resilient young boy...He decided to repair it...Word spread about the revamped playground, and soon, children flocked to see it...His resourcefulness and resilience had turned a desolate park into a haven of happiness for children in his new town.",
+        "points_possible": 1
+      }
+    ],
+    "total_questions": 12,
+    "answer_key": {
+      "questions": [
+        {
+          "question_number": 1,
+          "question_text": "What is the name of the resilient young boy who recently moved to a new town?",
+          "question_type": "literal",
+          "cognitive_demand": "CognitiveDemand.LOW",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Jake",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "John",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "James",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "Jeff",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "beginning",
+          "evidence_text": "Jake, a resilient young boy, gazed at his new surroundings with wonder and determination. Having recently moved to a new town, he eagerly explored his neighborhood, hoping to make friends with the local kids.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 2,
+          "question_text": "What does Jake do to the abandoned playground he found in his new town?",
+          "question_type": "literal",
+          "cognitive_demand": "CognitiveDemand.MEDIUM",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "He repairs and revamps it",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "He tears it down",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            },
+            {
+              "letter": "C",
+              "text": "He ignores it",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "D",
+              "text": "He reports it to the local authorities",
+              "is_correct": false,
+              "distractor_type": "detail"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "Despite its disrepair, Jake saw potential in the playground. He decided to repair it, believing it could be a great way to make friends. Over the next few days, Jake worked tirelessly. He managed to gather abundant resources from around town and even rallied a few helpers. Bit by bit, the playground transformed.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 3,
+          "question_text": "How did Jake react to the success of his project?",
+          "question_type": "literal",
+          "cognitive_demand": "CognitiveDemand.MEDIUM",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "He was happy as he made plenty of new friends",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "He was disappointed that the playground was not perfect",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            },
+            {
+              "letter": "C",
+              "text": "He was indifferent because he expected this outcome",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "D",
+              "text": "He was sad because he missed his old friends",
+              "is_correct": false,
+              "distractor_type": "detail"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "end",
+          "evidence_text": "Jake's efforts had paid off. Not only did he breathe new life into the playground, but he also made plenty of new friends in the process.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 4,
+          "question_text": "Why did Jake decide to repair the damaged playground?",
+          "question_type": "literal",
+          "cognitive_demand": "CognitiveDemand.HIGH",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "He believed it could be a great way to make friends.",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "He wanted to show his parents he could accomplish a big task.",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "He was asked to by the local kids.",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "He was bored and needed something to occupy his time.",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "He decided to repair it, believing it could be a great way to make friends.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 5,
+          "question_text": "What character traits does Jake display in this passage?",
+          "question_type": "inferential",
+          "cognitive_demand": "CognitiveDemand.LOW",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Resilience, determination and resourcefulness",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Shyness, laziness and fear",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "Arrogance, selfishness and impatience",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "Indifference, passivity and lack of initiative",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "beginning",
+          "evidence_text": "Jake, a resilient young boy, gazed at his new surroundings with wonder and determination. He decided to repair it, believing it could be a great way to make friends. Over the next few days, Jake worked tirelessly. He managed to gather abundant resources from around town and even rallied a few helpers.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 6,
+          "question_text": "What can one infer about Jake's character from his interaction with the abandoned park?",
+          "question_type": "inferential",
+          "cognitive_demand": "CognitiveDemand.MEDIUM",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Jake is resourceful and resilient.",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Jake is afraid of taking on big projects.",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            },
+            {
+              "letter": "C",
+              "text": "Jake dislikes physical labor.",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            },
+            {
+              "letter": "D",
+              "text": "Jake prefers to work alone.",
+              "is_correct": false,
+              "distractor_type": "detail"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "That evening, Jake discussed his plan with his parents. His resilience shone through his unwavering determination. Over the next few days, Jake worked tirelessly. He managed to gather abundant resources from around town and even rallied a few helpers.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 7,
+          "question_text": "What was the result of Jake's decision to repair the playground?",
+          "question_type": "inferential",
+          "cognitive_demand": "CognitiveDemand.HIGH",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "He made new friends and turned the park into a happy place for kids",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "He was appointed as the mayor of the town",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "He became the owner of the park",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "He was expelled from the town",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "end",
+          "evidence_text": "Not only did he breathe new life into the playground, but he also made plenty of new friends in the process. His resourcefulness and resilience had turned a desolate park into a haven of happiness for children in his new town.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 8,
+          "question_text": "What is the main theme of the story?",
+          "question_type": "inferential",
+          "cognitive_demand": "CognitiveDemand.HIGH",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "The power of resilience and resourcefulness in overcoming challenges and creating positive outcomes",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "The importance of maintaining public parks and playgrounds",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "The dangers of exploring abandoned places",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "The need for adult supervision in children's activities",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "throughout",
+          "evidence_text": "Jake, a resilient young boy, gazed at his new surroundings with wonder and determination. He decided to repair it, believing it could be a great way to make friends. Over the next few days, Jake worked tirelessly. He managed to gather abundant resources from around town and even rallied a few helpers. Not only did he breathe new life into the playground, but he also made plenty of new friends in the process. His resourcefulness and resilience had turned a desolate park into a haven of happiness for children in his new town.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 9,
+          "question_text": "What does the word 'resilient' mean as used in the context of this passage?",
+          "question_type": "vocabulary",
+          "cognitive_demand": "CognitiveDemand.LOW",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Able to withstand or recover quickly from difficult conditions",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Able to find one's way quickly",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "Able to easily understand complex ideas",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "Unable to recover quickly from difficult conditions",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "beginning",
+          "evidence_text": "Jake, a resilient young boy, gazed at his new surroundings with wonder and determination. Having recently moved to a new town, he eagerly explored his neighborhood, hoping to make friends with the local kids.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 10,
+          "question_text": "What does the word 'abundant' mean in the context of this passage?",
+          "question_type": "vocabulary",
+          "cognitive_demand": "CognitiveDemand.MEDIUM",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "plentiful",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "scarce",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            },
+            {
+              "letter": "C",
+              "text": "tiny",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "D",
+              "text": "heavy",
+              "is_correct": false,
+              "distractor_type": "unrelated"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "He managed to gather abundant resources from around town",
+          "points_possible": 1
+        },
+        {
+          "question_number": 11,
+          "question_text": "What is the main idea of the passage?",
+          "question_type": "main_idea",
+          "cognitive_demand": "CognitiveDemand.MEDIUM",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Jake's resilience and resourcefulness help him to revitalize an abandoned park and make friends in his new town.",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Jake moves to a new town and misses his old friends.",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "Jake's parents are skeptical about his plans to renovate an old park.",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "Jake's efforts to improve the park are unsuccessful.",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "throughout",
+          "evidence_text": "Jake, a resilient young boy, gazed at his new surroundings with wonder and determination...He decided to repair it, believing it could be a great way to make friends...Over the next few days, Jake worked tirelessly...Not only did he breathe new life into the playground, but he also made plenty of new friends in the process. His resourcefulness and resilience had turned a desolate park into a haven of happiness for children in his new town.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 12,
+          "question_text": "What is the main idea of the passage?",
+          "question_type": "main_idea",
+          "cognitive_demand": "CognitiveDemand.HIGH",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Jake's resilience and resourcefulness helped him turn an abandoned park into a haven of happiness, thereby making new friends.",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Jake's parents were concerned about his plan to repair the playground.",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "The playground was in a state of disrepair with rusty swings and a grimy slide.",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "Jake, after moving to a new town, struggled to make friends.",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "throughout",
+          "evidence_text": "Jake, a resilient young boy...He decided to repair it...Word spread about the revamped playground, and soon, children flocked to see it...His resourcefulness and resilience had turned a desolate park into a haven of happiness for children in his new town.",
+          "points_possible": 1
+        }
+      ],
+      "total_questions": 12,
+      "total_points": 12,
+      "answer_key_summary": {
+        "1": "A",
+        "2": "A",
+        "3": "A",
+        "4": "A",
+        "5": "A",
+        "6": "A",
+        "7": "A",
+        "8": "A",
+        "9": "A",
+        "10": "A",
+        "11": "A",
+        "12": "A"
+      }
+    },
+    "grade": "5",
+    "genre": "narrative",
+    "band": "late",
+    "form_id": "COMP-5-LATE-QUESTIONS-001",
+    "type_distribution": {
+      "literal": 4,
+      "inferential": 4,
+      "vocabulary": 2,
+      "main_idea": 2
+    },
+    "cognitive_distribution": {
+      "CognitiveDemand.LOW": 3,
+      "CognitiveDemand.MEDIUM": 5,
+      "CognitiveDemand.HIGH": 4
+    },
+    "qrm_form_id": "COMP-5-LATE-QRM-1768503964267-5368",
+    "passage_form_id": "COMP-5-LATE-001",
+    "num_answer_options": 4,
+    "generated_at": "2026-01-15T14:11:57.855780",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 4 (Comprehension Blueprint)": "Via QRM for question specifications",
+      "Bank 6 (Answer Options)": "Grade 5 → 4 answer options"
+    }
+  },
+  "recall_scoring": {
+    "total_sentences": 21,
+    "max_total_points": 42,
+    "sentences": [
+      {
+        "sentence_number": 1,
+        "sentence_text": "Jake, a resilient young boy, gazed at his new surroundings with wonder and determination",
+        "character_name": "Jake",
+        "key_detail": "Looking at new surroundings with determination",
+        "scoring_note": "2 pts: Jake + Looking at new surroundings | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 2,
+        "sentence_text": "Having recently moved to a new town, he eagerly explored his neighborhood, hoping to make friends with the local kids",
+        "character_name": "he",
+        "key_detail": "Moved to new town, wants to make friends",
+        "scoring_note": "2 pts: he + Moved to new town | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 3,
+        "sentence_text": "One day, Jake stumbled upon an abandoned park with a damaged playground",
+        "character_name": "Jake",
+        "key_detail": "Found abandoned park with damaged playground",
+        "scoring_note": "2 pts: Jake + Found abandoned park | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 4,
+        "sentence_text": "The rusty swings creaked in the wind and the slide was covered in a thick layer of grime",
+        "character_name": "The rusty swings, the slide",
+        "key_detail": "Damaged playground elements",
+        "scoring_note": "2 pts: The rusty swings, the slide + Damaged playground elements | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 5,
+        "sentence_text": "Despite its disrepair, Jake saw potential in the playground",
+        "character_name": "Jake",
+        "key_detail": "Saw potential in damaged playground",
+        "scoring_note": "2 pts: Jake + Saw potential in playground | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 6,
+        "sentence_text": "He decided to repair it, believing it could be a great way to make friends",
+        "character_name": "he",
+        "key_detail": "Decided to repair playground",
+        "scoring_note": "2 pts: he + Decided to repair playground | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 7,
+        "sentence_text": "That evening, Jake discussed his plan with his parents",
+        "character_name": "Jake",
+        "key_detail": "Discussed plan with parents",
+        "scoring_note": "2 pts: Jake + Discussed plan with parents | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 8,
+        "sentence_text": "\"This is a big task, Jake,\" his father warned",
+        "character_name": "Jake, his father",
+        "key_detail": "Father warns about big task",
+        "scoring_note": "2 pts: Jake, his father + Father warns about task | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 9,
+        "sentence_text": "His mother added, \"And you'll need help",
+        "character_name": "His mother",
+        "key_detail": "Mother mentions need for help",
+        "scoring_note": "2 pts: His mother + Mother mentions need for help | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 10,
+        "sentence_text": "\" But Jake was adamant",
+        "character_name": "Jake",
+        "key_detail": "Jake was adamant",
+        "scoring_note": "2 pts: Jake + Jake was adamant | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 11,
+        "sentence_text": "\"I can do it,\" he asserted",
+        "character_name": "he",
+        "key_detail": "Asserted he can do it",
+        "scoring_note": "2 pts: he + Asserted he can do it | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 12,
+        "sentence_text": "His resilience shone through his unwavering determination",
+        "character_name": "His",
+        "key_detail": "Showed resilience and determination",
+        "scoring_note": "2 pts: His + Showed resilience and determination | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 13,
+        "sentence_text": "Over the next few days, Jake worked tirelessly",
+        "character_name": "Jake",
+        "key_detail": "Worked tirelessly over days",
+        "scoring_note": "2 pts: Jake + Worked tirelessly | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 14,
+        "sentence_text": "He managed to gather abundant resources from around town and even rallied a few helpers",
+        "character_name": "he",
+        "key_detail": "Gathered resources and helpers",
+        "scoring_note": "2 pts: he + Gathered resources and helpers | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 15,
+        "sentence_text": "Bit by bit, the playground transformed",
+        "character_name": "the playground",
+        "key_detail": "Playground transformed bit by bit",
+        "scoring_note": "2 pts: the playground + Playground transformed | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 16,
+        "sentence_text": "The rusty swings now glowed with a fresh coat of paint, and the slide gleamed under the sun",
+        "character_name": "The rusty swings, the slide",
+        "key_detail": "Playground elements repaired and painted",
+        "scoring_note": "2 pts: The rusty swings, the slide + Playground elements repaired | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 17,
+        "sentence_text": "Word spread about the revamped playground, and soon, children flocked to see it",
+        "character_name": "children",
+        "key_detail": "Children flocked to revamped playground",
+        "scoring_note": "2 pts: children + Children flocked to playground | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 18,
+        "sentence_text": "Their faces lit up at the sight of the once-abandoned playground, now a vibrant space filled with laughter and joy",
+        "character_name": "Their",
+        "key_detail": "Playground now vibrant, filled with joy",
+        "scoring_note": "2 pts: Their + Playground now vibrant | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 19,
+        "sentence_text": "Jake's efforts had paid off",
+        "character_name": "Jake",
+        "key_detail": "Efforts paid off",
+        "scoring_note": "2 pts: Jake + Efforts paid off | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 20,
+        "sentence_text": "Not only did he breathe new life into the playground, but he also made plenty of new friends in the process",
+        "character_name": "he",
+        "key_detail": "Revived playground, made new friends",
+        "scoring_note": "2 pts: he + Revived playground, made friends | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 21,
+        "sentence_text": "His resourcefulness and resilience had turned a desolate park into a haven of happiness for children in his new town",
+        "character_name": "His",
+        "key_detail": "Transformed park into haven of happiness",
+        "scoring_note": "2 pts: His + Transformed park into haven | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      }
+    ],
+    "general_instructions": "For each sentence, award 2 points if student recalls BOTH the character and key detail, 1 point for either one, 0 points for neither. Allow paraphrasing.",
+    "passage_title": "\"Jake's Playground Project\"",
+    "grade": "5",
+    "genre": "narrative",
+    "form_id": "RECALL-COMP-5-LATE-001",
+    "passage_form_id": "COMP-5-LATE-001",
+    "created_at": "2026-01-15T14:12:56.325509",
+    "schema_version": "2026.1"
+  }
+}

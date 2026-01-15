@@ -301,11 +301,7 @@ class PIBGenerator:
         # Format QRM questions for prompt
         questions_text = ""
         for q in qrm_result.questions:
-            # Handle both string and Enum types
-            q_type = q.question_type.value if hasattr(q.question_type, 'value') else q.question_type
-            cog_demand = q.cognitive_demand.value if hasattr(q.cognitive_demand, 'value') else q.cognitive_demand
-            
-            questions_text += f"\nQ{q.question_number} ({q_type}, {cog_demand}):\n"
+            questions_text += f"\nQ{q.question_number} ({q.question_type.value}, {q.cognitive_demand.value}):\n"
             questions_text += f"  Location: {q.evidence_location}\n"
             questions_text += f"  Requirement: {q.content_requirement}\n"
         
@@ -459,26 +455,6 @@ Generate the PIB now:
             json_str = json_str.split("```")[1].split("```")[0].strip()
         
         data = json.loads(json_str)
-        # GENRE_AWARE_KEY_MAPPING with DEEP_FIELD_MAPPING - Added 2026-01-14
-        # Handle both 'scenes' (fiction) and 'sections' (nonfiction)
-        # Maps top-level key AND nested fields within each item
-        if 'sections' in data and 'scenes' not in data:
-            # Nonfiction uses 'sections' - map to 'scenes' for consistency
-            sections = data['sections']
-            
-            # Map nested fields: section_* → scene_*
-            scenes = []
-            for section in sections:
-                scene = {}
-                for key, value in section.items():
-                    # Replace 'section_' prefix with 'scene_'
-                    new_key = key.replace('section_', 'scene_') if key.startswith('section_') else key
-                    scene[new_key] = value
-                scenes.append(scene)
-            
-            data['scenes'] = scenes
-            del data['sections']
-
         # GENRE_AWARE_KEY_MAPPING - Added 2026-01-14
         # Handle both 'scenes' (fiction) and 'sections' (nonfiction)
         if 'sections' in data and 'scenes' not in data:

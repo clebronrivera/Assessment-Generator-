@@ -1,0 +1,1590 @@
+{
+  "metadata": {
+    "package_id": "COMP-PKG-6-20260115-142621",
+    "assessment_type": "comprehension",
+    "grade": "6",
+    "band": "late",
+    "genre": "nonfiction",
+    "created_at": "2026-01-15T14:26:21.810334",
+    "schema_version": "2026.1",
+    "component_forms": {
+      "passage": "COMP-6-LATE-001",
+      "qrm": "COMP-6-LATE-QRM-1768504873542-7768",
+      "pib": "COMP-6-LATE-PIB-001",
+      "questions": "COMP-6-LATE-QUESTIONS-001",
+      "recall_scoring": "RECALL-COMP-6-LATE-001"
+    },
+    "banks_used": [
+      "Bank 3 (Comp Word Counts)",
+      "Bank 7 (Text Structures)",
+      "Bank 4 (Comprehension Blueprint)",
+      "Bank 1 (Lexile Ranges)",
+      "Bank 6 (Answer Options)"
+    ],
+    "stats": {
+      "passage_word_count": 308,
+      "lexile_target": "1030L-1180L",
+      "total_questions": 14,
+      "total_points_questions": 14,
+      "total_sentences_recall": 16,
+      "total_points_recall": 32,
+      "components_included": 5
+    }
+  },
+  "package_type": "comprehension",
+  "ready_for_use": true,
+  "qrm": {
+    "questions": [
+      {
+        "question_number": 1,
+        "question_type": "explicit",
+        "cognitive_demand": "low",
+        "evidence_location": "beginning",
+        "content_requirement": "Passage must introduce a key event or phenomenon in the opening paragraph.",
+        "distractor_guidance": "Use unrelated events or phenomena mentioned elsewhere in the passage."
+      },
+      {
+        "question_number": 2,
+        "question_type": "explicit",
+        "cognitive_demand": "medium",
+        "evidence_location": "middle",
+        "content_requirement": "Passage should describe a specific process or sequence in detail.",
+        "distractor_guidance": "Offer steps that are out of order or steps from a different process mentioned in the passage."
+      },
+      {
+        "question_number": 3,
+        "question_type": "explicit",
+        "cognitive_demand": "high",
+        "evidence_location": "end",
+        "content_requirement": "Passage must provide explicit conclusion or summary of the described event or phenomenon.",
+        "distractor_guidance": "Use conclusions or summaries from other topics discussed in the passage."
+      },
+      {
+        "question_number": 4,
+        "question_type": "explicit",
+        "cognitive_demand": "medium",
+        "evidence_location": "middle",
+        "content_requirement": "Passage should include an explicit comparison or contrast between two concepts.",
+        "distractor_guidance": "Use other comparisons or contrasts made elsewhere in the passage."
+      },
+      {
+        "question_number": 5,
+        "question_type": "implicit",
+        "cognitive_demand": "high",
+        "evidence_location": "beginning",
+        "content_requirement": "Passage must imply the significance of the introduced event or phenomenon without explicitly stating it.",
+        "distractor_guidance": "Use explicit information from the passage that is unrelated to the event's or phenomenon's significance."
+      },
+      {
+        "question_number": 6,
+        "question_type": "implicit",
+        "cognitive_demand": "medium",
+        "evidence_location": "middle",
+        "content_requirement": "Passage should imply a cause-effect relationship in the described process or sequence.",
+        "distractor_guidance": "Use explicit cause-effect relationships elsewhere in the passage."
+      },
+      {
+        "question_number": 7,
+        "question_type": "implicit",
+        "cognitive_demand": "medium",
+        "evidence_location": "end",
+        "content_requirement": "Passage must imply the future implications of the event or phenomenon.",
+        "distractor_guidance": "Use unrelated future events or phenomena mentioned in the passage."
+      },
+      {
+        "question_number": 8,
+        "question_type": "implicit",
+        "cognitive_demand": "high",
+        "evidence_location": "middle",
+        "content_requirement": "Passage should imply a connection or relationship between two concepts without explicitly stating it.",
+        "distractor_guidance": "Use explicit connections or relationships stated elsewhere in the passage."
+      },
+      {
+        "question_number": 9,
+        "question_type": "vocabulary",
+        "cognitive_demand": "low",
+        "evidence_location": "beginning",
+        "content_requirement": "Passage must use the word 'resilient' in a context that shows its meaning.",
+        "distractor_guidance": "Use synonyms or antonyms of 'resilient'; use unrelated words from the passage."
+      },
+      {
+        "question_number": 10,
+        "question_type": "vocabulary",
+        "cognitive_demand": "medium",
+        "evidence_location": "middle",
+        "content_requirement": "Passage should use the word 'abundant' in a context that shows its meaning.",
+        "distractor_guidance": "Use synonyms or antonyms of 'abundant'; use unrelated words from the passage."
+      },
+      {
+        "question_number": 11,
+        "question_type": "main_idea",
+        "cognitive_demand": "high",
+        "evidence_location": "end",
+        "content_requirement": "Passage must have a clear overarching theme or message.",
+        "distractor_guidance": "Use minor themes or messages from the passage."
+      },
+      {
+        "question_number": 12,
+        "question_type": "main_idea",
+        "cognitive_demand": "medium",
+        "evidence_location": "middle",
+        "content_requirement": "Passage should contain a central argument or claim.",
+        "distractor_guidance": "Use side arguments or claims presented in the passage."
+      },
+      {
+        "question_number": 13,
+        "question_type": "text_structure",
+        "cognitive_demand": "high",
+        "evidence_location": "end",
+        "content_requirement": "Passage must follow a chronological sequence.",
+        "distractor_guidance": "Use non-chronological sequences mentioned in the passage."
+      },
+      {
+        "question_number": 14,
+        "question_type": "text_structure",
+        "cognitive_demand": "medium",
+        "evidence_location": "beginning",
+        "content_requirement": "Passage should contain a cause-effect relationship.",
+        "distractor_guidance": "Use other types of relationships mentioned in the passage."
+      }
+    ],
+    "total_questions": 14,
+    "type_distribution": {
+      "explicit": 4,
+      "implicit": 4,
+      "vocabulary": 2,
+      "main_idea": 2,
+      "text_structure": 2
+    },
+    "cognitive_distribution": {
+      "low": 2,
+      "medium": 7,
+      "high": 5
+    },
+    "evidence_distribution": {
+      "beginning": 4,
+      "middle": 6,
+      "end": 4
+    },
+    "required_content_elements": [
+      "Introduction of a key event or phenomenon",
+      "Detailed description of a specific process or sequence",
+      "Explicit conclusion or summary of the event or phenomenon",
+      "Comparison or contrast between two concepts",
+      "Implication of the significance of the event or phenomenon",
+      "Implied cause-effect relationship in the process or sequence",
+      "Implied future implications of the event or phenomenon",
+      "Implied connection or relationship between two concepts",
+      "Clear overarching theme or message",
+      "Central argument or claim"
+    ],
+    "required_vocabulary": [
+      "resilient",
+      "abundant"
+    ],
+    "required_structure_elements": [
+      "chronological sequence",
+      "cause-effect relationship"
+    ],
+    "grade": "6",
+    "genre": "nonfiction",
+    "band": "late",
+    "form_id": "COMP-6-LATE-QRM-1768504873542-7768",
+    "generated_at": "2026-01-15T14:21:39.600718",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 4 (Comprehension Blueprint)": "Grade 6 question specifications"
+    }
+  },
+  "pib": {
+    "scenes": [
+      {
+        "scene_number": 1,
+        "scene_type": "opening",
+        "location_in_passage": "beginning",
+        "purpose": "Introduce a key event or phenomenon (the discovery of plastic pollution in the ocean)",
+        "content_description": "The passage begins with a description of the Great Pacific Garbage Patch, a key event or phenomenon, and an initial discussion of the seriousness of plastic pollution in the ocean.",
+        "required_details": [
+          "State the reality of the Great Pacific Garbage Patch",
+          "Use word 'resilient' in context of plastic's durability in the ocean",
+          "Describe the cause-effect relationship of human actions leading to plastic pollution"
+        ],
+        "supports_questions": [
+          1,
+          5,
+          9,
+          14
+        ],
+        "vocabulary_placement": []
+      },
+      {
+        "scene_number": 2,
+        "scene_type": "description",
+        "location_in_passage": "middle",
+        "purpose": "Describe the specific process of plastic breakdown and its effect on marine life",
+        "content_description": "This section provides a detailed description of how plastic breaks down in the ocean, creating microplastics, and the negative effects these have on marine life.",
+        "required_details": [
+          "Explain the process of plastic breakdown in the ocean",
+          "Use the word 'abundant' in context of microplastics in the ocean",
+          "Compare the effects of plastic pollution on different marine species"
+        ],
+        "supports_questions": [
+          2,
+          4,
+          6,
+          8,
+          10,
+          12
+        ],
+        "vocabulary_placement": []
+      },
+      {
+        "scene_number": 3,
+        "scene_type": "conclusion",
+        "location_in_passage": "end",
+        "purpose": "Summarize the issue and discuss future implications",
+        "content_description": "The passage concludes by summarizing the issue of plastic pollution, discussing the potential future implications if the problem continues unchecked, and suggesting some potential solutions.",
+        "required_details": [
+          "Summarize the issue of plastic pollution",
+          "Discuss potential future implications of unchecked plastic pollution",
+          "Suggest some potential solutions"
+        ],
+        "supports_questions": [
+          3,
+          7,
+          11,
+          13
+        ],
+        "vocabulary_placement": []
+      }
+    ],
+    "total_scenes": 3,
+    "characters": [],
+    "opening_hook": "",
+    "central_conflict_or_topic": "",
+    "resolution_or_conclusion": "",
+    "vocabulary_targets": [
+      "resilient",
+      "abundant"
+    ],
+    "vocabulary_contexts": {
+      "resilient": "Used to describe the durability of plastic in the ocean",
+      "abundant": "Used in context of the high quantity of microplastics in the ocean"
+    },
+    "text_structure": "cause_effect",
+    "organizational_features": [
+      "headings",
+      "examples"
+    ],
+    "question_coverage_map": {
+      "1": [
+        1
+      ],
+      "2": [
+        2
+      ],
+      "3": [
+        3
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        2
+      ],
+      "7": [
+        3
+      ],
+      "8": [
+        2
+      ],
+      "9": [
+        1
+      ],
+      "10": [
+        2
+      ],
+      "11": [
+        3
+      ],
+      "12": [
+        2
+      ],
+      "13": [
+        3
+      ],
+      "14": [
+        1
+      ]
+    },
+    "target_lexile": "1030L-1180L",
+    "target_word_count": 325,
+    "actual_grade": "6",
+    "genre": "nonfiction",
+    "band": "late",
+    "form_id": "COMP-6-LATE-PIB-001",
+    "qrm_form_id": "COMP-6-LATE-QRM-1768504873542-7768",
+    "generated_at": "2026-01-15T14:22:35.301123",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 1 (Lexile Ranges)": "Target: 1030L-1180L",
+      "Bank 3 (Comp Word Counts)": "Target: 325 words",
+      "Bank 7 (Text Structures)": "Structure: cause_effect"
+    }
+  },
+  "passage": {
+    "passage_text": "In the heart of the Pacific Ocean, an unwelcome spectacle named the Great Pacific Garbage Patch swirls, an alarming testament to human carelessness. This vast collection of marine debris, predominantly resilient plastics, floats and degrades slowly, highlighting the severe issue of plastic pollution in our oceans. Our daily reliance on plastic items, from water bottles to shopping bags, combined with improper disposal, is the primary cause of this escalating problem.\n\nThe journey of plastic in the ocean is a distressing one. Over time, the resilient plastic breaks down into smaller pieces under the harsh sun and the constant churning of the waves. These tiny fragments, called microplastics, become abundant in the waters, almost invisible to the naked eye, but not to the marine life that mistakenly consumes them. The harmful effects of plastic pollution vary across marine species. For instance, sea turtles may mistake floating plastic bags for jellyfish, their favorite meal, leading to fatal consequences. Meanwhile, smaller creatures like plankton ingest microplastics, which then accumulate up the food chain, affecting larger marine animals and ultimately, humans.\n\nSummarizing, the issue of plastic pollution poses a significant threat to our oceans and the diverse life they support. If left unchecked, the future implications are grave. Marine species could face extinction, our seafood could become contaminated, and the balance of the entire marine ecosystem could be irreversibly disrupted. However, there are potential solutions to this daunting issue. We can reduce our use of single-use plastics, improve waste management systems, and support clean-up efforts in our oceans.\n\nThe tale of plastic pollution is a stark reminder of the cause-effect relationship between human actions and the health of our planet. It's a story of how something as resilient and abundant as plastic can turn into a menacing invader in our oceans, threatening the survival of countless marine species, and eventually, our own.",
+    "passage_title": "Title: The Resilient Invaders: Plastic Pollution in Our Oceans",
+    "grade": "6",
+    "genre": "nonfiction",
+    "band": "late",
+    "form_id": "COMP-6-LATE-001",
+    "actual_word_count": 308,
+    "target_word_count": 325,
+    "target_lexile": "1030L-1180L",
+    "total_questions": 14,
+    "question_coverage_verified": true,
+    "text_structure": "cause_effect",
+    "vocabulary_words": [
+      "resilient",
+      "abundant"
+    ],
+    "vocabulary_verified": true,
+    "validation": {
+      "word_count_valid": true,
+      "word_count_actual": 308,
+      "word_count_target": 325,
+      "word_count_acceptable_range": [
+        305,
+        345
+      ],
+      "lexile_target": "1030L-1180L",
+      "lexile_note": "Lexile cannot be automatically validated (requires external tool)",
+      "vocabulary_present": true,
+      "vocabulary_found": [
+        "resilient",
+        "abundant"
+      ],
+      "vocabulary_missing": [],
+      "scenes_covered": true,
+      "scenes_expected": 3,
+      "scenes_identifiable": 4,
+      "validation_passed": true,
+      "warnings": []
+    },
+    "qrm_form_id": "COMP-6-LATE-QRM-1768504873542-7768",
+    "pib_form_id": "COMP-6-LATE-PIB-001",
+    "generated_at": "2026-01-15T14:22:54.759507",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 1 (Lexile Ranges)": "Target: 1030L-1180L",
+      "Bank 3 (Comp Word Counts)": "Target: 325 words",
+      "Bank 7 (Text Structures)": "Structure: cause_effect"
+    }
+  },
+  "questions": {
+    "questions": [
+      {
+        "question_number": 1,
+        "question_text": "What is the primary cause of the escalating problem of plastic pollution in our oceans?",
+        "question_type": "literal",
+        "cognitive_demand": "CognitiveDemand.LOW",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Our daily reliance on plastic items and improper disposal",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "The consumption of microplastics by sea turtles",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "C",
+            "text": "The breakdown of plastic into microplastics by the sun and waves",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "D",
+            "text": "The support for clean-up efforts in our oceans",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "beginning",
+        "evidence_text": "Our daily reliance on plastic items, from water bottles to shopping bags, combined with improper disposal, is the primary cause of this escalating problem.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 2,
+        "question_text": "What is the journey of plastic in the ocean as described in the passage?",
+        "question_type": "literal",
+        "cognitive_demand": "CognitiveDemand.MEDIUM",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Plastic breaks down into smaller pieces, becomes microplastics, and then ingested by marine life",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Plastic is consumed by sea turtles, becomes microplastics, and then breaks down into smaller pieces",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "Plastic is collected as marine debris, becomes microplastics, and then ingested by humans",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "Plastic is ingested by plankton, breaks down into smaller pieces, and then becomes microplastics",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "The journey of plastic in the ocean is a distressing one. Over time, the resilient plastic breaks down into smaller pieces under the harsh sun and the constant churning of the waves. These tiny fragments, called microplastics, become abundant in the waters, almost invisible to the naked eye, but not to the marine life that mistakenly consumes them.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 3,
+        "question_text": "What does the passage conclude about the effects of plastic pollution in our oceans?",
+        "question_type": "literal",
+        "cognitive_demand": "CognitiveDemand.HIGH",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "It poses a significant threat to marine life and could disrupt the balance of the entire marine ecosystem.",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "It only affects small creatures like plankton but not larger marine animals.",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "It is a minor concern that has minimal impact on the health of our planet.",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          },
+          {
+            "letter": "D",
+            "text": "It primarily affects the survival of sea turtles due to their consumption of floating plastic bags.",
+            "is_correct": false,
+            "distractor_type": "detail"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "end",
+        "evidence_text": "Summarizing, the issue of plastic pollution poses a significant threat to our oceans and the diverse life they support. If left unchecked, the future implications are grave. Marine species could face extinction, our seafood could become contaminated, and the balance of the entire marine ecosystem could be irreversibly disrupted.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 4,
+        "question_text": "How do smaller and larger marine creatures interact with plastic pollution in the ocean?",
+        "question_type": "literal",
+        "cognitive_demand": "CognitiveDemand.MEDIUM",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Smaller creatures ingest microplastics, and larger species like sea turtles may mistake floating plastics for food",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Both smaller and larger creatures actively avoid plastics",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          },
+          {
+            "letter": "C",
+            "text": "Smaller creatures use plastics as a habitat, and larger species like sea turtles consume them intentionally",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "D",
+            "text": "Both smaller and larger creatures consume plastics without any harmful effects",
+            "is_correct": false,
+            "distractor_type": "detail"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "Over time, the resilient plastic breaks down into smaller pieces... These tiny fragments, called microplastics, become abundant in the waters... The harmful effects of plastic pollution vary across marine species. For instance, sea turtles may mistake floating plastic bags for jellyfish, their favorite meal, leading to fatal consequences. Meanwhile, smaller creatures like plankton ingest microplastics, which then accumulate up the food chain, affecting larger marine animals and ultimately, humans.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 5,
+        "question_text": "What can be inferred about the implications of the Great Pacific Garbage Patch on human life?",
+        "question_type": "inferential",
+        "cognitive_demand": "CognitiveDemand.HIGH",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "It could lead to contamination of seafood consumed by humans.",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "It provides a new habitat for marine species.",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "It causes the oceans to rise.",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "It increases the number of jellyfish in the ocean.",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "beginning",
+        "evidence_text": "Our daily reliance on plastic items, from water bottles to shopping bags, combined with improper disposal, is the primary cause of this escalating problem.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 6,
+        "question_text": "What is the effect of marine life consuming microplastics?",
+        "question_type": "inferential",
+        "cognitive_demand": "CognitiveDemand.MEDIUM",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Accumulation of microplastics in the food chain",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Increase in the size of the Great Pacific Garbage Patch",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "Decrease in the number of jellyfish",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "Improvement in the health of marine species",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "Meanwhile, smaller creatures like plankton ingest microplastics, which then accumulate up the food chain, affecting larger marine animals and ultimately, humans.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 7,
+        "question_text": "What could be a potential future implication if plastic pollution in the ocean is not addressed?",
+        "question_type": "inferential",
+        "cognitive_demand": "CognitiveDemand.MEDIUM",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Our seafood could become contaminated",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "The volume of water in the ocean could rise",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "The temperature of the ocean could increase",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "The ocean could become less salty",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "end",
+        "evidence_text": "Marine species could face extinction, our seafood could become contaminated, and the balance of the entire marine ecosystem could be irreversibly disrupted.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 8,
+        "question_text": "What can be inferred about the impact of microplastics on the food chain in the marine ecosystem?",
+        "question_type": "inferential",
+        "cognitive_demand": "CognitiveDemand.HIGH",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Microplastics, ingested by smaller marine creatures, accumulate up the food chain and impact larger marine animals and humans.",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Microplastics, being invisible to the naked eye, have no impact on larger marine animals and humans.",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          },
+          {
+            "letter": "C",
+            "text": "Microplastics break down into smaller pieces under the sun and waves, but do not impact the marine ecosystem.",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "D",
+            "text": "Microplastics, being resilient, can be used by marine animals as a food source.",
+            "is_correct": false,
+            "distractor_type": "detail"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "Over time, the resilient plastic breaks down into smaller pieces under the harsh sun and the constant churning of the waves. These tiny fragments, called microplastics, become abundant in the waters, almost invisible to the naked eye, but not to the marine life that mistakenly consumes them. Meanwhile, smaller creatures like plankton ingest microplastics, which then accumulate up the food chain, affecting larger marine animals and ultimately, humans.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 9,
+        "question_text": "What does the word 'resilient' most likely mean in the context of the passage?",
+        "question_type": "vocabulary",
+        "cognitive_demand": "CognitiveDemand.LOW",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "able to withstand or recover quickly",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "easy to break or destroy",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          },
+          {
+            "letter": "C",
+            "text": "related to the ocean",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "able to float",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "beginning",
+        "evidence_text": "This vast collection of marine debris, predominantly resilient plastics, floats and degrades slowly, highlighting the severe issue of plastic pollution in our oceans.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 10,
+        "question_text": "What does the word 'abundant' mean in the context of this passage?",
+        "question_type": "vocabulary",
+        "cognitive_demand": "CognitiveDemand.MEDIUM",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "plentiful",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "scarce",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          },
+          {
+            "letter": "C",
+            "text": "floating",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "invisible",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "These tiny fragments, called microplastics, become abundant in the waters, almost invisible to the naked eye, but not to the marine life that mistakenly consumes them.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 11,
+        "question_text": "What is the main idea of the passage?",
+        "question_type": "main_idea",
+        "cognitive_demand": "CognitiveDemand.HIGH",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "The plastic pollution in oceans is a severe problem threatening marine life and humans, and it requires urgent solutions.",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "The Great Pacific Garbage Patch is the only area affected by plastic pollution.",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "Sea turtles and plankton are the most affected by plastic pollution.",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "The plastic pollution in oceans is not a significant issue, and it does not affect marine life or humans.",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "end",
+        "evidence_text": "The tale of plastic pollution is a stark reminder of the cause-effect relationship between human actions and the health of our planet. It's a story of how something as resilient and abundant as plastic can turn into a menacing invader in our oceans, threatening the survival of countless marine species, and eventually, our own.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 12,
+        "question_text": "What is the main issue discussed in the passage?",
+        "question_type": "main_idea",
+        "cognitive_demand": "CognitiveDemand.MEDIUM",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "The problem of plastic pollution in the ocean",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "The extinction of marine species",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "The resilience of plastic in the environment",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "The impact of sunlight on plastic degradation",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "This vast collection of marine debris, predominantly resilient plastics, floats and degrades slowly, highlighting the severe issue of plastic pollution in our oceans.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 13,
+        "question_text": "What is the chronological sequence outlined in the passage?",
+        "question_type": "text_structure",
+        "cognitive_demand": "CognitiveDemand.HIGH",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Plastic is discarded, plastic degrades into microplastics, marine life consumes microplastics, humans are affected by contaminated seafood.",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Marine life consumes plastic, plastic degrades into microplastics, humans are affected by contaminated seafood, plastic is discarded.",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "Humans are affected by contaminated seafood, plastic degrades into microplastics, plastic is discarded, marine life consumes microplastics.",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "Marine life consumes microplastics, humans are affected by contaminated seafood, plastic degrades into microplastics, plastic is discarded.",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "end",
+        "evidence_text": "The journey of plastic in the ocean is a distressing one. Over time, the resilient plastic breaks down into smaller pieces... These tiny fragments, called microplastics, become abundant in the waters... The harmful effects of plastic pollution vary across marine species... smaller creatures like plankton ingest microplastics, which then accumulate up the food chain, affecting larger marine animals and ultimately, humans.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 14,
+        "question_text": "What is the main relationship type discussed in the passage?",
+        "question_type": "text_structure",
+        "cognitive_demand": "CognitiveDemand.MEDIUM",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Cause and effect",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Comparison and contrast",
+            "is_correct": false,
+            "distractor_type": "plausible"
+          },
+          {
+            "letter": "C",
+            "text": "Sequential",
+            "is_correct": false,
+            "distractor_type": "detail"
+          },
+          {
+            "letter": "D",
+            "text": "Problem and solution",
+            "is_correct": false,
+            "distractor_type": "opposite"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "beginning",
+        "evidence_text": "In the heart of the Pacific Ocean, an unwelcome spectacle named the Great Pacific Garbage Patch swirls, an alarming testament to human carelessness. This vast collection of marine debris, predominantly resilient plastics, floats and degrades slowly, highlighting the severe issue of plastic pollution in our oceans. Our daily reliance on plastic items, from water bottles to shopping bags, combined with improper disposal, is the primary cause of this escalating problem.",
+        "points_possible": 1
+      }
+    ],
+    "total_questions": 14,
+    "answer_key": {
+      "questions": [
+        {
+          "question_number": 1,
+          "question_text": "What is the primary cause of the escalating problem of plastic pollution in our oceans?",
+          "question_type": "literal",
+          "cognitive_demand": "CognitiveDemand.LOW",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Our daily reliance on plastic items and improper disposal",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "The consumption of microplastics by sea turtles",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "C",
+              "text": "The breakdown of plastic into microplastics by the sun and waves",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "D",
+              "text": "The support for clean-up efforts in our oceans",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "beginning",
+          "evidence_text": "Our daily reliance on plastic items, from water bottles to shopping bags, combined with improper disposal, is the primary cause of this escalating problem.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 2,
+          "question_text": "What is the journey of plastic in the ocean as described in the passage?",
+          "question_type": "literal",
+          "cognitive_demand": "CognitiveDemand.MEDIUM",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Plastic breaks down into smaller pieces, becomes microplastics, and then ingested by marine life",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Plastic is consumed by sea turtles, becomes microplastics, and then breaks down into smaller pieces",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "Plastic is collected as marine debris, becomes microplastics, and then ingested by humans",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "Plastic is ingested by plankton, breaks down into smaller pieces, and then becomes microplastics",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "The journey of plastic in the ocean is a distressing one. Over time, the resilient plastic breaks down into smaller pieces under the harsh sun and the constant churning of the waves. These tiny fragments, called microplastics, become abundant in the waters, almost invisible to the naked eye, but not to the marine life that mistakenly consumes them.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 3,
+          "question_text": "What does the passage conclude about the effects of plastic pollution in our oceans?",
+          "question_type": "literal",
+          "cognitive_demand": "CognitiveDemand.HIGH",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "It poses a significant threat to marine life and could disrupt the balance of the entire marine ecosystem.",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "It only affects small creatures like plankton but not larger marine animals.",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "It is a minor concern that has minimal impact on the health of our planet.",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            },
+            {
+              "letter": "D",
+              "text": "It primarily affects the survival of sea turtles due to their consumption of floating plastic bags.",
+              "is_correct": false,
+              "distractor_type": "detail"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "end",
+          "evidence_text": "Summarizing, the issue of plastic pollution poses a significant threat to our oceans and the diverse life they support. If left unchecked, the future implications are grave. Marine species could face extinction, our seafood could become contaminated, and the balance of the entire marine ecosystem could be irreversibly disrupted.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 4,
+          "question_text": "How do smaller and larger marine creatures interact with plastic pollution in the ocean?",
+          "question_type": "literal",
+          "cognitive_demand": "CognitiveDemand.MEDIUM",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Smaller creatures ingest microplastics, and larger species like sea turtles may mistake floating plastics for food",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Both smaller and larger creatures actively avoid plastics",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            },
+            {
+              "letter": "C",
+              "text": "Smaller creatures use plastics as a habitat, and larger species like sea turtles consume them intentionally",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "D",
+              "text": "Both smaller and larger creatures consume plastics without any harmful effects",
+              "is_correct": false,
+              "distractor_type": "detail"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "Over time, the resilient plastic breaks down into smaller pieces... These tiny fragments, called microplastics, become abundant in the waters... The harmful effects of plastic pollution vary across marine species. For instance, sea turtles may mistake floating plastic bags for jellyfish, their favorite meal, leading to fatal consequences. Meanwhile, smaller creatures like plankton ingest microplastics, which then accumulate up the food chain, affecting larger marine animals and ultimately, humans.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 5,
+          "question_text": "What can be inferred about the implications of the Great Pacific Garbage Patch on human life?",
+          "question_type": "inferential",
+          "cognitive_demand": "CognitiveDemand.HIGH",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "It could lead to contamination of seafood consumed by humans.",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "It provides a new habitat for marine species.",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "It causes the oceans to rise.",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "It increases the number of jellyfish in the ocean.",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "beginning",
+          "evidence_text": "Our daily reliance on plastic items, from water bottles to shopping bags, combined with improper disposal, is the primary cause of this escalating problem.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 6,
+          "question_text": "What is the effect of marine life consuming microplastics?",
+          "question_type": "inferential",
+          "cognitive_demand": "CognitiveDemand.MEDIUM",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Accumulation of microplastics in the food chain",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Increase in the size of the Great Pacific Garbage Patch",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "Decrease in the number of jellyfish",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "Improvement in the health of marine species",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "Meanwhile, smaller creatures like plankton ingest microplastics, which then accumulate up the food chain, affecting larger marine animals and ultimately, humans.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 7,
+          "question_text": "What could be a potential future implication if plastic pollution in the ocean is not addressed?",
+          "question_type": "inferential",
+          "cognitive_demand": "CognitiveDemand.MEDIUM",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Our seafood could become contaminated",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "The volume of water in the ocean could rise",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "The temperature of the ocean could increase",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "The ocean could become less salty",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "end",
+          "evidence_text": "Marine species could face extinction, our seafood could become contaminated, and the balance of the entire marine ecosystem could be irreversibly disrupted.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 8,
+          "question_text": "What can be inferred about the impact of microplastics on the food chain in the marine ecosystem?",
+          "question_type": "inferential",
+          "cognitive_demand": "CognitiveDemand.HIGH",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Microplastics, ingested by smaller marine creatures, accumulate up the food chain and impact larger marine animals and humans.",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Microplastics, being invisible to the naked eye, have no impact on larger marine animals and humans.",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            },
+            {
+              "letter": "C",
+              "text": "Microplastics break down into smaller pieces under the sun and waves, but do not impact the marine ecosystem.",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "D",
+              "text": "Microplastics, being resilient, can be used by marine animals as a food source.",
+              "is_correct": false,
+              "distractor_type": "detail"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "Over time, the resilient plastic breaks down into smaller pieces under the harsh sun and the constant churning of the waves. These tiny fragments, called microplastics, become abundant in the waters, almost invisible to the naked eye, but not to the marine life that mistakenly consumes them. Meanwhile, smaller creatures like plankton ingest microplastics, which then accumulate up the food chain, affecting larger marine animals and ultimately, humans.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 9,
+          "question_text": "What does the word 'resilient' most likely mean in the context of the passage?",
+          "question_type": "vocabulary",
+          "cognitive_demand": "CognitiveDemand.LOW",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "able to withstand or recover quickly",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "easy to break or destroy",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            },
+            {
+              "letter": "C",
+              "text": "related to the ocean",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "able to float",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "beginning",
+          "evidence_text": "This vast collection of marine debris, predominantly resilient plastics, floats and degrades slowly, highlighting the severe issue of plastic pollution in our oceans.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 10,
+          "question_text": "What does the word 'abundant' mean in the context of this passage?",
+          "question_type": "vocabulary",
+          "cognitive_demand": "CognitiveDemand.MEDIUM",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "plentiful",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "scarce",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            },
+            {
+              "letter": "C",
+              "text": "floating",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "invisible",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "These tiny fragments, called microplastics, become abundant in the waters, almost invisible to the naked eye, but not to the marine life that mistakenly consumes them.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 11,
+          "question_text": "What is the main idea of the passage?",
+          "question_type": "main_idea",
+          "cognitive_demand": "CognitiveDemand.HIGH",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "The plastic pollution in oceans is a severe problem threatening marine life and humans, and it requires urgent solutions.",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "The Great Pacific Garbage Patch is the only area affected by plastic pollution.",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "Sea turtles and plankton are the most affected by plastic pollution.",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "The plastic pollution in oceans is not a significant issue, and it does not affect marine life or humans.",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "end",
+          "evidence_text": "The tale of plastic pollution is a stark reminder of the cause-effect relationship between human actions and the health of our planet. It's a story of how something as resilient and abundant as plastic can turn into a menacing invader in our oceans, threatening the survival of countless marine species, and eventually, our own.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 12,
+          "question_text": "What is the main issue discussed in the passage?",
+          "question_type": "main_idea",
+          "cognitive_demand": "CognitiveDemand.MEDIUM",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "The problem of plastic pollution in the ocean",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "The extinction of marine species",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "The resilience of plastic in the environment",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "The impact of sunlight on plastic degradation",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "This vast collection of marine debris, predominantly resilient plastics, floats and degrades slowly, highlighting the severe issue of plastic pollution in our oceans.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 13,
+          "question_text": "What is the chronological sequence outlined in the passage?",
+          "question_type": "text_structure",
+          "cognitive_demand": "CognitiveDemand.HIGH",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Plastic is discarded, plastic degrades into microplastics, marine life consumes microplastics, humans are affected by contaminated seafood.",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Marine life consumes plastic, plastic degrades into microplastics, humans are affected by contaminated seafood, plastic is discarded.",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "Humans are affected by contaminated seafood, plastic degrades into microplastics, plastic is discarded, marine life consumes microplastics.",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "Marine life consumes microplastics, humans are affected by contaminated seafood, plastic degrades into microplastics, plastic is discarded.",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "end",
+          "evidence_text": "The journey of plastic in the ocean is a distressing one. Over time, the resilient plastic breaks down into smaller pieces... These tiny fragments, called microplastics, become abundant in the waters... The harmful effects of plastic pollution vary across marine species... smaller creatures like plankton ingest microplastics, which then accumulate up the food chain, affecting larger marine animals and ultimately, humans.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 14,
+          "question_text": "What is the main relationship type discussed in the passage?",
+          "question_type": "text_structure",
+          "cognitive_demand": "CognitiveDemand.MEDIUM",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Cause and effect",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Comparison and contrast",
+              "is_correct": false,
+              "distractor_type": "plausible"
+            },
+            {
+              "letter": "C",
+              "text": "Sequential",
+              "is_correct": false,
+              "distractor_type": "detail"
+            },
+            {
+              "letter": "D",
+              "text": "Problem and solution",
+              "is_correct": false,
+              "distractor_type": "opposite"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "beginning",
+          "evidence_text": "In the heart of the Pacific Ocean, an unwelcome spectacle named the Great Pacific Garbage Patch swirls, an alarming testament to human carelessness. This vast collection of marine debris, predominantly resilient plastics, floats and degrades slowly, highlighting the severe issue of plastic pollution in our oceans. Our daily reliance on plastic items, from water bottles to shopping bags, combined with improper disposal, is the primary cause of this escalating problem.",
+          "points_possible": 1
+        }
+      ],
+      "total_questions": 14,
+      "total_points": 14,
+      "answer_key_summary": {
+        "1": "A",
+        "2": "A",
+        "3": "A",
+        "4": "A",
+        "5": "A",
+        "6": "A",
+        "7": "A",
+        "8": "A",
+        "9": "A",
+        "10": "A",
+        "11": "A",
+        "12": "A",
+        "13": "A",
+        "14": "A"
+      }
+    },
+    "grade": "6",
+    "genre": "nonfiction",
+    "band": "late",
+    "form_id": "COMP-6-LATE-QUESTIONS-001",
+    "type_distribution": {
+      "literal": 4,
+      "inferential": 4,
+      "vocabulary": 2,
+      "main_idea": 2,
+      "text_structure": 2
+    },
+    "cognitive_distribution": {
+      "CognitiveDemand.LOW": 2,
+      "CognitiveDemand.MEDIUM": 7,
+      "CognitiveDemand.HIGH": 5
+    },
+    "qrm_form_id": "COMP-6-LATE-QRM-1768504873542-7768",
+    "passage_form_id": "COMP-6-LATE-001",
+    "num_answer_options": 4,
+    "generated_at": "2026-01-15T14:25:26.610647",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 4 (Comprehension Blueprint)": "Via QRM for question specifications",
+      "Bank 6 (Answer Options)": "Grade 6 → 4 answer options"
+    }
+  },
+  "recall_scoring": {
+    "total_sentences": 16,
+    "max_total_points": 32,
+    "sentences": [
+      {
+        "sentence_number": 1,
+        "sentence_text": "In the heart of the Pacific Ocean, an unwelcome spectacle named the Great Pacific Garbage Patch swirls, an alarming testament to human carelessness",
+        "character_name": "Great Pacific Garbage Patch",
+        "key_detail": "testament to human carelessness",
+        "scoring_note": "2 pts: [character] + [detail] | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 2,
+        "sentence_text": "This vast collection of marine debris, predominantly resilient plastics, floats and degrades slowly, highlighting the severe issue of plastic pollution in our oceans",
+        "character_name": "marine debris",
+        "key_detail": "illustrates severe plastic pollution",
+        "scoring_note": "2 pts: [character] + [detail] | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 3,
+        "sentence_text": "Our daily reliance on plastic items, from water bottles to shopping bags, combined with improper disposal, is the primary cause of this escalating problem",
+        "character_name": "our daily reliance on plastic",
+        "key_detail": "primary cause of escalating problem",
+        "scoring_note": "2 pts: [character] + [detail] | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 4,
+        "sentence_text": "The journey of plastic in the ocean is a distressing one",
+        "character_name": "plastic",
+        "key_detail": "has a distressing journey in ocean",
+        "scoring_note": "2 pts: [character] + [detail] | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 5,
+        "sentence_text": "Over time, the resilient plastic breaks down into smaller pieces under the harsh sun and the constant churning of the waves",
+        "character_name": "resilient plastic",
+        "key_detail": "breaks down into smaller pieces",
+        "scoring_note": "2 pts: [character] + [detail] | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 6,
+        "sentence_text": "These tiny fragments, called microplastics, become abundant in the waters, almost invisible to the naked eye, but not to the marine life that mistakenly consumes them",
+        "character_name": "microplastics",
+        "key_detail": "consumed by marine life by mistake",
+        "scoring_note": "2 pts: [character] + [detail] | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 7,
+        "sentence_text": "The harmful effects of plastic pollution vary across marine species",
+        "character_name": "plastic pollution",
+        "key_detail": "has varied harmful effects on marine species",
+        "scoring_note": "2 pts: [character] + [detail] | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 8,
+        "sentence_text": "For instance, sea turtles may mistake floating plastic bags for jellyfish, their favorite meal, leading to fatal consequences",
+        "character_name": "sea turtles",
+        "key_detail": "mistake plastic bags for jellyfish",
+        "scoring_note": "2 pts: [character] + [detail] | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 9,
+        "sentence_text": "Meanwhile, smaller creatures like plankton ingest microplastics, which then accumulate up the food chain, affecting larger marine animals and ultimately, humans",
+        "character_name": "plankton",
+        "key_detail": "ingest microplastics, affecting food chain",
+        "scoring_note": "2 pts: [character] + [detail] | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 10,
+        "sentence_text": "Summarizing, the issue of plastic pollution poses a significant threat to our oceans and the diverse life they support",
+        "character_name": "plastic pollution",
+        "key_detail": "poses significant threat to oceans",
+        "scoring_note": "2 pts: [character] + [detail] | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 11,
+        "sentence_text": "If left unchecked, the future implications are grave",
+        "character_name": "future implications",
+        "key_detail": "are grave if left unchecked",
+        "scoring_note": "2 pts: [character] + [detail] | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 12,
+        "sentence_text": "Marine species could face extinction, our seafood could become contaminated, and the balance of the entire marine ecosystem could be irreversibly disrupted",
+        "character_name": "marine species, seafood, marine ecosystem",
+        "key_detail": "face extinction, contamination, disruption",
+        "scoring_note": "2 pts: [character] + [detail] | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 13,
+        "sentence_text": "However, there are potential solutions to this daunting issue",
+        "character_name": "potential solutions",
+        "key_detail": "exist for this daunting issue",
+        "scoring_note": "2 pts: [character] + [detail] | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 14,
+        "sentence_text": "We can reduce our use of single-use plastics, improve waste management systems, and support clean-up efforts in our oceans",
+        "character_name": "we",
+        "key_detail": "can reduce plastic use, improve waste management",
+        "scoring_note": "2 pts: [character] + [detail] | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 15,
+        "sentence_text": "The tale of plastic pollution is a stark reminder of the cause-effect relationship between human actions and the health of our planet",
+        "character_name": "tale of plastic pollution",
+        "key_detail": "reminder of human actions' impact on planet",
+        "scoring_note": "2 pts: [character] + [detail] | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 16,
+        "sentence_text": "It's a story of how something as resilient and abundant as plastic can turn into a menacing invader in our oceans, threatening the survival of countless marine species, and eventually, our own",
+        "character_name": "plastic",
+        "key_detail": "becomes menacing invader, threatens marine species",
+        "scoring_note": "2 pts: [character] + [detail] | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      }
+    ],
+    "general_instructions": "For each sentence, award 2 points if student recalls BOTH the character and key detail, 1 point for either one, 0 points for neither. Allow paraphrasing.",
+    "passage_title": "Title: The Resilient Invaders: Plastic Pollution in Our Oceans",
+    "grade": "6",
+    "genre": "nonfiction",
+    "form_id": "RECALL-COMP-6-LATE-001",
+    "passage_form_id": "COMP-6-LATE-001",
+    "created_at": "2026-01-15T14:26:21.810136",
+    "schema_version": "2026.1"
+  }
+}

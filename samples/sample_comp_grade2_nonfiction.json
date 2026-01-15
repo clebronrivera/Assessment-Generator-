@@ -1,0 +1,856 @@
+{
+  "metadata": {
+    "package_id": "COMP-PKG-2-20260115-094753",
+    "assessment_type": "comprehension",
+    "grade": "2",
+    "band": "early",
+    "genre": "nonfiction",
+    "created_at": "2026-01-15T09:47:53.172939",
+    "schema_version": "2026.1",
+    "component_forms": {
+      "passage": "COMP-2-EARLY-001",
+      "qrm": "COMP-2-EARLY-QRM-1768488288301-3867",
+      "pib": "COMP-2-EARLY-PIB-001",
+      "questions": "COMP-2-EARLY-QUESTIONS-001",
+      "recall_scoring": "RECALL-COMP-2-EARLY-001"
+    },
+    "banks_used": [
+      "Bank 4 (Comprehension Blueprint)",
+      "Bank 6 (Answer Options)",
+      "Bank 3 (Comp Word Counts)",
+      "Bank 1 (Lexile Ranges)",
+      "Bank 7 (Text Structures)"
+    ],
+    "stats": {
+      "passage_word_count": 138,
+      "lexile_target": "245L-425L",
+      "total_questions": 6,
+      "total_points_questions": 6,
+      "total_sentences_recall": 15,
+      "total_points_recall": 30,
+      "components_included": 5
+    }
+  },
+  "package_type": "comprehension",
+  "ready_for_use": true,
+  "qrm": {
+    "questions": [
+      {
+        "question_number": 1,
+        "question_type": "explicit",
+        "cognitive_demand": "low",
+        "evidence_location": "beginning",
+        "content_requirement": "The passage must introduce a specific animal and its habitat in the first few sentences.",
+        "distractor_guidance": "Use names of other animals or different habitats that do not match the correct answer"
+      },
+      {
+        "question_number": 2,
+        "question_type": "explicit",
+        "cognitive_demand": "low",
+        "evidence_location": "middle",
+        "content_requirement": "The passage must provide information about the animal's diet.",
+        "distractor_guidance": "Include food items that are not part of the animal's diet."
+      },
+      {
+        "question_number": 3,
+        "question_type": "explicit",
+        "cognitive_demand": "medium",
+        "evidence_location": "middle",
+        "content_requirement": "The passage must discuss a specific behavior or trait of the animal.",
+        "distractor_guidance": "Include behaviors or traits that are not related to the animal being discussed."
+      },
+      {
+        "question_number": 4,
+        "question_type": "explicit",
+        "cognitive_demand": "medium",
+        "evidence_location": "end",
+        "content_requirement": "The passage must state a fact about the animal's reproduction or lifecycle.",
+        "distractor_guidance": "Use incorrect facts about the animal's reproduction or lifecycle."
+      },
+      {
+        "question_number": 5,
+        "question_type": "implicit",
+        "cognitive_demand": "medium",
+        "evidence_location": "middle",
+        "content_requirement": "The passage must provide information that allows the reader to infer the animal's size or weight.",
+        "distractor_guidance": "Include sizes or weights that are not consistent with the information provided in the passage."
+      },
+      {
+        "question_number": 6,
+        "question_type": "implicit",
+        "cognitive_demand": "low",
+        "evidence_location": "end",
+        "content_requirement": "The passage must provide information from which the reader can infer the animal's primary threats or challenges.",
+        "distractor_guidance": "Include threats or challenges that are not consistent with the information provided in the passage."
+      }
+    ],
+    "total_questions": 6,
+    "type_distribution": {
+      "explicit": 4,
+      "implicit": 2
+    },
+    "cognitive_distribution": {
+      "low": 3,
+      "medium": 3
+    },
+    "evidence_distribution": {
+      "beginning": 1,
+      "middle": 3,
+      "end": 2
+    },
+    "required_content_elements": [
+      "Introduction of specific animal and its habitat",
+      "Information about the animal's diet",
+      "Discussion of a specific behavior or trait of the animal",
+      "Fact about the animal's reproduction or lifecycle",
+      "Information to infer the animal's size or weight",
+      "Information to infer the animal's primary threats or challenges"
+    ],
+    "required_vocabulary": [
+      "herbivore",
+      "predator",
+      "camouflage",
+      "migrate"
+    ],
+    "required_structure_elements": [
+      "description",
+      "comparison",
+      "cause and effect"
+    ],
+    "grade": "2",
+    "genre": "nonfiction",
+    "band": "early",
+    "form_id": "COMP-2-EARLY-QRM-1768488288301-3867",
+    "generated_at": "2026-01-15T09:45:07.516529",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 4 (Comprehension Blueprint)": "Grade 2 question specifications"
+    }
+  },
+  "pib": {
+    "scenes": [
+      {
+        "scene_number": 1,
+        "scene_type": "opening",
+        "location_in_passage": "beginning",
+        "purpose": "Introduce the specific animal and its habitat",
+        "content_description": "Introduce the elephant living in the vast African savanna. Describe the habitat extensively, focusing on the trees, grasslands, and water sources.",
+        "required_details": [
+          "State elephants as the specific animal",
+          "Describe the African savanna as the habitat"
+        ],
+        "supports_questions": [
+          1
+        ],
+        "vocabulary_placement": []
+      },
+      {
+        "scene_number": 2,
+        "scene_type": "description",
+        "location_in_passage": "middle",
+        "purpose": "Provide information about the elephant's diet",
+        "content_description": "Describe the elephant's diet as 'herbivore', focusing on the various plants, fruits, and tree barks they consume. Include a comparison with other animals' diets for context.",
+        "required_details": [
+          "Mention elephants are herbivores",
+          "Describe the types of food elephants consume"
+        ],
+        "supports_questions": [
+          2
+        ],
+        "vocabulary_placement": [
+          "herbivore"
+        ]
+      },
+      {
+        "scene_number": 3,
+        "scene_type": "description",
+        "location_in_passage": "middle",
+        "purpose": "Discuss a specific behavior or trait of the elephant",
+        "content_description": "Discuss the elephant's unique trait of 'migrating' in search of food and water, and how it uses 'camouflage' to protect itself from predators.",
+        "required_details": [
+          "Explain elephants' migration habits",
+          "Describe how elephants use camouflage"
+        ],
+        "supports_questions": [
+          3,
+          5
+        ],
+        "vocabulary_placement": [
+          "migrate",
+          "camouflage"
+        ]
+      },
+      {
+        "scene_number": 4,
+        "scene_type": "description",
+        "location_in_passage": "end",
+        "purpose": "State a fact about the elephant's reproduction or lifecycle",
+        "content_description": "Describe the elephant's lifecycle, focusing on the lengthy period of gestation and the care given to the young calves.",
+        "required_details": [
+          "State the gestation period of elephants",
+          "Describe how elephants care for their young"
+        ],
+        "supports_questions": [
+          4
+        ],
+        "vocabulary_placement": []
+      },
+      {
+        "scene_number": 5,
+        "scene_type": "conclusion",
+        "location_in_passage": "end",
+        "purpose": "Provide information from which the reader can infer the elephant's primary threats or challenges",
+        "content_description": "Discuss the threats elephants face from 'predators' like lions, and human activities like habitat loss and poaching.",
+        "required_details": [
+          "Discuss the threats elephants face from predators",
+          "Discuss the threats elephants face from human activities"
+        ],
+        "supports_questions": [
+          6
+        ],
+        "vocabulary_placement": [
+          "predator"
+        ]
+      }
+    ],
+    "total_scenes": 5,
+    "characters": [],
+    "opening_hook": "",
+    "central_conflict_or_topic": "",
+    "resolution_or_conclusion": "",
+    "vocabulary_targets": [
+      "herbivore",
+      "predator",
+      "camouflage",
+      "migrate"
+    ],
+    "vocabulary_contexts": {},
+    "text_structure": "description",
+    "organizational_features": [
+      "Use of headings for each section",
+      "Use comparison and cause_effect structures within sections"
+    ],
+    "question_coverage_map": {
+      "1": [
+        1
+      ],
+      "2": [
+        2
+      ],
+      "3": [
+        3
+      ],
+      "4": [
+        4
+      ],
+      "5": [
+        3
+      ],
+      "6": [
+        5
+      ]
+    },
+    "target_lexile": "245L-425L",
+    "target_word_count": 125,
+    "actual_grade": "2",
+    "genre": "nonfiction",
+    "band": "early",
+    "form_id": "COMP-2-EARLY-PIB-001",
+    "qrm_form_id": "COMP-2-EARLY-QRM-1768488288301-3867",
+    "generated_at": "2026-01-15T09:46:19.598442",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 1 (Lexile Ranges)": "Target: 245L-425L",
+      "Bank 3 (Comp Word Counts)": "Target: 125 words",
+      "Bank 7 (Text Structures)": "Structure: description"
+    }
+  },
+  "passage": {
+    "passage_text": "In the wide African savanna, elephants wander. This vast habitat is full of tall trees, rich grasslands, and refreshing water sources. Elephants are herbivores, eating lots of different plants, fruits, and tree barks. That's different from meat-eating animals like lions!\n\nElephants have a special behavior - they migrate! They move around to find food and water. They also use camouflage, blending in with trees and grass to hide from predators. This helps them stay safe.\n\nElephants have a long pregnancy, almost 22 months! When the baby, or calf, is born, the elephant herd takes great care of it.\n\nHowever, elephants face threats. Predators like lions can harm them. Humans also pose danger through habitat loss and poaching. These challenges make life tough for our mighty elephants. But they remain strong, living their lives in the wide African savanna.",
+    "passage_title": "Title: The Mighty Elephants of Africa",
+    "grade": "2",
+    "genre": "nonfiction",
+    "band": "early",
+    "form_id": "COMP-2-EARLY-001",
+    "actual_word_count": 138,
+    "target_word_count": 125,
+    "target_lexile": "245L-425L",
+    "total_questions": 6,
+    "question_coverage_verified": true,
+    "text_structure": "description",
+    "vocabulary_words": [
+      "herbivore",
+      "predator",
+      "camouflage",
+      "migrate"
+    ],
+    "vocabulary_verified": true,
+    "validation": {
+      "word_count_valid": true,
+      "word_count_actual": 138,
+      "word_count_target": 125,
+      "word_count_acceptable_range": [
+        105,
+        145
+      ],
+      "lexile_target": "245L-425L",
+      "lexile_note": "Lexile cannot be automatically validated (requires external tool)",
+      "vocabulary_present": true,
+      "vocabulary_found": [
+        "herbivore",
+        "predator",
+        "camouflage",
+        "migrate"
+      ],
+      "vocabulary_missing": [],
+      "scenes_covered": true,
+      "scenes_expected": 5,
+      "scenes_identifiable": 4,
+      "validation_passed": true,
+      "warnings": []
+    },
+    "qrm_form_id": "COMP-2-EARLY-QRM-1768488288301-3867",
+    "pib_form_id": "COMP-2-EARLY-PIB-001",
+    "generated_at": "2026-01-15T09:46:27.481773",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 1 (Lexile Ranges)": "Target: 245L-425L",
+      "Bank 3 (Comp Word Counts)": "Target: 125 words",
+      "Bank 7 (Text Structures)": "Structure: description"
+    }
+  },
+  "questions": {
+    "questions": [
+      {
+        "question_number": 1,
+        "question_text": "Which animal is discussed in the passage and where does it live?",
+        "question_type": "explicit",
+        "cognitive_demand": "low",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Elephants in the African savanna",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Lions in the jungle",
+            "is_correct": false,
+            "distractor_type": "animal_habitat_confusion"
+          },
+          {
+            "letter": "C",
+            "text": "Giraffes in the desert",
+            "is_correct": false,
+            "distractor_type": "animal_habitat_confusion"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "beginning",
+        "evidence_text": "In the wide African savanna, elephants wander.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 2,
+        "question_text": "What do elephants eat?",
+        "question_type": "explicit",
+        "cognitive_demand": "low",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Plants, fruits, and tree barks",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Meat and fish",
+            "is_correct": false,
+            "distractor_type": "diet_misconception"
+          },
+          {
+            "letter": "C",
+            "text": "Insects and small mammals",
+            "is_correct": false,
+            "distractor_type": "diet_misconception"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "Elephants are herbivores, eating lots of different plants, fruits, and tree barks.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 3,
+        "question_text": "What special behavior do elephants exhibit?",
+        "question_type": "explicit",
+        "cognitive_demand": "medium",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Migration",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Burrowing underground",
+            "is_correct": false,
+            "distractor_type": "behavior_misconception"
+          },
+          {
+            "letter": "C",
+            "text": "Building nests in trees",
+            "is_correct": false,
+            "distractor_type": "behavior_misconception"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "Elephants have a special behavior - they migrate!",
+        "points_possible": 1
+      },
+      {
+        "question_number": 4,
+        "question_text": "How long is an elephant's pregnancy?",
+        "question_type": "explicit",
+        "cognitive_demand": "medium",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Almost 22 months",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Around 9 months",
+            "is_correct": false,
+            "distractor_type": "reproduction_misconception"
+          },
+          {
+            "letter": "C",
+            "text": "Nearly 12 months",
+            "is_correct": false,
+            "distractor_type": "reproduction_misconception"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "end",
+        "evidence_text": "Elephants have a long pregnancy, almost 22 months!",
+        "points_possible": 1
+      },
+      {
+        "question_number": 5,
+        "question_text": "Considering their ability to hide among trees and grass, how big might elephants be?",
+        "question_type": "implicit",
+        "cognitive_demand": "medium",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Very large",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Very small",
+            "is_correct": false,
+            "distractor_type": "size_misconception"
+          },
+          {
+            "letter": "C",
+            "text": "Medium-sized",
+            "is_correct": false,
+            "distractor_type": "size_misconception"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "They also use camouflage, blending in with trees and grass to hide from predators.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 6,
+        "question_text": "What are the primary threats to elephants?",
+        "question_type": "implicit",
+        "cognitive_demand": "low",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Predators and humans",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Climate change and floods",
+            "is_correct": false,
+            "distractor_type": "threat_misconception"
+          },
+          {
+            "letter": "C",
+            "text": "Disease and lack of food",
+            "is_correct": false,
+            "distractor_type": "threat_misconception"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "end",
+        "evidence_text": "Predators like lions can harm them. Humans also pose danger through habitat loss and poaching.",
+        "points_possible": 1
+      }
+    ],
+    "total_questions": 6,
+    "answer_key": {
+      "questions": [
+        {
+          "question_number": 1,
+          "question_text": "Which animal is discussed in the passage and where does it live?",
+          "question_type": "explicit",
+          "cognitive_demand": "low",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Elephants in the African savanna",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Lions in the jungle",
+              "is_correct": false,
+              "distractor_type": "animal_habitat_confusion"
+            },
+            {
+              "letter": "C",
+              "text": "Giraffes in the desert",
+              "is_correct": false,
+              "distractor_type": "animal_habitat_confusion"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "beginning",
+          "evidence_text": "In the wide African savanna, elephants wander.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 2,
+          "question_text": "What do elephants eat?",
+          "question_type": "explicit",
+          "cognitive_demand": "low",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Plants, fruits, and tree barks",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Meat and fish",
+              "is_correct": false,
+              "distractor_type": "diet_misconception"
+            },
+            {
+              "letter": "C",
+              "text": "Insects and small mammals",
+              "is_correct": false,
+              "distractor_type": "diet_misconception"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "Elephants are herbivores, eating lots of different plants, fruits, and tree barks.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 3,
+          "question_text": "What special behavior do elephants exhibit?",
+          "question_type": "explicit",
+          "cognitive_demand": "medium",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Migration",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Burrowing underground",
+              "is_correct": false,
+              "distractor_type": "behavior_misconception"
+            },
+            {
+              "letter": "C",
+              "text": "Building nests in trees",
+              "is_correct": false,
+              "distractor_type": "behavior_misconception"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "Elephants have a special behavior - they migrate!",
+          "points_possible": 1
+        },
+        {
+          "question_number": 4,
+          "question_text": "How long is an elephant's pregnancy?",
+          "question_type": "explicit",
+          "cognitive_demand": "medium",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Almost 22 months",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Around 9 months",
+              "is_correct": false,
+              "distractor_type": "reproduction_misconception"
+            },
+            {
+              "letter": "C",
+              "text": "Nearly 12 months",
+              "is_correct": false,
+              "distractor_type": "reproduction_misconception"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "end",
+          "evidence_text": "Elephants have a long pregnancy, almost 22 months!",
+          "points_possible": 1
+        },
+        {
+          "question_number": 5,
+          "question_text": "Considering their ability to hide among trees and grass, how big might elephants be?",
+          "question_type": "implicit",
+          "cognitive_demand": "medium",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Very large",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Very small",
+              "is_correct": false,
+              "distractor_type": "size_misconception"
+            },
+            {
+              "letter": "C",
+              "text": "Medium-sized",
+              "is_correct": false,
+              "distractor_type": "size_misconception"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "They also use camouflage, blending in with trees and grass to hide from predators.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 6,
+          "question_text": "What are the primary threats to elephants?",
+          "question_type": "implicit",
+          "cognitive_demand": "low",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Predators and humans",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Climate change and floods",
+              "is_correct": false,
+              "distractor_type": "threat_misconception"
+            },
+            {
+              "letter": "C",
+              "text": "Disease and lack of food",
+              "is_correct": false,
+              "distractor_type": "threat_misconception"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "end",
+          "evidence_text": "Predators like lions can harm them. Humans also pose danger through habitat loss and poaching.",
+          "points_possible": 1
+        }
+      ],
+      "total_questions": 6,
+      "total_points": 6,
+      "answer_key_summary": {
+        "1": "A",
+        "2": "A",
+        "3": "A",
+        "4": "A",
+        "5": "A",
+        "6": "A"
+      }
+    },
+    "grade": "2",
+    "genre": "nonfiction",
+    "band": "early",
+    "form_id": "COMP-2-EARLY-QUESTIONS-001",
+    "type_distribution": {
+      "explicit": 4,
+      "implicit": 2
+    },
+    "cognitive_distribution": {
+      "low": 3,
+      "medium": 3
+    },
+    "qrm_form_id": "COMP-2-EARLY-QRM-1768488288301-3867",
+    "passage_form_id": "COMP-2-EARLY-001",
+    "num_answer_options": 3,
+    "generated_at": "2026-01-15T09:47:11.224420",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 4 (Comprehension Blueprint)": "Via QRM for question specifications",
+      "Bank 6 (Answer Options)": "Grade 2 → 3 answer options"
+    }
+  },
+  "recall_scoring": {
+    "total_sentences": 15,
+    "max_total_points": 30,
+    "sentences": [
+      {
+        "sentence_number": 1,
+        "sentence_text": "In the wide African savanna, elephants wander",
+        "character_name": "elephants",
+        "key_detail": "wandering in African savanna",
+        "scoring_note": "2 pts: elephants + wandering in African savanna | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 2,
+        "sentence_text": "This vast habitat is full of tall trees, rich grasslands, and refreshing water sources",
+        "character_name": "habitat",
+        "key_detail": "full of trees, grasslands, water sources",
+        "scoring_note": "2 pts: habitat + full of trees, grasslands, water sources | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 3,
+        "sentence_text": "Elephants are herbivores, eating lots of different plants, fruits, and tree barks",
+        "character_name": "elephants",
+        "key_detail": "are herbivores, eat plants, fruits, barks",
+        "scoring_note": "2 pts: elephants + are herbivores, eat plants, fruits, barks | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 4,
+        "sentence_text": "That's different from meat-eating animals like lions",
+        "character_name": "lions",
+        "key_detail": "are meat-eating animals",
+        "scoring_note": "2 pts: lions + are meat-eating animals | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 5,
+        "sentence_text": "Elephants have a special behavior - they migrate",
+        "character_name": "elephants",
+        "key_detail": "have a special behavior - migration",
+        "scoring_note": "2 pts: elephants + have a special behavior - migration | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 6,
+        "sentence_text": "They move around to find food and water",
+        "character_name": "they",
+        "key_detail": "move around to find food, water",
+        "scoring_note": "2 pts: they + move around to find food, water | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 7,
+        "sentence_text": "They also use camouflage, blending in with trees and grass to hide from predators",
+        "character_name": "they",
+        "key_detail": "use camouflage to hide from predators",
+        "scoring_note": "2 pts: they + use camouflage to hide from predators | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 8,
+        "sentence_text": "This helps them stay safe",
+        "character_name": "them",
+        "key_detail": "camouflage helps stay safe",
+        "scoring_note": "2 pts: them + camouflage helps stay safe | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 9,
+        "sentence_text": "Elephants have a long pregnancy, almost 22 months",
+        "character_name": "elephants",
+        "key_detail": "have a long pregnancy, 22 months",
+        "scoring_note": "2 pts: elephants + have a long pregnancy, 22 months | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 10,
+        "sentence_text": "When the baby, or calf, is born, the elephant herd takes great care of it",
+        "character_name": "elephant herd",
+        "key_detail": "takes care of the born calf",
+        "scoring_note": "2 pts: elephant herd + takes care of the born calf | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 11,
+        "sentence_text": "However, elephants face threats",
+        "character_name": "elephants",
+        "key_detail": "face threats",
+        "scoring_note": "2 pts: elephants + face threats | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 12,
+        "sentence_text": "Predators like lions can harm them",
+        "character_name": "lions",
+        "key_detail": "can harm elephants",
+        "scoring_note": "2 pts: lions + can harm elephants | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 13,
+        "sentence_text": "Humans also pose danger through habitat loss and poaching",
+        "character_name": "humans",
+        "key_detail": "pose danger through habitat loss, poaching",
+        "scoring_note": "2 pts: humans + pose danger through habitat loss, poaching | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 14,
+        "sentence_text": "These challenges make life tough for our mighty elephants",
+        "character_name": "elephants",
+        "key_detail": "face tough life due to challenges",
+        "scoring_note": "2 pts: elephants + face tough life due to challenges | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 15,
+        "sentence_text": "But they remain strong, living their lives in the wide African savanna",
+        "character_name": "they",
+        "key_detail": "remain strong in African savanna",
+        "scoring_note": "2 pts: they + remain strong in African savanna | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      }
+    ],
+    "general_instructions": "For each sentence, award 2 points if student recalls BOTH the character and key detail, 1 point for either one, 0 points for neither. Allow paraphrasing.",
+    "passage_title": "Title: The Mighty Elephants of Africa",
+    "grade": "2",
+    "genre": "nonfiction",
+    "form_id": "RECALL-COMP-2-EARLY-001",
+    "passage_form_id": "COMP-2-EARLY-001",
+    "created_at": "2026-01-15T09:47:53.172808",
+    "schema_version": "2026.1"
+  }
+}

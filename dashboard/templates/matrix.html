@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment Matrix - Reading Compass</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .nav-links {
+            margin-top: 15px;
+        }
+
+        .nav-links a {
+            color: #667eea;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: 600;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .stat-card h3 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 5px;
+        }
+
+        .stat-card p {
+            color: #666;
+        }
+
+        .matrix-section {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .matrix-section h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+        }
+
+        .assessment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+        }
+
+        .assessment-item {
+            padding: 15px;
+            border-radius: 8px;
+            border: 2px solid #dee2e6;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.2s;
+        }
+
+        .assessment-item.exists {
+            background: #d4edda;
+            border-color: #28a745;
+        }
+
+        .assessment-item.missing {
+            background: #fff3cd;
+            border-color: #ffc107;
+        }
+
+        .assessment-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .assessment-name {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .assessment-status {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .status-badge {
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+
+        .badge-success {
+            background: #28a745;
+            color: white;
+        }
+
+        .badge-warning {
+            background: #ffc107;
+            color: #333;
+        }
+
+        .btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            font-size: 0.9em;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #5568d3;
+        }
+
+        .btn-sm {
+            padding: 6px 12px;
+            font-size: 0.85em;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 30px;
+            background: #e9ecef;
+            border-radius: 15px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            transition: width 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📊 Assessment Matrix</h1>
+            <p>Track all assessment generation progress</p>
+            <div class="nav-links">
+                <a href="/">← Back to Dashboard</a>
+                <a href="#" onclick="refreshStatus()">🔄 Refresh Status</a>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-card">
+                <h3>{{ matrix_status.total }}</h3>
+                <p>Total Assessments</p>
+            </div>
+            <div class="stat-card">
+                <h3>{{ matrix_status.generated }}</h3>
+                <p>Generated</p>
+            </div>
+            <div class="stat-card">
+                <h3>{{ matrix_status.missing }}</h3>
+                <p>Missing</p>
+            </div>
+            <div class="stat-card">
+                <h3>{{ ((matrix_status.generated / matrix_status.total * 100) | round) }}%</h3>
+                <p>Complete</p>
+            </div>
+        </div>
+
+        <div class="matrix-section">
+            <h2>Overall Progress</h2>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: {{ (matrix_status.generated / matrix_status.total * 100) }}%">
+                    {{ matrix_status.generated }}/{{ matrix_status.total }} Complete
+                </div>
+            </div>
+        </div>
+
+        <!-- ORF Assessments -->
+        <div class="matrix-section">
+            <h2>📖 ORF Assessments (Grades K-6)</h2>
+            <div class="assessment-grid">
+                {% for assessment in matrix_status.assessments %}
+                {% if assessment.spec.assessment_type == 'orf' %}
+                <div class="assessment-item {% if assessment.exists %}exists{% else %}missing{% endif %}">
+                    <div class="assessment-name">
+                        {{ assessment.spec.display_name }}
+                    </div>
+                    <div class="assessment-status">
+                        {% if assessment.exists %}
+                        <span class="status-badge badge-success">✓ Generated</span>
+                        <a href="/view/{{ assessment.filename }}" class="btn btn-primary btn-sm">View</a>
+                        {% else %}
+                        <span class="status-badge badge-warning">⚠ Missing</span>
+                        <button class="btn btn-primary btn-sm"
+                            onclick="generateAssessment('{{ assessment.spec.grade }}', 'orf', null)">Generate</button>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Comprehension Assessments - Narrative -->
+        <div class="matrix-section">
+            <h2>📚 Comprehension Assessments - Narrative (Grades 1-6)</h2>
+            <div class="assessment-grid">
+                {% for assessment in matrix_status.assessments %}
+                {% if assessment.spec.assessment_type == 'comprehension' and assessment.spec.genre == 'narrative' %}
+                <div class="assessment-item {% if assessment.exists %}exists{% else %}missing{% endif %}">
+                    <div class="assessment-name">
+                        {{ assessment.spec.display_name }}
+                    </div>
+                    <div class="assessment-status">
+                        {% if assessment.exists %}
+                        <span class="status-badge badge-success">✓ Generated</span>
+                        <a href="/view/{{ assessment.filename }}" class="btn btn-primary btn-sm">View</a>
+                        <a href="/preview/{{ assessment.filename }}" class="btn btn-primary btn-sm">Preview PDF</a>
+                        {% else %}
+                        <span class="status-badge badge-warning">⚠ Missing</span>
+                        <button class="btn btn-primary btn-sm"
+                            onclick="generateAssessment('{{ assessment.spec.grade }}', 'comprehension', 'narrative')">Generate</button>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Comprehension Assessments - Nonfiction -->
+        <div class="matrix-section">
+            <h2>📰 Comprehension Assessments - Nonfiction (Grades 1-6)</h2>
+            <div class="assessment-grid">
+                {% for assessment in matrix_status.assessments %}
+                {% if assessment.spec.assessment_type == 'comprehension' and assessment.spec.genre == 'nonfiction' %}
+                <div class="assessment-item {% if assessment.exists %}exists{% else %}missing{% endif %}">
+                    <div class="assessment-name">
+                        {{ assessment.spec.display_name }}
+                    </div>
+                    <div class="assessment-status">
+                        {% if assessment.exists %}
+                        <span class="status-badge badge-success">✓ Generated</span>
+                        <a href="/view/{{ assessment.filename }}" class="btn btn-primary btn-sm">View</a>
+                        <a href="/preview/{{ assessment.filename }}" class="btn btn-primary btn-sm">Preview PDF</a>
+                        {% else %}
+                        <span class="status-badge badge-warning">⚠ Missing</span>
+                        <button class="btn btn-primary btn-sm"
+                            onclick="generateAssessment('{{ assessment.spec.grade }}', 'comprehension', 'nonfiction')">Generate</button>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function generateAssessment(grade, type, genre) {
+            console.log(`🚀 Requesting generation: Grade ${grade}, ${type}, ${genre || 'N/A'}`);
+
+            // Allow user to see something is happening immediately
+            const btn = event.target;
+            const originalText = btn.innerText;
+            btn.innerText = "Starting...";
+            btn.disabled = true;
+
+            const data = { grade, assessment_type: type };
+            if (genre) data.genre = genre;
+
+            fetch('/api/generate', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            })
+                .then(r => r.json())
+                .then(data => {
+                    console.log("✅ Server response:", data);
+                    if (data.success) {
+                        alert(data.message + '\n\nThis will take 10-15 minutes. Refresh the page to see progress.');
+                        btn.innerText = "Generating...";
+                    } else {
+                        alert('Error: ' + data.error);
+                        btn.innerText = originalText;
+                        btn.disabled = false;
+                    }
+                })
+                .catch(err => {
+                    console.error("❌ Fetch error:", err);
+                    alert('Error: ' + err);
+                    btn.innerText = originalText;
+                    btn.disabled = false;
+                });
+        }
+
+        function refreshStatus() {
+            location.reload();
+        }
+    </script>
+</body>
+
+</html>

@@ -26,19 +26,6 @@ class QuestionType(Enum):
     VOCABULARY = "vocabulary"
     TEXT_STRUCTURE = "text_structure"
 
-# MAPPING: QRM type → Generator type
-QUESTION_TYPE_MAPPING = {
-    'explicit': 'literal',
-    'literal': 'literal',
-    'implicit': 'inferential',
-    'inferential': 'inferential',
-    'evaluative': 'evaluative',
-    'synthesis': 'synthesis',
-    'main_idea': 'main_idea',
-    'vocabulary': 'vocabulary',
-    'text_structure': 'text_structure'
-}
-
 @dataclass
 class AnswerOption:
     letter: str
@@ -247,10 +234,6 @@ Return ONLY this JSON (no markdown, no comments):
         # Parse
         data = json.loads(json_str)
         
-        # Map question type if needed
-        raw_question_type = data["question_type"]
-        mapped_type = QUESTION_TYPE_MAPPING.get(raw_question_type.lower(), raw_question_type)
-        
         # Build question
         answer_options = []
         for opt_data in data["answer_options"]:
@@ -264,7 +247,7 @@ Return ONLY this JSON (no markdown, no comments):
         return Question(
             question_number=data["question_number"],
             question_text=data["question_text"],
-            question_type=QuestionType(mapped_type),
+            question_type=QuestionType(data["question_type"]),
             cognitive_demand=data["cognitive_demand"],
             answer_options=answer_options,
             correct_answer=data["correct_answer"],

@@ -52,7 +52,12 @@ class ORFTargets:
 
 # ORF WORD COUNT BANK DATA
 # Rule: Target = (Spring 75th percentile WCPM + 10), rounded to next multiple of 10
+# ORF WORD COUNT BANK DATA
+# Rule: Target = (Spring 75th percentile WCPM + 10), rounded to next multiple of 10
 ORF_BANK = [
+    # Grade K: 40 + 10 = 50 (Estimated)
+    ORFTargets("K", spring_wcpm_50th=30, spring_wcpm_75th=40, target_word_count=50, basis="Estimated"),
+
     # Grade 1: 91 + 10 = 101 → 110
     ORFTargets("1", spring_wcpm_50th=60, spring_wcpm_75th=91, target_word_count=110),
     
@@ -161,8 +166,8 @@ def get_wcpm_benchmarks(grade: str) -> Optional[dict]:
 
 
 def get_orf_grades() -> list[str]:
-    """Get list of all grades with ORF assessments (1-8)."""
-    return ["1", "2", "3", "4", "5", "6", "7", "8"]
+    """Get list of all grades with ORF assessments (K-8)."""
+    return ["K", "1", "2", "3", "4", "5", "6", "7", "8"]
 
 
 def export_to_json() -> list[dict]:
@@ -178,8 +183,8 @@ def export_to_json() -> list[dict]:
 # Validation on module load
 def _validate_bank():
     """Internal validation to ensure bank integrity."""
-    # Check all grades 1-8 present
-    expected_grades = {"1", "2", "3", "4", "5", "6", "7", "8"}
+    # Check all grades K-8 present
+    expected_grades = {"K", "1", "2", "3", "4", "5", "6", "7", "8"}
     found_grades = {target.grade for target in ORF_BANK}
     
     assert found_grades == expected_grades, f"Missing ORF grades: {expected_grades - found_grades}"

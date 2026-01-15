@@ -1,0 +1,647 @@
+{
+  "metadata": {
+    "package_id": "COMP-PKG-1-20260115-090519",
+    "assessment_type": "comprehension",
+    "grade": "1",
+    "band": "early",
+    "genre": "nonfiction",
+    "created_at": "2026-01-15T09:05:19.247769",
+    "schema_version": "2026.1",
+    "component_forms": {
+      "passage": "COMP-1-EARLY-001",
+      "qrm": "COMP-1-EARLY-QRM-1768485752288-1889",
+      "pib": "COMP-1-EARLY-PIB-001",
+      "questions": "COMP-1-EARLY-QUESTIONS-001",
+      "recall_scoring": "RECALL-COMP-1-EARLY-001"
+    },
+    "banks_used": [
+      "Bank 1 (Lexile Ranges)",
+      "Bank 6 (Answer Options)",
+      "Bank 7 (Text Structures)",
+      "Bank 3 (Comp Word Counts)",
+      "Bank 4 (Comprehension Blueprint)"
+    ],
+    "stats": {
+      "passage_word_count": 109,
+      "lexile_target": "BR35L-165L",
+      "total_questions": 5,
+      "total_points_questions": 5,
+      "total_sentences_recall": 8,
+      "total_points_recall": 16,
+      "components_included": 5
+    }
+  },
+  "package_type": "comprehension",
+  "ready_for_use": true,
+  "qrm": {
+    "questions": [
+      {
+        "question_number": 1,
+        "question_type": "explicit",
+        "cognitive_demand": "low",
+        "evidence_location": "beginning",
+        "content_requirement": "The passage must introduce a specific animal and its natural habitat in the first paragraph.",
+        "distractor_guidance": "Use names of other animals and habitats not mentioned in the passage."
+      },
+      {
+        "question_number": 2,
+        "question_type": "explicit",
+        "cognitive_demand": "low",
+        "evidence_location": "middle",
+        "content_requirement": "The passage must describe a unique characteristic or ability of the animal.",
+        "distractor_guidance": "Use characteristics or abilities from other animals not mentioned in the passage."
+      },
+      {
+        "question_number": 3,
+        "question_type": "explicit",
+        "cognitive_demand": "low",
+        "evidence_location": "middle",
+        "content_requirement": "The passage must state what the animal eats.",
+        "distractor_guidance": "Use food items that the animal does not eat."
+      },
+      {
+        "question_number": 4,
+        "question_type": "explicit",
+        "cognitive_demand": "medium",
+        "evidence_location": "end",
+        "content_requirement": "The passage must explain how the animal protects itself from predators.",
+        "distractor_guidance": "Use strategies that the animal does not use or that are used by other animals not mentioned in the passage."
+      },
+      {
+        "question_number": 5,
+        "question_type": "implicit",
+        "cognitive_demand": "low",
+        "evidence_location": "end",
+        "content_requirement": "The passage must hint at how the changing climate could impact the animal's habitat.",
+        "distractor_guidance": "Use impacts that were not hinted at in the passage or that do not logically follow from the information given."
+      }
+    ],
+    "total_questions": 5,
+    "type_distribution": {
+      "explicit": 4,
+      "implicit": 1
+    },
+    "cognitive_distribution": {
+      "low": 4,
+      "medium": 1
+    },
+    "evidence_distribution": {
+      "beginning": 1,
+      "middle": 2,
+      "end": 2
+    },
+    "required_content_elements": [
+      "Introduction of a specific animal and its natural habitat",
+      "Description of a unique characteristic or ability of the animal",
+      "Information about the animal's diet",
+      "Explanation of how the animal protects itself from predators",
+      "Hints about how the changing climate could impact the animal's habitat"
+    ],
+    "required_vocabulary": [
+      "carnivore",
+      "herbivore",
+      "omnivore",
+      "predator",
+      "prey"
+    ],
+    "required_structure_elements": [
+      "Chronological sequence of the animal's daily activities",
+      "Cause-effect relationship between the climate change and the animal's habitat"
+    ],
+    "grade": "1",
+    "genre": "nonfiction",
+    "band": "early",
+    "form_id": "COMP-1-EARLY-QRM-1768485752288-1889",
+    "generated_at": "2026-01-15T09:02:55.314536",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 4 (Comprehension Blueprint)": "Grade 1 question specifications"
+    }
+  },
+  "pib": {
+    "scenes": [
+      {
+        "scene_number": 1,
+        "scene_type": "opening",
+        "location_in_passage": "beginning",
+        "purpose": "Introduce a specific animal and its natural habitat",
+        "content_description": "Introduction of the animal, a grizzly bear and its natural habitat, the forests and mountainous regions of North America.",
+        "required_details": [
+          "Mention the grizzly bear by name",
+          "Describe its habitat (dense forests, mountainous regions)"
+        ],
+        "supports_questions": [
+          1
+        ],
+        "vocabulary_placement": [
+          "predator"
+        ]
+      },
+      {
+        "scene_number": 2,
+        "scene_type": "description",
+        "location_in_passage": "middle",
+        "purpose": "Describe unique characteristic or ability, diet of the animal",
+        "content_description": "Describe the grizzly bear's unique ability to climb trees and swim swiftly, along with its omnivorous diet which includes berries, fish, and small mammals.",
+        "required_details": [
+          "Highlight the bear's ability to climb trees and swim",
+          "Mention the bear's diet (berries, fish, small mammals)"
+        ],
+        "supports_questions": [
+          2,
+          3
+        ],
+        "vocabulary_placement": [
+          "omnivore",
+          "prey"
+        ]
+      },
+      {
+        "scene_number": 3,
+        "scene_type": "description",
+        "location_in_passage": "end",
+        "purpose": "Explain how the animal protects itself, and how changing climate impacts the animal's habitat",
+        "content_description": "Explanation of the grizzly bear's protective instincts, such as its use of claws and teeth, along with a hint at how climate change might threaten its habitat by affecting the bear's food sources.",
+        "required_details": [
+          "Describe the bear's defensive mechanisms (claws, teeth)",
+          "Hint at the impact of climate change on the bear's habitat (potential scarcity of food sources)"
+        ],
+        "supports_questions": [
+          4,
+          5
+        ],
+        "vocabulary_placement": [
+          "carnivore",
+          "herbivore"
+        ]
+      }
+    ],
+    "total_scenes": 3,
+    "characters": [],
+    "opening_hook": "",
+    "central_conflict_or_topic": "",
+    "resolution_or_conclusion": "",
+    "vocabulary_targets": [
+      "carnivore",
+      "herbivore",
+      "omnivore",
+      "predator",
+      "prey"
+    ],
+    "vocabulary_contexts": {},
+    "text_structure": "descriptive",
+    "organizational_features": [
+      "Introduction of topic",
+      "Subtopics detailing the bear's abilities, diet, and protective mechanisms",
+      "Concluding hints about climate change impact"
+    ],
+    "question_coverage_map": {
+      "1": [
+        1
+      ],
+      "2": [
+        2
+      ],
+      "3": [
+        2
+      ],
+      "4": [
+        3
+      ],
+      "5": [
+        3
+      ]
+    },
+    "target_lexile": "BR35L-165L",
+    "target_word_count": 75,
+    "actual_grade": "1",
+    "genre": "nonfiction",
+    "band": "early",
+    "form_id": "COMP-1-EARLY-PIB-001",
+    "qrm_form_id": "COMP-1-EARLY-QRM-1768485752288-1889",
+    "generated_at": "2026-01-15T09:03:45.949393",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 1 (Lexile Ranges)": "Target: BR35L-165L",
+      "Bank 3 (Comp Word Counts)": "Target: 75 words",
+      "Bank 7 (Text Structures)": "Structure: descriptive"
+    }
+  },
+  "passage": {
+    "passage_text": "Meet the grizzly bear, a powerful predator who lives in the dense forests and towering mountains of North America. This big bear can climb trees and swim fast, too! It's an omnivore, which means it eats both plants and meat. Berries, fish, and small mammals are part of its diet.\n\nGrizzly bears protect themselves with sharp claws and strong teeth. But, they face a big problem. Changes in weather patterns, called climate change, might make it harder for them to find food. Whether it's the berries they munch as herbivores, or the fish and mammals they hunt as carnivores, grizzlies need lots of food to stay healthy and strong.",
+    "passage_title": "Title: The Mighty Grizzly Bear",
+    "grade": "1",
+    "genre": "nonfiction",
+    "band": "early",
+    "form_id": "COMP-1-EARLY-001",
+    "actual_word_count": 109,
+    "target_word_count": 75,
+    "target_lexile": "BR35L-165L",
+    "total_questions": 5,
+    "question_coverage_verified": true,
+    "text_structure": "descriptive",
+    "vocabulary_words": [
+      "carnivore",
+      "herbivore",
+      "omnivore",
+      "predator",
+      "prey"
+    ],
+    "vocabulary_verified": false,
+    "validation": {
+      "word_count_valid": false,
+      "word_count_actual": 109,
+      "word_count_target": 75,
+      "word_count_acceptable_range": [
+        55,
+        95
+      ],
+      "lexile_target": "BR35L-165L",
+      "lexile_note": "Lexile cannot be automatically validated (requires external tool)",
+      "vocabulary_present": false,
+      "vocabulary_found": [
+        "carnivore",
+        "herbivore",
+        "omnivore",
+        "predator"
+      ],
+      "vocabulary_missing": [
+        "prey"
+      ],
+      "scenes_covered": true,
+      "scenes_expected": 3,
+      "scenes_identifiable": 2,
+      "validation_passed": false,
+      "warnings": [
+        "Word count 109 outside acceptable range 55-95",
+        "Vocabulary word 'prey' not found in passage"
+      ]
+    },
+    "qrm_form_id": "COMP-1-EARLY-QRM-1768485752288-1889",
+    "pib_form_id": "COMP-1-EARLY-PIB-001",
+    "generated_at": "2026-01-15T09:04:04.841681",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 1 (Lexile Ranges)": "Target: BR35L-165L",
+      "Bank 3 (Comp Word Counts)": "Target: 75 words",
+      "Bank 7 (Text Structures)": "Structure: descriptive"
+    }
+  },
+  "questions": {
+    "questions": [
+      {
+        "question_number": 1,
+        "question_text": "Where does the grizzly bear live?",
+        "question_type": "explicit",
+        "cognitive_demand": "low",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "In the dense forests and towering mountains of North America",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "In the hot deserts of Africa",
+            "is_correct": false,
+            "distractor_type": "incorrect_habitat"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "beginning",
+        "evidence_text": "Meet the grizzly bear, a powerful predator who lives in the dense forests and towering mountains of North America.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 2,
+        "question_text": "What can the grizzly bear do?",
+        "question_type": "explicit",
+        "cognitive_demand": "low",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Climb trees and swim fast",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Fly and change colors",
+            "is_correct": false,
+            "distractor_type": "incorrect_ability"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "This big bear can climb trees and swim fast, too!",
+        "points_possible": 1
+      },
+      {
+        "question_number": 3,
+        "question_text": "What does the grizzly bear eat?",
+        "question_type": "explicit",
+        "cognitive_demand": "low",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Berries, fish, and small mammals",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Grass and leaves",
+            "is_correct": false,
+            "distractor_type": "incorrect_food"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "Berries, fish, and small mammals are part of its diet.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 4,
+        "question_text": "How does the grizzly bear protect itself?",
+        "question_type": "explicit",
+        "cognitive_demand": "medium",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "With sharp claws and strong teeth",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "By hiding in burrows",
+            "is_correct": false,
+            "distractor_type": "incorrect_protection"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "end",
+        "evidence_text": "Grizzly bears protect themselves with sharp claws and strong teeth.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 5,
+        "question_text": "What might make it harder for grizzly bears to find food?",
+        "question_type": "implicit",
+        "cognitive_demand": "low",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Changes in weather patterns",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Too many other animals",
+            "is_correct": false,
+            "distractor_type": "incorrect_impact"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "end",
+        "evidence_text": "Changes in weather patterns, called climate change, might make it harder for them to find food.",
+        "points_possible": 1
+      }
+    ],
+    "total_questions": 5,
+    "answer_key": {
+      "questions": [
+        {
+          "question_number": 1,
+          "question_text": "Where does the grizzly bear live?",
+          "question_type": "explicit",
+          "cognitive_demand": "low",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "In the dense forests and towering mountains of North America",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "In the hot deserts of Africa",
+              "is_correct": false,
+              "distractor_type": "incorrect_habitat"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "beginning",
+          "evidence_text": "Meet the grizzly bear, a powerful predator who lives in the dense forests and towering mountains of North America.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 2,
+          "question_text": "What can the grizzly bear do?",
+          "question_type": "explicit",
+          "cognitive_demand": "low",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Climb trees and swim fast",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Fly and change colors",
+              "is_correct": false,
+              "distractor_type": "incorrect_ability"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "This big bear can climb trees and swim fast, too!",
+          "points_possible": 1
+        },
+        {
+          "question_number": 3,
+          "question_text": "What does the grizzly bear eat?",
+          "question_type": "explicit",
+          "cognitive_demand": "low",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Berries, fish, and small mammals",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Grass and leaves",
+              "is_correct": false,
+              "distractor_type": "incorrect_food"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "Berries, fish, and small mammals are part of its diet.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 4,
+          "question_text": "How does the grizzly bear protect itself?",
+          "question_type": "explicit",
+          "cognitive_demand": "medium",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "With sharp claws and strong teeth",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "By hiding in burrows",
+              "is_correct": false,
+              "distractor_type": "incorrect_protection"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "end",
+          "evidence_text": "Grizzly bears protect themselves with sharp claws and strong teeth.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 5,
+          "question_text": "What might make it harder for grizzly bears to find food?",
+          "question_type": "implicit",
+          "cognitive_demand": "low",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Changes in weather patterns",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Too many other animals",
+              "is_correct": false,
+              "distractor_type": "incorrect_impact"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "end",
+          "evidence_text": "Changes in weather patterns, called climate change, might make it harder for them to find food.",
+          "points_possible": 1
+        }
+      ],
+      "total_questions": 5,
+      "total_points": 5,
+      "answer_key_summary": {
+        "1": "A",
+        "2": "A",
+        "3": "A",
+        "4": "A",
+        "5": "A"
+      }
+    },
+    "grade": "1",
+    "genre": "nonfiction",
+    "band": "early",
+    "form_id": "COMP-1-EARLY-QUESTIONS-001",
+    "type_distribution": {
+      "explicit": 4,
+      "implicit": 1
+    },
+    "cognitive_distribution": {
+      "low": 4,
+      "medium": 1
+    },
+    "qrm_form_id": "COMP-1-EARLY-QRM-1768485752288-1889",
+    "passage_form_id": "COMP-1-EARLY-001",
+    "num_answer_options": 2,
+    "generated_at": "2026-01-15T09:04:56.711302",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 4 (Comprehension Blueprint)": "Via QRM for question specifications",
+      "Bank 6 (Answer Options)": "Grade 1 → 2 answer options"
+    }
+  },
+  "recall_scoring": {
+    "total_sentences": 8,
+    "max_total_points": 16,
+    "sentences": [
+      {
+        "sentence_number": 1,
+        "sentence_text": "Meet the grizzly bear, a powerful predator who lives in the dense forests and towering mountains of North America",
+        "character_name": "grizzly bear",
+        "key_detail": "lives in forests and mountains",
+        "scoring_note": "2 pts: grizzly bear + lives in forests and mountains | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 2,
+        "sentence_text": "This big bear can climb trees and swim fast, too",
+        "character_name": "this big bear",
+        "key_detail": "can climb trees and swim fast",
+        "scoring_note": "2 pts: this big bear + can climb trees and swim fast | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 3,
+        "sentence_text": "It's an omnivore, which means it eats both plants and meat",
+        "character_name": "it",
+        "key_detail": "eats both plants and meat",
+        "scoring_note": "2 pts: it + eats both plants and meat | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 4,
+        "sentence_text": "Berries, fish, and small mammals are part of its diet",
+        "character_name": "its",
+        "key_detail": "diet includes berries, fish, mammals",
+        "scoring_note": "2 pts: its + diet includes berries, fish, mammals | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 5,
+        "sentence_text": "Grizzly bears protect themselves with sharp claws and strong teeth",
+        "character_name": "grizzly bears",
+        "key_detail": "protect themselves with claws and teeth",
+        "scoring_note": "2 pts: grizzly bears + protect themselves with claws and teeth | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 6,
+        "sentence_text": "But, they face a big problem",
+        "character_name": "they",
+        "key_detail": "face a big problem",
+        "scoring_note": "2 pts: they + face a big problem | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 7,
+        "sentence_text": "Changes in weather patterns, called climate change, might make it harder for them to find food",
+        "character_name": "them",
+        "key_detail": "climate change might affect their food",
+        "scoring_note": "2 pts: them + climate change might affect their food | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 8,
+        "sentence_text": "Whether it's the berries they munch as herbivores, or the fish and mammals they hunt as carnivores, grizzlies need lots of food to stay healthy and strong",
+        "character_name": "grizzlies",
+        "key_detail": "need lots of food to stay healthy",
+        "scoring_note": "2 pts: grizzlies + need lots of food to stay healthy | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      }
+    ],
+    "general_instructions": "For each sentence, award 2 points if student recalls BOTH the character and key detail, 1 point for either one, 0 points for neither. Allow paraphrasing.",
+    "passage_title": "Title: The Mighty Grizzly Bear",
+    "grade": "1",
+    "genre": "nonfiction",
+    "form_id": "RECALL-COMP-1-EARLY-001",
+    "passage_form_id": "COMP-1-EARLY-001",
+    "created_at": "2026-01-15T09:05:19.247447",
+    "schema_version": "2026.1"
+  }
+}

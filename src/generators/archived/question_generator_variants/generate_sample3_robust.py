@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate Sample 3 with Sequential Question Generator"""
+"""Generate Sample 3 with All Robust Generators"""
 import sys, os, json
 from datetime import datetime
 from dotenv import load_dotenv
@@ -9,7 +9,7 @@ PROJECT_ROOT = '/Users/lebron/Desktop/Bank Creator'
 sys.path.insert(0, PROJECT_ROOT)
 
 from src.generators import create_qrm_generator, create_pib_generator, create_comprehension_passage_generator
-from src.generators.question_generator import create_question_generator
+from src.generators.question_generator_robust import create_robust_question_generator
 from src.generators.simplified_recall_scoring_generator import create_simplified_recall_scoring_generator
 from src.packaging import create_package_builder
 from src.utils import create_ai_client
@@ -33,7 +33,7 @@ def save_json(data, filepath):
 
 def generate_sample3():
     print_header("SAMPLE 3: GRADE 5 COMPREHENSION - NONFICTION")
-    print("With SEQUENTIAL Question Generator (One at a Time)")
+    print("With ALL Robust Generators (Enhanced JSON Parsing)")
     
     api_key = os.getenv('OPENAI_API_KEY')
     if not api_key:
@@ -47,12 +47,12 @@ def generate_sample3():
         qrm_gen = create_qrm_generator(ai_client)
         pib_gen = create_pib_generator(ai_client)
         passage_gen = create_comprehension_passage_generator(ai_client)
-        question_gen = create_question_generator(ai_client)  # SEQUENTIAL VERSION
+        question_gen = create_robust_question_generator(ai_client)  # ROBUST VERSION
         recall_gen = create_simplified_recall_scoring_generator(ai_client)
         package_builder = create_package_builder()
         
         print_success("All generators created")
-        print("   Using SEQUENTIAL question generator (one question at a time)")
+        print("   Using ROBUST question generator with 3-strategy JSON parsing")
         
         print_step(1, "Generating QRM...")
         qrm = qrm_gen.generate(grade="5", genre="nonfiction", band="late")
@@ -67,8 +67,8 @@ def generate_sample3():
         print_success(f"Passage: {passage.actual_word_count} words")
         print(f"   Title: {passage.passage_title}")
         
-        print_step(4, "Generating questions (SEQUENTIAL - one at a time)...")
-        questions = question_gen.generate(qrm_result=qrm, passage_result=passage, max_retries=3)
+        print_step(4, "Generating questions (ROBUST parser with 3 strategies)...")
+        questions = question_gen.generate(qrm_result=qrm, passage_result=passage, max_retries=5)
         print_success(f"Questions: {questions.total_questions} questions")
         
         print_step(5, "Generating simplified recall scoring...")
@@ -101,6 +101,11 @@ def generate_sample3():
         print("  1. Grade 2 ORF Assessment ✓")
         print("  2. Grade 2 Comprehension Narrative + Simplified Recall ✓")
         print("  3. Grade 5 Comprehension Nonfiction + Simplified Recall ✓")
+        print("\nNext steps:")
+        print("  git add samples/sample_3_*")
+        print("  git add src/generators/question_generator_robust.py")
+        print('  git commit -m "feat: Complete Sample 3 with robust question generator"')
+        print("  git push origin main")
         
         return True
         
@@ -111,13 +116,13 @@ def generate_sample3():
         return False
 
 def main():
-    print_header("SAMPLE 3 GENERATION - SEQUENTIAL VERSION")
+    print_header("SAMPLE 3 GENERATION - ROBUST VERSION")
     print(f"Timestamp: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    print("\nApproach:")
-    print("  • Generate questions ONE AT A TIME (12 separate AI calls)")
-    print("  • Simpler JSON per call = higher reliability")
-    print("  • 3 retry attempts per question")
-    print("  • Slower but more robust")
+    print("\nEnhancements:")
+    print("  • 3-strategy JSON parsing (standard → aggressive → incremental)")
+    print("  • Smart quote replacement and cleanup")
+    print("  • Individual question extraction as fallback")
+    print("  • 5 retry attempts with error feedback")
     
     success = generate_sample3()
     sys.exit(0 if success else 1)

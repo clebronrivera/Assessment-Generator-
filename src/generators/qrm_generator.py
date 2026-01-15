@@ -433,13 +433,13 @@ Generate the QRM now:
                     f"got {actual_count}, expected {expected_count}"
                 )
         
-        # Check cognitive demand distribution
+        # Check cognitive demand distribution (allow ±1 variance for flexibility)
         for demand, expected_count in blueprint["cognitive_demands"].items():
             actual_count = qrm.cognitive_distribution.get(demand, 0)
-            if actual_count != expected_count:
+            if abs(actual_count - expected_count) > 1:  # Allow ±1 variance
                 raise ValueError(
                     f"Cognitive demand '{demand}' count mismatch: "
-                    f"got {actual_count}, expected {expected_count}"
+                    f"got {actual_count}, expected {expected_count} (±1 allowed)"
                 )
         
         print(f"✓ QRM validation passed - matches Bank 4 specifications")

@@ -1,0 +1,743 @@
+{
+  "metadata": {
+    "package_id": "COMP-PKG-1-20260115-090529",
+    "assessment_type": "comprehension",
+    "grade": "1",
+    "band": "early",
+    "genre": "narrative",
+    "created_at": "2026-01-15T09:05:29.976658",
+    "schema_version": "2026.1",
+    "component_forms": {
+      "passage": "COMP-1-EARLY-001",
+      "qrm": "COMP-1-EARLY-QRM-1768485746567-8140",
+      "pib": "COMP-1-EARLY-PIB-001",
+      "questions": "COMP-1-EARLY-QUESTIONS-001",
+      "recall_scoring": "RECALL-COMP-1-EARLY-001"
+    },
+    "banks_used": [
+      "Bank 7 (Text Structures)",
+      "Bank 6 (Answer Options)",
+      "Bank 1 (Lexile Ranges)",
+      "Bank 3 (Comp Word Counts)",
+      "Bank 4 (Comprehension Blueprint)"
+    ],
+    "stats": {
+      "passage_word_count": 93,
+      "lexile_target": "BR35L-165L",
+      "total_questions": 5,
+      "total_points_questions": 5,
+      "total_sentences_recall": 12,
+      "total_points_recall": 24,
+      "components_included": 5
+    }
+  },
+  "package_type": "comprehension",
+  "ready_for_use": true,
+  "qrm": {
+    "questions": [
+      {
+        "question_number": 1,
+        "question_type": "explicit",
+        "cognitive_demand": "low",
+        "evidence_location": "beginning",
+        "content_requirement": "The passage must introduce the main character and their pet at the start. The pet's name and type (e.g., dog, cat) must be mentioned.",
+        "distractor_guidance": "Use names of other characters or animals mentioned later in the passage; use different types of common pets."
+      },
+      {
+        "question_number": 2,
+        "question_type": "explicit",
+        "cognitive_demand": "low",
+        "evidence_location": "middle",
+        "content_requirement": "The passage must describe an activity that the main character and their pet do together.",
+        "distractor_guidance": "Use other activities mentioned in the passage; use activities that are plausible but not mentioned in the passage."
+      },
+      {
+        "question_number": 3,
+        "question_type": "explicit",
+        "cognitive_demand": "low",
+        "evidence_location": "middle",
+        "content_requirement": "The passage must mention a specific place where the main character and their pet visit.",
+        "distractor_guidance": "Use other places mentioned in the passage; use common places that are not mentioned in the passage."
+      },
+      {
+        "question_number": 4,
+        "question_type": "explicit",
+        "cognitive_demand": "medium",
+        "evidence_location": "end",
+        "content_requirement": "The passage must describe an event or problem that the main character and their pet encounter and resolve.",
+        "distractor_guidance": "Use other events or problems mentioned in the passage; use events or problems that are plausible but not mentioned in the passage."
+      },
+      {
+        "question_number": 5,
+        "question_type": "implicit",
+        "cognitive_demand": "low",
+        "evidence_location": "end",
+        "content_requirement": "The passage must include details that suggest how the main character feels about their pet by the end of the story (e.g., actions, dialogue).",
+        "distractor_guidance": "Use other emotions that could be interpreted from the passage; use common emotions that are not supported by the passage."
+      }
+    ],
+    "total_questions": 5,
+    "type_distribution": {
+      "explicit": 4,
+      "implicit": 1
+    },
+    "cognitive_distribution": {
+      "low": 4,
+      "medium": 1
+    },
+    "evidence_distribution": {
+      "beginning": 1,
+      "middle": 2,
+      "end": 2
+    },
+    "required_content_elements": [
+      "Introduction of main character and their pet",
+      "Activity that character and pet do together",
+      "Specific place that character and pet visit",
+      "Event or problem that character and pet encounter and resolve",
+      "Details indicating main character's feelings about their pet"
+    ],
+    "required_vocabulary": [
+      "journey",
+      "adventure",
+      "resolve",
+      "companion"
+    ],
+    "required_structure_elements": [
+      "chronological sequence",
+      "cause-effect relationship"
+    ],
+    "grade": "1",
+    "genre": "narrative",
+    "band": "early",
+    "form_id": "COMP-1-EARLY-QRM-1768485746567-8140",
+    "generated_at": "2026-01-15T09:02:46.833232",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 4 (Comprehension Blueprint)": "Grade 1 question specifications"
+    }
+  },
+  "pib": {
+    "scenes": [
+      {
+        "scene_number": 1,
+        "scene_type": "opening",
+        "location_in_passage": "beginning",
+        "purpose": "Introduce main character and his pet",
+        "content_description": "Introduction to the main character, a boy named Jack, and his pet dog, named Max. Show Jack and Max playing together in their backyard.",
+        "required_details": [
+          "State Jack's name clearly",
+          "Mention the pet's name, Max, and that he is a dog",
+          "Describe their playful interaction"
+        ],
+        "supports_questions": [
+          1
+        ],
+        "vocabulary_placement": [
+          "companion"
+        ]
+      },
+      {
+        "scene_number": 2,
+        "scene_type": "action",
+        "location_in_passage": "middle",
+        "purpose": "Describe an activity Jack and Max do together",
+        "content_description": "Jack and Max embark on an adventure, finding hidden treasures in their backyard.",
+        "required_details": [
+          "Describe the adventure",
+          "Mention the treasures they find"
+        ],
+        "supports_questions": [
+          2
+        ],
+        "vocabulary_placement": [
+          "adventure"
+        ]
+      },
+      {
+        "scene_number": 3,
+        "scene_type": "transition",
+        "location_in_passage": "middle",
+        "purpose": "Highlight a specific place they visit",
+        "content_description": "Jack and Max visit their favorite spot, the large oak tree in the park.",
+        "required_details": [
+          "Specific mention of the oak tree and the park"
+        ],
+        "supports_questions": [
+          3
+        ],
+        "vocabulary_placement": [
+          "journey"
+        ]
+      },
+      {
+        "scene_number": 4,
+        "scene_type": "action",
+        "location_in_passage": "end",
+        "purpose": "Present a problem and its resolution",
+        "content_description": "At the oak tree, Max gets his paw stuck in a hole. Jack manages to free him, showing his care for Max.",
+        "required_details": [
+          "Describe the problem and its resolution"
+        ],
+        "supports_questions": [
+          4
+        ],
+        "vocabulary_placement": [
+          "resolve"
+        ]
+      },
+      {
+        "scene_number": 5,
+        "scene_type": "conclusion",
+        "location_in_passage": "end",
+        "purpose": "Convey Jack's feelings towards Max",
+        "content_description": "Jack expresses his happiness about having Max as his companion, indicating his deep affection for his pet.",
+        "required_details": [
+          "Jack's dialogue expressing his feelings about Max"
+        ],
+        "supports_questions": [
+          5
+        ],
+        "vocabulary_placement": []
+      }
+    ],
+    "total_scenes": 5,
+    "characters": [
+      {
+        "name": "Jack",
+        "role": "main",
+        "key_traits": [
+          "adventurous",
+          "caring",
+          "happy"
+        ],
+        "actions_to_show": [
+          "Plays with Max",
+          "Takes Max on an adventure",
+          "Frees Max's paw",
+          "Expresses his love for Max"
+        ],
+        "supports_questions": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "name": "Max",
+        "role": "secondary",
+        "key_traits": [
+          "playful",
+          "loyal"
+        ],
+        "actions_to_show": [
+          "Plays with Jack",
+          "Joins Jack on an adventure",
+          "Gets his paw stuck",
+          "Shows affection towards Jack"
+        ],
+        "supports_questions": [
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    ],
+    "opening_hook": "The sun was shining bright as Jack and his loyal companion, Max, played fetch in their backyard.",
+    "central_conflict_or_topic": "An adventure between Jack and his pet, Max, in their backyard and the park.",
+    "resolution_or_conclusion": "Jack expresses his happiness about having Max as his companion, indicating his deep affection for his pet.",
+    "vocabulary_targets": [
+      "journey",
+      "adventure",
+      "resolve",
+      "companion"
+    ],
+    "vocabulary_contexts": {
+      "companion": "Describe Max as Jack's loyal companion.",
+      "adventure": "Use when describing their backyard treasure hunt.",
+      "journey": "Use when describing their visit to the oak tree.",
+      "resolve": "Use when describing the resolution of Max's paw problem."
+    },
+    "text_structure": "chronological",
+    "organizational_features": [],
+    "question_coverage_map": {
+      "1": [
+        1
+      ],
+      "2": [
+        2
+      ],
+      "3": [
+        3
+      ],
+      "4": [
+        4
+      ],
+      "5": [
+        5
+      ]
+    },
+    "target_lexile": "BR35L-165L",
+    "target_word_count": 75,
+    "actual_grade": "1",
+    "genre": "narrative",
+    "band": "early",
+    "form_id": "COMP-1-EARLY-PIB-001",
+    "qrm_form_id": "COMP-1-EARLY-QRM-1768485746567-8140",
+    "generated_at": "2026-01-15T09:04:16.559512",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 1 (Lexile Ranges)": "Target: BR35L-165L",
+      "Bank 3 (Comp Word Counts)": "Target: 75 words",
+      "Bank 7 (Text Structures)": "Structure: chronological"
+    }
+  },
+  "passage": {
+    "passage_text": "The sun was shining bright. Jack and his playful dog, Max, were having fun in the backyard. Max was Jack's loyal companion. Together, they had an adventure, finding shiny rocks and colorful feathers.\n\nTheir journey took them to the park. They loved the large oak tree there. Suddenly, Max's paw got stuck in a hole! Jack, caring and brave, managed to free Max's paw. He helped resolve the problem.\n\nAt the end of the day, Jack hugged Max. \"I'm happy you're my companion, Max,\" he said. Their adventure made them even closer friends.",
+    "passage_title": "\"Jack and Max's Backyard Adventure\"",
+    "grade": "1",
+    "genre": "narrative",
+    "band": "early",
+    "form_id": "COMP-1-EARLY-001",
+    "actual_word_count": 93,
+    "target_word_count": 75,
+    "target_lexile": "BR35L-165L",
+    "total_questions": 5,
+    "question_coverage_verified": true,
+    "text_structure": "chronological",
+    "vocabulary_words": [
+      "journey",
+      "adventure",
+      "resolve",
+      "companion"
+    ],
+    "vocabulary_verified": true,
+    "validation": {
+      "word_count_valid": true,
+      "word_count_actual": 93,
+      "word_count_target": 75,
+      "word_count_acceptable_range": [
+        55,
+        95
+      ],
+      "lexile_target": "BR35L-165L",
+      "lexile_note": "Lexile cannot be automatically validated (requires external tool)",
+      "vocabulary_present": true,
+      "vocabulary_found": [
+        "journey",
+        "adventure",
+        "resolve",
+        "companion"
+      ],
+      "vocabulary_missing": [],
+      "scenes_covered": false,
+      "scenes_expected": 5,
+      "scenes_identifiable": 3,
+      "validation_passed": false,
+      "warnings": [
+        "Expected ~5 scenes/sections, found 3 paragraphs"
+      ]
+    },
+    "qrm_form_id": "COMP-1-EARLY-QRM-1768485746567-8140",
+    "pib_form_id": "COMP-1-EARLY-PIB-001",
+    "generated_at": "2026-01-15T09:04:31.462901",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 1 (Lexile Ranges)": "Target: BR35L-165L",
+      "Bank 3 (Comp Word Counts)": "Target: 75 words",
+      "Bank 7 (Text Structures)": "Structure: chronological"
+    }
+  },
+  "questions": {
+    "questions": [
+      {
+        "question_number": 1,
+        "question_text": "Who is Jack's playful pet?",
+        "question_type": "explicit",
+        "cognitive_demand": "low",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Max",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Oak",
+            "is_correct": false,
+            "distractor_type": "character_confusion"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "beginning",
+        "evidence_text": "Jack and his playful dog, Max, were having fun in the backyard.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 2,
+        "question_text": "What activity do Jack and Max do together?",
+        "question_type": "explicit",
+        "cognitive_demand": "low",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Finding shiny rocks and colorful feathers",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Playing hide and seek",
+            "is_correct": false,
+            "distractor_type": "plausible_activity"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "Together, they had an adventure, finding shiny rocks and colorful feathers.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 3,
+        "question_text": "Where do Jack and Max visit during their adventure?",
+        "question_type": "explicit",
+        "cognitive_demand": "low",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "The park",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "The beach",
+            "is_correct": false,
+            "distractor_type": "plausible_place"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "Their journey took them to the park.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 4,
+        "question_text": "What problem do Jack and Max encounter and resolve?",
+        "question_type": "explicit",
+        "cognitive_demand": "medium",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Max's paw got stuck in a hole",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Max lost his favorite ball",
+            "is_correct": false,
+            "distractor_type": "plausible_problem"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "end",
+        "evidence_text": "Suddenly, Max's paw got stuck in a hole! Jack, caring and brave, managed to free Max's paw.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 5,
+        "question_text": "How does Jack feel about Max by the end of the story?",
+        "question_type": "implicit",
+        "cognitive_demand": "low",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Happy",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Angry",
+            "is_correct": false,
+            "distractor_type": "unsupported_emotion"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "end",
+        "evidence_text": "\"I'm happy you're my companion, Max,\" he said.",
+        "points_possible": 1
+      }
+    ],
+    "total_questions": 5,
+    "answer_key": {
+      "questions": [
+        {
+          "question_number": 1,
+          "question_text": "Who is Jack's playful pet?",
+          "question_type": "explicit",
+          "cognitive_demand": "low",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Max",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Oak",
+              "is_correct": false,
+              "distractor_type": "character_confusion"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "beginning",
+          "evidence_text": "Jack and his playful dog, Max, were having fun in the backyard.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 2,
+          "question_text": "What activity do Jack and Max do together?",
+          "question_type": "explicit",
+          "cognitive_demand": "low",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Finding shiny rocks and colorful feathers",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Playing hide and seek",
+              "is_correct": false,
+              "distractor_type": "plausible_activity"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "Together, they had an adventure, finding shiny rocks and colorful feathers.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 3,
+          "question_text": "Where do Jack and Max visit during their adventure?",
+          "question_type": "explicit",
+          "cognitive_demand": "low",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "The park",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "The beach",
+              "is_correct": false,
+              "distractor_type": "plausible_place"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "Their journey took them to the park.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 4,
+          "question_text": "What problem do Jack and Max encounter and resolve?",
+          "question_type": "explicit",
+          "cognitive_demand": "medium",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Max's paw got stuck in a hole",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Max lost his favorite ball",
+              "is_correct": false,
+              "distractor_type": "plausible_problem"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "end",
+          "evidence_text": "Suddenly, Max's paw got stuck in a hole! Jack, caring and brave, managed to free Max's paw.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 5,
+          "question_text": "How does Jack feel about Max by the end of the story?",
+          "question_type": "implicit",
+          "cognitive_demand": "low",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Happy",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Angry",
+              "is_correct": false,
+              "distractor_type": "unsupported_emotion"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "end",
+          "evidence_text": "\"I'm happy you're my companion, Max,\" he said.",
+          "points_possible": 1
+        }
+      ],
+      "total_questions": 5,
+      "total_points": 5,
+      "answer_key_summary": {
+        "1": "A",
+        "2": "A",
+        "3": "A",
+        "4": "A",
+        "5": "A"
+      }
+    },
+    "grade": "1",
+    "genre": "narrative",
+    "band": "early",
+    "form_id": "COMP-1-EARLY-QUESTIONS-001",
+    "type_distribution": {
+      "explicit": 4,
+      "implicit": 1
+    },
+    "cognitive_distribution": {
+      "low": 4,
+      "medium": 1
+    },
+    "qrm_form_id": "COMP-1-EARLY-QRM-1768485746567-8140",
+    "passage_form_id": "COMP-1-EARLY-001",
+    "num_answer_options": 2,
+    "generated_at": "2026-01-15T09:05:05.442417",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 4 (Comprehension Blueprint)": "Via QRM for question specifications",
+      "Bank 6 (Answer Options)": "Grade 1 → 2 answer options"
+    }
+  },
+  "recall_scoring": {
+    "total_sentences": 12,
+    "max_total_points": 24,
+    "sentences": [
+      {
+        "sentence_number": 1,
+        "sentence_text": "The sun was shining bright",
+        "character_name": "The sun",
+        "key_detail": "It was shining bright",
+        "scoring_note": "2 pts: [The sun] + [shining bright] | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 2,
+        "sentence_text": "Jack and his playful dog, Max, were having fun in the backyard",
+        "character_name": "Jack, Max",
+        "key_detail": "Having fun in the backyard",
+        "scoring_note": "2 pts: [Jack, Max] + [having fun in the backyard] | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 3,
+        "sentence_text": "Max was Jack's loyal companion",
+        "character_name": "Max",
+        "key_detail": "Max is Jack's loyal companion",
+        "scoring_note": "2 pts: [Max] + [Jack's loyal companion] | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 4,
+        "sentence_text": "Together, they had an adventure, finding shiny rocks and colorful feathers",
+        "character_name": "They",
+        "key_detail": "Had an adventure, found shiny rocks and colorful feathers",
+        "scoring_note": "2 pts: [They] + [had an adventure, found shiny rocks and colorful feathers] | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 5,
+        "sentence_text": "Their journey took them to the park",
+        "character_name": "They",
+        "key_detail": "Journey took them to the park",
+        "scoring_note": "2 pts: [They] + [journey took them to the park] | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 6,
+        "sentence_text": "They loved the large oak tree there",
+        "character_name": "They",
+        "key_detail": "Loved the large oak tree",
+        "scoring_note": "2 pts: [They] + [loved the large oak tree] | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 7,
+        "sentence_text": "Suddenly, Max's paw got stuck in a hole",
+        "character_name": "Max",
+        "key_detail": "Paw got stuck in a hole",
+        "scoring_note": "2 pts: [Max] + [paw got stuck in a hole] | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 8,
+        "sentence_text": "Jack, caring and brave, managed to free Max's paw",
+        "character_name": "Jack",
+        "key_detail": "Managed to free Max's paw",
+        "scoring_note": "2 pts: [Jack] + [managed to free Max's paw] | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 9,
+        "sentence_text": "He helped resolve the problem",
+        "character_name": "He (Jack)",
+        "key_detail": "Helped resolve the problem",
+        "scoring_note": "2 pts: [He (Jack)] + [helped resolve the problem] | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 10,
+        "sentence_text": "At the end of the day, Jack hugged Max",
+        "character_name": "Jack",
+        "key_detail": "Hugged Max",
+        "scoring_note": "2 pts: [Jack] + [hugged Max] | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 11,
+        "sentence_text": "\"I'm happy you're my companion, Max,\" he said",
+        "character_name": "He (Jack)",
+        "key_detail": "Happy Max is his companion",
+        "scoring_note": "2 pts: [He (Jack)] + [happy Max is his companion] | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 12,
+        "sentence_text": "Their adventure made them even closer friends",
+        "character_name": "They",
+        "key_detail": "Adventure made them closer friends",
+        "scoring_note": "2 pts: [They] + [adventure made them closer friends] | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      }
+    ],
+    "general_instructions": "For each sentence, award 2 points if student recalls BOTH the character and key detail, 1 point for either one, 0 points for neither. Allow paraphrasing.",
+    "passage_title": "\"Jack and Max's Backyard Adventure\"",
+    "grade": "1",
+    "genre": "narrative",
+    "form_id": "RECALL-COMP-1-EARLY-001",
+    "passage_form_id": "COMP-1-EARLY-001",
+    "created_at": "2026-01-15T09:05:29.976554",
+    "schema_version": "2026.1"
+  }
+}

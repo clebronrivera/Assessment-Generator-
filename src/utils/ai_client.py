@@ -32,13 +32,14 @@ class OpenAIClient(AIClient):
         
         Args:
             api_key: OpenAI API key
-            model: Model to use (default: gpt-4)
+            model: Model to use (default: gpt-4 - most capable model)
         """
         try:
             import openai
             self.openai = openai
             self.api_key = api_key
             self.model = model
+            # Simple initialization - let OpenAI library handle HTTP client
             self.client = openai.OpenAI(api_key=api_key)
         except ImportError:
             raise ImportError("OpenAI library not installed. Run: pip install openai")
@@ -112,6 +113,55 @@ class AnthropicClient(AIClient):
         return response.content[0].text
 
 
+class GeminiClient(AIClient):
+    """
+    Google Gemini API client.
+    Requires: pip install google-generativeai
+    """
+    
+    def __init__(self, api_key: str, model: str = "gemini-2.0-flash"):
+        """
+        Initialize Gemini client.
+        
+        Args:
+            api_key: Google API key
+            model: Model to use (default: gemini-2.0-flash)
+        """
+        try:
+            import google.generativeai as genai
+            self.genai = genai
+            self.api_key = api_key
+            self.model = model
+            genai.configure(api_key=api_key)
+            self.client = genai.GenerativeModel(model)
+        except ImportError:
+            raise ImportError("Google Generative AI library not installed. Run: pip install google-generativeai")
+    
+    def generate(self, prompt: str, **kwargs) -> str:
+        """
+        Generate text using Gemini API.
+        
+        Args:
+            prompt: The prompt to send
+            **kwargs: Additional parameters (temperature, max_tokens, etc.)
+            
+        Returns:
+            Generated text
+        """
+        generation_config = self.genai.types.GenerationConfig(
+            candidate_count=1,
+            max_output_tokens=kwargs.get('max_tokens', 2000),
+            temperature=kwargs.get('temperature', 0.7),
+        )
+        
+        response = self.client.generate_content(
+            prompt,
+            generation_config=generation_config
+        )
+        
+        return response.text
+
+
 class MockAIClient(AIClient):
     """
     Mock AI client for testing without API calls.
@@ -171,7 +221,9 @@ def create_ai_client(api_key: str, provider: str = "anthropic") -> AIClient:
         return OpenAIClient(api_key)
     elif provider == "anthropic":
         return AnthropicClient(api_key)
+    elif provider == "gemini":
+        return GeminiClient(api_key)
     elif provider == "mock":
         return MockAIClient()
     else:
-        raise ValueError(f"Unknown provider: {provider}. Use 'openai', 'anthropic', or 'mock'")
+        raise ValueError(f"Unknown provider: {provider}. Use 'openai', 'anthropic', 'gemini', or 'mock'")

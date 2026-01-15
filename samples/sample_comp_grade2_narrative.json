@@ -1,0 +1,845 @@
+{
+  "metadata": {
+    "package_id": "COMP-PKG-2-20260115-091148",
+    "assessment_type": "comprehension",
+    "grade": "2",
+    "band": "early",
+    "genre": "narrative",
+    "created_at": "2026-01-15T09:11:48.439301",
+    "schema_version": "2026.1",
+    "component_forms": {
+      "passage": "COMP-2-EARLY-001",
+      "qrm": "COMP-2-EARLY-QRM-1768486007717-3614",
+      "pib": "COMP-2-EARLY-PIB-001",
+      "questions": "COMP-2-EARLY-QUESTIONS-001",
+      "recall_scoring": "RECALL-COMP-2-EARLY-001"
+    },
+    "banks_used": [
+      "Bank 4 (Comprehension Blueprint)",
+      "Bank 6 (Answer Options)",
+      "Bank 3 (Comp Word Counts)",
+      "Bank 7 (Text Structures)",
+      "Bank 1 (Lexile Ranges)"
+    ],
+    "stats": {
+      "passage_word_count": 123,
+      "lexile_target": "245L-425L",
+      "total_questions": 6,
+      "total_points_questions": 6,
+      "total_sentences_recall": 14,
+      "total_points_recall": 28,
+      "components_included": 5
+    }
+  },
+  "package_type": "comprehension",
+  "ready_for_use": true,
+  "qrm": {
+    "questions": [
+      {
+        "question_number": 1,
+        "question_type": "explicit",
+        "cognitive_demand": "low",
+        "evidence_location": "beginning",
+        "content_requirement": "Passage must introduce the main character and their best friend in the first paragraph.",
+        "distractor_guidance": "Use names of other characters in the story or common names as distractors."
+      },
+      {
+        "question_number": 2,
+        "question_type": "explicit",
+        "cognitive_demand": "low",
+        "evidence_location": "middle",
+        "content_requirement": "The passage must describe a specific event where the main character and their best friend had fun at a park.",
+        "distractor_guidance": "Use distractors that depict other events in the story or common park activities."
+      },
+      {
+        "question_number": 3,
+        "question_type": "explicit",
+        "cognitive_demand": "medium",
+        "evidence_location": "end",
+        "content_requirement": "The passage must include a clear resolution where the main character and their best friend solve a problem together.",
+        "distractor_guidance": "Use other problems introduced in the story or common problems kids face as distractors."
+      },
+      {
+        "question_number": 4,
+        "question_type": "explicit",
+        "cognitive_demand": "medium",
+        "evidence_location": "middle",
+        "content_requirement": "The passage must include a cause-effect relationship where the main character's action leads to an effect on their best friend.",
+        "distractor_guidance": "Use distractors that show other cause-effect relationships in the story or common cause-effect relationships."
+      },
+      {
+        "question_number": 5,
+        "question_type": "implicit",
+        "cognitive_demand": "low",
+        "evidence_location": "beginning",
+        "content_requirement": "The passage must describe the main character's feelings towards their best friend at the start of the story.",
+        "distractor_guidance": "Use other emotions expressed in the story or common emotions as distractors."
+      },
+      {
+        "question_number": 6,
+        "question_type": "implicit",
+        "cognitive_demand": "medium",
+        "evidence_location": "end",
+        "content_requirement": "The passage must imply a change in the main character's feelings towards their best friend by the end of the story.",
+        "distractor_guidance": "Use other emotions expressed in the story or common emotions as distractors."
+      }
+    ],
+    "total_questions": 6,
+    "type_distribution": {
+      "explicit": 4,
+      "implicit": 2
+    },
+    "cognitive_distribution": {
+      "low": 3,
+      "medium": 3
+    },
+    "evidence_distribution": {
+      "beginning": 2,
+      "middle": 2,
+      "end": 2
+    },
+    "required_content_elements": [
+      "Introduction of main character and their best friend",
+      "Specific event at a park",
+      "Problem resolution",
+      "Cause-effect relationship",
+      "Emotions towards best friend at the start",
+      "Change in emotions towards best friend by the end"
+    ],
+    "required_vocabulary": [],
+    "required_structure_elements": [
+      "chronological sequence",
+      "cause-effect relationship"
+    ],
+    "grade": "2",
+    "genre": "narrative",
+    "band": "early",
+    "form_id": "COMP-2-EARLY-QRM-1768486007717-3614",
+    "generated_at": "2026-01-15T09:07:33.997104",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 4 (Comprehension Blueprint)": "Grade 2 question specifications"
+    }
+  },
+  "pib": {
+    "scenes": [
+      {
+        "scene_number": 1,
+        "scene_type": "opening",
+        "location_in_passage": "beginning",
+        "purpose": "Introduce the main character and their best friend",
+        "content_description": "Introduce main character Sam and his best friend Lily. Show their excitement as they prepare to go to the park after school.",
+        "required_details": [
+          "Introduction of the main character Sam",
+          "Introduction of Sam's best friend Lily",
+          "Describe Sam's positive feelings towards Lily"
+        ],
+        "supports_questions": [
+          1,
+          5
+        ],
+        "vocabulary_placement": []
+      },
+      {
+        "scene_number": 2,
+        "scene_type": "action",
+        "location_in_passage": "middle",
+        "purpose": "Describe a specific event at the park",
+        "content_description": "Describe how Sam and Lily have fun at the park. They play on the swings and share a picnic.",
+        "required_details": [
+          "Specific event at the park",
+          "Sam's action of sharing his sandwich leads to Lily's happiness"
+        ],
+        "supports_questions": [
+          2,
+          4
+        ],
+        "vocabulary_placement": []
+      },
+      {
+        "scene_number": 3,
+        "scene_type": "action",
+        "location_in_passage": "middle",
+        "purpose": "Introduce a problem",
+        "content_description": "Lily loses her favorite toy in the park. Both Sam and Lily are upset.",
+        "required_details": [
+          "Introduction of a problem: Lost toy"
+        ],
+        "supports_questions": [],
+        "vocabulary_placement": []
+      },
+      {
+        "scene_number": 4,
+        "scene_type": "action",
+        "location_in_passage": "end",
+        "purpose": "Resolve the problem",
+        "content_description": "Sam helps Lily to find her lost toy. They are both relieved and happy when they find it.",
+        "required_details": [
+          "Problem resolution: Found toy"
+        ],
+        "supports_questions": [
+          3
+        ],
+        "vocabulary_placement": []
+      },
+      {
+        "scene_number": 5,
+        "scene_type": "conclusion",
+        "location_in_passage": "end",
+        "purpose": "Show change in main character's feelings",
+        "content_description": "Sam feels even closer to Lily after their adventure. They promise to always help each other.",
+        "required_details": [
+          "Highlight a change in Sam's feelings towards Lily"
+        ],
+        "supports_questions": [
+          6
+        ],
+        "vocabulary_placement": []
+      }
+    ],
+    "total_scenes": 5,
+    "characters": [
+      {
+        "name": "Sam",
+        "role": "main",
+        "key_traits": [
+          "helpful",
+          "kind"
+        ],
+        "actions_to_show": [
+          "Helps Lily when she loses her toy",
+          "Shares his sandwich with Lily"
+        ],
+        "supports_questions": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "name": "Lily",
+        "role": "supporting",
+        "key_traits": [
+          "friendly",
+          "playful"
+        ],
+        "actions_to_show": [],
+        "supports_questions": []
+      }
+    ],
+    "opening_hook": "Sam and Lily, the best of friends, were excited as they planned their afternoon at the park.",
+    "central_conflict_or_topic": "Lily loses her favorite toy at the park",
+    "resolution_or_conclusion": "With Sam's help, Lily finds her toy and their bond deepens",
+    "vocabulary_targets": [],
+    "vocabulary_contexts": {},
+    "text_structure": "chronological",
+    "organizational_features": [],
+    "question_coverage_map": {
+      "1": [
+        1
+      ],
+      "2": [
+        2
+      ],
+      "3": [
+        4
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        1
+      ],
+      "6": [
+        5
+      ]
+    },
+    "target_lexile": "245L-425L",
+    "target_word_count": 125,
+    "actual_grade": "2",
+    "genre": "narrative",
+    "band": "early",
+    "form_id": "COMP-2-EARLY-PIB-001",
+    "qrm_form_id": "COMP-2-EARLY-QRM-1768486007717-3614",
+    "generated_at": "2026-01-15T09:09:25.490653",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 1 (Lexile Ranges)": "Target: 245L-425L",
+      "Bank 3 (Comp Word Counts)": "Target: 125 words",
+      "Bank 7 (Text Structures)": "Structure: chronological"
+    }
+  },
+  "passage": {
+    "passage_text": "Sam and Lily, the best of friends, were thrilled about their afternoon at the park. Sam thought Lily was the greatest friend anyone could have.\n\nAt the park, they swung high on swings and laughed. Sam shared his sandwich with Lily at their picnic, making her smile.\n\nBut then, Lily's smile faded. She couldn't find her favorite toy! It was lost! Sam and Lily were both upset.\n\n\"I'll help you look,\" Sam promised. Together, they searched the park. When they finally found the toy hidden under a bench, they felt relief and joy.\n\nAfter the adventure, Sam felt even closer to Lily. They made a pact to always help each other. With Sam's help, Lily's toy was found, and their bond grew stronger.",
+    "passage_title": "\"An Afternoon Adventure\"",
+    "grade": "2",
+    "genre": "narrative",
+    "band": "early",
+    "form_id": "COMP-2-EARLY-001",
+    "actual_word_count": 123,
+    "target_word_count": 125,
+    "target_lexile": "245L-425L",
+    "total_questions": 6,
+    "question_coverage_verified": true,
+    "text_structure": "chronological",
+    "vocabulary_words": [],
+    "vocabulary_verified": true,
+    "validation": {
+      "word_count_valid": true,
+      "word_count_actual": 123,
+      "word_count_target": 125,
+      "word_count_acceptable_range": [
+        105,
+        145
+      ],
+      "lexile_target": "245L-425L",
+      "lexile_note": "Lexile cannot be automatically validated (requires external tool)",
+      "vocabulary_present": true,
+      "vocabulary_found": [],
+      "vocabulary_missing": [],
+      "scenes_covered": true,
+      "scenes_expected": 5,
+      "scenes_identifiable": 5,
+      "validation_passed": true,
+      "warnings": []
+    },
+    "qrm_form_id": "COMP-2-EARLY-QRM-1768486007717-3614",
+    "pib_form_id": "COMP-2-EARLY-PIB-001",
+    "generated_at": "2026-01-15T09:09:53.971893",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 1 (Lexile Ranges)": "Target: 245L-425L",
+      "Bank 3 (Comp Word Counts)": "Target: 125 words",
+      "Bank 7 (Text Structures)": "Structure: chronological"
+    }
+  },
+  "questions": {
+    "questions": [
+      {
+        "question_number": 1,
+        "question_text": "Who are the best friends in the story?",
+        "question_type": "explicit",
+        "cognitive_demand": "low",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Sam and Lily",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Sam and Ben",
+            "is_correct": false,
+            "distractor_type": "character_confusion"
+          },
+          {
+            "letter": "C",
+            "text": "Lily and Emma",
+            "is_correct": false,
+            "distractor_type": "similar_name"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "beginning",
+        "evidence_text": "Sam and Lily, the best of friends, were thrilled about their afternoon at the park.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 2,
+        "question_text": "What fun activity did Sam and Lily do at the park?",
+        "question_type": "explicit",
+        "cognitive_demand": "low",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "They swung high on swings",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "They played tag",
+            "is_correct": false,
+            "distractor_type": "common_park_activity"
+          },
+          {
+            "letter": "C",
+            "text": "They fed the ducks",
+            "is_correct": false,
+            "distractor_type": "common_park_activity"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "At the park, they swung high on swings and laughed.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 3,
+        "question_text": "What problem did Sam and Lily solve together?",
+        "question_type": "explicit",
+        "cognitive_demand": "medium",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Finding Lily's lost toy",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Getting stuck on the swing",
+            "is_correct": false,
+            "distractor_type": "other_problem"
+          },
+          {
+            "letter": "C",
+            "text": "Finding their way back home",
+            "is_correct": false,
+            "distractor_type": "common_problem"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "end",
+        "evidence_text": "Together, they searched the park. When they finally found the toy hidden under a bench, they felt relief and joy.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 4,
+        "question_text": "What effect did Sam's action have on Lily at the picnic?",
+        "question_type": "explicit",
+        "cognitive_demand": "medium",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "It made her smile",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "It made her cry",
+            "is_correct": false,
+            "distractor_type": "other_emotion"
+          },
+          {
+            "letter": "C",
+            "text": "It made her laugh",
+            "is_correct": false,
+            "distractor_type": "other_emotion"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "Sam shared his sandwich with Lily at their picnic, making her smile.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 5,
+        "question_text": "How does Sam feel about Lily at the beginning of the story?",
+        "question_type": "implicit",
+        "cognitive_demand": "low",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "He thinks she is the greatest friend",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "He is annoyed by her",
+            "is_correct": false,
+            "distractor_type": "other_emotion"
+          },
+          {
+            "letter": "C",
+            "text": "He is jealous of her",
+            "is_correct": false,
+            "distractor_type": "other_emotion"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "beginning",
+        "evidence_text": "Sam thought Lily was the greatest friend anyone could have.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 6,
+        "question_text": "How did Sam's feelings towards Lily change by the end of the story?",
+        "question_type": "implicit",
+        "cognitive_demand": "medium",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "He felt even closer to Lily",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "He was angry with Lily",
+            "is_correct": false,
+            "distractor_type": "other_emotion"
+          },
+          {
+            "letter": "C",
+            "text": "He was indifferent to Lily",
+            "is_correct": false,
+            "distractor_type": "other_emotion"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "end",
+        "evidence_text": "After the adventure, Sam felt even closer to Lily.",
+        "points_possible": 1
+      }
+    ],
+    "total_questions": 6,
+    "answer_key": {
+      "questions": [
+        {
+          "question_number": 1,
+          "question_text": "Who are the best friends in the story?",
+          "question_type": "explicit",
+          "cognitive_demand": "low",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Sam and Lily",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Sam and Ben",
+              "is_correct": false,
+              "distractor_type": "character_confusion"
+            },
+            {
+              "letter": "C",
+              "text": "Lily and Emma",
+              "is_correct": false,
+              "distractor_type": "similar_name"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "beginning",
+          "evidence_text": "Sam and Lily, the best of friends, were thrilled about their afternoon at the park.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 2,
+          "question_text": "What fun activity did Sam and Lily do at the park?",
+          "question_type": "explicit",
+          "cognitive_demand": "low",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "They swung high on swings",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "They played tag",
+              "is_correct": false,
+              "distractor_type": "common_park_activity"
+            },
+            {
+              "letter": "C",
+              "text": "They fed the ducks",
+              "is_correct": false,
+              "distractor_type": "common_park_activity"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "At the park, they swung high on swings and laughed.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 3,
+          "question_text": "What problem did Sam and Lily solve together?",
+          "question_type": "explicit",
+          "cognitive_demand": "medium",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Finding Lily's lost toy",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Getting stuck on the swing",
+              "is_correct": false,
+              "distractor_type": "other_problem"
+            },
+            {
+              "letter": "C",
+              "text": "Finding their way back home",
+              "is_correct": false,
+              "distractor_type": "common_problem"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "end",
+          "evidence_text": "Together, they searched the park. When they finally found the toy hidden under a bench, they felt relief and joy.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 4,
+          "question_text": "What effect did Sam's action have on Lily at the picnic?",
+          "question_type": "explicit",
+          "cognitive_demand": "medium",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "It made her smile",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "It made her cry",
+              "is_correct": false,
+              "distractor_type": "other_emotion"
+            },
+            {
+              "letter": "C",
+              "text": "It made her laugh",
+              "is_correct": false,
+              "distractor_type": "other_emotion"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "Sam shared his sandwich with Lily at their picnic, making her smile.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 5,
+          "question_text": "How does Sam feel about Lily at the beginning of the story?",
+          "question_type": "implicit",
+          "cognitive_demand": "low",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "He thinks she is the greatest friend",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "He is annoyed by her",
+              "is_correct": false,
+              "distractor_type": "other_emotion"
+            },
+            {
+              "letter": "C",
+              "text": "He is jealous of her",
+              "is_correct": false,
+              "distractor_type": "other_emotion"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "beginning",
+          "evidence_text": "Sam thought Lily was the greatest friend anyone could have.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 6,
+          "question_text": "How did Sam's feelings towards Lily change by the end of the story?",
+          "question_type": "implicit",
+          "cognitive_demand": "medium",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "He felt even closer to Lily",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "He was angry with Lily",
+              "is_correct": false,
+              "distractor_type": "other_emotion"
+            },
+            {
+              "letter": "C",
+              "text": "He was indifferent to Lily",
+              "is_correct": false,
+              "distractor_type": "other_emotion"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "end",
+          "evidence_text": "After the adventure, Sam felt even closer to Lily.",
+          "points_possible": 1
+        }
+      ],
+      "total_questions": 6,
+      "total_points": 6,
+      "answer_key_summary": {
+        "1": "A",
+        "2": "A",
+        "3": "A",
+        "4": "A",
+        "5": "A",
+        "6": "A"
+      }
+    },
+    "grade": "2",
+    "genre": "narrative",
+    "band": "early",
+    "form_id": "COMP-2-EARLY-QUESTIONS-001",
+    "type_distribution": {
+      "explicit": 4,
+      "implicit": 2
+    },
+    "cognitive_distribution": {
+      "low": 3,
+      "medium": 3
+    },
+    "qrm_form_id": "COMP-2-EARLY-QRM-1768486007717-3614",
+    "passage_form_id": "COMP-2-EARLY-001",
+    "num_answer_options": 3,
+    "generated_at": "2026-01-15T09:10:50.075202",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 4 (Comprehension Blueprint)": "Via QRM for question specifications",
+      "Bank 6 (Answer Options)": "Grade 2 → 3 answer options"
+    }
+  },
+  "recall_scoring": {
+    "total_sentences": 14,
+    "max_total_points": 28,
+    "sentences": [
+      {
+        "sentence_number": 1,
+        "sentence_text": "Sam and Lily, the best of friends, were thrilled about their afternoon at the park",
+        "character_name": "Sam and Lily",
+        "key_detail": "Thrilled about park afternoon",
+        "scoring_note": "2 pts: Sam and Lily + Thrilled about park afternoon | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 2,
+        "sentence_text": "Sam thought Lily was the greatest friend anyone could have",
+        "character_name": "Sam",
+        "key_detail": "Thinks Lily is a great friend",
+        "scoring_note": "2 pts: Sam + Thinks Lily is a great friend | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 3,
+        "sentence_text": "At the park, they swung high on swings and laughed",
+        "character_name": "They",
+        "key_detail": "Swung on swings and laughed",
+        "scoring_note": "2 pts: They + Swung on swings and laughed | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 4,
+        "sentence_text": "Sam shared his sandwich with Lily at their picnic, making her smile",
+        "character_name": "Sam",
+        "key_detail": "Shared sandwich with Lily",
+        "scoring_note": "2 pts: Sam + Shared sandwich with Lily | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 5,
+        "sentence_text": "But then, Lily's smile faded",
+        "character_name": "Lily",
+        "key_detail": "Her smile faded",
+        "scoring_note": "2 pts: Lily + Her smile faded | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 6,
+        "sentence_text": "She couldn't find her favorite toy",
+        "character_name": "She",
+        "key_detail": "Couldn't find her favorite toy",
+        "scoring_note": "2 pts: She + Couldn't find her favorite toy | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 7,
+        "sentence_text": "It was lost",
+        "character_name": "It",
+        "key_detail": "The toy was lost",
+        "scoring_note": "2 pts: It + The toy was lost | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 8,
+        "sentence_text": "Sam and Lily were both upset",
+        "character_name": "Sam and Lily",
+        "key_detail": "Were both upset",
+        "scoring_note": "2 pts: Sam and Lily + Were both upset | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 9,
+        "sentence_text": "\"I'll help you look,\" Sam promised",
+        "character_name": "Sam",
+        "key_detail": "Promised to help look",
+        "scoring_note": "2 pts: Sam + Promised to help look | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 10,
+        "sentence_text": "Together, they searched the park",
+        "character_name": "They",
+        "key_detail": "Searched the park",
+        "scoring_note": "2 pts: They + Searched the park | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 11,
+        "sentence_text": "When they finally found the toy hidden under a bench, they felt relief and joy",
+        "character_name": "They",
+        "key_detail": "Found the toy, felt relief and joy",
+        "scoring_note": "2 pts: They + Found the toy, felt relief and joy | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 12,
+        "sentence_text": "After the adventure, Sam felt even closer to Lily",
+        "character_name": "Sam",
+        "key_detail": "Felt closer to Lily",
+        "scoring_note": "2 pts: Sam + Felt closer to Lily | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 13,
+        "sentence_text": "They made a pact to always help each other",
+        "character_name": "They",
+        "key_detail": "Made a pact to help each other",
+        "scoring_note": "2 pts: They + Made a pact to help each other | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 14,
+        "sentence_text": "With Sam's help, Lily's toy was found, and their bond grew stronger",
+        "character_name": "Sam",
+        "key_detail": "Helped find Lily's toy, bond grew stronger",
+        "scoring_note": "2 pts: Sam + Helped find Lily's toy, bond grew stronger | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      }
+    ],
+    "general_instructions": "For each sentence, award 2 points if student recalls BOTH the character and key detail, 1 point for either one, 0 points for neither. Allow paraphrasing.",
+    "passage_title": "\"An Afternoon Adventure\"",
+    "grade": "2",
+    "genre": "narrative",
+    "form_id": "RECALL-COMP-2-EARLY-001",
+    "passage_form_id": "COMP-2-EARLY-001",
+    "created_at": "2026-01-15T09:11:48.438943",
+    "schema_version": "2026.1"
+  }
+}

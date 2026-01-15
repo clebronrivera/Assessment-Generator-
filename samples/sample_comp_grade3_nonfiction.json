@@ -1,0 +1,964 @@
+{
+  "metadata": {
+    "package_id": "COMP-PKG-3-20260115-102047",
+    "assessment_type": "comprehension",
+    "grade": "3",
+    "band": "early",
+    "genre": "nonfiction",
+    "created_at": "2026-01-15T10:20:47.679604",
+    "schema_version": "2026.1",
+    "component_forms": {
+      "passage": "COMP-3-EARLY-001",
+      "qrm": "COMP-3-EARLY-QRM-1768490186946-4801",
+      "pib": "COMP-3-EARLY-PIB-001",
+      "questions": "COMP-3-EARLY-QUESTIONS-001",
+      "recall_scoring": "RECALL-COMP-3-EARLY-001"
+    },
+    "banks_used": [
+      "Bank 7 (Text Structures)",
+      "Bank 4 (Comprehension Blueprint)",
+      "Bank 3 (Comp Word Counts)",
+      "Bank 6 (Answer Options)",
+      "Bank 1 (Lexile Ranges)"
+    ],
+    "stats": {
+      "passage_word_count": 160,
+      "lexile_target": "480L-645L",
+      "total_questions": 8,
+      "total_points_questions": 8,
+      "total_sentences_recall": 13,
+      "total_points_recall": 26,
+      "components_included": 5
+    }
+  },
+  "package_type": "comprehension",
+  "ready_for_use": true,
+  "qrm": {
+    "questions": [
+      {
+        "question_number": 1,
+        "question_type": "explicit",
+        "cognitive_demand": "low",
+        "evidence_location": "beginning",
+        "content_requirement": "Passage must introduce a specific animal and its habitat in the first paragraph",
+        "distractor_guidance": "Use other animals and habitats mentioned in the passage"
+      },
+      {
+        "question_number": 2,
+        "question_type": "explicit",
+        "cognitive_demand": "medium",
+        "evidence_location": "middle",
+        "content_requirement": "Passage must describe a specific event where the animal was in danger",
+        "distractor_guidance": "Use events that did not put the animal in danger"
+      },
+      {
+        "question_number": 3,
+        "question_type": "explicit",
+        "cognitive_demand": "high",
+        "evidence_location": "end",
+        "content_requirement": "Passage must explain how the animal escaped the danger",
+        "distractor_guidance": "Use other ways the animal could have escaped, but didn't"
+      },
+      {
+        "question_number": 4,
+        "question_type": "explicit",
+        "cognitive_demand": "low",
+        "evidence_location": "middle",
+        "content_requirement": "Passage must detail the animal's diet",
+        "distractor_guidance": "Use food items not mentioned in the animal's diet"
+      },
+      {
+        "question_number": 5,
+        "question_type": "implicit",
+        "cognitive_demand": "medium",
+        "evidence_location": "middle",
+        "content_requirement": "Passage should suggest why the animal's habitat is suitable for its survival but not explicitly state it",
+        "distractor_guidance": "Use reasons that are not supported by the passage's description of the habitat"
+      },
+      {
+        "question_number": 6,
+        "question_type": "implicit",
+        "cognitive_demand": "high",
+        "evidence_location": "end",
+        "content_requirement": "Passage should infer the animal's feelings or emotions towards the encountered danger without explicitly stating them",
+        "distractor_guidance": "Use emotions not suggested by the animal's actions or reactions"
+      },
+      {
+        "question_number": 7,
+        "question_type": "implicit",
+        "cognitive_demand": "low",
+        "evidence_location": "beginning",
+        "content_requirement": "Passage should imply the time of year through descriptions of the setting but not explicitly state it",
+        "distractor_guidance": "Use seasons not implied by the description of the setting"
+      },
+      {
+        "question_number": 8,
+        "question_type": "implicit",
+        "cognitive_demand": "medium",
+        "evidence_location": "end",
+        "content_requirement": "Passage should suggest potential threats to the animal's habitat without explicitly stating them",
+        "distractor_guidance": "Use threats not suggested by the passage"
+      }
+    ],
+    "total_questions": 8,
+    "type_distribution": {
+      "explicit": 4,
+      "implicit": 4
+    },
+    "cognitive_distribution": {
+      "low": 3,
+      "medium": 3,
+      "high": 2
+    },
+    "evidence_distribution": {
+      "beginning": 2,
+      "middle": 3,
+      "end": 3
+    },
+    "required_content_elements": [
+      "Introduction of a specific animal and its habitat",
+      "Description of a specific event where the animal was in danger",
+      "Explanation of how the animal escaped the danger",
+      "Detail of the animal's diet",
+      "Implication of why the animal's habitat is suitable for its survival",
+      "Inference of the animal's feelings or emotions towards the encountered danger",
+      "Implication of the time of year through descriptions of the setting",
+      "Suggestion of potential threats to the animal's habitat"
+    ],
+    "required_vocabulary": [
+      "habitat",
+      "endangered",
+      "escape",
+      "diet"
+    ],
+    "required_structure_elements": [
+      "cause-effect relationship",
+      "description-inference relationship"
+    ],
+    "grade": "3",
+    "genre": "nonfiction",
+    "band": "early",
+    "form_id": "COMP-3-EARLY-QRM-1768490186946-4801",
+    "generated_at": "2026-01-15T10:17:39.797663",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 4 (Comprehension Blueprint)": "Grade 3 question specifications"
+    }
+  },
+  "pib": {
+    "scenes": [
+      {
+        "scene_number": 1,
+        "scene_type": "opening",
+        "location_in_passage": "beginning",
+        "purpose": "Introduce the specific animal and its habitat",
+        "content_description": "The passage opens with the introduction of a snow leopard and its high-altitude, snowy habitat in the Himalayas. The vegetation is sparse, the air is cold, and it is winter season.",
+        "required_details": [
+          "Specify the animal as a snow leopard",
+          "Describe the high-altitude, snowy habitat of the Himalayas",
+          "Imply the time of year (winter) through descriptions of the setting"
+        ],
+        "supports_questions": [
+          1,
+          7
+        ],
+        "vocabulary_placement": [
+          "habitat"
+        ]
+      },
+      {
+        "scene_number": 2,
+        "scene_type": "description",
+        "location_in_passage": "middle",
+        "purpose": "Describe the specific event where the animal was in danger and its diet",
+        "content_description": "The passage describes a scenario wherein the snow leopard is caught in an avalanche while hunting for blue sheep, its primary diet. The habitat's rugged terrain and unpredictable weather make it a tough place for survival.",
+        "required_details": [
+          "Describe the event of the avalanche and the snow leopard's danger",
+          "Detail the snow leopard's diet of blue sheep",
+          "Suggest why the snow leopard's habitat is suitable for its survival"
+        ],
+        "supports_questions": [
+          2,
+          4,
+          5
+        ],
+        "vocabulary_placement": [
+          "endangered",
+          "diet"
+        ]
+      },
+      {
+        "scene_number": 3,
+        "scene_type": "conclusion",
+        "location_in_passage": "end",
+        "purpose": "Explain how the animal escaped the danger and suggest potential threats to its habitat",
+        "content_description": "The passage concludes by explaining how the snow leopard escaped the danger by using its powerful hind legs to leap clear of the avalanche. The destruction caused by the avalanche subtly hints at potential threats to the snow leopard's habitat. The snow leopard's relief is implied through descriptions of its behaviour after escaping.",
+        "required_details": [
+          "Explain how the snow leopard escaped the avalanche using its powerful hind legs",
+          "Suggest potential threats to the snow leopard's habitat",
+          "Infer the snow leopard's feelings of relief after escaping the danger"
+        ],
+        "supports_questions": [
+          3,
+          6,
+          8
+        ],
+        "vocabulary_placement": [
+          "escape"
+        ]
+      }
+    ],
+    "total_scenes": 3,
+    "characters": [],
+    "opening_hook": "",
+    "central_conflict_or_topic": "",
+    "resolution_or_conclusion": "",
+    "vocabulary_targets": [
+      "habitat",
+      "endangered",
+      "escape",
+      "diet"
+    ],
+    "vocabulary_contexts": {},
+    "text_structure": "descriptive",
+    "organizational_features": [
+      "headings",
+      "examples"
+    ],
+    "question_coverage_map": {
+      "1": [
+        1
+      ],
+      "2": [
+        2
+      ],
+      "3": [
+        3
+      ],
+      "4": [
+        2
+      ],
+      "5": [
+        2
+      ],
+      "6": [
+        3
+      ],
+      "7": [
+        1
+      ],
+      "8": [
+        3
+      ]
+    },
+    "target_lexile": "480L-645L",
+    "target_word_count": 175,
+    "actual_grade": "3",
+    "genre": "nonfiction",
+    "band": "early",
+    "form_id": "COMP-3-EARLY-PIB-001",
+    "qrm_form_id": "COMP-3-EARLY-QRM-1768490186946-4801",
+    "generated_at": "2026-01-15T10:18:30.036268",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 1 (Lexile Ranges)": "Target: 480L-645L",
+      "Bank 3 (Comp Word Counts)": "Target: 175 words",
+      "Bank 7 (Text Structures)": "Structure: descriptive"
+    }
+  },
+  "passage": {
+    "passage_text": "In the high-altitude, snowy peaks of the Himalayas, a snow leopard prowled its chilly habitat. It was winter, and the air was biting cold. The mountains were blanketed in white, and trees were sparse.\n\nOne day, while hunting for blue sheep, its main diet, the snow leopard faced danger. An avalanche! The snow leopard's home was rugged and unpredictable, which made survival quite a challenge. Yet, this endangered creature was perfectly adapted to this tough terrain.\n\nJust as the avalanche rushed towards it, the snow leopard used its powerful hind legs and leaped away to safety. It was a close escape! The once peaceful snowscape was now a chaotic mix of snow and debris. After the escape, the snow leopard calmly groomed its fur, a sign of relief.\n\nThis adventure hints that avalanches could pose a threat to the snow leopard's habitat. Despite the challenges, the snow leopard continues to thrive in its icy home, showcasing its adaptability and strength.",
+    "passage_title": "Title: \"The Snow Leopard's Wintry Adventure\"",
+    "grade": "3",
+    "genre": "nonfiction",
+    "band": "early",
+    "form_id": "COMP-3-EARLY-001",
+    "actual_word_count": 160,
+    "target_word_count": 175,
+    "target_lexile": "480L-645L",
+    "total_questions": 8,
+    "question_coverage_verified": true,
+    "text_structure": "descriptive",
+    "vocabulary_words": [
+      "habitat",
+      "endangered",
+      "escape",
+      "diet"
+    ],
+    "vocabulary_verified": true,
+    "validation": {
+      "word_count_valid": true,
+      "word_count_actual": 160,
+      "word_count_target": 175,
+      "word_count_acceptable_range": [
+        155,
+        195
+      ],
+      "lexile_target": "480L-645L",
+      "lexile_note": "Lexile cannot be automatically validated (requires external tool)",
+      "vocabulary_present": true,
+      "vocabulary_found": [
+        "habitat",
+        "endangered",
+        "escape",
+        "diet"
+      ],
+      "vocabulary_missing": [],
+      "scenes_covered": true,
+      "scenes_expected": 3,
+      "scenes_identifiable": 4,
+      "validation_passed": true,
+      "warnings": []
+    },
+    "qrm_form_id": "COMP-3-EARLY-QRM-1768490186946-4801",
+    "pib_form_id": "COMP-3-EARLY-PIB-001",
+    "generated_at": "2026-01-15T10:18:52.685694",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 1 (Lexile Ranges)": "Target: 480L-645L",
+      "Bank 3 (Comp Word Counts)": "Target: 175 words",
+      "Bank 7 (Text Structures)": "Structure: descriptive"
+    }
+  },
+  "questions": {
+    "questions": [
+      {
+        "question_number": 1,
+        "question_text": "Which animal is introduced in the first paragraph of the passage?",
+        "question_type": "explicit",
+        "cognitive_demand": "low",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Snow leopard",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Blue sheep",
+            "is_correct": false,
+            "distractor_type": "other_animal"
+          },
+          {
+            "letter": "C",
+            "text": "Polar bear",
+            "is_correct": false,
+            "distractor_type": "not_mentioned"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "beginning",
+        "evidence_text": "In the high-altitude, snowy peaks of the Himalayas, a snow leopard prowled its chilly habitat.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 2,
+        "question_text": "What danger did the snow leopard face while hunting?",
+        "question_type": "explicit",
+        "cognitive_demand": "medium",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "An avalanche",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "A snowstorm",
+            "is_correct": false,
+            "distractor_type": "not_mentioned"
+          },
+          {
+            "letter": "C",
+            "text": "A predator",
+            "is_correct": false,
+            "distractor_type": "not_mentioned"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "One day, while hunting for blue sheep, its main diet, the snow leopard faced danger. An avalanche!",
+        "points_possible": 1
+      },
+      {
+        "question_number": 3,
+        "question_text": "How did the snow leopard escape the avalanche?",
+        "question_type": "explicit",
+        "cognitive_demand": "high",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "It leaped away using its powerful hind legs",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "It dug a hole in the snow",
+            "is_correct": false,
+            "distractor_type": "not_mentioned"
+          },
+          {
+            "letter": "C",
+            "text": "It climbed a tree",
+            "is_correct": false,
+            "distractor_type": "not_mentioned"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "end",
+        "evidence_text": "Just as the avalanche rushed towards it, the snow leopard used its powerful hind legs and leaped away to safety.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 4,
+        "question_text": "What is the main diet of the snow leopard?",
+        "question_type": "explicit",
+        "cognitive_demand": "low",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Blue sheep",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Polar bear",
+            "is_correct": false,
+            "distractor_type": "not_mentioned"
+          },
+          {
+            "letter": "C",
+            "text": "Snow hare",
+            "is_correct": false,
+            "distractor_type": "not_mentioned"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "One day, while hunting for blue sheep, its main diet, the snow leopard faced danger.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 5,
+        "question_text": "Why is the habitat of the snow leopard suitable for its survival?",
+        "question_type": "implicit",
+        "cognitive_demand": "medium",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "The snow leopard is adapted to the rugged and unpredictable terrain",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "The habitat is full of trees for the snow leopard to climb",
+            "is_correct": false,
+            "distractor_type": "not_supported"
+          },
+          {
+            "letter": "C",
+            "text": "The habitat is always warm and comfortable",
+            "is_correct": false,
+            "distractor_type": "contradict_text"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "middle",
+        "evidence_text": "The snow leopard's home was rugged and unpredictable, which made survival quite a challenge. Yet, this endangered creature was perfectly adapted to this tough terrain.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 6,
+        "question_text": "How did the snow leopard feel after escaping the avalanche?",
+        "question_type": "implicit",
+        "cognitive_demand": "high",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Relieved",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Angry",
+            "is_correct": false,
+            "distractor_type": "not_suggested"
+          },
+          {
+            "letter": "C",
+            "text": "Excited",
+            "is_correct": false,
+            "distractor_type": "not_suggested"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "end",
+        "evidence_text": "After the escape, the snow leopard calmly groomed its fur, a sign of relief.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 7,
+        "question_text": "What time of the year is suggested by the description of the setting?",
+        "question_type": "implicit",
+        "cognitive_demand": "low",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Winter",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Spring",
+            "is_correct": false,
+            "distractor_type": "not_implied"
+          },
+          {
+            "letter": "C",
+            "text": "Summer",
+            "is_correct": false,
+            "distractor_type": "not_implied"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "beginning",
+        "evidence_text": "It was winter, and the air was biting cold. The mountains were blanketed in white, and trees were sparse.",
+        "points_possible": 1
+      },
+      {
+        "question_number": 8,
+        "question_text": "What could be a potential threat to the snow leopard's habitat?",
+        "question_type": "implicit",
+        "cognitive_demand": "medium",
+        "answer_options": [
+          {
+            "letter": "A",
+            "text": "Avalanches",
+            "is_correct": true,
+            "distractor_type": null
+          },
+          {
+            "letter": "B",
+            "text": "Forest fires",
+            "is_correct": false,
+            "distractor_type": "not_suggested"
+          },
+          {
+            "letter": "C",
+            "text": "Drought",
+            "is_correct": false,
+            "distractor_type": "not_suggested"
+          }
+        ],
+        "correct_answer": "A",
+        "evidence_location": "end",
+        "evidence_text": "This adventure hints that avalanches could pose a threat to the snow leopard's habitat.",
+        "points_possible": 1
+      }
+    ],
+    "total_questions": 8,
+    "answer_key": {
+      "questions": [
+        {
+          "question_number": 1,
+          "question_text": "Which animal is introduced in the first paragraph of the passage?",
+          "question_type": "explicit",
+          "cognitive_demand": "low",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Snow leopard",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Blue sheep",
+              "is_correct": false,
+              "distractor_type": "other_animal"
+            },
+            {
+              "letter": "C",
+              "text": "Polar bear",
+              "is_correct": false,
+              "distractor_type": "not_mentioned"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "beginning",
+          "evidence_text": "In the high-altitude, snowy peaks of the Himalayas, a snow leopard prowled its chilly habitat.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 2,
+          "question_text": "What danger did the snow leopard face while hunting?",
+          "question_type": "explicit",
+          "cognitive_demand": "medium",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "An avalanche",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "A snowstorm",
+              "is_correct": false,
+              "distractor_type": "not_mentioned"
+            },
+            {
+              "letter": "C",
+              "text": "A predator",
+              "is_correct": false,
+              "distractor_type": "not_mentioned"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "One day, while hunting for blue sheep, its main diet, the snow leopard faced danger. An avalanche!",
+          "points_possible": 1
+        },
+        {
+          "question_number": 3,
+          "question_text": "How did the snow leopard escape the avalanche?",
+          "question_type": "explicit",
+          "cognitive_demand": "high",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "It leaped away using its powerful hind legs",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "It dug a hole in the snow",
+              "is_correct": false,
+              "distractor_type": "not_mentioned"
+            },
+            {
+              "letter": "C",
+              "text": "It climbed a tree",
+              "is_correct": false,
+              "distractor_type": "not_mentioned"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "end",
+          "evidence_text": "Just as the avalanche rushed towards it, the snow leopard used its powerful hind legs and leaped away to safety.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 4,
+          "question_text": "What is the main diet of the snow leopard?",
+          "question_type": "explicit",
+          "cognitive_demand": "low",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Blue sheep",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Polar bear",
+              "is_correct": false,
+              "distractor_type": "not_mentioned"
+            },
+            {
+              "letter": "C",
+              "text": "Snow hare",
+              "is_correct": false,
+              "distractor_type": "not_mentioned"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "One day, while hunting for blue sheep, its main diet, the snow leopard faced danger.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 5,
+          "question_text": "Why is the habitat of the snow leopard suitable for its survival?",
+          "question_type": "implicit",
+          "cognitive_demand": "medium",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "The snow leopard is adapted to the rugged and unpredictable terrain",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "The habitat is full of trees for the snow leopard to climb",
+              "is_correct": false,
+              "distractor_type": "not_supported"
+            },
+            {
+              "letter": "C",
+              "text": "The habitat is always warm and comfortable",
+              "is_correct": false,
+              "distractor_type": "contradict_text"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "middle",
+          "evidence_text": "The snow leopard's home was rugged and unpredictable, which made survival quite a challenge. Yet, this endangered creature was perfectly adapted to this tough terrain.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 6,
+          "question_text": "How did the snow leopard feel after escaping the avalanche?",
+          "question_type": "implicit",
+          "cognitive_demand": "high",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Relieved",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Angry",
+              "is_correct": false,
+              "distractor_type": "not_suggested"
+            },
+            {
+              "letter": "C",
+              "text": "Excited",
+              "is_correct": false,
+              "distractor_type": "not_suggested"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "end",
+          "evidence_text": "After the escape, the snow leopard calmly groomed its fur, a sign of relief.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 7,
+          "question_text": "What time of the year is suggested by the description of the setting?",
+          "question_type": "implicit",
+          "cognitive_demand": "low",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Winter",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Spring",
+              "is_correct": false,
+              "distractor_type": "not_implied"
+            },
+            {
+              "letter": "C",
+              "text": "Summer",
+              "is_correct": false,
+              "distractor_type": "not_implied"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "beginning",
+          "evidence_text": "It was winter, and the air was biting cold. The mountains were blanketed in white, and trees were sparse.",
+          "points_possible": 1
+        },
+        {
+          "question_number": 8,
+          "question_text": "What could be a potential threat to the snow leopard's habitat?",
+          "question_type": "implicit",
+          "cognitive_demand": "medium",
+          "answer_options": [
+            {
+              "letter": "A",
+              "text": "Avalanches",
+              "is_correct": true,
+              "distractor_type": null
+            },
+            {
+              "letter": "B",
+              "text": "Forest fires",
+              "is_correct": false,
+              "distractor_type": "not_suggested"
+            },
+            {
+              "letter": "C",
+              "text": "Drought",
+              "is_correct": false,
+              "distractor_type": "not_suggested"
+            }
+          ],
+          "correct_answer": "A",
+          "evidence_location": "end",
+          "evidence_text": "This adventure hints that avalanches could pose a threat to the snow leopard's habitat.",
+          "points_possible": 1
+        }
+      ],
+      "total_questions": 8,
+      "total_points": 8,
+      "answer_key_summary": {
+        "1": "A",
+        "2": "A",
+        "3": "A",
+        "4": "A",
+        "5": "A",
+        "6": "A",
+        "7": "A",
+        "8": "A"
+      }
+    },
+    "grade": "3",
+    "genre": "nonfiction",
+    "band": "early",
+    "form_id": "COMP-3-EARLY-QUESTIONS-001",
+    "type_distribution": {
+      "explicit": 4,
+      "implicit": 4
+    },
+    "cognitive_distribution": {
+      "low": 3,
+      "medium": 3,
+      "high": 2
+    },
+    "qrm_form_id": "COMP-3-EARLY-QRM-1768490186946-4801",
+    "passage_form_id": "COMP-3-EARLY-001",
+    "num_answer_options": 3,
+    "generated_at": "2026-01-15T10:19:40.428403",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 4 (Comprehension Blueprint)": "Via QRM for question specifications",
+      "Bank 6 (Answer Options)": "Grade 3 → 3 answer options"
+    }
+  },
+  "recall_scoring": {
+    "total_sentences": 13,
+    "max_total_points": 26,
+    "sentences": [
+      {
+        "sentence_number": 1,
+        "sentence_text": "In the high-altitude, snowy peaks of the Himalayas, a snow leopard prowled its chilly habitat",
+        "character_name": "snow leopard",
+        "key_detail": "prolwing in its chilly habitat",
+        "scoring_note": "2 pts: snow leopard + prowling in habitat | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 2,
+        "sentence_text": "It was winter, and the air was biting cold",
+        "character_name": "it (referring to the season)",
+        "key_detail": "winter with biting cold air",
+        "scoring_note": "2 pts: it (season) + winter/cold air | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 3,
+        "sentence_text": "The mountains were blanketed in white, and trees were sparse",
+        "character_name": "mountains",
+        "key_detail": "blanketed in white, sparse trees",
+        "scoring_note": "2 pts: mountains + white blanket, sparse trees | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 4,
+        "sentence_text": "One day, while hunting for blue sheep, its main diet, the snow leopard faced danger",
+        "character_name": "snow leopard",
+        "key_detail": "hunting for blue sheep, faced danger",
+        "scoring_note": "2 pts: snow leopard + hunting/facing danger | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 5,
+        "sentence_text": "An avalanche",
+        "character_name": "avalanche",
+        "key_detail": "avalanche occurred",
+        "scoring_note": "2 pts: avalanche + occurred | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 6,
+        "sentence_text": "The snow leopard's home was rugged and unpredictable, which made survival quite a challenge",
+        "character_name": "snow leopard",
+        "key_detail": "home is rugged, unpredictable",
+        "scoring_note": "2 pts: snow leopard + rugged, unpredictable home | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 7,
+        "sentence_text": "Yet, this endangered creature was perfectly adapted to this tough terrain",
+        "character_name": "endangered creature (snow leopard)",
+        "key_detail": "adapted to tough terrain",
+        "scoring_note": "2 pts: endangered creature + adapted to terrain | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 8,
+        "sentence_text": "Just as the avalanche rushed towards it, the snow leopard used its powerful hind legs and leaped away to safety",
+        "character_name": "snow leopard",
+        "key_detail": "leaped away from avalanche",
+        "scoring_note": "2 pts: snow leopard + leaped away from avalanche | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 9,
+        "sentence_text": "It was a close escape",
+        "character_name": "it (referring to the snow leopard)",
+        "key_detail": "close escape",
+        "scoring_note": "2 pts: it (snow leopard) + close escape | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 10,
+        "sentence_text": "The once peaceful snowscape was now a chaotic mix of snow and debris",
+        "character_name": "snowscape",
+        "key_detail": "became chaotic with snow and debris",
+        "scoring_note": "2 pts: snowscape + became chaotic | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 11,
+        "sentence_text": "After the escape, the snow leopard calmly groomed its fur, a sign of relief",
+        "character_name": "snow leopard",
+        "key_detail": "groomed fur after escape",
+        "scoring_note": "2 pts: snow leopard + groomed fur after escape | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 12,
+        "sentence_text": "This adventure hints that avalanches could pose a threat to the snow leopard's habitat",
+        "character_name": "adventure",
+        "key_detail": "avalanches threat to snow leopard's habitat",
+        "scoring_note": "2 pts: adventure + avalanches threat to habitat | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      },
+      {
+        "sentence_number": 13,
+        "sentence_text": "Despite the challenges, the snow leopard continues to thrive in its icy home, showcasing its adaptability and strength",
+        "character_name": "snow leopard",
+        "key_detail": "continues to thrive, showcasing adaptability",
+        "scoring_note": "2 pts: snow leopard + thriving, showcasing adaptability | 1 pt: either | 0 pts: neither",
+        "max_points": 2
+      }
+    ],
+    "general_instructions": "For each sentence, award 2 points if student recalls BOTH the character and key detail, 1 point for either one, 0 points for neither. Allow paraphrasing.",
+    "passage_title": "Title: \"The Snow Leopard's Wintry Adventure\"",
+    "grade": "3",
+    "genre": "nonfiction",
+    "form_id": "RECALL-COMP-3-EARLY-001",
+    "passage_form_id": "COMP-3-EARLY-001",
+    "created_at": "2026-01-15T10:20:47.679337",
+    "schema_version": "2026.1"
+  }
+}

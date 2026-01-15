@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "package_id": "ORF-PKG-4-20260115-090131",
+    "assessment_type": "orf",
+    "grade": "4",
+    "band": "late",
+    "genre": null,
+    "created_at": "2026-01-15T09:01:31.333365",
+    "schema_version": "2026.1",
+    "component_forms": {
+      "passage": "ORF-4-LATE-001",
+      "assessor_materials": "ORF-G4-LATE-001"
+    },
+    "banks_used": [
+      "Bank 2 (ORF Word Counts)"
+    ],
+    "stats": {
+      "passage_word_count": 176,
+      "wcpm_50th_percentile": 133,
+      "wcpm_75th_percentile": 160,
+      "lexile_target": "N/A",
+      "assessor_components": 7
+    }
+  },
+  "passage": {
+    "success": false,
+    "passage_text": "Lily lived in a small town surrounded by mountains. Every morning, she'd wake up early, pack a sandwich and an apple, and set off on her bicycle. She loved exploring the trails that wound through the forest and over the hills. Most of all, she loved the feeling of the wind in her hair as she pedaled fast down the slopes.\n\nOne day, she discovered a new trail. It was narrow and steep, twisting its way up towards the tallest peak. Lily felt a surge of excitement. She had always wanted to reach the top of that mountain. She took a deep breath and started to pedal.\n\nThe ride was tough. Her legs ached, and her breath came in short gasps. But she kept going, determined to reach the top. After what felt like hours, she finally made it. She stood at the peak, looking out at the breathtaking view of her town below. With a triumphant smile, Lily realized that the journey was worth every bit of effort. She couldn't wait for her next adventure.",
+    "metadata": {
+      "grade": "4",
+      "band": "late",
+      "lexile_range": "855L to 1005L",
+      "lexile_midpoint": "930L",
+      "target_word_count": 170,
+      "actual_word_count": 176,
+      "structure": "chronological",
+      "topic_constraint": null,
+      "prohibited_content": null,
+      "timestamp": "2026-01-15T09:01:31.333281",
+      "schema_version": "2026.1",
+      "generator": "ORFGenerator"
+    },
+    "bank_usage": {
+      "Bank 1 (Lexile)": "855L-1005L (midpoint: 930L)",
+      "Bank 2 (ORF Word Counts)": "Target: 170 words (±2)",
+      "Bank 7 (Text Structure)": "chronological"
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "Word count too high: 176 words (maximum: 172)"
+      ],
+      "warnings": [],
+      "checks": {
+        "has_content": true,
+        "word_count_valid": false,
+        "has_paragraphs": true,
+        "clean_text": true
+      }
+    },
+    "prompt_used": "\n\nYou are an expert reading assessment passage writer specializing in Oral Reading Fluency (ORF) assessments.\n\n## TASK\nGenerate a narrative passage for oral reading fluency assessment.\n\n## STRICT CONSTRAINTS - DO NOT DEVIATE\n\n### Grade & Lexile\n- **Grade Level:** 4\n- **Lexile Range:** 855L to 1005L\n- **Target Lexile:** 930L\n- **Lexile Note:** This is a TARGET for vocabulary and syntax complexity, not a computed score.\n\n### Word Count (CRITICAL)\n- **Target Word Count:** 170 words\n- **Minimum Allowed:** 168 words\n- **Maximum Allowed:** 172 words\n- **Tolerance:** ±2 words only\n- **YOU MUST:** End the passage at a natural sentence boundary within this range\n\n### Passage Type\n- **Genre:** Narrative only (ORF passages are not designed for comprehension questions)\n- **Structure:** chronological (chronological, problem_solution, or sequence)\n- **Paragraphs:** 2-4 paragraphs\n- **Format:** Plain text, no title, no formatting\n\n### Content Requirements\n- **Appropriate for:** Grade 4 students reading aloud\n- **Reading Level:** Natural oral reading flow, grade-appropriate vocabulary\n- **Sentence Length:** Varied but manageable for grade level\n- **Decodability:** Use high-frequency words and grade-appropriate phonics patterns\n\n\n\n## QUALITY STANDARDS\n\n### Vocabulary\n- Use predominantly high-frequency words for grade 4\n- Avoid words more than 1 grade level above target\n- Include some challenge words appropriate to Lexile range\n- Prioritize decodability for oral reading\n\n### Sentence Structure\n- Vary sentence length naturally\n- Use grade-appropriate syntax\n- Avoid overly complex embedded clauses\n- Ensure natural prosody opportunities (rhythm, phrasing)\n\n### Content\n- Engaging, age-appropriate topic\n- Clear narrative flow\n- Natural dialogue is acceptable unless prohibited\n- Culturally sensitive and inclusive\n- Positive themes appropriate for assessment context\n\n### Oral Reading Considerations\n- Natural phrase boundaries at punctuation\n- Opportunities for expression and intonation\n- Manageable multi-syllable words for grade level\n- Clear context clues for challenging words\n\n## OUTPUT REQUIREMENTS\n\nProvide ONLY the passage text with:\n- No title\n- No formatting (bold, italics, etc.)\n- No preamble or explanation\n- No word count in output (but ensure it meets requirements)\n- Natural paragraph breaks (2-4 paragraphs)\n- Proper punctuation for oral reading flow\n\n## EXAMPLE STRUCTURE (Grade 2, ~140 words)\n\nParagraph 1 (50-60 words): Introduce character and setting\nParagraph 2 (40-50 words): Present situation or action\nParagraph 3 (40-50 words): Resolution or conclusion\n\nRemember: This passage is for ORAL READING FLUENCY, not comprehension. Focus on:\n- Natural flow for reading aloud\n- Appropriate pacing markers (punctuation)\n- Grade-level vocabulary and syntax\n- Exact word count within ±2 words of 170\n\nBEGIN PASSAGE (170 words, 855L-1005L):"
+  },
+  "assessor_materials": {
+    "timing_script": "ORF TIMING PROTOCOL (60 seconds)\n\nSETUP:\n• Have stopwatch/timer ready\n• Have scoring sheet prepared\n• Ensure quiet environment\n• Student has clean copy of passage\n\nSAY TO STUDENT:\n\"I'm going to ask you to read this passage aloud. Read it as accurately and \nsmoothly as you can. If you come to a word you don't know, I'll tell it to you. \nDo you have any questions?\"\n\n[Answer questions, then continue]\n\n\"Begin reading when I say 'start.' Ready? Start.\"\n\nDURING READING:\n• Start timer immediately\n• Mark errors on scoring sheet as they occur\n• Supply words after 3-second hesitation (see Word Supply Rules)\n• Do not provide feedback or encouragement during reading\n• Maintain neutral, supportive demeanor\n\nAT 60 SECONDS:\n• Say \"Stop\" clearly but calmly\n• Mark the last word read with a bracket: ]\n• Student may finish the word they're on, but mark where they were at 60 sec\n\nAFTER READING:\n• Thank the student\n• Calculate scores (do not share with student during assessment)\n• Proceed to comprehension questions if applicable",
+    "word_supply_rules": "3-SECOND WORD SUPPLY RULE\n\nWHEN TO SUPPLY A WORD:\nIf student hesitates for 3 full seconds on a word:\n1. Supply the word clearly\n2. Mark as an error on scoring sheet\n3. Student continues reading\n\nHOW TO COUNT 3 SECONDS:\n• Use \"one-thousand-one, one-thousand-two, one-thousand-three\" method\n• OR count silently while maintaining visual engagement with student\n• Be consistent across all assessments\n\nIMPORTANT:\n• DO supply after 3 seconds - prevents frustration and keeps assessment moving\n• DO NOT supply before 3 seconds - allow time for decoding attempts\n• DO mark supplied words as errors - they count toward accuracy calculation\n• DO remain neutral - no verbal encouragement or discouragement\n\nSTUDENT SELF-CORRECTIONS:\n• If student self-corrects within 3 seconds: NOT an error\n• If student self-corrects after moving to next word: IS an error\n• Mark original error, note self-correction in margin",
+    "general_instructions": "GENERAL ADMINISTRATION INSTRUCTIONS - GRADE 4\n\nBEFORE ASSESSMENT:\n□ Prepare materials: student passage, assessor copy, score sheet, timer\n□ Ensure student is comfortable and ready\n□ Briefly explain the task (see Timing Script)\n□ Answer questions about the process, not about the passage\n\nDURING ASSESSMENT:\n□ Follow Timing Protocol exactly (60 seconds)\n□ Apply 3-Second Word Supply Rule consistently\n□ Mark all errors as they occur\n□ Maintain neutral demeanor - no facial reactions to errors\n□ Do not interrupt reading except to supply words after 3 seconds\n\nAFTER ASSESSMENT:\n□ Calculate Words Correct Per Minute (WCPM)\n□ Calculate Accuracy Percentage\n□ Score Prosody using rubric\n□ Record all scores on score sheet\n□ Do not discuss scores with student during assessment session\n\nENVIRONMENTAL CONSIDERATIONS:\n• Quiet space with minimal distractions\n• Good lighting for reading\n• Comfortable seating\n• Private (1-on-1) administration preferred\n\nASSESSMENT VALIDITY:\n• If interrupted, restart with new passage\n• If student is ill/distracted, reschedule\n• If significant emotional distress occurs, stop assessment",
+    "score_sheet": "═══════════════════════════════════════════════════════════════\n        ORAL READING FLUENCY SCORE SHEET\n═══════════════════════════════════════════════════════════════\n\nFORM: ORF-G4-LATE-001\nGRADE: 4\nPASSAGE WORD COUNT: 176\n\nSTUDENT INFORMATION:\nStudent Name: _______________________________________\nDate: _______________  Assessor: ___________________\nSchool: _____________________  Class: ______________\n\n═══════════════════════════════════════════════════════════════\nSCORING\n═══════════════════════════════════════════════════════════════\n\nSTEP 1: WORDS READ IN 60 SECONDS\nLast word read (marked with ]): Word # ________\n\nSTEP 2: COUNT ERRORS\nTotal errors made: ________ errors\n\nError Types Marked:\n  Omissions: ______\n  Substitutions: ______\n  Insertions: ______\n  Hesitations (3+ sec): ______\n\nSTEP 3: CALCULATE WCPM (Words Correct Per Minute)\nFormula: Words Read - Errors = WCPM\n\n  ________ (words read) - ________ (errors) = ________ WCPM\n\nSTEP 4: CALCULATE ACCURACY\nFormula: (Words Read - Errors) / Words Read × 100\n\n  (________ - ________) / ________ × 100 = ________%\n\n═══════════════════════════════════════════════════════════════\nBENCHMARK COMPARISON (Grade 4)\n═══════════════════════════════════════════════════════════════\n\nFall Target:    133 WCPM (50th percentile)    Student: ________ WCPM\nWinter Target:  160 WCPM (75th percentile)    Student: ________ WCPM  \nSpring Target:  160 WCPM (75th percentile)    Student: ________ WCPM\n\nPerformance Level (check one):\n□ Above Benchmark (exceeds target by 10+ WCPM)\n□ At Benchmark (within ±10 WCPM of target)\n□ Below Benchmark (below target by 10+ WCPM)\n□ Significantly Below (below target by 30+ WCPM)\n\n═══════════════════════════════════════════════════════════════\nPROSODY RATING (See Prosody Rubric)\n═══════════════════════════════════════════════════════════════\n\nScore (1-4): ________\n\n□ 1 - Primarily word-by-word, choppy\n□ 2 - Mostly two-word phrases, limited expression\n□ 3 - Mixture of three+ word phrases, appropriate phrasing\n□ 4 - Consistent meaningful phrases, good expression\n\n═══════════════════════════════════════════════════════════════\nNOTES & OBSERVATIONS\n═══════════════════════════════════════════════════════════════\n\nPatterns noticed:\n_____________________________________________________________\n_____________________________________________________________\n_____________________________________________________________\n\nRecommendations:\n_____________________________________________________________\n_____________________________________________________________\n_____________________________________________________________\n\n═══════════════════════════════════════════════════════════════",
+    "wcpm_benchmark": {
+      "50th_percentile": 133,
+      "75th_percentile": 160
+    },
+    "accuracy_calculation": "ACCURACY CALCULATION GUIDE\n\nFormula: (Words Read - Errors) / Words Read × 100 = Accuracy %\n\nEXAMPLE with 176-word passage:\n\nScenario 1: Strong Reader\n  Words read in 60 sec: 120 words\n  Errors made: 2 errors\n  Calculation: (120 - 2) / 120 × 100 = 98.3% accuracy\n  \nScenario 2: Developing Reader\n  Words read in 60 sec: 85 words\n  Errors made: 8 errors\n  Calculation: (85 - 8) / 85 × 100 = 90.6% accuracy\n\nScenario 3: Struggling Reader\n  Words read in 60 sec: 45 words\n  Errors made: 12 errors\n  Calculation: (45 - 12) / 45 × 100 = 73.3% accuracy\n\nACCURACY GUIDELINES:\n• 97-100%: Excellent accuracy, independent level\n• 90-96%: Good accuracy, instructional level\n• Below 90%: Frustration level, text may be too difficult\n\nNOTE: Accuracy matters as much as speed. A fast reader with many \nerrors needs different support than a slow but accurate reader.",
+    "prosody_rubric": "MULTIDIMENSIONAL FLUENCY SCALE (Prosody)\nAdapted from NAEP Oral Reading Fluency Scale\n\nScore each dimension, then determine overall level (1-4):\n\nPHRASING & EXPRESSION:\nLevel 4 - Reads with good phrasing; adheres to author's syntax; uses \n         expression to convey meaning; attention to punctuation.\n\nLevel 3 - Reads with a mixture of run-ons, mid-sentence pauses for breath,\n         and some choppiness; reasonable syntax; expressive interpretation.\n\nLevel 2 - Reads with a mixture of two-word phrases and occasional \n         three-to-four-word phrases; limited expression; monotone.\n\nLevel 1 - Reads primarily word-by-word with occasional two-word phrases;\n         lacks expression; ignores most punctuation.\n\nSMOOTHNESS:\n• Smooth, automatic reading with few hesitations\n• Some hesitations and pauses, but generally flows\n• Frequent hesitations, pauses, false starts, repetitions\n• Very choppy, labored reading throughout\n\nPACE:\n• Conversational pace throughout\n• Uneven pace, sometimes too fast or slow\n• Consistently too slow or too fast\n• Very slow, laborious pace\n\nOVERALL PROSODY SCORE: _________ (1-4)\n\nNOTES ON PROSODY:\n_________________________________________________________________\n_________________________________________________________________\n_________________________________________________________________",
+    "error_marking_grid": "ERROR MARKING SYSTEM\n\nMark errors directly on the assessor copy of the passage as they occur.\n\n═══════════════════════════════════════════════════════════════\nERROR TYPES & MARKING CONVENTIONS\n═══════════════════════════════════════════════════════════════\n\n1. SUBSTITUTION (wrong word said)\n   Mark: Draw line through word, write what student said above\n   Example: \"The cat ran\" → student says \"The cat run\"\n            The cat ran\n                    run\n\n2. OMISSION (word skipped)\n   Mark: Circle the omitted word\n   Example: \"jumped over the\" → student says \"jumped the\"\n            jumped (over) the\n\n3. INSERTION (word added that isn't in text)\n   Mark: Use caret (^) where word inserted, write word above\n   Example: \"the big dog\" → student says \"the really big dog\"\n                    really\n            the ^ big dog\n\n4. HESITATION (3+ second pause, word supplied by assessor)\n   Mark: Put \"H\" above word\n   Example: \"difficult\" → student pauses 3+ seconds, you supply word\n                H\n            difficult\n\n5. SELF-CORRECTION (student fixes own error quickly)\n   Mark: Write \"SC\" above; DO NOT count as error\n   Example: \"ran... race\" → student says \"ran\" then self-corrects to \"race\"\n                SC\n            race\n\n6. REPETITION (repeats word or phrase)\n   Mark: Underline repeated portion; DO NOT count as error\n   Example: \"the dog ran\" → student says \"the dog... the dog ran\"\n            the dog ran\n\n7. LAST WORD READ AT 60 SECONDS\n   Mark: Place bracket ] after last word completed\n   Example: ... the dog ran fast] across the yard\n\n═══════════════════════════════════════════════════════════════\nEXAMPLE MARKED PASSAGE SEGMENT:\n═══════════════════════════════════════════════════════════════\n\nLily lived in a small town surrounded by mountains. Every morning, she'd wake up early, pack a sandwich and an...\n\n[Mark errors as shown above directly on your copy]\n\n═══════════════════════════════════════════════════════════════\nMARKING TIPS:\n═══════════════════════════════════════════════════════════════\n\n• Mark in real-time as student reads\n• Use consistent symbols across all assessments\n• If unsure, mark it and review after completion\n• Keep tally of each error type for analysis\n• Note patterns (e.g., struggles with multi-syllable words)",
+    "error_types": {
+      "substitution": "Student says a different word than what is printed",
+      "omission": "Student skips a word entirely",
+      "insertion": "Student adds a word that is not in the text",
+      "hesitation": "Student pauses 3+ seconds, assessor supplies word",
+      "self_correction": "Student corrects own error immediately (not counted)",
+      "repetition": "Student repeats word or phrase (not counted as error)"
+    },
+    "grade": "4",
+    "passage_word_count": 176,
+    "form_id": "ORF-G4-LATE-001",
+    "generated_at": "2026-01-15T09:01:31.333340",
+    "schema_version": "2026.1",
+    "bank_usage": {
+      "Bank 2 (ORF Word Counts)": "Grade 4 WCPM benchmarks"
+    }
+  },
+  "package_type": "orf",
+  "ready_for_use": true
+}

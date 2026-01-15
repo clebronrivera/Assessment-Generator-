@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ sample_name }} - Reading Compass</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f7fa;
+            color: #333;
+        }
+
+        .nav {
+            background: white;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .nav-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+        }
+
+        .passage-text {
+            line-height: 1.8;
+            font-size: 1.1em;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .question {
+            padding: 20px;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .question-text {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .options {
+            margin-left: 20px;
+        }
+
+        .option {
+            padding: 10px;
+            margin-bottom: 8px;
+            border-radius: 6px;
+            transition: background 0.2s;
+        }
+
+        .option.correct {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #dee2e6;
+        }
+
+        .tab {
+            padding: 12px 24px;
+            cursor: pointer;
+            border: none;
+            background: none;
+            font-size: 1em;
+            color: #666;
+            border-bottom: 3px solid transparent;
+            transition: all 0.2s;
+        }
+
+        .tab.active {
+            color: #667eea;
+            border-bottom-color: #667eea;
+            font-weight: 600;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .metadata-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .metadata-item {
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .metadata-item strong {
+            color: #667eea;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        pre {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-size: 0.9em;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #5568d3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="nav-content">
+            <a href="/">← Back to Dashboard</a>
+            <h1>{{ sample_name.replace('_', ' ').title() }}</h1>
+            <button class="btn btn-primary" onclick="downloadJSON()">Download JSON</button>
+        </div>
+    </div>
+
+    <div class="container">
+        {% if manifest %}
+        <div class="section">
+            <h2>📊 Package Information</h2>
+            <div class="metadata-grid">
+                <div class="metadata-item">
+                    <strong>Package ID</strong>
+                    {{ manifest.package_id }}
+                </div>
+                <div class="metadata-item">
+                    <strong>Grade Level</strong>
+                    Grade {{ manifest.grade_level }}
+                </div>
+                <div class="metadata-item">
+                    <strong>Assessment Type</strong>
+                    {{ manifest.assessment_type|capitalize }}
+                </div>
+                {% if manifest.genre %}
+                <div class="metadata-item">
+                    <strong>Genre</strong>
+                    {{ manifest.genre|capitalize }}
+                </div>
+                {% endif %}
+                {% if manifest.total_questions %}
+                <div class="metadata-item">
+                    <strong>Total Questions</strong>
+                    {{ manifest.total_questions }}
+                </div>
+                {% endif %}
+                {% if manifest.word_count %}
+                <div class="metadata-item">
+                    <strong>Word Count</strong>
+                    {{ manifest.word_count }}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
+
+        <div class="section">
+            <div class="tabs">
+                <button class="tab active" onclick="showTab('overview')">Overview</button>
+                <button class="tab" onclick="showTab('passage')">Passage</button>
+                <button class="tab" onclick="showTab('questions')">Questions</button>
+                <button class="tab" onclick="showTab('recall')">Recall</button>
+                <button class="tab" onclick="showTab('json')">Raw JSON</button>
+            </div>
+
+            <div id="overview" class="tab-content active">
+                <h2>📋 Assessment Overview</h2>
+                <p>This section shows a summary of the entire assessment package.</p>
+
+                {% if sample.passage %}
+                <h3 style="margin-top: 30px;">Passage Summary</h3>
+                <div class="metadata-grid">
+                    <div class="metadata-item">
+                        <strong>Title</strong>
+                        {{ sample.passage.passage_title }}
+                    </div>
+                    <div class="metadata-item">
+                        <strong>Word Count</strong>
+                        {{ sample.passage.actual_word_count }}
+                    </div>
+                    {% if sample.passage.lexile_level %}
+                    <div class="metadata-item">
+                        <strong>Lexile Level</strong>
+                        {{ sample.passage.lexile_level }}
+                    </div>
+                    {% endif %}
+                </div>
+                {% endif %}
+            </div>
+
+            <div id="passage" class="tab-content">
+                {% if sample.passage %}
+                <h2>📖 {{ sample.passage.passage_title }}</h2>
+                <div class="passage-text">
+                    {{ sample.passage.passage_text }}
+                </div>
+                {% else %}
+                <p>No passage available for this sample (ORF assessment).</p>
+                {% endif %}
+            </div>
+
+            <div id="questions" class="tab-content">
+                <h2>❓ Questions ({{ sample.questions.total_questions if sample.questions else 'N/A' }})</h2>
+
+                {% if sample.questions %}
+                {% for question in sample.questions.questions %}
+                <div class="question">
+                    <div class="question-text">
+                        {{ question.question_number }}. {{ question.question_text }}
+                    </div>
+                    <div class="options">
+                        {% for option in question.answer_options %}
+                        <div class="option {% if option.letter == question.correct_answer %}correct{% endif %}">
+                            <strong>{{ option.letter }}.</strong> {{ option.text }}
+                            {% if option.letter == question.correct_answer %} ✓{% endif %}
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% if question.rationale %}
+                    <div style="margin-top: 15px; padding: 10px; background: #e7f3ff; border-radius: 6px;">
+                        <strong>Rationale:</strong> {{ question.rationale }}
+                    </div>
+                    {% endif %}
+                </div>
+                {% endfor %}
+                {% else %}
+                <p>No questions available for this sample.</p>
+                {% endif %}
+            </div>
+
+            <div id="recall" class="tab-content">
+                <h2>💭 Recall Scoring</h2>
+
+                {% if sample.recall_scoring %}
+                <div class="metadata-grid">
+                    <div class="metadata-item">
+                        <strong>Total Sentences</strong>
+                        {{ sample.recall_scoring.total_sentences }}
+                    </div>
+                    <div class="metadata-item">
+                        <strong>Max Points</strong>
+                        {{ sample.recall_scoring.max_total_points }}
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 30px;">Scoring Rubric</h3>
+                {% for sentence in sample.recall_scoring.sentences %}
+                <div style="padding: 15px; border: 1px solid #dee2e6; border-radius: 8px; margin-bottom: 10px;">
+                    <strong>Sentence {{ sentence.sentence_number }}:</strong> {{ sentence.sentence_text }}
+                    <div style="margin-top: 10px; padding: 10px; background: #f8f9fa; border-radius: 6px;">
+                        <strong>Max Points:</strong> {{ sentence.max_points }} | <strong>Character:</strong> {{
+                        sentence.character_name }}<br>
+                        <strong>Key Detail:</strong> {{ sentence.key_detail }}<br>
+                        <em>{{ sentence.scoring_note }}</em>
+                    </div>
+                </div>
+                {% endfor %}
+                {% else %}
+                <p>No recall scoring available for this sample.</p>
+                {% endif %}
+            </div>
+
+            <div id="json" class="tab-content">
+                <h2>🔧 Raw JSON Data</h2>
+                <pre>{{ sample|tojson(indent=2) }}</pre>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showTab(tabName) {
+            // Hide all tabs
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            // Show selected tab
+            document.getElementById(tabName).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        function downloadJSON() {
+            const data = {{ sample| tojson | safe
+        }};
+        const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = '{{ sample_name }}.json';
+        a.click();
+        }
+    </script>
+</body>
+
+</html>
