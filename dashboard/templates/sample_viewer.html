@@ -196,11 +196,15 @@
                 </div>
                 <div class="metadata-item">
                     <strong>Grade Level</strong>
-                    Grade {{ manifest.grade_level }}
+                    Grade {{ manifest.grade }}
                 </div>
                 <div class="metadata-item">
                     <strong>Assessment Type</strong>
-                    {{ manifest.assessment_type|capitalize }}
+                    {% if manifest.package_type == 'orf' %}
+                    Oral Reading Fluency - Formative
+                    {% else %}
+                    {{ manifest.package_type|capitalize }}
+                    {% endif %}
                 </div>
                 {% if manifest.genre %}
                 <div class="metadata-item">
@@ -208,16 +212,16 @@
                     {{ manifest.genre|capitalize }}
                 </div>
                 {% endif %}
+                {% if manifest.statistics and manifest.statistics.passage_word_count %}
+                <div class="metadata-item">
+                    <strong>Word Count</strong>
+                    {{ manifest.statistics.passage_word_count }}
+                </div>
+                {% endif %}
                 {% if manifest.total_questions %}
                 <div class="metadata-item">
                     <strong>Total Questions</strong>
                     {{ manifest.total_questions }}
-                </div>
-                {% endif %}
-                {% if manifest.word_count %}
-                <div class="metadata-item">
-                    <strong>Word Count</strong>
-                    {{ manifest.word_count }}
                 </div>
                 {% endif %}
             </div>
@@ -246,12 +250,13 @@
                     </div>
                     <div class="metadata-item">
                         <strong>Word Count</strong>
-                        {{ sample.passage.actual_word_count }}
+                        {{ sample.passage.word_count or sample.passage.actual_word_count or
+                        sample.passage.metadata.actual_word_count }}
                     </div>
-                    {% if sample.passage.lexile_level %}
+                    {% if sample.passage.target_lexile or sample.passage.lexile_level %}
                     <div class="metadata-item">
                         <strong>Lexile Level</strong>
-                        {{ sample.passage.lexile_level }}
+                        {{ sample.passage.target_lexile or sample.passage.lexile_level }}
                     </div>
                     {% endif %}
                 </div>

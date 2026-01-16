@@ -40,8 +40,8 @@ class AssessmentMatrix:
         """Generate all possible assessment combinations"""
         specs = []
         
-        # ORF assessments for grades K-6
-        for grade in ['K', '1', '2', '3', '4', '5', '6']:
+        # ORF assessments for grades K-8
+        for grade in ['K', '1', '2', '3', '4', '5', '6', '7', '8']:
             specs.append(AssessmentSpec(
                 grade=grade,
                 assessment_type='orf'
