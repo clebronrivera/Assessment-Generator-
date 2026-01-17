@@ -1,0 +1,162 @@
+{
+  "metadata": {
+    "assessment_id": "PA-SYLS",
+    "form_id": "PA-SYLS-FORM-001",
+    "form_number": 1,
+    "grade": "K",
+    "assessment_name": "Syllable Segmentation",
+    "category": "Phonological Awareness",
+    "created_at": "2026-01-15T21:45:28.566527",
+    "schema_version": "2026.1",
+    "total_items": 20
+  },
+  "assessment_id": "PA-SYLS",
+  "form_id": "PA-SYLS-FORM-001",
+  "form_number": 1,
+  "grade": "K",
+  "items": [
+    {
+      "item_number": 1,
+      "word": "candle",
+      "correct_syllable_count": 2
+    },
+    {
+      "item_number": 2,
+      "word": "computer",
+      "correct_syllable_count": 3
+    },
+    {
+      "item_number": 3,
+      "word": "animal",
+      "correct_syllable_count": 3
+    },
+    {
+      "item_number": 4,
+      "word": "telephone",
+      "correct_syllable_count": 3
+    },
+    {
+      "item_number": 5,
+      "word": "family",
+      "correct_syllable_count": 3
+    },
+    {
+      "item_number": 6,
+      "word": "butter",
+      "correct_syllable_count": 2
+    },
+    {
+      "item_number": 7,
+      "word": "beautiful",
+      "correct_syllable_count": 3
+    },
+    {
+      "item_number": 8,
+      "word": "table",
+      "correct_syllable_count": 2
+    },
+    {
+      "item_number": 9,
+      "word": "elephant",
+      "correct_syllable_count": 3
+    },
+    {
+      "item_number": 10,
+      "word": "apple",
+      "correct_syllable_count": 2
+    },
+    {
+      "item_number": 11,
+      "word": "garden",
+      "correct_syllable_count": 2
+    },
+    {
+      "item_number": 12,
+      "word": "banana",
+      "correct_syllable_count": 3
+    },
+    {
+      "item_number": 13,
+      "word": "cat",
+      "correct_syllable_count": 1
+    },
+    {
+      "item_number": 14,
+      "word": "happy",
+      "correct_syllable_count": 2
+    },
+    {
+      "item_number": 15,
+      "word": "dog",
+      "correct_syllable_count": 1
+    },
+    {
+      "item_number": 16,
+      "word": "water",
+      "correct_syllable_count": 2
+    },
+    {
+      "item_number": 17,
+      "word": "eagle",
+      "correct_syllable_count": 2
+    },
+    {
+      "item_number": 18,
+      "word": "hospital",
+      "correct_syllable_count": 3
+    },
+    {
+      "item_number": 19,
+      "word": "tiger",
+      "correct_syllable_count": 2
+    },
+    {
+      "item_number": 20,
+      "word": "butterfly",
+      "correct_syllable_count": 3
+    }
+  ],
+  "interface_spec": {
+    "student_presentation": "audio_only",
+    "student_sees_text": false,
+    "items_advance_mode": "manual_next_button",
+    "assessor_interaction": "count_input",
+    "click_cycle": null,
+    "timing_mode": "untimed",
+    "timer_direction": "none",
+    "timer_visible_to_student": false,
+    "assessor_script": [
+      "SETUP: Prepare word list. Have student demonstrate understanding of syllable concept if needed.",
+      "SAY TO STUDENT: 'I will say a word. Clap the syllables, or tell me how many parts the word has.'",
+      "Give example: 'If I say 'butter,' you clap twice: but-ter. If I say 'cat,' you clap once.'",
+      "Practice with 1-2 examples if needed.",
+      "SAY: 'Now I'll say each word. Clap how many syllables you hear in each word.'",
+      "ADMINISTRATION:",
+      "  • Say each word clearly and distinctly",
+      "  • Student claps, taps, or verbally counts syllables",
+      "  • Count the number of segments/claps student produces",
+      "  • Enter the number of correct syllables in the count input field",
+      "  • Mark as correct if number matches expected syllable count",
+      "  • Mark as incorrect if number is wrong",
+      "  • If student doesn't respond, wait 3-5 seconds, then mark as no response",
+      "  • Advance to next word after marking",
+      "SCORING: Total correct out of 20. Note which word lengths (1, 2, or 3 syllables) are challenging."
+    ],
+    "student_prompt": "Clap the syllables.",
+    "student_action": "Student hears a word spoken by the assessor and must clap or tap the number of syllables in the word. For example, for 'butter', student claps twice (but-ter). Student may also verbally count or segment syllables orally. This is untimed, allowing careful analysis.",
+    "assessor_grading": "Assessor counts the number of correct syllable segments the student produces for each word. Mark as: CORRECT (correct number of syllables identified, e.g., 2 claps for 'butter'), INCORRECT COUNT (wrong number, e.g., 1 or 3 claps for 'butter'), PARTIAL SEGMENTATION (student partially segments but not complete), or NO RESPONSE (doesn't respond). Primary score is total correct out of 20. Also track total syllables correctly identified across all words for partial credit analysis.",
+    "additional_considerations": ""
+  },
+  "scoring": {
+    "primary_metric": "total_correct",
+    "secondary_metrics": [
+      "total_syllables_correct",
+      "accuracy_pct"
+    ],
+    "error_types": [
+      "incorrect_count",
+      "partial_segmentation",
+      "no_response"
+    ]
+  }
+}

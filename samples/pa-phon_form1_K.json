@@ -1,0 +1,141 @@
+{
+  "metadata": {
+    "assessment_id": "PA-PHON",
+    "form_id": "PA-PHON-FORM-001",
+    "form_number": 1,
+    "grade": "K",
+    "assessment_name": "Phoneme Segmentation",
+    "category": "Phonological Awareness",
+    "created_at": "2026-01-15T21:46:14.090201",
+    "schema_version": "2026.1",
+    "total_items": 20
+  },
+  "assessment_id": "PA-PHON",
+  "form_id": "PA-PHON-FORM-001",
+  "form_number": 1,
+  "grade": "K",
+  "items": [
+    {
+      "item_number": 1,
+      "word": "stamp"
+    },
+    {
+      "item_number": 2,
+      "word": "swim"
+    },
+    {
+      "item_number": 3,
+      "word": "jump"
+    },
+    {
+      "item_number": 4,
+      "word": "hand"
+    },
+    {
+      "item_number": 5,
+      "word": "splash"
+    },
+    {
+      "item_number": 6,
+      "word": "dog"
+    },
+    {
+      "item_number": 7,
+      "word": "leg"
+    },
+    {
+      "item_number": 8,
+      "word": "mop"
+    },
+    {
+      "item_number": 9,
+      "word": "fox"
+    },
+    {
+      "item_number": 10,
+      "word": "frog"
+    },
+    {
+      "item_number": 11,
+      "word": "book"
+    },
+    {
+      "item_number": 12,
+      "word": "fast"
+    },
+    {
+      "item_number": 13,
+      "word": "dress"
+    },
+    {
+      "item_number": 14,
+      "word": "wind"
+    },
+    {
+      "item_number": 15,
+      "word": "chip"
+    },
+    {
+      "item_number": 16,
+      "word": "cat"
+    },
+    {
+      "item_number": 17,
+      "word": "this"
+    },
+    {
+      "item_number": 18,
+      "word": "truck"
+    },
+    {
+      "item_number": 19,
+      "word": "cup"
+    },
+    {
+      "item_number": 20,
+      "word": "lamp"
+    }
+  ],
+  "interface_spec": {
+    "student_presentation": "audio_only",
+    "student_sees_text": false,
+    "items_advance_mode": "manual_next_button",
+    "assessor_interaction": "correct_incorrect",
+    "click_cycle": null,
+    "timing_mode": "untimed",
+    "timer_direction": "none",
+    "timer_visible_to_student": false,
+    "assessor_script": [
+      "SETUP: Prepare word list. Ensure student understands task is different from saying whole word.",
+      "SAY TO STUDENT: 'I will say a word. Tell me all the sounds in the word.'",
+      "Give example: 'If I say 'sun,' you would say /s/ /u/ /n/. Do not say the whole word, just the sounds.'",
+      "Practice with 1-2 examples if needed to ensure student understands.",
+      "SAY: 'Now I'll say each word. After each word, tell me all the sounds you hear.'",
+      "ADMINISTRATION:",
+      "  • Say each word clearly and distinctly",
+      "  • Wait for student to produce individual phonemes",
+      "  • If student says whole word, prompt once: 'Tell me the sounds, not the word'",
+      "  • Mark using correct/incorrect buttons:",
+      "    - Click 'Correct' only if ALL phonemes are produced correctly in sequence",
+      "    - Click 'Incorrect' if any phoneme is omitted, added, or out of sequence",
+      "  • Advance to next word after marking or 3 seconds of no response",
+      "SCORING: Total correct out of 20. Track error patterns: which phonemes are commonly omitted, which words are challenging."
+    ],
+    "student_prompt": "Tell me all the sounds.",
+    "student_action": "Student hears a word spoken by the assessor and must orally segment the word into all its individual phonemes (sounds) in sequence. For example, for 'sun', student says '/s/ /u/ /n/'. This is untimed, allowing student to think and produce all sounds carefully.",
+    "assessor_grading": "Assessor marks each item as: CORRECT (all phonemes produced correctly in sequence), INCORRECT - PHONEME OMISSION (student misses one or more phonemes), INCORRECT - PHONEME ADDITION (student adds extra sounds), INCORRECT - SEQUENCE ERROR (phonemes out of order), or NO RESPONSE (doesn't respond within 3 seconds or produces no phonemes). Primary score is total correct out of 20. Note which phonemes students typically omit or struggle with for instructional planning.",
+    "additional_considerations": ""
+  },
+  "scoring": {
+    "primary_metric": "total_correct",
+    "secondary_metrics": [
+      "accuracy_pct"
+    ],
+    "error_types": [
+      "phoneme_omission",
+      "phoneme_addition",
+      "sequence_error",
+      "no_response"
+    ]
+  }
+}

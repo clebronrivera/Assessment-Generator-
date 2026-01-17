@@ -1,0 +1,180 @@
+{
+  "metadata": {
+    "assessment_id": "PA-OONS",
+    "form_id": "PA-OONS-FORM-001",
+    "form_number": 1,
+    "grade": "K",
+    "assessment_name": "Onset-Rime Blending",
+    "category": "Phonological Awareness",
+    "created_at": "2026-01-15T21:45:25.983227",
+    "schema_version": "2026.1",
+    "total_items": 20
+  },
+  "assessment_id": "PA-OONS",
+  "form_id": "PA-OONS-FORM-001",
+  "form_number": 1,
+  "grade": "K",
+  "items": [
+    {
+      "item_number": 1,
+      "onset": "f",
+      "rime": "ox",
+      "correct_word": "fox"
+    },
+    {
+      "item_number": 2,
+      "onset": "c",
+      "rime": "up",
+      "correct_word": "cup"
+    },
+    {
+      "item_number": 3,
+      "onset": "f",
+      "rime": "un",
+      "correct_word": "fun"
+    },
+    {
+      "item_number": 4,
+      "onset": "r",
+      "rime": "un",
+      "correct_word": "run"
+    },
+    {
+      "item_number": 5,
+      "onset": "p",
+      "rime": "ig",
+      "correct_word": "pig"
+    },
+    {
+      "item_number": 6,
+      "onset": "c",
+      "rime": "at",
+      "correct_word": "cat"
+    },
+    {
+      "item_number": 7,
+      "onset": "d",
+      "rime": "og",
+      "correct_word": "dog"
+    },
+    {
+      "item_number": 8,
+      "onset": "m",
+      "rime": "ix",
+      "correct_word": "mix"
+    },
+    {
+      "item_number": 9,
+      "onset": "l",
+      "rime": "og",
+      "correct_word": "log"
+    },
+    {
+      "item_number": 10,
+      "onset": "h",
+      "rime": "op",
+      "correct_word": "hop"
+    },
+    {
+      "item_number": 11,
+      "onset": "s",
+      "rime": "un",
+      "correct_word": "sun"
+    },
+    {
+      "item_number": 12,
+      "onset": "f",
+      "rime": "ix",
+      "correct_word": "fix"
+    },
+    {
+      "item_number": 13,
+      "onset": "p",
+      "rime": "up",
+      "correct_word": "pup"
+    },
+    {
+      "item_number": 14,
+      "onset": "r",
+      "rime": "ed",
+      "correct_word": "red"
+    },
+    {
+      "item_number": 15,
+      "onset": "b",
+      "rime": "at",
+      "correct_word": "bat"
+    },
+    {
+      "item_number": 16,
+      "onset": "t",
+      "rime": "op",
+      "correct_word": "top"
+    },
+    {
+      "item_number": 17,
+      "onset": "b",
+      "rime": "ig",
+      "correct_word": "big"
+    },
+    {
+      "item_number": 18,
+      "onset": "f",
+      "rime": "og",
+      "correct_word": "fog"
+    },
+    {
+      "item_number": 19,
+      "onset": "b",
+      "rime": "ed",
+      "correct_word": "bed"
+    },
+    {
+      "item_number": 20,
+      "onset": "p",
+      "rime": "op",
+      "correct_word": "pop"
+    }
+  ],
+  "interface_spec": {
+    "student_presentation": "audio_only",
+    "student_sees_text": false,
+    "items_advance_mode": "manual_next_button",
+    "assessor_interaction": "correct_incorrect",
+    "click_cycle": null,
+    "timing_mode": "untimed",
+    "timer_direction": "none",
+    "timer_visible_to_student": false,
+    "assessor_script": [
+      "SETUP: Prepare onset-rime pairs list. Ensure student can hear and process both parts.",
+      "SAY TO STUDENT: 'I will say two parts of a word. Put them together to make a whole word.'",
+      "Give example: 'If I say 'b... at,' what word do you hear? Bat!'",
+      "Demonstrate with one practice item if needed.",
+      "SAY: 'Now I'll say the beginning sound, pause, then the ending. Put them together and tell me the word.'",
+      "ADMINISTRATION:",
+      "  • Say the onset (beginning sound) clearly, pause 300-800ms, then say the rime (ending pattern)",
+      "  • Student responds with the blended word",
+      "  • Mark using correct/incorrect buttons:",
+      "    - Click 'Correct' if student produces correct word",
+      "    - Click 'Incorrect' if student produces wrong word, partial blend, or no response",
+      "  • Advance to next item after marking",
+      "  • If student doesn't respond after 3-5 seconds, mark as no response",
+      "SCORING: Total correct out of 20. Monitor for patterns: students who consistently miss may need more practice with sound blending."
+    ],
+    "student_prompt": "What word do you hear?",
+    "student_action": "Student hears an onset (beginning sound, e.g., /b/) and a rime (ending pattern, e.g., /at/) spoken separately by the assessor, and must blend them together to produce the complete word (e.g., 'bat'). Student responds orally with the blended word.",
+    "assessor_grading": "Assessor marks each item as: CORRECT (student successfully blends onset and rime to produce correct word), INCORRECT BLEND (student produces wrong word or blends incorrectly), PARTIAL BLEND (student produces parts but not complete word), or NO RESPONSE (student doesn't respond within reasonable time). Primary score is total correct out of 20. Note error patterns: students who struggle with onset-rime blending may need additional phonemic awareness support.",
+    "additional_considerations": ""
+  },
+  "scoring": {
+    "primary_metric": "total_correct",
+    "secondary_metrics": [
+      "accuracy_pct"
+    ],
+    "error_types": [
+      "incorrect_blend",
+      "partial_blend",
+      "no_response"
+    ]
+  }
+}

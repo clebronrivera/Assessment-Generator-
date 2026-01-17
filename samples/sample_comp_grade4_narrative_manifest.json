@@ -27,8 +27,56 @@
     "total_points_questions": 10,
     "total_sentences_recall": 14,
     "total_points_recall": 28,
-    "components_included": 5
+    "components_included": 5,
+    "total_items": 10
   },
   "ready_for_use": true,
-  "genre": "narrative"
+  "genre": "narrative",
+  "metadata": {
+    "assessment_id": "COMP",
+    "form_id": "COMP-N/A-EARLY-NARRATIVE-001",
+    "form_number": 1,
+    "assessment_name": "Reading Comprehension - Grade N/A (Narrative)"
+  },
+  "assessment_id": "COMP",
+  "form_id": "COMP-N/A-EARLY-NARRATIVE-001",
+  "form_number": 1,
+  "interface_spec": {
+    "student_presentation": "full_text_with_questions",
+    "student_sees_text": true,
+    "items_advance_mode": "manual_next_button",
+    "assessor_interaction": "correct_incorrect",
+    "click_cycle": null,
+    "timing_mode": "untimed",
+    "timer_direction": "none",
+    "timer_visible_to_student": false,
+    "assessor_script": [
+      "SETUP: Prepare assessment materials. Ensure student has access to passage and questions.",
+      "SAY TO STUDENT: 'I'm going to ask you to read this passage and then answer some questions about it. You can refer back to the passage while answering questions.'",
+      "ADMINISTRATION:",
+      "  • Allow student to read passage at their own pace",
+      "  • Present questions one at a time",
+      "  • Mark each answer as correct or incorrect",
+      "  • Record recall scoring if applicable",
+      "  • Calculate total score"
+    ],
+    "student_prompt": "Read this passage and answer the questions that follow.",
+    "student_action": "Student reads passage and answers questions. Student can refer back to passage while answering.",
+    "assessor_grading": "Assessor marks each question as correct or incorrect. Calculate total score based on questions answered correctly.",
+    "additional_considerations": ""
+  },
+  "scoring": {
+    "primary_metric": "total_correct",
+    "secondary_metrics": [
+      "accuracy_pct",
+      "recall_score"
+    ],
+    "error_types": [
+      "incorrect"
+    ]
+  },
+  "assessment_type": "comprehension",
+  "questions": {
+    "questions": []
+  }
 }

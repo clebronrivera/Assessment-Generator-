@@ -1,0 +1,272 @@
+{
+  "metadata": {
+    "assessment_id": "FL-WRF",
+    "form_id": "FL-WRF-FORM-001",
+    "form_number": 1,
+    "grade": "K",
+    "assessment_name": "Word Reading Fluency",
+    "category": "Fluency",
+    "created_at": "2026-01-15T21:45:12.521593",
+    "schema_version": "2026.1",
+    "total_items": 50
+  },
+  "assessment_id": "FL-WRF",
+  "form_id": "FL-WRF-FORM-001",
+  "form_number": 1,
+  "grade": "K",
+  "items": [
+    {
+      "item_number": 1,
+      "word": "pig"
+    },
+    {
+      "item_number": 2,
+      "word": "get"
+    },
+    {
+      "item_number": 3,
+      "word": "top"
+    },
+    {
+      "item_number": 4,
+      "word": "hat"
+    },
+    {
+      "item_number": 5,
+      "word": "sit"
+    },
+    {
+      "item_number": 6,
+      "word": "hot"
+    },
+    {
+      "item_number": 7,
+      "word": "bed"
+    },
+    {
+      "item_number": 8,
+      "word": "cap"
+    },
+    {
+      "item_number": 9,
+      "word": "get"
+    },
+    {
+      "item_number": 10,
+      "word": "sit"
+    },
+    {
+      "item_number": 11,
+      "word": "map"
+    },
+    {
+      "item_number": 12,
+      "word": "pen"
+    },
+    {
+      "item_number": 13,
+      "word": "pen"
+    },
+    {
+      "item_number": 14,
+      "word": "men"
+    },
+    {
+      "item_number": 15,
+      "word": "fox"
+    },
+    {
+      "item_number": 16,
+      "word": "bed"
+    },
+    {
+      "item_number": 17,
+      "word": "run"
+    },
+    {
+      "item_number": 18,
+      "word": "us"
+    },
+    {
+      "item_number": 19,
+      "word": "cup"
+    },
+    {
+      "item_number": 20,
+      "word": "men"
+    },
+    {
+      "item_number": 21,
+      "word": "ten"
+    },
+    {
+      "item_number": 22,
+      "word": "run"
+    },
+    {
+      "item_number": 23,
+      "word": "red"
+    },
+    {
+      "item_number": 24,
+      "word": "fix"
+    },
+    {
+      "item_number": 25,
+      "word": "had"
+    },
+    {
+      "item_number": 26,
+      "word": "us"
+    },
+    {
+      "item_number": 27,
+      "word": "hen"
+    },
+    {
+      "item_number": 28,
+      "word": "van"
+    },
+    {
+      "item_number": 29,
+      "word": "hot"
+    },
+    {
+      "item_number": 30,
+      "word": "sad"
+    },
+    {
+      "item_number": 31,
+      "word": "yes"
+    },
+    {
+      "item_number": 32,
+      "word": "box"
+    },
+    {
+      "item_number": 33,
+      "word": "mad"
+    },
+    {
+      "item_number": 34,
+      "word": "mop"
+    },
+    {
+      "item_number": 35,
+      "word": "pan"
+    },
+    {
+      "item_number": 36,
+      "word": "peg"
+    },
+    {
+      "item_number": 37,
+      "word": "had"
+    },
+    {
+      "item_number": 38,
+      "word": "dad"
+    },
+    {
+      "item_number": 39,
+      "word": "leg"
+    },
+    {
+      "item_number": 40,
+      "word": "ten"
+    },
+    {
+      "item_number": 41,
+      "word": "pup"
+    },
+    {
+      "item_number": 42,
+      "word": "fun"
+    },
+    {
+      "item_number": 43,
+      "word": "bat"
+    },
+    {
+      "item_number": 44,
+      "word": "box"
+    },
+    {
+      "item_number": 45,
+      "word": "mop"
+    },
+    {
+      "item_number": 46,
+      "word": "sun"
+    },
+    {
+      "item_number": 47,
+      "word": "man"
+    },
+    {
+      "item_number": 48,
+      "word": "top"
+    },
+    {
+      "item_number": 49,
+      "word": "mad"
+    },
+    {
+      "item_number": 50,
+      "word": "cup"
+    }
+  ],
+  "interface_spec": {
+    "student_presentation": "one_at_a_time",
+    "student_sees_text": true,
+    "items_advance_mode": "manual_next_button",
+    "assessor_interaction": "click_cycle",
+    "click_cycle": {
+      "states": [
+        "correct",
+        "incorrect",
+        "self_correct",
+        "omission",
+        "omission",
+        "reset"
+      ]
+    },
+    "timing_mode": "timer_down_60",
+    "timer_direction": "down",
+    "timer_visible_to_student": false,
+    "assessor_script": [
+      "SETUP: Prepare word list, timer, and scoring sheet. Ensure quiet environment.",
+      "SAY TO STUDENT: 'I'm going to show you some words. Read each word as quickly and carefully as you can.'",
+      "SAY: 'When I say 'start,' begin reading the words. Try to read as many words as you can in 60 seconds.'",
+      "Demonstrate with one example if needed.",
+      "ADMINISTRATION:",
+      "  • Start the 60-second countdown timer when you say 'start'",
+      "  • Present words one at a time",
+      "  • Click/tap each word to mark errors as student reads:",
+      "    - First click: Mark as INCORRECT",
+      "    - Second click: Mark as SELF-CORRECT",
+      "    - Third click: Mark as OMISSION",
+      "    - Additional clicks cycle through states",
+      "  • If word is read correctly, leave unmarked",
+      "  • Continue presenting words until 60 seconds expire or student completes list",
+      "  • At 60 seconds, say 'stop' and mark the last word attempted",
+      "SCORING: Calculate WCPM = (words read correctly) × (60 / seconds elapsed). Count only words read correctly within the time limit."
+    ],
+    "student_prompt": "Read this word.",
+    "student_action": "Student sees one word at a time on screen and reads the word aloud. Student reads words sequentially, as quickly and accurately as possible within the 60-second time limit. Student can attempt to decode unfamiliar words or skip if needed.",
+    "assessor_grading": "Assessor marks each word read during the 60-second period as: CORRECT (word read accurately), INCORRECT (word misread, substituted, or pronounced incorrectly), SELF-CORRECT (student initially incorrect but self-corrected), or OMISSION (word skipped or not attempted). Timer counts down from 60 seconds. Primary score is Words Correct Per Minute (WCPM) calculated as: (Total words attempted - errors) × (60 / time taken). Secondary metrics include total correct, accuracy percentage, and error pattern analysis.",
+    "additional_considerations": ""
+  },
+  "scoring": {
+    "primary_metric": "words_correct_per_minute",
+    "secondary_metrics": [
+      "total_correct",
+      "accuracy_pct"
+    ],
+    "error_types": [
+      "incorrect",
+      "omission",
+      "self_correction"
+    ]
+  }
+}

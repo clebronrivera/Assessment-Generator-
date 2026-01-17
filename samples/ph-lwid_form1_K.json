@@ -1,0 +1,263 @@
+{
+  "metadata": {
+    "assessment_id": "PH-LWID",
+    "form_id": "PH-LWID-FORM-001",
+    "form_number": 1,
+    "grade": "K",
+    "assessment_name": "Letter-Word Identification",
+    "category": "Phonics",
+    "created_at": "2026-01-15T21:45:33.033649",
+    "schema_version": "2026.1",
+    "total_items": 40
+  },
+  "assessment_id": "PH-LWID",
+  "form_id": "PH-LWID-FORM-001",
+  "form_number": 1,
+  "grade": "K",
+  "items": [
+    {
+      "item_number": 1,
+      "content": "cat",
+      "item_type": "word"
+    },
+    {
+      "item_number": 2,
+      "content": "P",
+      "item_type": "letter"
+    },
+    {
+      "item_number": 3,
+      "content": "dog",
+      "item_type": "word"
+    },
+    {
+      "item_number": 4,
+      "content": "J",
+      "item_type": "letter"
+    },
+    {
+      "item_number": 5,
+      "content": "F",
+      "item_type": "letter"
+    },
+    {
+      "item_number": 6,
+      "content": "L",
+      "item_type": "letter"
+    },
+    {
+      "item_number": 7,
+      "content": "C",
+      "item_type": "letter"
+    },
+    {
+      "item_number": 8,
+      "content": "O",
+      "item_type": "letter"
+    },
+    {
+      "item_number": 9,
+      "content": "T",
+      "item_type": "letter"
+    },
+    {
+      "item_number": 10,
+      "content": "K",
+      "item_type": "letter"
+    },
+    {
+      "item_number": 11,
+      "content": "J",
+      "item_type": "letter"
+    },
+    {
+      "item_number": 12,
+      "content": "sun",
+      "item_type": "word"
+    },
+    {
+      "item_number": 13,
+      "content": "Q",
+      "item_type": "letter"
+    },
+    {
+      "item_number": 14,
+      "content": "C",
+      "item_type": "letter"
+    },
+    {
+      "item_number": 15,
+      "content": "L",
+      "item_type": "letter"
+    },
+    {
+      "item_number": 16,
+      "content": "O",
+      "item_type": "letter"
+    },
+    {
+      "item_number": 17,
+      "content": "N",
+      "item_type": "letter"
+    },
+    {
+      "item_number": 18,
+      "content": "M",
+      "item_type": "letter"
+    },
+    {
+      "item_number": 19,
+      "content": "dog",
+      "item_type": "word"
+    },
+    {
+      "item_number": 20,
+      "content": "R",
+      "item_type": "letter"
+    },
+    {
+      "item_number": 21,
+      "content": "cat",
+      "item_type": "word"
+    },
+    {
+      "item_number": 22,
+      "content": "sun",
+      "item_type": "word"
+    },
+    {
+      "item_number": 23,
+      "content": "F",
+      "item_type": "letter"
+    },
+    {
+      "item_number": 24,
+      "content": "I",
+      "item_type": "letter"
+    },
+    {
+      "item_number": 25,
+      "content": "K",
+      "item_type": "letter"
+    },
+    {
+      "item_number": 26,
+      "content": "D",
+      "item_type": "letter"
+    },
+    {
+      "item_number": 27,
+      "content": "S",
+      "item_type": "letter"
+    },
+    {
+      "item_number": 28,
+      "content": "T",
+      "item_type": "letter"
+    },
+    {
+      "item_number": 29,
+      "content": "B",
+      "item_type": "letter"
+    },
+    {
+      "item_number": 30,
+      "content": "hat",
+      "item_type": "word"
+    },
+    {
+      "item_number": 31,
+      "content": "hat",
+      "item_type": "word"
+    },
+    {
+      "item_number": 32,
+      "content": "R",
+      "item_type": "letter"
+    },
+    {
+      "item_number": 33,
+      "content": "A",
+      "item_type": "letter"
+    },
+    {
+      "item_number": 34,
+      "content": "D",
+      "item_type": "letter"
+    },
+    {
+      "item_number": 35,
+      "content": "P",
+      "item_type": "letter"
+    },
+    {
+      "item_number": 36,
+      "content": "B",
+      "item_type": "letter"
+    },
+    {
+      "item_number": 37,
+      "content": "S",
+      "item_type": "letter"
+    },
+    {
+      "item_number": 38,
+      "content": "G",
+      "item_type": "letter"
+    },
+    {
+      "item_number": 39,
+      "content": "N",
+      "item_type": "letter"
+    },
+    {
+      "item_number": 40,
+      "content": "A",
+      "item_type": "letter"
+    }
+  ],
+  "interface_spec": {
+    "student_presentation": "one_at_a_time",
+    "student_sees_text": true,
+    "items_advance_mode": "manual_next_button",
+    "assessor_interaction": "correct_incorrect",
+    "click_cycle": null,
+    "timing_mode": "untimed",
+    "timer_direction": "none",
+    "timer_visible_to_student": false,
+    "assessor_script": [
+      "SETUP: Prepare mixed letter-word list. Ensure student understands items may be letters or words.",
+      "SAY TO STUDENT: 'I will show you some letters and words mixed together. If you see a letter, tell me its name. If you see a word, read the word.'",
+      "Give examples: 'This is the letter B - say 'B.' This is the word 'cat' - read it.'",
+      "SAY: 'Now I'll show you each item one at a time. Tell me the letter name or read the word.'",
+      "ADMINISTRATION:",
+      "  • Display each item one at a time on screen",
+      "  • For letters: Student names the letter",
+      "  • For words: Student reads the word",
+      "  • Mark using correct/incorrect buttons:",
+      "    - Click 'Correct' if letter named correctly or word read accurately",
+      "    - Click 'Incorrect' if wrong name, misread word, skipped, or no response",
+      "  • Advance to next item after marking",
+      "  • Note item type (letter vs. word) for analysis",
+      "SCORING: Total correct out of 40. Calculate separate scores for letters and words to identify specific needs."
+    ],
+    "student_prompt": "Tell me this letter / Read this word.",
+    "student_action": "Student sees one item at a time on screen - either a single letter or a word. For letters, student names the letter (e.g., says 'B' or 'bee'). For words, student reads the word aloud. Items are mixed together in the list. Student responds orally to each item.",
+    "assessor_grading": "Assessor marks each item as: CORRECT (letter named correctly or word read accurately), INCORRECT - MISIDENTIFICATION (wrong letter name or word misread), SUBSTITUTION (student says different word/letter), OMISSION (skipped item), or NO RESPONSE (doesn't respond). Primary score is total correct out of 40. Secondary metrics include letter accuracy (out of letter items) and word accuracy (out of word items) separately, which helps identify if student struggles with letter recognition vs. word reading.",
+    "additional_considerations": ""
+  },
+  "scoring": {
+    "primary_metric": "total_correct",
+    "secondary_metrics": [
+      "letter_correct",
+      "word_correct",
+      "accuracy_pct"
+    ],
+    "error_types": [
+      "misidentification",
+      "substitution",
+      "omission",
+      "no_response"
+    ]
+  }
+}

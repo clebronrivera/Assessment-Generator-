@@ -1,0 +1,141 @@
+{
+  "metadata": {
+    "assessment_id": "FL-PSF",
+    "form_id": "FL-PSF-FORM-001",
+    "form_number": 1,
+    "grade": "1",
+    "assessment_name": "Phoneme Segmentation Fluency",
+    "category": "Phonological Awareness",
+    "created_at": "2026-01-15T22:04:12.158881",
+    "schema_version": "2026.1",
+    "total_items": 20
+  },
+  "assessment_id": "FL-PSF",
+  "form_id": "FL-PSF-FORM-001",
+  "form_number": 1,
+  "grade": "1",
+  "items": [
+    {
+      "item_number": 1,
+      "word": "stamp"
+    },
+    {
+      "item_number": 2,
+      "word": "swim"
+    },
+    {
+      "item_number": 3,
+      "word": "jump"
+    },
+    {
+      "item_number": 4,
+      "word": "hand"
+    },
+    {
+      "item_number": 5,
+      "word": "splash"
+    },
+    {
+      "item_number": 6,
+      "word": "dog"
+    },
+    {
+      "item_number": 7,
+      "word": "leg"
+    },
+    {
+      "item_number": 8,
+      "word": "mop"
+    },
+    {
+      "item_number": 9,
+      "word": "fox"
+    },
+    {
+      "item_number": 10,
+      "word": "frog"
+    },
+    {
+      "item_number": 11,
+      "word": "book"
+    },
+    {
+      "item_number": 12,
+      "word": "fast"
+    },
+    {
+      "item_number": 13,
+      "word": "dress"
+    },
+    {
+      "item_number": 14,
+      "word": "wind"
+    },
+    {
+      "item_number": 15,
+      "word": "chip"
+    },
+    {
+      "item_number": 16,
+      "word": "cat"
+    },
+    {
+      "item_number": 17,
+      "word": "this"
+    },
+    {
+      "item_number": 18,
+      "word": "truck"
+    },
+    {
+      "item_number": 19,
+      "word": "cup"
+    },
+    {
+      "item_number": 20,
+      "word": "lamp"
+    }
+  ],
+  "interface_spec": {
+    "student_presentation": "audio_only",
+    "student_sees_text": false,
+    "items_advance_mode": "manual_next_button",
+    "assessor_interaction": "count_input",
+    "click_cycle": null,
+    "timing_mode": "timer_down_60",
+    "timer_direction": "down",
+    "timer_visible_to_student": false,
+    "assessor_script": [
+      "SETUP: Prepare word list and timer. Ensure student understands task.",
+      "SAY TO STUDENT: 'I will say a word. You say all the sounds in the word.'",
+      "Give example: 'If I say 'sat,' you would say /s/ /a/ /t/.' Demonstrate with one practice item if needed.",
+      "SAY: 'Let's start. I'll say each word, and you tell me all the sounds.'",
+      "ADMINISTRATION:",
+      "  • Start the 60-second countdown timer",
+      "  • Say each word clearly and distinctly (one word per item)",
+      "  • Student responds by producing individual phonemes",
+      "  • Count correct phonemes produced for each word",
+      "  • Enter the number of correct phonemes (e.g., 3 for 'cat', 4 for 'frog')",
+      "  • If student says the whole word instead, prompt once: 'Tell me the sounds, not the word'",
+      "  • If no response after 3 seconds, mark as no response and move to next word",
+      "  • Continue until 60 seconds expire or all words complete",
+      "SCORING: Count total phonemes correct. Calculate PCPM = (total phonemes correct) × (60 / time taken)."
+    ],
+    "student_prompt": "Tell me all the sounds.",
+    "student_action": "Student hears a word spoken by the assessor and must orally segment the word into all its individual phonemes (sounds). For example, for 'cat', student says '/k/ /a/ /t/'. Student produces sounds one at a time in sequence within the 60-second time limit.",
+    "assessor_grading": "Assessor counts the number of correct phonemes the student produces for each word within the time limit. Each word receives credit for correct phonemes only if all phonemes are produced in correct sequence. Mark as: CORRECT PHONEMES COUNT (e.g., 3/3 for 'cat' = /k/ /a/ /t/), PARTIAL (e.g., 2/3 if student misses a phoneme), or NO RESPONSE (if student doesn't respond within 3 seconds or produces no phonemes). Primary score is Phonemes Correct Per Minute (PCPM) = total correct phonemes × (60 / time taken). Also track words with all phonemes correct vs. partial.",
+    "additional_considerations": ""
+  },
+  "scoring": {
+    "primary_metric": "phonemes_correct_per_minute",
+    "secondary_metrics": [
+      "total_words_correct",
+      "accuracy_pct"
+    ],
+    "error_types": [
+      "omission",
+      "substitution",
+      "no_response"
+    ]
+  }
+}

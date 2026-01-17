@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reading Compass Dashboard</title>
+    <title>Reading Compass - Assessment Warehouse</title>
     <style>
         * {
             margin: 0;
@@ -14,37 +14,313 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
             color: #333;
             min-height: 100vh;
             padding: 20px;
         }
 
         .container {
-            max-width: 1400px;
+            max-width: 1600px;
             margin: 0 auto;
         }
 
-        .header {
+        /* WAREHOUSE HEADER */
+        .warehouse-header {
             background: white;
-            padding: 30px;
+            padding: 30px 40px;
             border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-left: 6px solid #2a5298;
         }
 
-        .header h1 {
-            color: #667eea;
-            font-size: 2.5em;
-            margin-bottom: 10px;
+        .warehouse-header h1 {
+            color: #1e3c72;
+            font-size: 2.8em;
+            margin-bottom: 5px;
+            font-weight: 700;
         }
 
-        .header p {
+        .warehouse-header .subtitle {
             color: #666;
             font-size: 1.1em;
         }
 
-        .stats {
+        .warehouse-header .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-btn {
+            padding: 12px 24px;
+            background: #2a5298;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        .nav-btn:hover {
+            background: #1e3c72;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* INVENTORY SUMMARY SECTION */
+        .inventory-section {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            margin-bottom: 30px;
+        }
+
+        .inventory-section h2 {
+            color: #1e3c72;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #e0e0e0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .inventory-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .inventory-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 5px solid;
+            transition: all 0.3s;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .inventory-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .inventory-card.orf {
+            border-left-color: #667eea;
+        }
+
+        .inventory-card.comp-narrative {
+            border-left-color: #48bb78;
+        }
+
+        .inventory-card.comp-nonfiction {
+            border-left-color: #ed8936;
+        }
+
+        .inventory-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .inventory-card-title {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .inventory-card-icon {
+            font-size: 2em;
+            opacity: 0.8;
+        }
+
+        .inventory-card-count {
+            font-size: 3.5em;
+            font-weight: 700;
+            color: #1e3c72;
+            margin: 10px 0;
+        }
+
+        .inventory-card-details {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #dee2e6;
+        }
+
+        .detail-item {
+            text-align: center;
+        }
+
+        .detail-value {
+            font-weight: 600;
+            color: #1e3c72;
+            font-size: 1.1em;
+        }
+
+        .detail-label {
+            font-size: 0.85em;
+            color: #999;
+        }
+
+        /* RECENT ACTIVITY SECTION */
+        .activity-section {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            margin-bottom: 30px;
+        }
+
+        .activity-section h2 {
+            color: #1e3c72;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #e0e0e0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .activity-log {
+            max-height: 600px;
+            overflow-y: auto;
+            padding-right: 10px;
+        }
+
+        .activity-log::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .activity-log::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        .activity-log::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+
+        .activity-log::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        .activity-item {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            margin-bottom: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #2a5298;
+            transition: all 0.2s;
+        }
+
+        .activity-item:hover {
+            background: #e9ecef;
+            transform: translateX(5px);
+        }
+
+        .activity-icon {
+            font-size: 2em;
+            margin-right: 20px;
+            opacity: 0.7;
+        }
+
+        .activity-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .activity-title {
+            font-weight: 600;
+            color: #1e3c72;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+
+        .activity-meta {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 8px;
+        }
+
+        .activity-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .activity-meta-item strong {
+            color: #333;
+        }
+
+        .activity-time {
+            color: #999;
+            font-size: 0.9em;
+            white-space: nowrap;
+        }
+
+        .activity-actions {
+            display: flex;
+            gap: 10px;
+            margin-left: 20px;
+        }
+
+        .btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            font-size: 0.9em;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.2s;
+            font-weight: 600;
+        }
+
+        .btn-view {
+            background: #2a5298;
+            color: white;
+        }
+
+        .btn-view:hover {
+            background: #1e3c72;
+        }
+
+        .btn-pdf {
+            background: #48bb78;
+            color: white;
+        }
+
+        .btn-pdf:hover {
+            background: #38a169;
+        }
+
+        .package-id {
+            font-family: 'Courier New', monospace;
+            font-size: 0.85em;
+            color: #999;
+            margin-top: 5px;
+        }
+
+        /* OVERALL STATS */
+        .overall-stats {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 20px;
@@ -53,239 +329,251 @@
 
         .stat-card {
             background: white;
-            padding: 20px;
+            padding: 25px;
             border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
+            border-top: 4px solid #2a5298;
         }
 
-        .stat-card h3 {
-            color: #667eea;
-            font-size: 2.5em;
-            margin-bottom: 5px;
+        .stat-card .number {
+            font-size: 3em;
+            font-weight: 700;
+            color: #1e3c72;
+            margin-bottom: 8px;
         }
 
-        .stat-card p {
+        .stat-card .label {
             color: #666;
-            font-size: 0.9em;
+            font-size: 0.95em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
-        .samples-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-            gap: 20px;
-        }
-
-        .sample-card {
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            transition: transform 0.2s, box-shadow 0.2s;
-            cursor: pointer;
-        }
-
-        .sample-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
-        }
-
-        .sample-header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 20px;
-        }
-
-        .sample-header h2 {
-            font-size: 1.3em;
-            margin-bottom: 5px;
-        }
-
-        .sample-header .grade {
-            opacity: 0.9;
-            font-size: 0.9em;
-        }
-
-        .sample-body {
-            padding: 20px;
-        }
-
-        .sample-meta {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-            margin-bottom: 15px;
-        }
-
-        .meta-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .meta-item strong {
-            color: #667eea;
-        }
-
-        .sample-footer {
-            padding: 15px 20px;
-            background: #f8f9fa;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .btn {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 6px;
-            font-size: 0.9em;
-            cursor: pointer;
-            transition: all 0.2s;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .btn-primary {
-            background: #667eea;
-            color: white;
-        }
-
-        .btn-primary:hover {
-            background: #5568d3;
-        }
-
-        .btn-secondary {
-            background: #6c757d;
-            color: white;
-        }
-
-        .btn-secondary:hover {
-            background: #5a6268;
-        }
-
-        .no-samples {
-            background: white;
-            padding: 60px;
-            border-radius: 12px;
+        /* Empty state */
+        .empty-state {
             text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 60px 20px;
+            color: #999;
         }
 
-        .no-samples h2 {
-            color: #667eea;
+        .empty-state-icon {
+            font-size: 4em;
             margin-bottom: 20px;
+            opacity: 0.5;
         }
 
-        .badge {
-            display: inline-block;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 0.85em;
-            font-weight: 600;
-        }
-
-        .badge-success {
-            background: #d4edda;
-            color: #155724;
-        }
-
-        .badge-info {
-            background: #d1ecf1;
-            color: #0c5460;
+        .empty-state h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #666;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="header">
-            <h1>📚 Reading Compass Dashboard</h1>
-            <p>View and explore generated assessment samples</p>
-            <div style="margin-top: 15px;">
-                <a href="/matrix" class="btn btn-primary">📊 Assessment Matrix</a>
+        <!-- WAREHOUSE HEADER -->
+        <div class="warehouse-header">
+            <div>
+                <h1>🏭 Assessment Warehouse</h1>
+                <p class="subtitle">Inventory Management & Activity Log</p>
+            </div>
+            <div class="nav-links">
+                <a href="/matrix" class="nav-btn">📊 Full Matrix</a>
             </div>
         </div>
 
-        <div class="stats">
+        <!-- OVERALL STATS -->
+        <div class="overall-stats">
             <div class="stat-card">
-                <h3>{{ samples|length }}</h3>
-                <p>Generated Samples</p>
+                <div class="number">{{ inventory_summary.total_assessments }}</div>
+                <div class="label">Total in Stock</div>
             </div>
             <div class="stat-card">
-                <h3>{{ matrix_status.total if matrix_status else '19' }}</h3>
-                <p>Total Assessments</p>
+                <div class="number">{{ inventory_summary.domain_counts.get('Fluency', 0) }}</div>
+                <div class="label">Fluency</div>
             </div>
             <div class="stat-card">
-                <h3>{{ matrix_status.missing if matrix_status else '16' }}</h3>
-                <p>Missing</p>
+                <div class="number">{{ inventory_summary.domain_counts.get('Comprehension', 0) }}</div>
+                <div class="label">Comprehension</div>
             </div>
             <div class="stat-card">
-                <h3>{{ ((matrix_status.generated / matrix_status.total * 100) | round) if matrix_status else '16' }}%
-                </h3>
-                <p>Complete</p>
+                <div class="number">{{ inventory_summary.domain_counts.get('Phonological Awareness', 0) + inventory_summary.domain_counts.get('Alphabetic Principle', 0) + inventory_summary.domain_counts.get('Phonics', 0) }}</div>
+                <div class="label">Foundational Skills</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">{{ ((inventory_summary.total_assessments / matrix_status.total * 100) | round) if matrix_status.total > 0 else 0 }}%</div>
+                <div class="label">Warehouse Full</div>
             </div>
         </div>
 
-        {% if samples %}
-        <div class="samples-grid">
-            {% for sample in samples %}
-            <div class="sample-card" onclick="window.location.href='/view/{{ sample.name }}'">
-                <div class="sample-header">
-                    <h2>{{ sample.name.replace('_', ' ').title() }}</h2>
-                    {% if sample.manifest %}
-                    <div class="grade">
-                        Grade {{ sample.manifest.grade_level }} •
-                        {{ sample.manifest.assessment_type|capitalize }} •
-                        {{ sample.manifest.genre|capitalize if sample.manifest.genre else 'N/A' }}
+        <!-- INVENTORY BY READING DOMAIN -->
+        <div class="inventory-section">
+            <h2>📦 Inventory by Reading Domain</h2>
+            <div class="inventory-grid">
+                <!-- Fluency -->
+                <div class="inventory-card orf">
+                    <div class="inventory-card-header">
+                        <div class="inventory-card-title">Fluency</div>
+                        <div class="inventory-card-icon">⚡</div>
                     </div>
-                    {% endif %}
+                    <div class="inventory-card-count">{{ inventory_summary.domain_counts.get('Fluency', 0) }}</div>
+                    <div class="inventory-card-details">
+                        <div class="detail-item">
+                            <div class="detail-value">ORF, WRF</div>
+                            <div class="detail-label">Types</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-value">{{ inventory_summary.orf_by_grade|length }}</div>
+                            <div class="detail-label">Grades</div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="sample-body">
-                    <div class="sample-meta">
-                        <div class="meta-item">
-                            <strong>📄</strong>
-                            <span>{{ sample.size_kb|round(1) }} KB</span>
+                <!-- Phonological Awareness -->
+                <div class="inventory-card comp-narrative">
+                    <div class="inventory-card-header">
+                        <div class="inventory-card-title">Phonological Awareness</div>
+                        <div class="inventory-card-icon">🎵</div>
+                    </div>
+                    <div class="inventory-card-count">{{ inventory_summary.domain_counts.get('Phonological Awareness', 0) }}</div>
+                    <div class="inventory-card-details">
+                        <div class="detail-item">
+                            <div class="detail-value">5</div>
+                            <div class="detail-label">Assessments</div>
                         </div>
-                        <div class="meta-item">
-                            <strong>🕐</strong>
-                            <span>{{ sample.modified }}</span>
+                        <div class="detail-item">
+                            <div class="detail-value">PSF, RHYM, OONS, PHON, SYLS</div>
+                            <div class="detail-label">Types</div>
                         </div>
-                        {% if sample.manifest %}
-                        <div class="meta-item">
-                            <strong>📝</strong>
-                            <span>{{ sample.manifest.total_questions or 'N/A' }} Questions</span>
+                    </div>
+                </div>
+
+                <!-- Alphabetic Principle -->
+                <div class="inventory-card comp-nonfiction">
+                    <div class="inventory-card-header">
+                        <div class="inventory-card-title">Alphabetic Principle</div>
+                        <div class="inventory-card-icon">🔤</div>
+                    </div>
+                    <div class="inventory-card-count">{{ inventory_summary.domain_counts.get('Alphabetic Principle', 0) }}</div>
+                    <div class="inventory-card-details">
+                        <div class="detail-item">
+                            <div class="detail-value">1</div>
+                            <div class="detail-label">Assessment</div>
                         </div>
-                        <div class="meta-item">
-                            <strong>📊</strong>
-                            <span>{{ sample.manifest.word_count or 'N/A' }} Words</span>
+                        <div class="detail-item">
+                            <div class="detail-value">LR-ALPH</div>
+                            <div class="detail-label">Type</div>
                         </div>
+                    </div>
+                </div>
+
+                <!-- Phonics -->
+                <div class="inventory-card" style="border-left-color: #9c27b0;">
+                    <div class="inventory-card-header">
+                        <div class="inventory-card-title">Phonics</div>
+                        <div class="inventory-card-icon">📝</div>
+                    </div>
+                    <div class="inventory-card-count">{{ inventory_summary.domain_counts.get('Phonics', 0) }}</div>
+                    <div class="inventory-card-details">
+                        <div class="detail-item">
+                            <div class="detail-value">2</div>
+                            <div class="detail-label">Assessments</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-value">CSA, LWID</div>
+                            <div class="detail-label">Types</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comprehension -->
+                <div class="inventory-card" style="border-left-color: #ff5722;">
+                    <div class="inventory-card-header">
+                        <div class="inventory-card-title">Comprehension</div>
+                        <div class="inventory-card-icon">📖</div>
+                    </div>
+                    <div class="inventory-card-count">{{ inventory_summary.domain_counts.get('Comprehension', 0) }}</div>
+                    <div class="inventory-card-details">
+                        <div class="detail-item">
+                            <div class="detail-value">1-6</div>
+                            <div class="detail-label">Grades</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-value">Narrative, Nonfiction</div>
+                            <div class="detail-label">Genres</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RECENT ACTIVITY LOG -->
+        <div class="activity-section">
+            <h2>📋 Recent Activity - Last Generated Assessments</h2>
+            {% if recent_assessments %}
+            <div class="activity-log">
+                {% for assessment in recent_assessments %}
+                <div class="activity-item">
+                    <div class="activity-icon">
+                        {% if assessment.type == 'orf' %}📖{% elif assessment.genre == 'narrative' %}📚{% else %}📰{% endif %}
+                    </div>
+                    <div class="activity-content">
+                        <div class="activity-title">
+                            {{ assessment.display_name }}
+                            {% if assessment.manifest and assessment.manifest.package_id %}
+                            <span class="package-id">({{ assessment.manifest.package_id }})</span>
+                            {% endif %}
+                        </div>
+                        <div class="activity-meta">
+                            <div class="activity-meta-item">
+                                <strong>Grade:</strong> {{ assessment.grade }}
+                            </div>
+                            {% if assessment.type == 'comprehension' %}
+                            <div class="activity-meta-item">
+                                <strong>Genre:</strong> {{ assessment.genre|title }}
+                            </div>
+                            {% endif %}
+                            {% if assessment.manifest and assessment.manifest.statistics %}
+                                {% if assessment.manifest.statistics.passage_word_count %}
+                                <div class="activity-meta-item">
+                                    <strong>Words:</strong> {{ assessment.manifest.statistics.passage_word_count }}
+                                </div>
+                                {% endif %}
+                                {% if assessment.manifest.statistics.total_questions %}
+                                <div class="activity-meta-item">
+                                    <strong>Questions:</strong> {{ assessment.manifest.statistics.total_questions }}
+                                </div>
+                                {% endif %}
+                                {% if assessment.manifest.statistics.lexile_target and assessment.manifest.statistics.lexile_target != "N/A" %}
+                                <div class="activity-meta-item">
+                                    <strong>Lexile:</strong> {{ assessment.manifest.statistics.lexile_target }}
+                                </div>
+                                {% endif %}
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="activity-time">
+                        {{ assessment.last_modified }}
+                    </div>
+                    <div class="activity-actions">
+                        <a href="/view/{{ assessment.filename }}" class="btn btn-view">View</a>
+                        {% if assessment.type == 'comprehension' %}
+                        <a href="/preview/{{ assessment.filename }}" class="btn btn-pdf">PDF</a>
                         {% endif %}
                     </div>
-
-                    {% if sample.manifest %}
-                    <div style="margin-top: 15px;">
-                        <span class="badge badge-success">✓ Complete</span>
-                        <span class="badge badge-info">{{ sample.manifest.package_id }}</span>
-                    </div>
-                    {% endif %}
                 </div>
-
-                <div class="sample-footer">
-                    <span style="color: #666; font-size: 0.9em;">Click to view details</span>
-                    <a href="/view/{{ sample.name }}" class="btn btn-primary">View Sample →</a>
-                </div>
+                {% endfor %}
             </div>
-            {% endfor %}
+            {% else %}
+            <div class="empty-state">
+                <div class="empty-state-icon">📭</div>
+                <h3>No Assessments Generated Yet</h3>
+                <p>Start generating assessments to see them appear here</p>
+            </div>
+            {% endif %}
         </div>
-        {% else %}
-        <div class="no-samples">
-            <h2>No Samples Found</h2>
-            <p>Generate your first sample to get started!</p>
-            <button class="btn btn-primary" style="margin-top: 20px;">Generate Sample</button>
-        </div>
-        {% endif %}
     </div>
 </body>
 

@@ -119,8 +119,7 @@ class HealthChecker:
         required_dirs = [
             'src',
             'src/generators',
-            'src/foundation_banks',
-            'src/models',
+            'src/banks',
             'src/packaging',
             'src/utils',
             'samples',
@@ -187,20 +186,15 @@ class HealthChecker:
         # Check foundation banks
         print_info("\nFoundation Banks:")
         try:
-            from src.foundation_banks.standards_bank import StandardsBank
-            from src.foundation_banks.question_types_bank import QuestionTypesBank
-            from src.foundation_banks.lexile_ranges_bank import LexileRangesBank
+            from src.banks import validate_all_banks
             
-            standards = StandardsBank()
-            print_success("Standards Bank loads")
-            
-            question_types = QuestionTypesBank()
-            print_success("Question Types Bank loads")
-            
-            lexile = LexileRangesBank()
-            print_success("Lexile Ranges Bank loads")
-            
-            self.success_count += 3
+            if validate_all_banks():
+                print_success("All foundation banks validated successfully")
+                self.success_count += 1
+            else:
+                print_error("Foundation banks validation failed")
+                self.error_count += 1
+                
         except Exception as e:
             print_error(f"Foundation banks error: {str(e)}")
             self.error_count += 1

@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #f5f5f5;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 0;
+    height: 100vh;
+}
+
+/* Student Display (Left) */
+.student-display {
+    background: white;
+    border-right: 4px solid #667eea;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.stimulus {
+    font-size: 120px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stimulus .instruction {
+    font-size: 24px;
+    color: #999;
+    font-weight: normal;
+}
+
+.progress-bar {
+    width: 80%;
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #667eea;
+    width: 0%;
+    transition: width 0.3s;
+}
+
+/* Assessor Controls (Right) */
+.controls {
+    background: #f8f9fa;
+    padding: 30px;
+    overflow-y: auto;
+    border-left: 1px solid #ddd;
+}
+
+.header h2 {
+    color: #667eea;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.timer {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border: 3px solid #667eea;
+}
+
+.progress-info {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+}
+
+/* Click Cycle */
+.click-cycle {
+    margin-bottom: 30px;
+}
+
+.click-cycle h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.state-buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.state-btn {
+    padding: 18px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 3px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    background: white;
+    color: #333;
+    transition: all 0.2s;
+    text-align: left;
+}
+
+.state-btn:hover {
+    border-color: #667eea;
+    background: #f0f0ff;
+}
+
+.state-btn.active {
+    background: #667eea;
+    color: white;
+    border-color: #667eea;
+}
+
+.state-btn.active#btn-correct {
+    background: #4CAF50;
+    border-color: #4CAF50;
+}
+
+.state-btn.active#btn-incorrect {
+    background: #f44336;
+    border-color: #f44336;
+}
+
+.state-btn.active#btn-self-correct {
+    background: #FF9800;
+    border-color: #FF9800;
+}
+
+.state-btn.active#btn-omission {
+    background: #9E9E9E;
+    border-color: #9E9E9E;
+}
+
+.state-btn.active#btn-reset {
+    background: #2196F3;
+    border-color: #2196F3;
+}
+
+/* Navigation */
+.navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.navigation button {
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid #667eea;
+    border-radius: 8px;
+    cursor: pointer;
+    background: white;
+    color: #667eea;
+    transition: all 0.2s;
+}
+
+.navigation button:hover:not(:disabled) {
+    background: #667eea;
+    color: white;
+}
+
+.navigation button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Session Controls */
+.session-controls {
+    margin-bottom: 30px;
+}
+
+.stop-btn {
+    width: 100%;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #f44336;
+    color: white;
+    transition: all 0.2s;
+}
+
+.stop-btn:hover {
+    background: #d32f2f;
+}
+
+/* Session Info */
+.session-info {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.session-info h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+#sessionDetails {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 600px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content h2 {
+    color: #667eea;
+    margin-bottom: 30px;
+}
+
+#resultsContent {
+    font-size: 18px;
+    line-height: 2;
+    margin-bottom: 30px;
+}
+
+.close-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #667eea;
+    color: white;
+}
+
+.close-btn:hover {
+    background: #5568d3;
+}

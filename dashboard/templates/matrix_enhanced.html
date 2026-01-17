@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment Matrix - Reading Compass</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+        
+        .container { max-width: 1400px; margin: 0 auto; }
+        
+        .header {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .header h1 { color: #667eea; font-size: 2.5em; margin-bottom: 10px; }
+        .header .breadcrumb { color: #666; font-size: 0.95em; }
+        .header .breadcrumb a { color: #667eea; text-decoration: none; }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .stat-card .number { font-size: 2.5em; font-weight: bold; color: #667eea; }
+        .stat-card .label { color: #666; margin-top: 5px; }
+        
+        .controls {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .controls input, .controls select {
+            padding: 10px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            font-size: 0.95em;
+        }
+        
+        .controls input { flex: 1; min-width: 250px; }
+        .controls select { min-width: 150px; }
+        
+        .section {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .section h2 {
+            color: #667eea;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        /* TABLE LAYOUT - MAIN IMPROVEMENT */
+        .assessment-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        
+        .assessment-table thead {
+            background: #f8f9fa;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        
+        .assessment-table th {
+            padding: 12px 15px;
+            text-align: left;
+            font-weight: 600;
+            color: #333;
+            border-bottom: 2px solid #e0e0e0;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .assessment-table td {
+            padding: 15px;
+            border-bottom: 1px solid #f0f0f0;
+            vertical-align: middle;
+        }
+        
+        .assessment-table tbody tr:hover {
+            background: #f8f9ff;
+            transition: background 0.2s;
+        }
+        
+        .status-badge {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+        
+        .status-generated {
+            background: #d4edda;
+            color: #155724;
+        }
+        
+        .status-missing {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        
+        .action-buttons {
+            display: flex;
+            gap: 8px;
+        }
+        
+        .btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            font-size: 0.85em;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.2s;
+        }
+        
+        .btn-view {
+            background: #667eea;
+            color: white;
+        }
+        
+        .btn-view:hover { background: #5568d3; }
+        
+        .btn-pdf {
+            background: #28a745;
+            color: white;
+        }
+        
+        .btn-pdf:hover { background: #218838; }
+        
+        .btn-generate {
+            background: #ffc107;
+            color: #333;
+        }
+        
+        .btn-generate:hover { background: #e0a800; }
+        
+        .btn-delete {
+            background: #dc3545;
+            color: white;
+        }
+        
+        .btn-delete:hover { background: #c82333; }
+        
+        .metadata {
+            font-size: 0.85em;
+            color: #666;
+        }
+        
+        .metadata-item {
+            display: inline-block;
+            margin-right: 15px;
+        }
+        
+        .metadata-item strong { color: #333; }
+        
+        .package-id {
+            font-family: 'Courier New', monospace;
+            font-size: 0.8em;
+            color: #999;
+        }
+        
+        /* Toggle View Buttons */
+        .view-toggle {
+            display: flex;
+            gap: 10px;
+            margin-left: auto;
+        }
+        
+        .view-toggle button {
+            padding: 8px 16px;
+            border: 2px solid #667eea;
+            background: white;
+            color: #667eea;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+        
+        .view-toggle button.active {
+            background: #667eea;
+            color: white;
+        }
+        
+        .view-toggle button:hover {
+            background: #f0f0ff;
+        }
+        
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .assessment-table { font-size: 0.9em; }
+            .assessment-table th, .assessment-table td { padding: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="breadcrumb">
+                <a href="/">← Back to Dashboard</a>
+            </div>
+            <h1>📊 Assessment Matrix</h1>
+            <p>Complete overview of all assessment types with detailed metadata</p>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-card">
+                <div class="number">{{ matrix_status.total }}</div>
+                <div class="label">Total Assessments</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">{{ matrix_status.generated }}</div>
+                <div class="label">Generated</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">{{ matrix_status.missing }}</div>
+                <div class="label">Missing</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">{{ ((matrix_status.generated / matrix_status.total * 100) | round) }}%</div>
+                <div class="label">Complete</div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="🔍 Search by grade, type, or package ID..." onkeyup="filterTable()">
+            
+            <select id="gradeFilter" onchange="filterTable()">
+                <option value="">All Grades</option>
+                <option value="K">Kindergarten</option>
+                <option value="1">Grade 1</option>
+                <option value="2">Grade 2</option>
+                <option value="3">Grade 3</option>
+                <option value="4">Grade 4</option>
+                <option value="5">Grade 5</option>
+                <option value="6">Grade 6</option>
+                <option value="7">Grade 7</option>
+                <option value="8">Grade 8</option>
+            </select>
+            
+            <select id="domainFilter" onchange="filterTable()">
+                <option value="">All Domains</option>
+                <option value="Fluency">Fluency</option>
+                <option value="Comprehension">Comprehension</option>
+                <option value="Phonics">Phonics</option>
+                <option value="Vocabulary">Vocabulary</option>
+                <option value="Alphabetic Principle">Alphabetic Principle</option>
+                <option value="Phonological Awareness">Phonological Awareness</option>
+            </select>
+            
+            <div class="view-toggle">
+                <button class="active" onclick="toggleView('table')">📋 Table</button>
+                <button onclick="toggleView('cards')">🗂️ Cards</button>
+            </div>
+        </div>
+        
+        <!-- TABLE VIEW (NEW) -->
+        <div class="section" id="tableView">
+            <h2>📖 All Assessments (Table View)</h2>
+            
+            <table class="assessment-table" id="assessmentTable">
+                <thead>
+                    <tr>
+                        <th>Grade</th>
+                        <th>Domain</th>
+                        <th>Subdomain</th>
+                        <th>Word Count</th>
+                        <th>Items</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for assessment in matrix_status.assessments %}
+                    <tr data-grade="{{ assessment.spec.grade }}" 
+                        data-type="{{ assessment.spec.assessment_type|title }}" 
+                        data-genre="{{ assessment.spec.genre|title if assessment.spec.genre else '' }}"
+                        data-domain="{{ assessment.spec.domain }}"
+                        data-subdomain="{{ assessment.spec.sub_domain }}">
+                        <td><strong>{{ assessment.spec.grade }}</strong></td>
+                        <td>{{ assessment.spec.domain }}</td>
+                        <td>{{ assessment.spec.sub_domain }}</td>
+                        <td>
+                            {% if assessment.manifest and assessment.manifest.word_count %}
+                            {{ assessment.manifest.word_count }}
+                            {% else %}
+                            —
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if assessment.manifest and assessment.manifest.word_count %}
+                            {# For ORF and comprehension, show word count as items #}
+                            {{ assessment.manifest.word_count }}
+                            {% elif assessment.manifest and assessment.manifest.total_questions %}
+                            {{ assessment.manifest.total_questions }}
+                            {% elif assessment.manifest and assessment.manifest.total_items %}
+                            {{ assessment.manifest.total_items }}
+                            {% elif assessment.registry_assessment and assessment.registry_assessment.content %}
+                            {{ assessment.registry_assessment.content.total_items }}
+                            {% else %}
+                            —
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if assessment.exists %}
+                            <span class="status-badge status-generated">✓ Generated</span>
+                            {% else %}
+                            <span class="status-badge status-missing">⚠ Missing</span>
+                            {% endif %}
+                        </td>
+                        <td class="action-buttons">
+                            {% if assessment.exists %}
+                            <a href="/view/{{ assessment.filename }}" class="btn btn-view">View</a>
+                            {% if assessment.spec.assessment_type == 'comprehension' %}
+                            <a href="/preview/{{ assessment.filename }}" class="btn btn-pdf">PDF</a>
+                            {% endif %}
+                            <button class="btn btn-delete" 
+                                onclick="deleteAssessment('{{ assessment.filename }}', event)"
+                                title="Delete Assessment">
+                                🗑️ Delete
+                            </button>
+                            {% else %}
+                            <button class="btn btn-generate" 
+                                onclick="generateAssessment('{{ assessment.spec.grade }}', '{{ assessment.spec.assessment_type }}', '{{ assessment.spec.genre or '' }}')">
+                                Generate
+                            </button>
+                            {% endif %}
+                            <button class="btn btn-view" style="background: #6c757d; font-size: 0.75em; padding: 4px 8px;" 
+                                onclick="showDetails(event, '{{ assessment.spec.grade }}', '{{ assessment.spec.grade_equivalent }}', '{{ assessment.manifest.package_id if assessment.manifest and assessment.manifest.package_id else '—' }}')" 
+                                title="View Details">
+                                ℹ️
+                            </button>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- CARD VIEW (Original, hidden by default) -->
+        <div class="section" id="cardView" style="display: none;">
+            <h2>📖 All Assessments (Card View)</h2>
+            
+            <!-- ORF Assessments -->
+            <h3 style="margin-top: 20px; color: #667eea;">ORF Assessments (Grades K-8)</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 15px; margin-top: 15px;">
+                {% for assessment in matrix_status.assessments %}
+                {% if assessment.spec.assessment_type == 'orf' %}
+                <div class="assessment-item" style="padding: 15px; border-radius: 8px; border: 2px solid {% if assessment.exists %}#28a745{% else %}#ffc107{% endif %}; background: {% if assessment.exists %}#d4edda{% else %}#fff3cd{% endif %};">
+                    <div style="font-weight: 600; color: #333; margin-bottom: 10px;">
+                        {{ assessment.spec.display_name }}
+                    </div>
+                    <div style="display: flex; gap: 10px; align-items: center; justify-content: space-between;">
+                        {% if assessment.exists %}
+                        <span class="status-badge status-generated">✓ Generated</span>
+                        <div style="display: flex; gap: 8px;">
+                            <a href="/view/{{ assessment.filename }}" class="btn btn-view">View</a>
+                            <button class="btn btn-delete" 
+                                onclick="deleteAssessment('{{ assessment.filename }}', event)"
+                                title="Delete Assessment">
+                                🗑️ Delete
+                            </button>
+                        </div>
+                        {% else %}
+                        <span class="status-badge status-missing">⚠ Missing</span>
+                        <button class="btn btn-generate"
+                            onclick="generateAssessment('{{ assessment.spec.grade }}', 'orf', null)">Generate</button>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+            
+            <!-- Comprehension - Narrative -->
+            <h3 style="margin-top: 30px; color: #667eea;">Comprehension Assessments - Narrative (Grades 1-5)</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 15px; margin-top: 15px;">
+                {% for assessment in matrix_status.assessments %}
+                {% if assessment.spec.assessment_type == 'comprehension' and assessment.spec.genre == 'narrative' %}
+                <div class="assessment-item" style="padding: 15px; border-radius: 8px; border: 2px solid {% if assessment.exists %}#28a745{% else %}#ffc107{% endif %}; background: {% if assessment.exists %}#d4edda{% else %}#fff3cd{% endif %};">
+                    <div style="font-weight: 600; color: #333; margin-bottom: 10px;">
+                        {{ assessment.spec.display_name }}
+                    </div>
+                    <div style="display: flex; gap: 10px; align-items: center; justify-content: space-between;">
+                        {% if assessment.exists %}
+                        <span class="status-badge status-generated">✓ Generated</span>
+                        <div style="display: flex; gap: 8px;">
+                            <a href="/view/{{ assessment.filename }}" class="btn btn-view">View</a>
+                            <a href="/preview/{{ assessment.filename }}" class="btn btn-pdf">PDF</a>
+                            <button class="btn btn-delete" 
+                                onclick="deleteAssessment('{{ assessment.filename }}', event)"
+                                title="Delete Assessment">
+                                🗑️ Delete
+                            </button>
+                        </div>
+                        {% else %}
+                        <span class="status-badge status-missing">⚠ Missing</span>
+                        <button class="btn btn-generate"
+                            onclick="generateAssessment('{{ assessment.spec.grade }}', 'comprehension', 'narrative')">Generate</button>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+            
+            <!-- Comprehension - Nonfiction -->
+            <h3 style="margin-top: 30px; color: #667eea;">Comprehension Assessments - Nonfiction (Grades 1-5)</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 15px; margin-top: 15px;">
+                {% for assessment in matrix_status.assessments %}
+                {% if assessment.spec.assessment_type == 'comprehension' and assessment.spec.genre == 'nonfiction' %}
+                <div class="assessment-item" style="padding: 15px; border-radius: 8px; border: 2px solid {% if assessment.exists %}#28a745{% else %}#ffc107{% endif %}; background: {% if assessment.exists %}#d4edda{% else %}#fff3cd{% endif %};">
+                    <div style="font-weight: 600; color: #333; margin-bottom: 10px;">
+                        {{ assessment.spec.display_name }}
+                    </div>
+                    <div style="display: flex; gap: 10px; align-items: center; justify-content: space-between;">
+                        {% if assessment.exists %}
+                        <span class="status-badge status-generated">✓ Generated</span>
+                        <div style="display: flex; gap: 8px;">
+                            <a href="/view/{{ assessment.filename }}" class="btn btn-view">View</a>
+                            <a href="/preview/{{ assessment.filename }}" class="btn btn-pdf">PDF</a>
+                            <button class="btn btn-delete" 
+                                onclick="deleteAssessment('{{ assessment.filename }}', event)"
+                                title="Delete Assessment">
+                                🗑️ Delete
+                            </button>
+                        </div>
+                        {% else %}
+                        <span class="status-badge status-missing">⚠ Missing</span>
+                        <button class="btn btn-generate"
+                            onclick="generateAssessment('{{ assessment.spec.grade }}', 'comprehension', 'nonfiction')">Generate</button>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function filterTable() {
+            const searchValue = document.getElementById('searchInput').value.toLowerCase();
+            const gradeValue = document.getElementById('gradeFilter').value;
+            const domainValue = document.getElementById('domainFilter').value;
+            
+            const rows = document.querySelectorAll('#assessmentTable tbody tr');
+            
+            rows.forEach(row => {
+                const grade = row.dataset.grade;
+                const domain = row.dataset.domain || '';
+                const text = row.textContent.toLowerCase();
+                
+                const matchesSearch = text.includes(searchValue);
+                const matchesGrade = !gradeValue || grade === gradeValue;
+                const matchesDomain = !domainValue || domain === domainValue;
+                
+                if (matchesSearch && matchesGrade && matchesDomain) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        }
+        
+        function toggleView(view) {
+            const tableView = document.getElementById('tableView');
+            const cardView = document.getElementById('cardView');
+            const buttons = document.querySelectorAll('.view-toggle button');
+            
+            if (view === 'table') {
+                tableView.style.display = 'block';
+                cardView.style.display = 'none';
+                buttons[0].classList.add('active');
+                buttons[1].classList.remove('active');
+            } else {
+                tableView.style.display = 'none';
+                cardView.style.display = 'block';
+                buttons[0].classList.remove('active');
+                buttons[1].classList.add('active');
+            }
+        }
+        
+        function generateAssessment(grade, type, genre) {
+            console.log(`🚀 Requesting generation: Grade ${grade}, ${type}, ${genre || 'N/A'}`);
+
+            const btn = event.target;
+            const originalText = btn.innerText;
+            btn.innerText = "Starting...";
+            btn.disabled = true;
+
+            const data = { grade, assessment_type: type };
+            if (genre && genre !== 'null') data.genre = genre;
+
+            fetch('/api/generate', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            })
+                .then(r => r.json())
+                .then(data => {
+                    console.log("✅ Server response:", data);
+                    if (data.success) {
+                        alert(data.message + '\n\nThis will take 10-15 minutes. Refresh the page to see progress.');
+                        btn.innerText = "Generating...";
+                    } else {
+                        alert('Error: ' + data.error);
+                        btn.innerText = originalText;
+                        btn.disabled = false;
+                    }
+                })
+                .catch(err => {
+                    console.error("❌ Fetch error:", err);
+                    alert('Error: ' + err);
+                    btn.innerText = originalText;
+                    btn.disabled = false;
+                });
+        }
+        
+        function showDetails(event, grade, gradeEquivalent, packageId) {
+            event.stopPropagation();
+            // Find the assessment data from the table row
+            const row = event.target.closest('tr');
+            if (!row) return;
+            
+            // Get assessment type and genre from row data
+            const assessmentType = row.getAttribute('data-type') || '';
+            const genre = row.getAttribute('data-genre') || '';
+            const domain = row.getAttribute('data-domain') || '';
+            
+            // Build comprehensive details string
+            let details = `📋 Assessment Details\n\n`;
+            details += `Grade: ${grade}\n`;
+            details += `Grade Equivalent: ${gradeEquivalent}\n`;
+            if (packageId && packageId !== '—') {
+                details += `Package ID: ${packageId}\n`;
+            }
+            details += `Domain: ${domain}\n`;
+            if (genre) {
+                details += `Genre: ${genre}\n`;
+            }
+            details += `\nℹ️ For full details, click "View" to see the complete assessment.`;
+            
+            alert(details);
+        }
+        
+        function deleteAssessment(sampleName, event) {
+            event.stopPropagation();
+            
+            if (!confirm(`Are you sure you want to delete "${sampleName}"?\n\nThis will permanently delete the assessment and manifest files. This action cannot be undone.`)) {
+                return;
+            }
+            
+            const btn = event.target;
+            const originalText = btn.innerText;
+            btn.innerText = "Deleting...";
+            btn.disabled = true;
+            
+            fetch(`/api/delete/${sampleName}`, {
+                method: 'DELETE',
+                headers: { 'Content-Type': 'application/json' }
+            })
+                .then(r => r.json())
+                .then(data => {
+                    if (data.success) {
+                        alert(`✅ ${data.message}`);
+                        // Reload the page to refresh the matrix
+                        window.location.reload();
+                    } else {
+                        alert(`❌ Error: ${data.error}`);
+                        btn.innerText = originalText;
+                        btn.disabled = false;
+                    }
+                })
+                .catch(err => {
+                    console.error("❌ Delete error:", err);
+                    alert(`❌ Error deleting assessment: ${err.message}`);
+                    btn.innerText = originalText;
+                    btn.disabled = false;
+                });
+        }
+    </script>
+</body>
+</html>

@@ -18,7 +18,58 @@
     "wcpm_50th_percentile": 112,
     "wcpm_75th_percentile": 139,
     "lexile_target": "N/A",
-    "assessor_components": 7
+    "assessor_components": 7,
+    "total_items": 148
   },
-  "ready_for_use": true
+  "ready_for_use": true,
+  "metadata": {
+    "assessment_id": "ORF",
+    "form_id": "ORF-N/A-EARLY-001",
+    "form_number": 1,
+    "assessment_name": "Oral Reading Fluency - Grade N/A"
+  },
+  "assessment_id": "ORF",
+  "form_id": "ORF-N/A-EARLY-001",
+  "form_number": 1,
+  "interface_spec": {
+    "student_presentation": "full_text",
+    "student_sees_text": true,
+    "items_advance_mode": "n/a",
+    "assessor_interaction": "error_marking",
+    "click_cycle": null,
+    "timing_mode": "timer_down",
+    "timer_direction": "down",
+    "timer_visible_to_student": false,
+    "assessor_script": [
+      "SETUP: Prepare assessment materials. Ensure student has clean copy of passage.",
+      "SAY TO STUDENT: 'I'm going to ask you to read this passage aloud. Read it as accurately and smoothly as you can. If you come to a word you don't know, I'll tell it to you. Do you have any questions?'",
+      "ADMINISTRATION:",
+      "  • Start timer when student begins reading",
+      "  • Mark errors on assessor copy in real-time",
+      "  • Supply words after 3-second hesitation",
+      "  • Stop at 60 seconds and mark last word read",
+      "  • Calculate WCPM and accuracy",
+      "  • Score prosody using rubric"
+    ],
+    "student_prompt": "Read this passage aloud as accurately and smoothly as you can.",
+    "student_action": "Student reads the passage aloud from a clean copy. Student attempts to read as accurately and smoothly as possible within the 60-second time limit.",
+    "assessor_grading": "Assessor marks errors in real-time on assessor copy. Calculate WCPM = (Words Read - Errors) and Accuracy = (Words Read - Errors) / Words Read × 100. Score prosody using 1-4 scale.",
+    "additional_considerations": ""
+  },
+  "scoring": {
+    "primary_metric": "wcpm",
+    "secondary_metrics": [
+      "accuracy_pct",
+      "prosody_score",
+      "total_errors"
+    ],
+    "error_types": [
+      "substitution",
+      "omission",
+      "insertion",
+      "hesitation"
+    ]
+  },
+  "assessment_type": "orf",
+  "items": []
 }

@@ -1,0 +1,203 @@
+{
+  "metadata": {
+    "assessment_id": "PA-RHYM",
+    "form_id": "PA-RHYM-FORM-001",
+    "form_number": 1,
+    "grade": "K",
+    "assessment_name": "Rhyme Recognition",
+    "category": "Phonological Awareness",
+    "created_at": "2026-01-15T21:45:23.397530",
+    "schema_version": "2026.1",
+    "total_items": 20
+  },
+  "assessment_id": "PA-RHYM",
+  "form_id": "PA-RHYM-FORM-001",
+  "form_number": 1,
+  "grade": "K",
+  "items": [
+    {
+      "item_number": 1,
+      "word1": "cup",
+      "word2": "fox",
+      "correct_answer": false,
+      "expected_response": "no"
+    },
+    {
+      "item_number": 2,
+      "word1": "sun",
+      "word2": "fun",
+      "correct_answer": true,
+      "expected_response": "yes"
+    },
+    {
+      "item_number": 3,
+      "word1": "lamp",
+      "word2": "stamp",
+      "correct_answer": true,
+      "expected_response": "yes"
+    },
+    {
+      "item_number": 4,
+      "word1": "dog",
+      "word2": "frog",
+      "correct_answer": true,
+      "expected_response": "yes"
+    },
+    {
+      "item_number": 5,
+      "word1": "wind",
+      "word2": "cold",
+      "correct_answer": false,
+      "expected_response": "no"
+    },
+    {
+      "item_number": 6,
+      "word1": "hat",
+      "word2": "mop",
+      "correct_answer": false,
+      "expected_response": "no"
+    },
+    {
+      "item_number": 7,
+      "word1": "cup",
+      "word2": "pup",
+      "correct_answer": true,
+      "expected_response": "yes"
+    },
+    {
+      "item_number": 8,
+      "word1": "hand",
+      "word2": "land",
+      "correct_answer": true,
+      "expected_response": "yes"
+    },
+    {
+      "item_number": 9,
+      "word1": "light",
+      "word2": "night",
+      "correct_answer": true,
+      "expected_response": "yes"
+    },
+    {
+      "item_number": 10,
+      "word1": "light",
+      "word2": "boat",
+      "correct_answer": false,
+      "expected_response": "no"
+    },
+    {
+      "item_number": 11,
+      "word1": "fox",
+      "word2": "fish",
+      "correct_answer": false,
+      "expected_response": "no"
+    },
+    {
+      "item_number": 12,
+      "word1": "cat",
+      "word2": "dog",
+      "correct_answer": false,
+      "expected_response": "no"
+    },
+    {
+      "item_number": 13,
+      "word1": "stop",
+      "word2": "chair",
+      "correct_answer": false,
+      "expected_response": "no"
+    },
+    {
+      "item_number": 14,
+      "word1": "sun",
+      "word2": "hat",
+      "correct_answer": false,
+      "expected_response": "no"
+    },
+    {
+      "item_number": 15,
+      "word1": "cold",
+      "word2": "stop",
+      "correct_answer": false,
+      "expected_response": "no"
+    },
+    {
+      "item_number": 16,
+      "word1": "mop",
+      "word2": "leg",
+      "correct_answer": false,
+      "expected_response": "no"
+    },
+    {
+      "item_number": 17,
+      "word1": "jump",
+      "word2": "bump",
+      "correct_answer": true,
+      "expected_response": "yes"
+    },
+    {
+      "item_number": 18,
+      "word1": "leg",
+      "word2": "cup",
+      "correct_answer": false,
+      "expected_response": "no"
+    },
+    {
+      "item_number": 19,
+      "word1": "boat",
+      "word2": "coat",
+      "correct_answer": true,
+      "expected_response": "yes"
+    },
+    {
+      "item_number": 20,
+      "word1": "book",
+      "word2": "hand",
+      "correct_answer": false,
+      "expected_response": "no"
+    }
+  ],
+  "interface_spec": {
+    "student_presentation": "audio_only",
+    "student_sees_text": false,
+    "items_advance_mode": "manual_next_button",
+    "assessor_interaction": "yes_no_buttons",
+    "click_cycle": null,
+    "timing_mode": "untimed",
+    "timer_direction": "none",
+    "timer_visible_to_student": false,
+    "assessor_script": [
+      "SETUP: Prepare word pairs list. Ensure student understands concept of rhyming.",
+      "SAY TO STUDENT: 'I will say two words. Tell me if they rhyme.'",
+      "Give examples: 'Cat and hat - do they rhyme? Yes! Sun and cup - do they rhyme? No.'",
+      "Practice with 1-2 examples if needed to ensure understanding.",
+      "SAY: 'Now I'll say pairs of words. After I say both words, tell me 'yes' if they rhyme or 'no' if they don't.'",
+      "ADMINISTRATION:",
+      "  • Say the first word clearly, pause briefly (300-800ms), then say the second word",
+      "  • Wait for student's yes/no response",
+      "  • Mark response using yes/no buttons:",
+      "    - Click 'Yes' if student correctly identifies rhyming pair",
+      "    - Click 'No' if student correctly identifies non-rhyming pair",
+      "    - System marks as incorrect if response doesn't match correct answer",
+      "  • Advance to next pair after marking",
+      "  • If student doesn't respond, wait 3-5 seconds, then mark as no response",
+      "SCORING: Total correct out of 20. Note patterns: students who say 'yes' too often may not understand rhyme concept, while those who say 'no' too often may be overly cautious."
+    ],
+    "student_prompt": "Do these words rhyme?",
+    "student_action": "Student hears two words spoken by the assessor and must determine if the words rhyme. Student responds orally with 'yes' if they rhyme or 'no' if they don't rhyme. Student listens to both words before responding.",
+    "assessor_grading": "Assessor marks each pair as: CORRECT (student correctly identifies rhyming or non-rhyming pairs), INCORRECT - FALSE POSITIVE (student says 'yes' for non-rhyming pair), INCORRECT - FALSE NEGATIVE (student says 'no' for rhyming pair), or NO RESPONSE (student doesn't respond). Primary score is total correct out of 20. Secondary analysis includes false positive rate (saying 'yes' too often) and false negative rate (saying 'no' too often), which indicate different aspects of phonological awareness.",
+    "additional_considerations": ""
+  },
+  "scoring": {
+    "primary_metric": "total_correct",
+    "secondary_metrics": [
+      "accuracy_pct",
+      "false_positives",
+      "false_negatives"
+    ],
+    "error_types": [
+      "false_positive",
+      "false_negative",
+      "no_response"
+    ]
+  }
+}

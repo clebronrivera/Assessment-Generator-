@@ -55,7 +55,9 @@ def main():
     # Python version
     python_version = sys.version.split()[0]
     print_info(f"Python: {python_version}")
-    if python_version >= '3.11':
+    # Proper version comparison using tuple comparison
+    version_tuple = tuple(map(int, python_version.split('.')))
+    if version_tuple >= (3, 11):
         print_success("Python 3.11+ ✓")
         successes += 1
     else:
@@ -75,7 +77,14 @@ def main():
     # Flask
     try:
         import flask
-        print_success(f"Flask installed (v{flask.__version__})")
+        # Use importlib.metadata to avoid deprecation warning
+        try:
+            from importlib.metadata import version
+            flask_version = version("flask")
+        except (ImportError, Exception):
+            # Fallback for older Python versions
+            flask_version = getattr(flask, '__version__', 'unknown')
+        print_success(f"Flask installed (v{flask_version})")
         successes += 1
     except ImportError:
         print_error("Flask not installed")

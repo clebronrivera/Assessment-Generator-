@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Page - {{ assessment_name }}</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background: #f5f7fa;
+            padding: 20px;
+        }
+
+        .nav {
+            background: white;
+            padding: 15px 30px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav a {
+            color: #667eea;
+            text-decoration: none;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .page {
+            width: 8.5in;
+            min-height: 11in;
+            background: white;
+            margin: 0 auto 20px;
+            padding: 1in;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #333;
+        }
+
+        .page-header h1 {
+            font-size: 18pt;
+            margin-bottom: 5px;
+        }
+
+        .page-header .meta {
+            font-size: 11pt;
+            color: #666;
+        }
+
+        /* Grid layout for visual items (letters, words) */
+        .items-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .item {
+            text-align: center;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 8px;
+            font-size: 36pt;
+            font-weight: bold;
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .item-number {
+            font-size: 10pt;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        /* List layout for question numbers (audio-only tasks) */
+        .items-list {
+            margin: 30px 0;
+        }
+
+        .item-row {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            font-size: 14pt;
+        }
+
+        .item-row .item-num {
+            font-weight: bold;
+            margin-right: 20px;
+            display: inline-block;
+            width: 40px;
+        }
+
+        /* For word pairs */
+        .word-pair {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .word-pair .word {
+            flex: 1;
+            text-align: center;
+            padding: 15px;
+            border: 2px solid #333;
+            border-radius: 8px;
+            font-size: 24pt;
+        }
+
+        /* For spelling assessments - blanks */
+        .spelling-blank {
+            display: inline-block;
+            min-width: 40px;
+            border-bottom: 2px solid #333;
+            margin: 0 3px;
+            padding-bottom: 5px;
+            text-align: center;
+        }
+
+        .spelling-item {
+            margin: 20px 0;
+            font-size: 16pt;
+            line-height: 2;
+        }
+
+        .spelling-item-number {
+            font-weight: bold;
+            margin-right: 15px;
+        }
+
+        /* Passage section for comprehension */
+        .passage-section {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+        }
+
+        .passage-title {
+            font-size: 14pt;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .passage-text {
+            font-size: 12pt;
+            line-height: 1.8;
+            text-align: left;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .nav {
+                display: none;
+            }
+
+            .page {
+                margin: 0;
+                box-shadow: none;
+                page-break-after: always;
+            }
+
+            .item {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="/view/{{ filename }}">← Back to Viewer</a>
+        <div>
+            <button class="btn btn-primary" onclick="window.print()">🖨️ Print</button>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="page-header">
+            <h1>{{ assessment_name }}</h1>
+            <div class="meta">
+                Grade {{ grade }} • Form {{ form_number }}
+            </div>
+            <div class="meta" style="margin-top: 10px;">
+                Name: _________________ Date: _________________
+            </div>
+        </div>
+
+        {% if passage %}
+        <!-- Comprehension Passage -->
+        <div class="passage-section">
+            <div class="passage-title">
+                {% if passage.passage_title %}
+                    {{ passage.passage_title }}
+                {% else %}
+                    Reading Passage
+                {% endif %}
+            </div>
+            <div class="passage-text">
+                {{ passage.passage_text }}
+            </div>
+        </div>
+        {% endif %}
+
+        {% if assessment_id == "PH-SPEL" %}
+        <!-- Spelling Assessment: Show numbered blanks -->
+        <div class="instructions" style="margin-bottom: 30px; font-size: 12pt;">
+            <p><strong>Directions:</strong> Listen to each word. Write the word on the line.</p>
+        </div>
+        <div class="items-list">
+            {% for item in items %}
+            <div class="spelling-item">
+                <span class="spelling-item-number">{{ item.item_number }}.</span>
+                {% if item.target_word or item.word %}
+                    {% set word = item.target_word or item.word %}
+                    {% for letter in word %}
+                        <span class="spelling-blank">&nbsp;</span>
+                    {% endfor %}
+                {% else %}
+                    <span class="spelling-blank" style="min-width: 200px;">&nbsp;</span>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        {% elif student_presentation == "audio_only" %}
+        <!-- Audio-only tasks: Show question numbers only -->
+        <div class="items-list">
+            {% for item in items %}
+            <div class="item-row">
+                <span class="item-num">{{ item.item_number }}.</span>
+                {% if item.word1 and item.word2 %}
+                    <span>Listen for word pair</span>
+                {% elif item.onset and item.rime %}
+                    <span>Listen for sounds</span>
+                {% elif item.target_word %}
+                    <span>Listen for word</span>
+                {% elif item.answer_options %}
+                    <span>Listen for question</span>
+                {% else %}
+                    <span>Listen for item</span>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <!-- Visual tasks: Show actual items -->
+        {% if items|length <= 30 %}
+        <!-- Small number of items: Use grid -->
+        <div class="items-grid">
+            {% for item in items %}
+            <div class="item">
+                <div>
+                    <div class="item-number">{{ item.item_number }}</div>
+                    {% if item.content %}
+                        <div>{{ item.content }}</div>
+                    {% elif item.letter %}
+                        <div>{{ item.letter }}</div>
+                    {% elif item.consonant %}
+                        <div>{{ item.consonant }}</div>
+                    {% elif item.word %}
+                        <div>{{ item.word }}</div>
+                    {% elif item.word1 and item.word2 %}
+                        <div class="word-pair">
+                            <div class="word">{{ item.word1 }}</div>
+                            <div class="word">{{ item.word2 }}</div>
+                        </div>
+                    {% elif item.onset and item.rime %}
+                        <div>{{ item.onset }} + {{ item.rime }}</div>
+                    {% elif item.question_text and item.answer_options %}
+                        <!-- Multiple choice question -->
+                        <div style="text-align: left; font-size: 14pt; font-weight: normal;">
+                            <div style="margin-bottom: 10px;">{{ item.question_text }}</div>
+                            <div style="margin-left: 20px;">
+                                {% for option in item.answer_options %}
+                                <div style="margin: 5px 0;">{{ option.letter }}) {{ option.text }}</div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    {% else %}
+                        <div>Item {{ item.item_number }}</div>
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <!-- Large number of items: Use compact list -->
+        <div class="items-list">
+            {% for item in items %}
+            <div class="item-row">
+                <span class="item-num">{{ item.item_number }}.</span>
+                {% if item.content %}
+                    <span style="font-size: {% if item.item_type == 'letter' %}24pt{% else %}18pt{% endif %}; font-weight: bold;">{{ item.content }}</span>
+                {% elif item.letter %}
+                    <span style="font-size: 24pt; font-weight: bold;">{{ item.letter }}</span>
+                {% elif item.consonant %}
+                    <span style="font-size: 24pt; font-weight: bold;">{{ item.consonant }}</span>
+                {% elif item.word %}
+                    <span style="font-size: 18pt; font-weight: bold;">{{ item.word }}</span>
+                {% elif item.word1 and item.word2 %}
+                    <span style="font-size: 18pt;">
+                        <strong>{{ item.word1 }}</strong> / <strong>{{ item.word2 }}</strong>
+                    </span>
+                {% elif item.onset and item.rime %}
+                    <span style="font-size: 18pt;">
+                        <strong>{{ item.onset }}</strong> + <strong>{{ item.rime }}</strong>
+                    </span>
+                {% elif item.question_text and item.answer_options %}
+                    <!-- Multiple choice question in list format -->
+                    <div style="margin-left: 40px;">
+                        <div style="margin-bottom: 5px; font-weight: normal;">{{ item.question_text }}</div>
+                        <div style="margin-left: 15px;">
+                            {% for option in item.answer_options %}
+                            <div style="font-size: 12pt;">{{ option.letter }}) {{ option.text }}</div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                {% else %}
+                    <span>Item {{ item.item_number }}</span>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+        {% endif %}
+    </div>
+</body>
+</html>

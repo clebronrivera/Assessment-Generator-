@@ -29,7 +29,11 @@
       "total_sentences_recall": 13,
       "total_points_recall": 26,
       "components_included": 5
-    }
+    },
+    "assessment_id": "COMP",
+    "form_id": "COMP-3-EARLY-NONFICTION-102047",
+    "form_number": 102047,
+    "assessment_name": "Reading Comprehension - Grade 3 (Nonfiction)"
   },
   "package_type": "comprehension",
   "ready_for_use": true,
@@ -960,5 +964,46 @@
     "passage_form_id": "COMP-3-EARLY-001",
     "created_at": "2026-01-15T10:20:47.679337",
     "schema_version": "2026.1"
+  },
+  "student_action": "Phase 1 - Reading: Student reads the passage silently or aloud (as appropriate) from beginning to end. Student may take as much time as needed to read and understand the passage. Phase 2 - Recall: After reading, passage is removed/covered. Student orally recalls everything they remember from the passage. Student may include characters, events, details, and main ideas. Assessor records recalled sentences. Phase 3 - Questions: Passage is made visible again. Student answers multiple-choice comprehension questions (typically 5-6 questions). Student may refer back to the passage while answering questions. Student selects answer choice (A, B, or C).",
+  "assessor_grading": "Assessor scores in three phases: Phase 1 - Reading: Observe and note reading behaviors, fluency, and any difficulties (not formally scored but noted). Phase 2 - Recall: For each sentence in the passage, assessor marks if student recalled: (1) the character/subject mentioned in sentence, (2) the key detail/action in sentence. Each sentence receives 2 points (both recalled), 1 point (one recalled), or 0 points (neither recalled). Total recall score = sum of sentence scores. Recall accuracy ratio = total points / max possible points. Phase 3 - Questions: Assessor marks each multiple-choice question as CORRECT (correct answer selected) or INCORRECT (wrong answer, multiple selections, or no response). Question score = total correct out of total questions. Overall comprehension performance combines both recall accuracy and question accuracy.",
+  "additional_considerations": "",
+  "assessment_id": "COMP",
+  "form_id": "COMP-3-EARLY-NONFICTION-102047",
+  "form_number": 102047,
+  "grade": "3",
+  "interface_spec": {
+    "student_presentation": "full_text_with_questions",
+    "student_sees_text": true,
+    "items_advance_mode": "manual_next_button",
+    "assessor_interaction": "correct_incorrect",
+    "click_cycle": null,
+    "timing_mode": "untimed",
+    "timer_direction": "none",
+    "timer_visible_to_student": false,
+    "assessor_script": [
+      "SETUP: Prepare assessment materials. Ensure student has access to passage and questions.",
+      "SAY TO STUDENT: 'I'm going to ask you to read this passage and then answer some questions about it. You can refer back to the passage while answering questions.'",
+      "ADMINISTRATION:",
+      "  • Allow student to read passage at their own pace",
+      "  • Present questions one at a time",
+      "  • Mark each answer as correct or incorrect",
+      "  • Record recall scoring if applicable",
+      "  • Calculate total score"
+    ],
+    "student_prompt": "Read this passage and answer the questions that follow.",
+    "student_action": "Student reads passage and answers questions. Student can refer back to passage while answering.",
+    "assessor_grading": "Assessor marks each question as correct or incorrect. Calculate total score based on questions answered correctly.",
+    "additional_considerations": ""
+  },
+  "scoring": {
+    "primary_metric": "total_correct",
+    "secondary_metrics": [
+      "accuracy_pct",
+      "recall_score"
+    ],
+    "error_types": [
+      "incorrect"
+    ]
   }
 }

@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Compass Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .stat-card h3 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 5px;
+        }
+
+        .stat-card p {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        /* DASHBOARD CONTROLS */
+        .dashboard-controls {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .sort-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .sort-label {
+            color: #666;
+            font-weight: 600;
+        }
+
+        .sort-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .sort-buttons button {
+            padding: 8px 16px;
+            border: 2px solid #e0e0e0;
+            background: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: all 0.2s;
+        }
+
+        .sort-buttons button:hover {
+            border-color: #667eea;
+            background: #f0f0ff;
+        }
+
+        .sort-buttons button.active {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+
+        .view-options {
+            display: flex;
+            gap: 10px;
+        }
+
+        .view-options button {
+            padding: 8px 16px;
+            border: 2px solid #667eea;
+            background: white;
+            color: #667eea;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        .view-options button:hover {
+            background: #f0f0ff;
+        }
+
+        .view-options button.active {
+            background: #667eea;
+            color: white;
+        }
+
+        /* SAMPLE GRIDS */
+        .samples-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 20px;
+        }
+
+        .samples-grid.compact {
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+        }
+
+        /* REGULAR CARD VIEW */
+        .sample-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+        }
+
+        .sample-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .sample-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+        }
+
+        .sample-header h2 {
+            font-size: 1.3em;
+            margin-bottom: 5px;
+        }
+
+        .sample-header .grade {
+            opacity: 0.9;
+            font-size: 0.9em;
+        }
+
+        .sample-body {
+            padding: 20px;
+        }
+
+        .sample-meta {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .meta-item strong {
+            color: #667eea;
+        }
+
+        .sample-footer {
+            padding: 15px 20px;
+            background: #f8f9fa;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* COMPACT CARD VIEW */
+        .sample-card.compact {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            gap: 20px;
+            align-items: center;
+            padding: 20px;
+            cursor: default;
+        }
+
+        .sample-card.compact .sample-icon {
+            font-size: 2.5em;
+            opacity: 0.8;
+        }
+
+        .sample-card.compact .sample-info h3 {
+            color: #667eea;
+            font-size: 1.2em;
+            margin-bottom: 8px;
+        }
+
+        .sample-card.compact .sample-info {
+            min-width: 0;
+        }
+
+        .sample-card.compact .sample-meta {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 8px;
+            grid-template-columns: unset;
+        }
+
+        .sample-card.compact .sample-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .sample-card.compact .sample-actions {
+            display: flex;
+            gap: 10px;
+            flex-shrink: 0;
+        }
+
+        .sample-card.compact .package-id {
+            font-family: 'Courier New', monospace;
+            font-size: 0.8em;
+            color: #999;
+            margin-top: 5px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            font-size: 0.9em;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #5568d3;
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+
+        .btn-sm {
+            padding: 8px 16px;
+            font-size: 0.85em;
+        }
+
+        .no-samples {
+            background: white;
+            padding: 60px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .no-samples h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+
+        .badge-success {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .badge-info {
+            background: #d1ecf1;
+            color: #0c5460;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 Reading Compass Dashboard</h1>
+            <p>View and explore generated assessment samples</p>
+            <div style="margin-top: 15px;">
+                <a href="/matrix" class="btn btn-primary">📊 Assessment Matrix</a>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-card">
+                <h3>{{ samples|length }}</h3>
+                <p>Generated Samples</p>
+            </div>
+            <div class="stat-card">
+                <h3>{{ matrix_status.total if matrix_status else '19' }}</h3>
+                <p>Total Assessments</p>
+            </div>
+            <div class="stat-card">
+                <h3>{{ matrix_status.missing if matrix_status else '16' }}</h3>
+                <p>Missing</p>
+            </div>
+            <div class="stat-card">
+                <h3>{{ ((matrix_status.generated / matrix_status.total * 100) | round) if matrix_status else '16' }}%</h3>
+                <p>Complete</p>
+            </div>
+        </div>
+
+        {% if samples %}
+        <!-- Dashboard Controls -->
+        <div class="dashboard-controls">
+            <div class="sort-section">
+                <span class="sort-label">Sort by:</span>
+                <div class="sort-buttons">
+                    <button class="active" onclick="sortBy('date')" data-sort="date">📅 Date</button>
+                    <button onclick="sortBy('grade')" data-sort="grade">📊 Grade</button>
+                    <button onclick="sortBy('type')" data-sort="type">📚 Type</button>
+                    <button onclick="sortBy('size')" data-sort="size">💾 Size</button>
+                </div>
+            </div>
+
+            <div class="view-options">
+                <button class="active" onclick="toggleCompactView(false)" id="regularViewBtn">📋 Regular</button>
+                <button onclick="toggleCompactView(true)" id="compactViewBtn">⬜ Compact</button>
+            </div>
+        </div>
+
+        <!-- Samples Grid -->
+        <div class="samples-grid" id="samplesGrid">
+            {% for sample in samples %}
+            <div class="sample-card" 
+                 data-date="{{ sample.modified }}" 
+                 data-grade="{% if sample.manifest %}{{ sample.manifest.grade_level }}{% else %}0{% endif %}"
+                 data-type="{% if sample.manifest %}{{ sample.manifest.assessment_type }}{% else %}unknown{% endif %}"
+                 data-size="{{ sample.size_kb }}"
+                 onclick="{% if not sample_card_compact %}window.location.href='/view/{{ sample.name }}'{% endif %}">
+                
+                <!-- Regular View -->
+                <div class="regular-view">
+                    <div class="sample-header">
+                        <h2>{{ sample.name.replace('_', ' ').title() }}</h2>
+                        {% if sample.manifest %}
+                        <div class="grade">
+                            Grade {{ sample.manifest.grade_level }} •
+                            {{ sample.manifest.assessment_type|capitalize }} •
+                            {{ sample.manifest.genre|capitalize if sample.manifest.genre else 'N/A' }}
+                        </div>
+                        {% endif %}
+                    </div>
+
+                    <div class="sample-body">
+                        <div class="sample-meta">
+                            <div class="meta-item">
+                                <strong>📄</strong>
+                                <span>{{ sample.size_kb|round(1) }} KB</span>
+                            </div>
+                            <div class="meta-item">
+                                <strong>🕐</strong>
+                                <span>{{ sample.modified }}</span>
+                            </div>
+                            {% if sample.manifest %}
+                            <div class="meta-item">
+                                <strong>📝</strong>
+                                <span>{{ sample.manifest.total_questions or 'N/A' }} Questions</span>
+                            </div>
+                            <div class="meta-item">
+                                <strong>📊</strong>
+                                <span>{{ sample.manifest.word_count or 'N/A' }} Words</span>
+                            </div>
+                            {% endif %}
+                        </div>
+
+                        {% if sample.manifest %}
+                        <div style="margin-top: 15px;">
+                            <span class="badge badge-success">✓ Complete</span>
+                            <span class="badge badge-info">{{ sample.manifest.package_id }}</span>
+                        </div>
+                        {% endif %}
+                    </div>
+
+                    <div class="sample-footer">
+                        <span style="color: #666; font-size: 0.9em;">Click to view details</span>
+                        <a href="/view/{{ sample.name }}" class="btn btn-primary" onclick="event.stopPropagation()">View Sample →</a>
+                    </div>
+                </div>
+
+                <!-- Compact View -->
+                <div class="compact-view" style="display: none;">
+                    <div class="sample-icon">📖</div>
+                    
+                    <div class="sample-info">
+                        <h3>{{ sample.name.replace('_', ' ').title() }}</h3>
+                        <div class="sample-meta">
+                            {% if sample.manifest %}
+                            <span class="sample-meta-item">📊 <strong>{{ sample.manifest.word_count or 'N/A' }}</strong> words</span>
+                            <span class="sample-meta-item">❓ <strong>{{ sample.manifest.total_questions or 'N/A' }}</strong> questions</span>
+                            {% if sample.manifest.lexile_range %}
+                            <span class="sample-meta-item">📈 {{ sample.manifest.lexile_range }}</span>
+                            {% endif %}
+                            {% endif %}
+                            <span class="sample-meta-item">📅 {{ sample.modified }}</span>
+                        </div>
+                        {% if sample.manifest and sample.manifest.package_id %}
+                        <div class="package-id">{{ sample.manifest.package_id }}</div>
+                        {% endif %}
+                    </div>
+                    
+                    <div class="sample-actions">
+                        <a href="/view/{{ sample.name }}" class="btn btn-primary btn-sm" onclick="event.stopPropagation()">View</a>
+                        {% if sample.manifest and sample.manifest.assessment_type == 'comprehension' %}
+                        <a href="/preview/{{ sample.name }}" class="btn btn-secondary btn-sm" onclick="event.stopPropagation()">PDF</a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="no-samples">
+            <h2>No Samples Found</h2>
+            <p>Generate your first sample to get started!</p>
+            <button class="btn btn-primary" style="margin-top: 20px;">Generate Sample</button>
+        </div>
+        {% endif %}
+    </div>
+
+    <script>
+        let currentSort = 'date';
+        let compactView = false;
+
+        function sortBy(criteria) {
+            currentSort = criteria;
+            
+            // Update active button
+            document.querySelectorAll('.sort-buttons button').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.dataset.sort === criteria) {
+                    btn.classList.add('active');
+                }
+            });
+
+            const grid = document.getElementById('samplesGrid');
+            const cards = Array.from(grid.children);
+
+            cards.sort((a, b) => {
+                if (criteria === 'date') {
+                    const dateA = new Date(a.dataset.date);
+                    const dateB = new Date(b.dataset.date);
+                    return dateB - dateA; // Newest first
+                } else if (criteria === 'grade') {
+                    const gradeA = parseInt(a.dataset.grade) || 0;
+                    const gradeB = parseInt(b.dataset.grade) || 0;
+                    return gradeA - gradeB;
+                } else if (criteria === 'type') {
+                    const typeA = a.dataset.type || '';
+                    const typeB = b.dataset.type || '';
+                    return typeA.localeCompare(typeB);
+                } else if (criteria === 'size') {
+                    const sizeA = parseFloat(a.dataset.size) || 0;
+                    const sizeB = parseFloat(b.dataset.size) || 0;
+                    return sizeB - sizeA; // Largest first
+                }
+                return 0;
+            });
+
+            // Re-append in sorted order
+            cards.forEach(card => grid.appendChild(card));
+        }
+
+        function toggleCompactView(compact) {
+            compactView = compact;
+            const grid = document.getElementById('samplesGrid');
+            const regularViewBtn = document.getElementById('regularViewBtn');
+            const compactViewBtn = document.getElementById('compactViewBtn');
+
+            // Update buttons
+            if (compact) {
+                regularViewBtn.classList.remove('active');
+                compactViewBtn.classList.add('active');
+                grid.classList.add('compact');
+            } else {
+                regularViewBtn.classList.add('active');
+                compactViewBtn.classList.remove('active');
+                grid.classList.remove('compact');
+            }
+
+            // Toggle views
+            document.querySelectorAll('.sample-card').forEach(card => {
+                const regularView = card.querySelector('.regular-view');
+                const compactViewEl = card.querySelector('.compact-view');
+                
+                if (compact) {
+                    regularView.style.display = 'none';
+                    compactViewEl.style.display = 'grid';
+                    card.classList.add('compact');
+                    card.style.cursor = 'default';
+                } else {
+                    regularView.style.display = 'block';
+                    compactViewEl.style.display = 'none';
+                    card.classList.remove('compact');
+                    card.style.cursor = 'pointer';
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

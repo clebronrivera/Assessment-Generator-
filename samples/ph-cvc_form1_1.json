@@ -1,0 +1,197 @@
+{
+  "metadata": {
+    "assessment_id": "PH-CVC",
+    "form_id": "PH-CVC-FORM-001",
+    "form_number": 1,
+    "grade": "1",
+    "assessment_name": "CVC Blending",
+    "category": "CVC Blending",
+    "created_at": "2026-01-15T22:19:06.487375",
+    "schema_version": "2026.1",
+    "total_items": 25
+  },
+  "assessment_id": "PH-CVC",
+  "form_id": "PH-CVC-FORM-001",
+  "form_number": 1,
+  "grade": "1",
+  "items": [
+    {
+      "item_number": 1,
+      "word": "hat",
+      "medial_vowel": "a"
+    },
+    {
+      "item_number": 2,
+      "word": "pan",
+      "medial_vowel": "a"
+    },
+    {
+      "item_number": 3,
+      "word": "cat",
+      "medial_vowel": "a"
+    },
+    {
+      "item_number": 4,
+      "word": "fan",
+      "medial_vowel": "a"
+    },
+    {
+      "item_number": 5,
+      "word": "led",
+      "medial_vowel": "e"
+    },
+    {
+      "item_number": 6,
+      "word": "wed",
+      "medial_vowel": "e"
+    },
+    {
+      "item_number": 7,
+      "word": "wet",
+      "medial_vowel": "e"
+    },
+    {
+      "item_number": 8,
+      "word": "bet",
+      "medial_vowel": "e"
+    },
+    {
+      "item_number": 9,
+      "word": "wit",
+      "medial_vowel": "i"
+    },
+    {
+      "item_number": 10,
+      "word": "pig",
+      "medial_vowel": "i"
+    },
+    {
+      "item_number": 11,
+      "word": "fit",
+      "medial_vowel": "i"
+    },
+    {
+      "item_number": 12,
+      "word": "pin",
+      "medial_vowel": "i"
+    },
+    {
+      "item_number": 13,
+      "word": "box",
+      "medial_vowel": "o"
+    },
+    {
+      "item_number": 14,
+      "word": "hop",
+      "medial_vowel": "o"
+    },
+    {
+      "item_number": 15,
+      "word": "fox",
+      "medial_vowel": "o"
+    },
+    {
+      "item_number": 16,
+      "word": "pop",
+      "medial_vowel": "o"
+    },
+    {
+      "item_number": 17,
+      "word": "fun",
+      "medial_vowel": "u"
+    },
+    {
+      "item_number": 18,
+      "word": "cub",
+      "medial_vowel": "u"
+    },
+    {
+      "item_number": 19,
+      "word": "bus",
+      "medial_vowel": "u"
+    },
+    {
+      "item_number": 20,
+      "word": "pup",
+      "medial_vowel": "u"
+    },
+    {
+      "item_number": 21,
+      "word": "ced",
+      "is_nonsense": true
+    },
+    {
+      "item_number": 22,
+      "word": "vur",
+      "is_nonsense": true
+    },
+    {
+      "item_number": 23,
+      "word": "tup",
+      "is_nonsense": true
+    },
+    {
+      "item_number": 24,
+      "word": "ray",
+      "is_nonsense": true
+    },
+    {
+      "item_number": 25,
+      "word": "tow",
+      "is_nonsense": true
+    }
+  ],
+  "interface_spec": {
+    "student_presentation": "one_at_a_time",
+    "student_sees_text": true,
+    "items_advance_mode": "manual_next_button",
+    "assessor_interaction": "click_cycle",
+    "click_cycle": {
+      "states": [
+        "correct",
+        "incorrect",
+        "self_correct",
+        "omission",
+        "omission",
+        "reset"
+      ]
+    },
+    "timing_mode": "untimed",
+    "timer_direction": "none",
+    "timer_visible_to_student": false,
+    "assessor_script": [
+      "SETUP: Prepare CVC word list. Ensure student understands some words may be made-up.",
+      "SAY TO STUDENT: 'I will show you some words. Some are real words, and some are made-up words. Read each word the best you can.'",
+      "Give example: 'This word is 'cat' - a real word. This word is 'ced' - a made-up word. Try to sound it out.'",
+      "SAY: 'Now I'll show you each word one at a time. Read each word aloud.'",
+      "ADMINISTRATION:",
+      "  • Display each word one at a time on screen",
+      "  • Student reads word aloud (or attempts to decode)",
+      "  • Click/tap the word to mark responses:",
+      "    - First click: Mark as INCORRECT (if wrong)",
+      "    - Second click: Mark as SELF-CORRECT (if self-corrected)",
+      "    - Third click: Mark as OMISSION (if skipped)",
+      "    - Additional clicks cycle through states",
+      "  • If word is read correctly, leave unmarked (default correct)",
+      "  • Advance to next word after response",
+      "  • Allow reasonable time for decoding attempts",
+      "SCORING: Total correct out of 25. Analyze patterns: vowel accuracy, real vs. nonsense word performance."
+    ],
+    "student_prompt": "Read this word.",
+    "student_action": "Student sees one CVC (consonant-vowel-consonant) word displayed on screen and reads the word aloud. Words include both real words (e.g., 'cat', 'bed') and nonsense words (e.g., 'ced', 'vur'). Student attempts to decode each word using phonics knowledge.",
+    "assessor_grading": "Assessor marks each item as: CORRECT (word read accurately with correct decoding), INCORRECT (word misread, substituted, or decoded incorrectly), SELF-CORRECT (student initially incorrect but self-corrected), or OMISSION (word skipped or not attempted). Primary score is total correct out of 25. Secondary metrics include accuracy percentage and vowel accuracy (tracking which vowels are challenging). Note performance on real words vs. nonsense words to assess pure decoding skills.",
+    "additional_considerations": ""
+  },
+  "scoring": {
+    "primary_metric": "total_correct",
+    "secondary_metrics": [
+      "accuracy_pct",
+      "vowel_accuracy"
+    ],
+    "error_types": [
+      "incorrect",
+      "omission",
+      "self_correction"
+    ]
+  }
+}

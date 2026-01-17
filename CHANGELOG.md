@@ -1,3 +1,131 @@
+## [2026-01-15] - Task: Complete Phase 2B Optional Generators
+
+### Task Reference
+**From:** Phase 2B - Comprehension Generator (Optional Components)
+**Task:** Build Picture Description Generator and Text Feature Injector
+**Status:** ✅ COMPLETE - Both generators operational
+**Related Tasks:** Phase 2B core generators (QRM, PIB, Passage) ✅
+
+### Changes Made
+**Files Created:**
+- `src/generators/picture_description_generator.py` - Picture description generator for K-1 passages (280 lines)
+- `src/generators/text_feature_injector.py` - Text feature injector for grades 6+ passages (380 lines)
+
+**Files Modified:**
+- `src/generators/__init__.py` - Added exports for both new generators
+- `TASK_LIST.md` - Marked both generators as complete
+
+### Key Decisions
+
+1. **Decision:** Implement Picture Description Generator for K-1 listening comprehension
+   **Rationale:** K-1 students need visual support for listening comprehension assessments
+   **Impact:** Complete Phase 2B optional components - K-1 support now available
+   **Bank Usage:** Bank 4 (Comprehension Blueprint) for K-1 requirements
+   **Anti-Drift Check:** ✅ Uses Bank 4 exclusively, validates against K-1 specifications
+
+2. **Decision:** Implement Text Feature Injector for grades 6+ nonfiction
+   **Rationale:** Grades 6+ nonfiction passages require headings and organizational features per Bank 7
+   **Impact:** Complete Phase 2B optional components - Grades 6+ support now available
+   **Bank Usage:** Banks 3 (Comp Word Counts), 7 (Text Structures)
+   **Anti-Drift Check:** ✅ Uses Banks 3 and 7 exclusively, validates word count and feature requirements
+
+3. **Decision:** Include comprehensive validation for both generators
+   **Rationale:** Ensure quality output that meets assessment standards
+   **Impact:** Both generators validate output before returning
+   **Anti-Drift Check:** ✅ Validation checks against bank specifications
+
+### Anti-Drift Validation
+- ✅ Tasks exist in TASK_LIST.md (Phase 2B)
+- ✅ All data pulled from existing banks (Bank 4 for Picture, Banks 3 & 7 for Text Features)
+- ✅ No hardcoded values introduced
+- ✅ Follows established patterns (dataclasses, validation, bank logging)
+- ✅ Dependencies verified complete (Templates ✅, Banks ✅)
+
+### Bank Usage Report
+
+**Picture Description Generator:**
+- **Bank 4 (Comprehension Blueprint):** Grade K-1 specifications, text access mode, supports allowed
+
+**Text Feature Injector:**
+- **Bank 3 (Comp Word Counts):** Word count targets and ranges for grades 6+
+- **Bank 7 (Text Structures):** Organizational feature requirements for nonfiction
+
+**Bank Functions Called:**
+- `get_blueprint(grade)` - Returns K-1 comprehension blueprint
+- `get_comp_word_count(grade)` - Returns word count specs for grades 6+
+- `get_structure_names(genre)` - Returns text structure names for nonfiction
+
+**New Bank Needs Identified:** None - Existing banks sufficient
+
+### Code Changes Summary
+
+**Picture Description Generator Features:**
+```python
+class PictureDescriptionGenerator:
+    """Generates illustrator-ready picture descriptions for K-1 passages"""
+    
+    def generate(self, passage_text: str, grade: str) -> Dict[str, Any]:
+        # Validates grade is K or 1
+        # Gets K-1 requirements from Bank 4
+        # Uses picture_description.j2 template
+        # Validates: has characters, has setting, single scene, appropriate length
+        # Returns: picture description, metadata, validation results
+```
+
+**Text Feature Injector Features:**
+```python
+class TextFeatureInjector:
+    """Adds headings and organizational features to grades 6+ passages"""
+    
+    def generate(self, passage_text: str, grade: str, genre: str) -> Dict[str, Any]:
+        # Validates grade is 6, 7, 8, or 8+
+        # Gets word count specs from Bank 3
+        # Gets structure requirements from Bank 7
+        # Uses text_features.j2 template
+        # Validates: 1-2 headings, one organizational feature, word count reasonable
+        # Returns: enhanced passage, features extracted, metadata, validation results
+```
+
+### Testing & Validation
+
+**Picture Description Generator:**
+- ✅ Grade validation (K or 1 only)
+- ✅ Bank 4 integration verified
+- ✅ Template rendering tested
+- ✅ Validation checks: characters, setting, single scene, length
+- ✅ Error handling with retry logic
+
+**Text Feature Injector:**
+- ✅ Grade validation (6, 7, 8, 8+ only)
+- ✅ Banks 3 & 7 integration verified
+- ✅ Template rendering tested
+- ✅ Validation checks: headings (1-2), organizational feature (one), word count, content preservation
+- ✅ Feature extraction: headings, feature type detection
+- ✅ Error handling with retry logic
+
+### New Tasks Identified
+None - Phase 2B optional components complete
+
+### Next Steps
+- Phase 3: User Interface & Workflow
+- Phase 4: Validation & Quality Checks
+- Phase 5: Output & Packaging
+- Phase 6: Testing & Verification
+
+### Technical Debt / Future Considerations
+- Could add picture description quality scoring
+- Could add text feature placement optimization
+- Could cache successful feature patterns
+
+### Notes & Warnings
+- **✅ PHASE 2B OPTIONAL COMPONENTS COMPLETE:** Both generators operational
+- **Picture Description Generator:** For K-1 listening comprehension only
+- **Text Feature Injector:** For grades 6+ nonfiction only
+- **Both generators:** Include comprehensive validation and error handling
+- **Ready for:** Integration with assessment packaging system
+
+---
+
 ## [2026-01-15 07:20] - Task: Generate Sample 3 with Sequential Question Generator
 
 ### Task Reference

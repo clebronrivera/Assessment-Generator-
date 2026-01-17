@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessor Page - {{ assessment_name }}</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background: #f5f7fa;
+            padding: 20px;
+        }
+
+        .nav {
+            background: white;
+            padding: 15px 30px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav a {
+            color: #667eea;
+            text-decoration: none;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .page {
+            width: 8.5in;
+            min-height: 11in;
+            background: white;
+            margin: 0 auto 20px;
+            padding: 1in;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #333;
+        }
+
+        .page-header h1 {
+            font-size: 18pt;
+            margin-bottom: 5px;
+        }
+
+        .page-header .meta {
+            font-size: 11pt;
+            color: #666;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 14pt;
+            font-weight: bold;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #333;
+        }
+
+        .instructions {
+            font-size: 12pt;
+            line-height: 1.8;
+        }
+
+        .instructions ol, .instructions ul {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        .instructions li {
+            margin-bottom: 8px;
+        }
+
+        .coding-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-left: 4px solid #667eea;
+            margin: 20px 0;
+        }
+
+        .coding-info h3 {
+            font-size: 13pt;
+            margin-bottom: 10px;
+        }
+
+        .click-cycle {
+            margin-top: 15px;
+        }
+
+        .click-cycle .state {
+            display: inline-block;
+            margin: 5px 10px 5px 0;
+            padding: 5px 10px;
+            background: #e9ecef;
+            border-radius: 4px;
+            font-size: 11pt;
+        }
+
+        .answer-key {
+            margin-top: 20px;
+        }
+
+        .answer-key-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .answer-item {
+            padding: 8px;
+            border: 1px solid #ddd;
+            font-size: 11pt;
+        }
+
+        .answer-item .item-num {
+            font-weight: bold;
+        }
+
+        /* Multiple choice answer options */
+        .mc-options {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        .mc-option {
+            padding: 5px 0;
+            font-size: 10pt;
+        }
+
+        .mc-option.correct {
+            font-weight: bold;
+            color: #28a745;
+        }
+
+        .mc-wrong-answer {
+            margin-top: 8px;
+            padding: 5px;
+            background: #fff3cd;
+            border-left: 3px solid #ffc107;
+            font-size: 9pt;
+        }
+
+        /* Spelling item display */
+        .spelling-word {
+            font-weight: bold;
+            font-size: 13pt;
+            color: #333;
+        }
+
+        .timing-info {
+            background: #fff3cd;
+            padding: 15px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .nav {
+                display: none;
+            }
+
+            .page {
+                margin: 0;
+                box-shadow: none;
+                page-break-after: always;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="/view/{{ filename }}">← Back to Viewer</a>
+        <div>
+            <button class="btn btn-primary" onclick="window.print()">🖨️ Print</button>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="page-header">
+            <h1>ASSESSOR COPY</h1>
+            <div class="meta">
+                {{ assessment_name }} • Grade {{ grade }} • Form {{ form_number }}
+            </div>
+            <div class="meta" style="margin-top: 10px;">
+                Student Name: _________________ Date: _________________
+            </div>
+        </div>
+
+        <!-- Instructions Section -->
+        <div class="section">
+            <div class="section-title">Directions</div>
+            <div class="instructions">
+                {% if assessor_script %}
+                <ol>
+                    {% for instruction in assessor_script %}
+                    <li>{{ instruction }}</li>
+                    {% endfor %}
+                </ol>
+                {% else %}
+                <p>Follow the standard administration procedures for this assessment.</p>
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- Timing Information -->
+        {% if timing_mode != "untimed" %}
+        <div class="timing-info">
+            <strong>Timing:</strong> 
+            {% if timing_mode == "timer_up" %}
+            Start timer when you begin. Timer counts up. Stop when assessment is complete.
+            {% elif timing_mode == "timer_down_60" %}
+            Start 60-second countdown timer. Stop at 60 seconds or when list is complete.
+            {% endif %}
+        </div>
+        {% endif %}
+
+        <!-- Coding Information -->
+        <div class="section">
+            <div class="section-title">How to Code Responses</div>
+            <div class="coding-info">
+                {% if assessor_interaction == "click_cycle" %}
+                <h3>Response Coding (Click Cycle)</h3>
+                <p>Mark responses using the following states:</p>
+                <div class="click-cycle">
+                    {% for state in click_cycle_states %}
+                    <span class="state">
+                        {% if state == "correct" %}✓ Correct (default)
+                        {% elif state == "incorrect" %}✗ Incorrect
+                        {% elif state == "self_correct" %}↻ Self-Correct
+                        {% elif state == "omission" %}— Omission
+                        {% elif state == "reset" %}⟲ Reset
+                        {% else %}{{ state|title }}{% endif %}
+                    </span>
+                    {% endfor %}
+                </div>
+                <p style="margin-top: 10px; font-size: 11pt;">
+                    <strong>Note:</strong> Click through states to mark each item. Default state is "Correct" - only mark items that are incorrect, self-corrected, or omitted.
+                </p>
+                {% elif assessor_interaction == "yes_no_buttons" %}
+                <h3>Response Coding</h3>
+                <p>Mark each response as:</p>
+                <ul>
+                    <li><strong>Yes</strong> - Student correctly identifies that words rhyme</li>
+                    <li><strong>No</strong> - Student correctly identifies that words do not rhyme</li>
+                    <li><strong>No Response</strong> - Student does not respond</li>
+                </ul>
+                <p style="margin-top: 10px; font-size: 10pt; color: #666;">
+                    <strong>Note:</strong> For multiple choice questions, record which wrong answer the student selected in the Answer Key section below.
+                </p>
+                {% elif assessor_interaction == "correct_incorrect" %}
+                <h3>Response Coding</h3>
+                <p>Mark each response as:</p>
+                <ul>
+                    <li><strong>Correct</strong> - Student response is accurate</li>
+                    <li><strong>Incorrect</strong> - Student response is inaccurate</li>
+                    <li><strong>No Response</strong> - Student does not respond</li>
+                </ul>
+                {% elif assessor_interaction == "count_input" %}
+                <h3>Response Coding</h3>
+                <p>Enter the number of correct segments (phonemes or syllables) the student produces.</p>
+                <ul>
+                    <li>Count each correct sound/syllable separately</li>
+                    <li>Partial credit may be given for correct segments even if incomplete</li>
+                    <li>Record "0" if no response or completely incorrect</li>
+                </ul>
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- Answer Key -->
+        {% if items %}
+        <div class="section answer-key">
+            <div class="section-title">Answer Key / Scoring Sheet</div>
+            {% if assessment_id == "PH-SPEL" %}
+            <!-- Spelling Assessment: Show words for assessor -->
+            <div style="margin-top: 15px;">
+                {% for item in items %}
+                <div class="answer-item" style="margin-bottom: 10px; padding: 10px; border: 1px solid #ddd;">
+                    <span class="item-num">{{ item.item_number }}.</span>
+                    <span class="spelling-word">
+                        {% if item.target_word %}
+                            {{ item.target_word }}
+                        {% elif item.word %}
+                            {{ item.word }}
+                        {% else %}
+                            (Word to dictate)
+                        {% endif %}
+                    </span>
+                    <div style="margin-top: 5px; font-size: 9pt; color: #666;">
+                        Student response: ________________________
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% elif items[0].answer_options %}
+            <!-- Multiple Choice Questions: Show options and allow wrong answer tracking -->
+            <div style="margin-top: 15px;">
+                {% for item in items %}
+                <div class="answer-item" style="margin-bottom: 15px; padding: 12px; border: 1px solid #ddd; page-break-inside: avoid;">
+                    <div style="font-weight: bold; margin-bottom: 8px;">
+                        {{ item.item_number }}. 
+                        {% if item.question_text %}
+                            {{ item.question_text }}
+                        {% else %}
+                            Question {{ item.item_number }}
+                        {% endif %}
+                    </div>
+                    <div class="mc-options">
+                        {% for option in item.answer_options %}
+                        <div class="mc-option {% if option.is_correct %}correct{% endif %}">
+                            {{ option.letter }}) {{ option.text }}
+                            {% if option.is_correct %}
+                                <span style="color: #28a745;">✓ Correct</span>
+                            {% endif %}
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <div class="mc-wrong-answer">
+                        <strong>If incorrect:</strong> Circle the wrong answer selected: 
+                        {% for option in item.answer_options %}
+                            {% if not option.is_correct %}
+                                <span style="margin: 0 5px;">[{{ option.letter }}]</span>
+                            {% endif %}
+                        {% endfor %}
+                        <span style="margin: 0 5px;">[No Response]</span>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% else %}
+            <!-- Standard answer key grid -->
+            <div class="answer-key-grid">
+                {% for item in items %}
+                <div class="answer-item">
+                    <span class="item-num">{{ item.item_number }}.</span>
+                    {% if item.content %}
+                        {{ item.content }}
+                    {% elif item.letter %}
+                        {{ item.letter }}
+                    {% elif item.consonant %}
+                        {{ item.consonant }}
+                    {% elif item.word %}
+                        {{ item.word }}
+                    {% elif item.word1 and item.word2 %}
+                        {{ item.word1 }} / {{ item.word2 }} → 
+                        {% if item.correct_answer %}Yes{% else %}No{% endif %}
+                    {% elif item.onset and item.rime %}
+                        {{ item.onset }} + {{ item.rime }} → {{ item.correct_word or item.target_word }}
+                    {% elif item.target_word %}
+                        {{ item.target_word }}
+                    {% else %}
+                        Item {{ item.item_number }}
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+        {% endif %}
+
+        <!-- Scoring Information -->
+        <div class="section">
+            <div class="section-title">Scoring</div>
+            <div class="instructions">
+                <p><strong>Primary Metric:</strong> {{ primary_metric|replace('_', ' ')|title }}</p>
+                {% if secondary_metrics %}
+                <p><strong>Secondary Metrics:</strong> {{ secondary_metrics|join(', ')|replace('_', ' ')|title }}</p>
+                {% endif %}
+                {% if error_types %}
+                <p><strong>Error Types to Track:</strong> {{ error_types|join(', ')|replace('_', ' ')|title }}</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

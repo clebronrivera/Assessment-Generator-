@@ -20,7 +20,11 @@
       "wcpm_75th_percentile": 173,
       "lexile_target": "N/A",
       "assessor_components": 7
-    }
+    },
+    "assessment_id": "ORF",
+    "form_id": "ORF-6-LATE-103729",
+    "form_number": 103729,
+    "assessment_name": "Oral Reading Fluency - Grade 6"
   },
   "passage": {
     "success": false,
@@ -88,8 +92,55 @@
     "schema_version": "2026.1",
     "bank_usage": {
       "Bank 2 (ORF Word Counts)": "Grade 6 WCPM benchmarks"
-    }
+    },
+    "student_action": "Student reads the passage aloud from a clean copy placed in front of them. Student attempts to read as accurately and smoothly as possible within the 60-second time limit. If student encounters an unknown word and hesitates for 3 seconds, assessor supplies the word. Student may self-correct errors during reading. Student reads continuously until time expires or passage is complete.",
+    "assessor_grading": "Assessor marks errors in real-time on a separate assessor copy of the passage as student reads. Error types include: SUBSTITUTION (wrong word said - mark by drawing line through word, write what student said above), OMISSION (word skipped - circle the omitted word), INSERTION (word added - use caret ^ where inserted, write word above), HESITATION (3+ second pause, word supplied - mark with 'H' above word), SELF-CORRECTION (student fixes own error quickly - mark 'SC', DO NOT count as error), REPETITION (repeats word/phrase - underline, DO NOT count as error). At 60 seconds, mark last word read with bracket ]. Calculate WCPM = (Words Read - Errors) and Accuracy = (Words Read - Errors) / Words Read × 100. Also score prosody using 1-4 scale based on phrasing, expression, smoothness, and pace.",
+    "additional_considerations": ""
   },
   "package_type": "orf",
-  "ready_for_use": true
+  "ready_for_use": true,
+  "assessment_id": "ORF",
+  "form_id": "ORF-6-LATE-103729",
+  "form_number": 103729,
+  "grade": "6",
+  "interface_spec": {
+    "student_presentation": "full_text",
+    "student_sees_text": true,
+    "items_advance_mode": "n/a",
+    "assessor_interaction": "error_marking",
+    "click_cycle": null,
+    "timing_mode": "timer_down",
+    "timer_direction": "down",
+    "timer_visible_to_student": false,
+    "assessor_script": [
+      "SETUP: Prepare assessment materials. Ensure student has clean copy of passage.",
+      "SAY TO STUDENT: 'I'm going to ask you to read this passage aloud. Read it as accurately and smoothly as you can. If you come to a word you don't know, I'll tell it to you. Do you have any questions?'",
+      "ADMINISTRATION:",
+      "  • Start timer when student begins reading",
+      "  • Mark errors on assessor copy in real-time",
+      "  • Supply words after 3-second hesitation",
+      "  • Stop at 60 seconds and mark last word read",
+      "  • Calculate WCPM and accuracy",
+      "  • Score prosody using rubric"
+    ],
+    "student_prompt": "Read this passage aloud as accurately and smoothly as you can.",
+    "student_action": "Student reads the passage aloud from a clean copy. Student attempts to read as accurately and smoothly as possible within the 60-second time limit.",
+    "assessor_grading": "Assessor marks errors in real-time on assessor copy. Calculate WCPM = (Words Read - Errors) and Accuracy = (Words Read - Errors) / Words Read × 100. Score prosody using 1-4 scale.",
+    "additional_considerations": ""
+  },
+  "scoring": {
+    "primary_metric": "wcpm",
+    "secondary_metrics": [
+      "accuracy_pct",
+      "prosody_score",
+      "total_errors"
+    ],
+    "error_types": [
+      "substitution",
+      "omission",
+      "insertion",
+      "hesitation"
+    ]
+  },
+  "items": []
 }

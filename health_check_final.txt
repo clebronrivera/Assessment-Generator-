@@ -1,0 +1,439 @@
+
+[94m[1m================================================================================[0m
+[94m[1mREADING COMPASS HEALTH CHECK[0m
+[94m[1m================================================================================[0m
+
+Timestamp: 2026-01-16 21:17:56
+
+
+[94m[1m================================================================================[0m
+[94m[1m1. Environment Check[0m
+[94m[1m================================================================================[0m
+
+[94mℹ[0m Python version: 3.9.6
+[92m✓[0m Python 3.11+ detected
+[92m✓[0m .env file found
+[92m✓[0m OpenAI API key loaded (164 chars)
+[92m✓[0m openai package installed
+[93m⚠[0m anthropic package not installed (may not be needed)
+[92m✓[0m flask package installed
+
+[94m[1m================================================================================[0m
+[94m[1m2. Project Structure Check[0m
+[94m[1m================================================================================[0m
+
+[92m✓[0m src/ exists
+[92m✓[0m src/generators/ exists
+[92m✓[0m src/banks/ exists
+[92m✓[0m src/packaging/ exists
+[92m✓[0m src/utils/ exists
+[92m✓[0m samples/ exists
+[92m✓[0m dashboard/ exists
+[92m✓[0m dashboard/templates/ exists
+[92m✓[0m src/generators/__init__.py exists (3612 bytes)
+[92m✓[0m src/generators/qrm_generator.py exists (20383 bytes)
+[92m✓[0m src/generators/pib_generator.py exists (29481 bytes)
+[92m✓[0m src/generators/comprehension_passage_generator.py exists (22085 bytes)
+[92m✓[0m src/generators/question_generator.py exists (12063 bytes)
+[92m✓[0m src/generators/simplified_recall_scoring_generator.py exists (12432 bytes)
+[92m✓[0m dashboard/app.py exists (20613 bytes)
+[92m✓[0m dashboard/templates/index.html exists (19656 bytes)
+[92m✓[0m dashboard/templates/sample_viewer.html exists (18531 bytes)
+
+[94m[1m================================================================================[0m
+[94m[1m3. Generator Import Check[0m
+[94m[1m================================================================================[0m
+
+============================================================
+VALIDATING ALL FOUNDATION BANKS
+============================================================
+✓ Bank 1 (Lexile Ranges) validated successfully
+✓ Bank 2 (ORF Word Counts) validated successfully
+✓ Bank 3 (Comprehension Word Counts) validated successfully
+✓ Bank 4 (Comprehension Blueprint) validated successfully
+✓ Bank 5 (Form Requirements) validated successfully
+✓ Bank 6 (Answer Options) validated successfully
+✓ Bank 7 (Text Structures) validated successfully
+============================================================
+✓ ALL BANKS VALIDATED SUCCESSFULLY
+Bank Version: 2026.1
+============================================================
+[92m✓[0m QRM Generator imports successfully
+[92m✓[0m PIB Generator imports successfully
+[92m✓[0m Passage Generator imports successfully
+[92m✓[0m Question Generator imports successfully
+[92m✓[0m Simplified Recall Generator imports successfully
+[92m✓[0m Package Builder imports successfully
+[92m✓[0m AI Client imports successfully
+[94mℹ[0m 
+Foundation Banks:
+============================================================
+VALIDATING ALL FOUNDATION BANKS
+============================================================
+✓ Bank 1 (Lexile Ranges) validated successfully
+✓ Bank 2 (ORF Word Counts) validated successfully
+✓ Bank 3 (Comprehension Word Counts) validated successfully
+✓ Bank 4 (Comprehension Blueprint) validated successfully
+✓ Bank 5 (Form Requirements) validated successfully
+✓ Bank 6 (Answer Options) validated successfully
+✓ Bank 7 (Text Structures) validated successfully
+============================================================
+✓ ALL BANKS VALIDATED SUCCESSFULLY
+Bank Version: 2026.1
+============================================================
+[92m✓[0m All foundation banks validated successfully
+
+[94m[1m================================================================================[0m
+[94m[1m4. Sample Files Check[0m
+[94m[1m================================================================================[0m
+
+[94mℹ[0m Found 46 sample files
+
+[94mℹ[0m Checking: fl-psf_form2_K
+[92m✓[0m   ✓ Valid JSON (4.2 KB)
+[92m✓[0m   ✓ Has metadata
+[93m⚠[0m   ⚠ Missing passage
+[93m⚠[0m   ⚠ Missing questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: sample_comp_grade4_narrative
+[92m✓[0m   ✓ Valid JSON (48.1 KB)
+[92m✓[0m   ✓ Has metadata
+[92m✓[0m   ✓ Has passage (or is ORF)
+[92m✓[0m   ✓ Has 10 questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: sample_comp_grade3_narrative
+[92m✓[0m   ✓ Valid JSON (37.8 KB)
+[92m✓[0m   ✓ Has metadata
+[92m✓[0m   ✓ Has passage (or is ORF)
+[92m✓[0m   ✓ Has 8 questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: sample_orf_gradeK_early
+[92m✓[0m   ✓ Valid JSON (21.5 KB)
+[92m✓[0m   ✓ Has metadata
+[92m✓[0m   ✓ Has passage (or is ORF)
+[93m⚠[0m   ⚠ Missing questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: sample_comp_grade3_nonfiction
+[92m✓[0m   ✓ Valid JSON (37.0 KB)
+[92m✓[0m   ✓ Has metadata
+[92m✓[0m   ✓ Has passage (or is ORF)
+[92m✓[0m   ✓ Has 8 questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: sample_orf_grade3
+[92m✓[0m   ✓ Valid JSON (22.1 KB)
+[92m✓[0m   ✓ Has metadata
+[92m✓[0m   ✓ Has passage (or is ORF)
+[93m⚠[0m   ⚠ Missing questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: lr-alph_form5_K
+[92m✓[0m   ✓ Valid JSON (7.4 KB)
+[92m✓[0m   ✓ Has metadata
+[93m⚠[0m   ⚠ Missing passage
+[93m⚠[0m   ⚠ Missing questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: sample_orf_grade2
+[92m✓[0m   ✓ Valid JSON (21.9 KB)
+[92m✓[0m   ✓ Has metadata
+[92m✓[0m   ✓ Has passage (or is ORF)
+[93m⚠[0m   ⚠ Missing questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: sample_comp_grade4_nonfiction
+[92m✓[0m   ✓ Valid JSON (51.2 KB)
+[92m✓[0m   ✓ Has metadata
+[92m✓[0m   ✓ Has passage (or is ORF)
+[92m✓[0m   ✓ Has 10 questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: sample_comp_grade2_narrative
+[92m✓[0m   ✓ Valid JSON (31.8 KB)
+[92m✓[0m   ✓ Has metadata
+[92m✓[0m   ✓ Has passage (or is ORF)
+[92m✓[0m   ✓ Has 6 questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: sample_comp_grade5_narrative
+[92m✓[0m   ✓ Valid JSON (60.9 KB)
+[92m✓[0m   ✓ Has metadata
+[92m✓[0m   ✓ Has passage (or is ORF)
+[92m✓[0m   ✓ Has 12 questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: pa-phon_form1_K
+[92m✓[0m   ✓ Valid JSON (4.1 KB)
+[92m✓[0m   ✓ Has metadata
+[93m⚠[0m   ⚠ Missing passage
+[93m⚠[0m   ⚠ Missing questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: lr-alph_form3_K
+[92m✓[0m   ✓ Valid JSON (7.4 KB)
+[92m✓[0m   ✓ Has metadata
+[93m⚠[0m   ⚠ Missing passage
+[93m⚠[0m   ⚠ Missing questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: sample_comp_grade5_nonfiction
+[92m✓[0m   ✓ Valid JSON (60.3 KB)
+[92m✓[0m   ✓ Has metadata
+[92m✓[0m   ✓ Has passage (or is ORF)
+[92m✓[0m   ✓ Has 12 questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: sample_orf_grade5
+[92m✓[0m   ✓ Valid JSON (22.2 KB)
+[92m✓[0m   ✓ Has metadata
+[92m✓[0m   ✓ Has passage (or is ORF)
+[93m⚠[0m   ⚠ Missing questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: fl-wrf_form1_K
+[92m✓[0m   ✓ Valid JSON (5.9 KB)
+[92m✓[0m   ✓ Has metadata
+[93m⚠[0m   ⚠ Missing passage
+[93m⚠[0m   ⚠ Missing questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: sample_orf_grade8
+[92m✓[0m   ✓ Valid JSON (22.3 KB)
+[92m✓[0m   ✓ Has metadata
+[92m✓[0m   ✓ Has passage (or is ORF)
+[93m⚠[0m   ⚠ Missing questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: sample_2_comp_grade2_narrative
+[92m✓[0m   ✓ Valid JSON (32.2 KB)
+[92m✓[0m   ✓ Has metadata
+[92m✓[0m   ✓ Has passage (or is ORF)
+[92m✓[0m   ✓ Has 6 questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: sample_comp_grade1_narrative
+[92m✓[0m   ✓ Valid JSON (27.9 KB)
+[92m✓[0m   ✓ Has metadata
+[92m✓[0m   ✓ Has passage (or is ORF)
+[92m✓[0m   ✓ Has 5 questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: pa-rhym_form1_K
+[92m✓[0m   ✓ Valid JSON (5.9 KB)
+[92m✓[0m   ✓ Has metadata
+[93m⚠[0m   ⚠ Missing passage
+[93m⚠[0m   ⚠ Missing questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: sample_comp_grade6_narrative
+[92m✓[0m   ✓ Valid JSON (71.9 KB)
+[92m✓[0m   ✓ Has metadata
+[92m✓[0m   ✓ Has passage (or is ORF)
+[92m✓[0m   ✓ Has 14 questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: sample_orf_grade4
+[92m✓[0m   ✓ Valid JSON (22.2 KB)
+[92m✓[0m   ✓ Has metadata
+[92m✓[0m   ✓ Has passage (or is ORF)
+[93m⚠[0m   ⚠ Missing questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: sample_comp_grade2_nonfiction
+[92m✓[0m   ✓ Valid JSON (32.8 KB)
+[92m✓[0m   ✓ Has metadata
+[92m✓[0m   ✓ Has passage (or is ORF)
+[92m✓[0m   ✓ Has 6 questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: lr-alph_form1_K
+[92m✓[0m   ✓ Valid JSON (7.4 KB)
+[92m✓[0m   ✓ Has metadata
+[93m⚠[0m   ⚠ Missing passage
+[93m⚠[0m   ⚠ Missing questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: sample_1_orf_grade2_early
+[92m✓[0m   ✓ Valid JSON (21.9 KB)
+[92m✓[0m   ✓ Has metadata
+[92m✓[0m   ✓ Has passage (or is ORF)
+[93m⚠[0m   ⚠ Missing questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: sample_orf_grade7
+[92m✓[0m   ✓ Valid JSON (22.4 KB)
+[92m✓[0m   ✓ Has metadata
+[92m✓[0m   ✓ Has passage (or is ORF)
+[93m⚠[0m   ⚠ Missing questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: lr-alph_form4_K
+[92m✓[0m   ✓ Valid JSON (7.4 KB)
+[92m✓[0m   ✓ Has metadata
+[93m⚠[0m   ⚠ Missing passage
+[93m⚠[0m   ⚠ Missing questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: pa-syls_form1_1
+[92m✓[0m   ✓ Valid JSON (4.8 KB)
+[92m✓[0m   ✓ Has metadata
+[93m⚠[0m   ⚠ Missing passage
+[93m⚠[0m   ⚠ Missing questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: fl-psf_form1_1
+[92m✓[0m   ✓ Valid JSON (4.2 KB)
+[92m✓[0m   ✓ Has metadata
+[93m⚠[0m   ⚠ Missing passage
+[93m⚠[0m   ⚠ Missing questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: ph-cvc_form1_1
+[92m✓[0m   ✓ Valid JSON (5.2 KB)
+[92m✓[0m   ✓ Has metadata
+[93m⚠[0m   ⚠ Missing passage
+[93m⚠[0m   ⚠ Missing questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: ph-csa_form1_1
+[92m✓[0m   ✓ Valid JSON (5.0 KB)
+[92m✓[0m   ✓ Has metadata
+[93m⚠[0m   ⚠ Missing passage
+[93m⚠[0m   ⚠ Missing questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: fl-wrf_form1_3
+[92m✓[0m   ✓ Valid JSON (6.1 KB)
+[92m✓[0m   ✓ Has metadata
+[93m⚠[0m   ⚠ Missing passage
+[93m⚠[0m   ⚠ Missing questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: ph-csa_form1_K
+[92m✓[0m   ✓ Valid JSON (5.0 KB)
+[92m✓[0m   ✓ Has metadata
+[93m⚠[0m   ⚠ Missing passage
+[93m⚠[0m   ⚠ Missing questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: fl-psf_form1_K
+[92m✓[0m   ✓ Valid JSON (4.2 KB)
+[92m✓[0m   ✓ Has metadata
+[93m⚠[0m   ⚠ Missing passage
+[93m⚠[0m   ⚠ Missing questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: pa-oons_form1_K
+[92m✓[0m   ✓ Valid JSON (4.9 KB)
+[92m✓[0m   ✓ Has metadata
+[93m⚠[0m   ⚠ Missing passage
+[93m⚠[0m   ⚠ Missing questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: sample_3_comp_grade5_nonfiction
+[92m✓[0m   ✓ Valid JSON (60.3 KB)
+[92m✓[0m   ✓ Has metadata
+[92m✓[0m   ✓ Has passage (or is ORF)
+[92m✓[0m   ✓ Has 12 questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: ph-cvc_form1_K
+[92m✓[0m   ✓ Valid JSON (5.2 KB)
+[92m✓[0m   ✓ Has metadata
+[93m⚠[0m   ⚠ Missing passage
+[93m⚠[0m   ⚠ Missing questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: lr-alph_form6_K
+[92m✓[0m   ✓ Valid JSON (7.4 KB)
+[92m✓[0m   ✓ Has metadata
+[93m⚠[0m   ⚠ Missing passage
+[93m⚠[0m   ⚠ Missing questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: pa-syls_form1_K
+[92m✓[0m   ✓ Valid JSON (4.8 KB)
+[92m✓[0m   ✓ Has metadata
+[93m⚠[0m   ⚠ Missing passage
+[93m⚠[0m   ⚠ Missing questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: sample_orf_grade6
+[92m✓[0m   ✓ Valid JSON (22.3 KB)
+[92m✓[0m   ✓ Has metadata
+[92m✓[0m   ✓ Has passage (or is ORF)
+[93m⚠[0m   ⚠ Missing questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: sample_orf_grade1
+[92m✓[0m   ✓ Valid JSON (21.7 KB)
+[92m✓[0m   ✓ Has metadata
+[92m✓[0m   ✓ Has passage (or is ORF)
+[93m⚠[0m   ⚠ Missing questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: lr-alph_form2_K
+[92m✓[0m   ✓ Valid JSON (7.4 KB)
+[92m✓[0m   ✓ Has metadata
+[93m⚠[0m   ⚠ Missing passage
+[93m⚠[0m   ⚠ Missing questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: sample_comp_grade1_nonfiction
+[92m✓[0m   ✓ Valid JSON (25.5 KB)
+[92m✓[0m   ✓ Has metadata
+[92m✓[0m   ✓ Has passage (or is ORF)
+[92m✓[0m   ✓ Has 5 questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: sample_comp_grade6_nonfiction
+[92m✓[0m   ✓ Valid JSON (69.8 KB)
+[92m✓[0m   ✓ Has metadata
+[92m✓[0m   ✓ Has passage (or is ORF)
+[92m✓[0m   ✓ Has 14 questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: ph-lwid_form1_K
+[92m✓[0m   ✓ Valid JSON (6.4 KB)
+[92m✓[0m   ✓ Has metadata
+[93m⚠[0m   ⚠ Missing passage
+[93m⚠[0m   ⚠ Missing questions
+[92m✓[0m   ✓ Has manifest
+
+[94mℹ[0m Checking: sample_orf_gradeK
+[92m✓[0m   ✓ Valid JSON (21.5 KB)
+[92m✓[0m   ✓ Has metadata
+[92m✓[0m   ✓ Has passage (or is ORF)
+[93m⚠[0m   ⚠ Missing questions
+[92m✓[0m   ✓ Has manifest
+
+
+[94m[1m================================================================================[0m
+[94m[1m5. Dashboard Check[0m
+[94m[1m================================================================================[0m
+
+[92m✓[0m Flask app.py exists
+[92m✓[0m Flask app has valid Python syntax
+[92m✓[0m Template index.html exists
+[92m✓[0m Template sample_viewer.html exists
+[92m✓[0m Template matrix.html exists
+[92m✓[0m Template pdf_preview.html exists
+[92m✓[0m Assessment matrix module loads
+
+[94m[1m================================================================================[0m
+[94m[1mHEALTH CHECK SUMMARY[0m
+[94m[1m================================================================================[0m
+
+[92m✓ Successes: 81[0m
+[93m⚠ Warnings:  1[0m
+[91m✗ Errors:    0[0m
+
+[94mTotal checks: 82[0m
+
+[92m[1m✓ OVERALL: GOOD HEALTH[0m
+Some minor warnings, but system is functional
+

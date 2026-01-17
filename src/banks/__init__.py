@@ -12,6 +12,10 @@ Available Banks:
 - Bank 5: Form Requirements (form_requirements.py)
 - Bank 6: Answer Options (answer_options.py)
 - Bank 7: Text Structures (text_structures.py)
+- Bank 8: Error Codes (error_codes.py) [NEW v2026.2]
+- Bank 9: ORF Scoring Rules (scoring_rules.py) [NEW v2026.2]
+- Bank 10: Benchmark Norms (benchmark_norms.py) [NEW v2026.2]
+- Bank 11: Prosody Scales (prosody_scales.py) [NEW v2026.2]
 """
 
 # Import all banks
@@ -22,6 +26,10 @@ from . import comprehension_blueprint
 from . import form_requirements
 from . import answer_options
 from . import text_structures
+from . import error_codes
+from . import scoring_rules
+from . import benchmark_norms
+from . import prosody_scales
 
 # Export key classes and enums for easy access
 from .lexile_ranges import LexileRange, get_lexile_range, get_midpoint_lexile
@@ -47,11 +55,38 @@ from .text_structures import (
     get_structures_for_genre,
     get_structure_names
 )
+# NEW v2026.2: Measurement banks
+from .error_codes import (
+    ErrorCodeDefinition,
+    ERROR_CODE_BANK,
+    get_error_code,
+    get_error_codes_for_assessment,
+    get_counted_error_codes
+)
+from .scoring_rules import (
+    ORFScoringRules,
+    ORF_SCORING_RULES,
+    get_scoring_rules
+)
+from .benchmark_norms import (
+    BenchmarkNorm,
+    BENCHMARK_NORMS_BANK,
+    get_benchmark_norm,
+    get_benchmarks_for_grade
+)
+from .prosody_scales import (
+    ProsodyScaleLevel,
+    ProsodyScale,
+    NAEP_PROSODY_SCALE,
+    get_prosody_scale,
+    validate_prosody_score
+)
 
 
 # Version info
-__version__ = "1.0.0"
-__bank_version__ = "2026.1"  # Year.Revision format
+__version__ = "1.1.0"  # Bumped for new banks
+__bank_version__ = "2026.2"  # Year.Revision format - BUMPED for measurement banks
+
 
 
 # Unified validation function
@@ -74,6 +109,11 @@ def validate_all_banks() -> bool:
         form_requirements._validate_bank()
         answer_options._validate_bank()
         text_structures._validate_bank()
+        # NEW v2026.2: Measurement banks
+        error_codes._validate_bank()
+        scoring_rules._validate_rules()
+        benchmark_norms._validate_bank()
+        prosody_scales._validate_scale()
         
         print("="*60)
         print("✓ ALL BANKS VALIDATED SUCCESSFULLY")
@@ -105,7 +145,12 @@ def export_all_banks_to_json() -> dict:
             "comprehension_blueprint": comprehension_blueprint.export_to_json(),
             "form_requirements": form_requirements.export_to_json(),
             "answer_options": answer_options.export_to_json(),
-            "text_structures": text_structures.export_to_json()
+            "text_structures": text_structures.export_to_json(),
+            # NEW v2026.2: Measurement banks
+            "error_codes": error_codes.export_to_json(),
+            "scoring_rules": ORF_SCORING_RULES.to_dict(),
+            "benchmark_norms": benchmark_norms.export_to_json(),
+            "prosody_scales": NAEP_PROSODY_SCALE.to_dict()
         }
     }
 

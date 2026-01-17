@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORF PDF Preview - {{ sample_name }}</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background: #f5f7fa;
+            padding: 20px;
+        }
+
+        .nav {
+            background: white;
+            padding: 15px 30px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav a {
+            color: #667eea;
+            text-decoration: none;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        /* PDF-like styling */
+        .page {
+            width: 8.5in;
+            min-height: 11in;
+            background: white;
+            margin: 0 auto 20px;
+            padding: 1in;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #333;
+        }
+
+        .page-header h1 {
+            font-size: 18pt;
+            margin-bottom: 5px;
+        }
+
+        .page-header .meta {
+            font-size: 11pt;
+            color: #666;
+        }
+
+        .passage-section {
+            margin-bottom: 40px;
+        }
+
+        .passage-title {
+            font-size: 16pt;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .passage-text {
+            font-size: 14pt;
+            line-height: 2;
+            text-align: left;
+            font-family: 'Courier New', monospace;
+        }
+
+        .instructions-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+        }
+
+        .section-title {
+            font-size: 14pt;
+            font-weight: bold;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #333;
+        }
+
+        .instruction-item {
+            margin-bottom: 15px;
+            font-size: 11pt;
+            line-height: 1.6;
+        }
+
+        .instruction-item strong {
+            color: #333;
+        }
+
+        .assessment-details {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-bottom: 30px;
+            font-size: 11pt;
+        }
+
+        .detail-item {
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 4px;
+        }
+
+        .detail-item strong {
+            display: block;
+            margin-bottom: 5px;
+            color: #667eea;
+        }
+
+        .timing-info {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            border-left: 4px solid #ffc107;
+        }
+
+        .assessor-script {
+            background: #e7f3ff;
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            border-left: 4px solid #667eea;
+            font-size: 11pt;
+            line-height: 1.8;
+            white-space: pre-line;
+        }
+
+        .error-marking-guide {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 20px;
+            font-size: 10pt;
+            border: 1px solid #dee2e6;
+        }
+
+        .error-marking-guide h4 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .error-type {
+            margin-bottom: 8px;
+            padding-left: 15px;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .nav {
+                display: none;
+            }
+
+            .page {
+                margin: 0;
+                box-shadow: none;
+                page-break-after: always;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="/view/{{ sample_name }}">← Back to Viewer</a>
+        <div>
+            <button class="btn btn-primary" onclick="window.print()">🖨️ Print</button>
+        </div>
+    </div>
+
+    <!-- Student Version -->
+    <div class="page">
+        <div class="page-header">
+            <h1>Oral Reading Fluency Assessment</h1>
+            <div class="meta">
+                Grade {{ sample.passage.metadata.grade if sample.passage and sample.passage.metadata else (manifest.grade if manifest else 'N/A') }} •
+                Form: {{ sample.assessor_materials.form_id if sample.assessor_materials else 'N/A' }}
+            </div>
+            <div class="meta" style="margin-top: 10px;">
+                Name: _________________ Date: _________________
+            </div>
+        </div>
+
+        {% if sample.passage %}
+        <div class="passage-section">
+            <div class="passage-title">{{ sample.passage.passage_title }}</div>
+            <div class="passage-text">{{ sample.passage.passage_text }}</div>
+        </div>
+        {% endif %}
+    </div>
+
+    <!-- Teacher/Assessor Copy with Instructions -->
+    <div class="page">
+        <div class="page-header">
+            <h1>TEACHER COPY - Oral Reading Fluency Assessment</h1>
+            <div class="meta">
+                Grade {{ sample.passage.metadata.grade if sample.passage and sample.passage.metadata else (manifest.grade if manifest else 'N/A') }} •
+                Form: {{ sample.assessor_materials.form_id if sample.assessor_materials else 'N/A' }}
+            </div>
+        </div>
+
+        <!-- Assessment Details -->
+        <div class="assessment-details">
+            <div class="detail-item">
+                <strong>Assessment Type:</strong>
+                Oral Reading Fluency (ORF)
+            </div>
+            <div class="detail-item">
+                <strong>Grade Level:</strong>
+                {{ sample.passage.metadata.grade if sample.passage and sample.passage.metadata else (manifest.grade if manifest else 'N/A') }}
+            </div>
+            <div class="detail-item">
+                <strong>Passage Word Count:</strong>
+                {{ sample.passage.word_count if sample.passage else (sample.assessor_materials.passage_word_count if sample.assessor_materials else 'N/A') }}
+            </div>
+            <div class="detail-item">
+                <strong>Form ID:</strong>
+                {{ sample.assessor_materials.form_id if sample.assessor_materials else 'N/A' }}
+            </div>
+        </div>
+
+        <!-- Presentation Mode -->
+        <div class="instructions-section">
+            <div class="section-title">Presentation Mode</div>
+            <div class="instruction-item">
+                <strong>Mode:</strong> One-on-One Administration
+            </div>
+            <div class="instruction-item">
+                <strong>Student Sees Text:</strong> Yes (student has clean copy of passage)
+            </div>
+            <div class="instruction-item">
+                <strong>Advance Mode:</strong> Continuous reading (no manual advancement needed)
+            </div>
+            <div class="instruction-item">
+                <strong>Reading Duration:</strong> 60 seconds (timed assessment)
+            </div>
+        </div>
+
+        <!-- Timing Information -->
+        <div class="timing-info">
+            <div class="section-title">Timing</div>
+            <div class="instruction-item">
+                <strong>Timing Mode:</strong> 60-second countdown timer
+            </div>
+            <div class="instruction-item">
+                <strong>Timer Direction:</strong> Countdown (60 seconds to 0)
+            </div>
+            <div class="instruction-item">
+                <strong>Timer Visible to Student:</strong> No (assessor only)
+            </div>
+            <div class="instruction-item">
+                <strong>Stop at:</strong> 60 seconds OR end of passage (whichever comes first)
+            </div>
+        </div>
+
+        <!-- Assessor Script -->
+        {% if sample.assessor_materials and sample.assessor_materials.timing_script %}
+        <div class="assessor-script">
+            <div class="section-title">Assessor Script</div>
+            {{ sample.assessor_materials.timing_script }}
+        </div>
+        {% endif %}
+
+        <!-- Word Supply Rules -->
+        {% if sample.assessor_materials and sample.assessor_materials.word_supply_rules %}
+        <div class="instructions-section">
+            <div class="section-title">Word Supply Rules</div>
+            <div style="font-size: 11pt; line-height: 1.8; white-space: pre-line;">
+                {{ sample.assessor_materials.word_supply_rules }}
+            </div>
+        </div>
+        {% endif %}
+
+        <!-- General Instructions -->
+        {% if sample.assessor_materials and sample.assessor_materials.general_instructions %}
+        <div class="instructions-section">
+            <div class="section-title">General Administration Instructions</div>
+            <div style="font-size: 11pt; line-height: 1.8; white-space: pre-line;">
+                {{ sample.assessor_materials.general_instructions }}
+            </div>
+        </div>
+        {% endif %}
+
+        <!-- Passage for Marking (Teacher Copy) -->
+        {% if sample.passage %}
+        <div class="passage-section" style="margin-top: 40px;">
+            <div class="section-title">Passage for Error Marking</div>
+            <div class="passage-text">{{ sample.passage.passage_text }}</div>
+        </div>
+        {% endif %}
+
+        <!-- Error Marking Guide -->
+        {% if sample.assessor_materials and sample.assessor_materials.error_marking_grid %}
+        <div class="error-marking-guide">
+            <h4>Error Marking Guide</h4>
+            <div style="white-space: pre-line; font-size: 10pt; line-height: 1.6;">
+                {{ sample.assessor_materials.error_marking_grid[:500] }}...
+            </div>
+        </div>
+        {% endif %}
+
+        <!-- Scoring Information -->
+        {% if sample.assessor_materials and sample.assessor_materials.wcpm_benchmark %}
+        <div class="instructions-section" style="margin-top: 30px;">
+            <div class="section-title">WCPM Benchmarks (Grade {{ sample.assessor_materials.grade if sample.assessor_materials else 'N/A' }})</div>
+            <div style="font-size: 11pt;">
+                <div style="margin-bottom: 8px;">
+                    <strong>50th Percentile:</strong> {{ sample.assessor_materials.wcpm_benchmark.get('50th_percentile', 'N/A') }} WCPM
+                </div>
+                <div style="margin-bottom: 8px;">
+                    <strong>75th Percentile:</strong> {{ sample.assessor_materials.wcpm_benchmark.get('75th_percentile', 'N/A') }} WCPM
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+
+    <!-- Score Sheet Page -->
+    {% if sample.assessor_materials and sample.assessor_materials.score_sheet %}
+    <div class="page">
+        <div class="page-header">
+            <h1>ORF Score Sheet</h1>
+            <div class="meta">
+                Grade {{ sample.assessor_materials.grade if sample.assessor_materials else 'N/A' }} •
+                Form: {{ sample.assessor_materials.form_id if sample.assessor_materials else 'N/A' }}
+            </div>
+        </div>
+        <div style="font-family: 'Courier New', monospace; font-size: 10pt; white-space: pre-line; line-height: 1.4;">
+            {{ sample.assessor_materials.score_sheet }}
+        </div>
+    </div>
+    {% endif %}
+</body>
+
+</html>

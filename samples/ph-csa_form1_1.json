@@ -1,0 +1,181 @@
+{
+  "metadata": {
+    "assessment_id": "PH-CSA",
+    "form_id": "PH-CSA-FORM-001",
+    "form_number": 1,
+    "grade": "1",
+    "assessment_name": "Consonant Sound Accuracy",
+    "category": "Phonics",
+    "created_at": "2026-01-15T21:57:15.172471",
+    "schema_version": "2026.1",
+    "total_items": 24
+  },
+  "assessment_id": "PH-CSA",
+  "form_id": "PH-CSA-FORM-001",
+  "form_number": 1,
+  "grade": "1",
+  "items": [
+    {
+      "item_number": 1,
+      "consonant": "th",
+      "is_digraph": true
+    },
+    {
+      "item_number": 2,
+      "consonant": "ph",
+      "is_digraph": true
+    },
+    {
+      "item_number": 3,
+      "consonant": "p",
+      "is_digraph": false
+    },
+    {
+      "item_number": 4,
+      "consonant": "n",
+      "is_digraph": false
+    },
+    {
+      "item_number": 5,
+      "consonant": "sh",
+      "is_digraph": true
+    },
+    {
+      "item_number": 6,
+      "consonant": "c",
+      "is_digraph": false
+    },
+    {
+      "item_number": 7,
+      "consonant": "h",
+      "is_digraph": false
+    },
+    {
+      "item_number": 8,
+      "consonant": "ck",
+      "is_digraph": true
+    },
+    {
+      "item_number": 9,
+      "consonant": "y",
+      "is_digraph": false
+    },
+    {
+      "item_number": 10,
+      "consonant": "r",
+      "is_digraph": false
+    },
+    {
+      "item_number": 11,
+      "consonant": "m",
+      "is_digraph": false
+    },
+    {
+      "item_number": 12,
+      "consonant": "w",
+      "is_digraph": false
+    },
+    {
+      "item_number": 13,
+      "consonant": "v",
+      "is_digraph": false
+    },
+    {
+      "item_number": 14,
+      "consonant": "b",
+      "is_digraph": false
+    },
+    {
+      "item_number": 15,
+      "consonant": "k",
+      "is_digraph": false
+    },
+    {
+      "item_number": 16,
+      "consonant": "ch",
+      "is_digraph": true
+    },
+    {
+      "item_number": 17,
+      "consonant": "j",
+      "is_digraph": false
+    },
+    {
+      "item_number": 18,
+      "consonant": "q",
+      "is_digraph": false
+    },
+    {
+      "item_number": 19,
+      "consonant": "z",
+      "is_digraph": false
+    },
+    {
+      "item_number": 20,
+      "consonant": "s",
+      "is_digraph": false
+    },
+    {
+      "item_number": 21,
+      "consonant": "t",
+      "is_digraph": false
+    },
+    {
+      "item_number": 22,
+      "consonant": "f",
+      "is_digraph": false
+    },
+    {
+      "item_number": 23,
+      "consonant": "l",
+      "is_digraph": false
+    },
+    {
+      "item_number": 24,
+      "consonant": "d",
+      "is_digraph": false
+    }
+  ],
+  "interface_spec": {
+    "student_presentation": "one_at_a_time",
+    "student_sees_text": true,
+    "items_advance_mode": "manual_next_button",
+    "assessor_interaction": "correct_incorrect",
+    "click_cycle": null,
+    "timing_mode": "untimed",
+    "timer_direction": "none",
+    "timer_visible_to_student": false,
+    "assessor_script": [
+      "SETUP: Prepare letter/digraph list. Ensure student understands task is sounds, not names.",
+      "SAY TO STUDENT: 'I will show you some letters. Tell me the sound each letter makes.'",
+      "Give example: 'This letter is C. What sound does it make? /k/ or /s/.' Clarify that you want the SOUND, not the name.",
+      "Practice with 1-2 examples if needed.",
+      "SAY: 'Now I'll show you each letter one at a time. Tell me the sound each letter makes.'",
+      "ADMINISTRATION:",
+      "  • Display each letter or digraph one at a time on screen",
+      "  • Student responds orally with the sound(s)",
+      "  • Mark using correct/incorrect buttons:",
+      "    - Click 'Correct' if sound is accurate",
+      "    - Click 'Incorrect' if sound is wrong, letter name given instead, or no response",
+      "    - Accept acceptable regional variants (e.g., /r/ variations)",
+      "  • Advance to next letter after marking",
+      "  • If student says letter name, gently redirect: 'What SOUND does it make?'",
+      "SCORING: Total correct out of 24. Track which letter-sound correspondences need reteaching."
+    ],
+    "student_prompt": "What sound does this letter make?",
+    "student_action": "Student sees one letter or digraph displayed on screen and must orally produce the sound(s) that letter or letter combination represents. For example, for 'c', student says '/k/' or '/s/'. For 'th', student says '/θ/' or '/ð/'. Student responds with the sound, not the letter name.",
+    "assessor_grading": "Assessor marks each item as: CORRECT (accurate sound production for the letter/digraph), INCORRECT SOUND (student produces wrong sound, letter name instead of sound, or confused sound), ARTICULATION VARIANT (acceptable regional pronunciation variant), or NO RESPONSE (doesn't respond within reasonable time). Primary score is total correct out of 24. Note which letters or digraphs are challenging for targeted instruction.",
+    "additional_considerations": ""
+  },
+  "scoring": {
+    "primary_metric": "total_correct",
+    "secondary_metrics": [
+      "accuracy_pct"
+    ],
+    "error_types": [
+      "incorrect_sound",
+      "no_response",
+      "articulation_variant"
+    ]
+  }
+}

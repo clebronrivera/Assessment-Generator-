@@ -1,0 +1,333 @@
+{
+  "metadata": {
+    "assessment_id": "LR-ALPH",
+    "form_id": "LR-ALPH-FORM-002",
+    "form_number": 2,
+    "grade": "K",
+    "assessment_name": "Letter Recognition",
+    "category": "Phonics",
+    "created_at": "2026-01-15T21:40:24.239001",
+    "schema_version": "2026.1",
+    "total_items": 52
+  },
+  "assessment_id": "LR-ALPH",
+  "form_id": "LR-ALPH-FORM-002",
+  "form_number": 2,
+  "grade": "K",
+  "items": [
+    {
+      "item_number": 1,
+      "letter": "P",
+      "is_uppercase": true
+    },
+    {
+      "item_number": 2,
+      "letter": "d",
+      "is_uppercase": false
+    },
+    {
+      "item_number": 3,
+      "letter": "J",
+      "is_uppercase": true
+    },
+    {
+      "item_number": 4,
+      "letter": "V",
+      "is_uppercase": true
+    },
+    {
+      "item_number": 5,
+      "letter": "E",
+      "is_uppercase": true
+    },
+    {
+      "item_number": 6,
+      "letter": "G",
+      "is_uppercase": true
+    },
+    {
+      "item_number": 7,
+      "letter": "z",
+      "is_uppercase": false
+    },
+    {
+      "item_number": 8,
+      "letter": "a",
+      "is_uppercase": false
+    },
+    {
+      "item_number": 9,
+      "letter": "W",
+      "is_uppercase": true
+    },
+    {
+      "item_number": 10,
+      "letter": "Y",
+      "is_uppercase": true
+    },
+    {
+      "item_number": 11,
+      "letter": "I",
+      "is_uppercase": true
+    },
+    {
+      "item_number": 12,
+      "letter": "i",
+      "is_uppercase": false
+    },
+    {
+      "item_number": 13,
+      "letter": "k",
+      "is_uppercase": false
+    },
+    {
+      "item_number": 14,
+      "letter": "S",
+      "is_uppercase": true
+    },
+    {
+      "item_number": 15,
+      "letter": "o",
+      "is_uppercase": false
+    },
+    {
+      "item_number": 16,
+      "letter": "e",
+      "is_uppercase": false
+    },
+    {
+      "item_number": 17,
+      "letter": "t",
+      "is_uppercase": false
+    },
+    {
+      "item_number": 18,
+      "letter": "H",
+      "is_uppercase": true
+    },
+    {
+      "item_number": 19,
+      "letter": "U",
+      "is_uppercase": true
+    },
+    {
+      "item_number": 20,
+      "letter": "f",
+      "is_uppercase": false
+    },
+    {
+      "item_number": 21,
+      "letter": "x",
+      "is_uppercase": false
+    },
+    {
+      "item_number": 22,
+      "letter": "s",
+      "is_uppercase": false
+    },
+    {
+      "item_number": 23,
+      "letter": "u",
+      "is_uppercase": false
+    },
+    {
+      "item_number": 24,
+      "letter": "M",
+      "is_uppercase": true
+    },
+    {
+      "item_number": 25,
+      "letter": "p",
+      "is_uppercase": false
+    },
+    {
+      "item_number": 26,
+      "letter": "O",
+      "is_uppercase": true
+    },
+    {
+      "item_number": 27,
+      "letter": "L",
+      "is_uppercase": true
+    },
+    {
+      "item_number": 28,
+      "letter": "A",
+      "is_uppercase": true
+    },
+    {
+      "item_number": 29,
+      "letter": "n",
+      "is_uppercase": false
+    },
+    {
+      "item_number": 30,
+      "letter": "B",
+      "is_uppercase": true
+    },
+    {
+      "item_number": 31,
+      "letter": "h",
+      "is_uppercase": false
+    },
+    {
+      "item_number": 32,
+      "letter": "R",
+      "is_uppercase": true
+    },
+    {
+      "item_number": 33,
+      "letter": "j",
+      "is_uppercase": false
+    },
+    {
+      "item_number": 34,
+      "letter": "c",
+      "is_uppercase": false
+    },
+    {
+      "item_number": 35,
+      "letter": "w",
+      "is_uppercase": false
+    },
+    {
+      "item_number": 36,
+      "letter": "g",
+      "is_uppercase": false
+    },
+    {
+      "item_number": 37,
+      "letter": "Z",
+      "is_uppercase": true
+    },
+    {
+      "item_number": 38,
+      "letter": "b",
+      "is_uppercase": false
+    },
+    {
+      "item_number": 39,
+      "letter": "v",
+      "is_uppercase": false
+    },
+    {
+      "item_number": 40,
+      "letter": "l",
+      "is_uppercase": false
+    },
+    {
+      "item_number": 41,
+      "letter": "C",
+      "is_uppercase": true
+    },
+    {
+      "item_number": 42,
+      "letter": "r",
+      "is_uppercase": false
+    },
+    {
+      "item_number": 43,
+      "letter": "N",
+      "is_uppercase": true
+    },
+    {
+      "item_number": 44,
+      "letter": "m",
+      "is_uppercase": false
+    },
+    {
+      "item_number": 45,
+      "letter": "Q",
+      "is_uppercase": true
+    },
+    {
+      "item_number": 46,
+      "letter": "T",
+      "is_uppercase": true
+    },
+    {
+      "item_number": 47,
+      "letter": "q",
+      "is_uppercase": false
+    },
+    {
+      "item_number": 48,
+      "letter": "K",
+      "is_uppercase": true
+    },
+    {
+      "item_number": 49,
+      "letter": "X",
+      "is_uppercase": true
+    },
+    {
+      "item_number": 50,
+      "letter": "y",
+      "is_uppercase": false
+    },
+    {
+      "item_number": 51,
+      "letter": "F",
+      "is_uppercase": true
+    },
+    {
+      "item_number": 52,
+      "letter": "D",
+      "is_uppercase": true
+    }
+  ],
+  "interface_spec": {
+    "student_presentation": "one_at_a_time",
+    "student_sees_text": true,
+    "items_advance_mode": "manual_next_button",
+    "assessor_interaction": "click_cycle",
+    "click_cycle": {
+      "states": [
+        "correct",
+        "incorrect",
+        "self_correct",
+        "omission",
+        "omission",
+        "reset"
+      ]
+    },
+    "timing_mode": "timer_up",
+    "timer_direction": "up",
+    "timer_visible_to_student": false,
+    "assessor_script": [
+      "SETUP: Prepare assessment materials. Ensure student is comfortable and ready.",
+      "SAY TO STUDENT: 'I'm going to show you some letters. Tell me the name of each letter.'",
+      "Demonstrate with one example if needed: 'This is the letter B. Can you tell me its name?'",
+      "SAY: 'When you're ready, I'll start showing you letters one at a time. Say the name of each letter you see.'",
+      "ADMINISTRATION:",
+      "  • Start the timer when you show the first letter",
+      "  • Present letters one at a time using the manual next button",
+      "  • Wait for student response before advancing",
+      "  • Click/tap the item to cycle through marking states:",
+      "    - First click: Mark as INCORRECT (if wrong)",
+      "    - Second click: Mark as SELF-CORRECT (if student self-corrected)",
+      "    - Third click: Mark as OMISSION (if skipped/no response)",
+      "    - Additional clicks cycle back through states",
+      "  • If student is correct, leave unmarked (default is correct)",
+      "  • Continue through all 52 letters",
+      "  • Stop timer when assessment is complete",
+      "IMPORTANT: Accept letter names (e.g., 'bee', 'ay', 'see'), not sounds. For lowercase letters, accept either case name or the letter name."
+    ],
+    "student_prompt": "Tell me this letter.",
+    "student_action": "Student sees one letter at a time on screen and orally names the letter (e.g., says 'B' or 'bee' for uppercase B, 'b' or 'buh' for lowercase b). Student can self-correct before moving to next letter.",
+    "assessor_grading": "Assessor marks each item as: CORRECT (letter named correctly), INCORRECT (wrong letter name, letter sound instead of name, or confused case), SELF-CORRECT (student initially incorrect but self-corrected within reasonable time), or OMISSION (no response or skipped). Timer tracks total completion time. Final score is total correct out of 52 (all uppercase and lowercase letters).",
+    "additional_considerations": ""
+  },
+  "scoring": {
+    "primary_metric": "total_correct",
+    "secondary_metrics": [
+      "total_time_seconds",
+      "accuracy_pct"
+    ],
+    "error_types": [
+      "incorrect",
+      "omission",
+      "self_correction"
+    ]
+  }
+}

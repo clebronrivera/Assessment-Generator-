@@ -179,9 +179,19 @@
 <body>
     <div class="nav">
         <div class="nav-content">
-            <a href="/">← Back to Dashboard</a>
+            <a href="/matrix">← Back to Matrix</a>
             <h1>{{ sample_name.replace('_', ' ').title() }}</h1>
-            <button class="btn btn-primary" onclick="downloadJSON()">Download JSON</button>
+            <div>
+                {% if sample.get('items') %}
+                {# Simple assessment - show assessor/student page buttons #}
+                <a href="/assessor/{{ sample_name }}" class="btn btn-primary" style="margin-right: 10px; text-decoration: none; display: inline-block;">📋 Assessor Page</a>
+                <a href="/student/{{ sample_name }}" class="btn btn-primary" style="margin-right: 10px; text-decoration: none; display: inline-block;">📄 Student Page</a>
+                {% elif sample.get('passage') %}
+                {# Comprehension assessment - show PDF preview #}
+                <a href="/preview/{{ sample_name }}" class="btn btn-primary" style="margin-right: 10px; text-decoration: none; display: inline-block;">📄 PDF Preview</a>
+                {% endif %}
+                <button class="btn btn-primary" onclick="downloadJSON()">Download JSON</button>
+            </div>
         </div>
     </div>
 
@@ -200,7 +210,10 @@
                 </div>
                 <div class="metadata-item">
                     <strong>Assessment Type</strong>
-                    {% if manifest.package_type == 'orf' %}
+                    {% if manifest.assessment_type %}
+                    {# Simple assessment #}
+                    {{ manifest.assessment_type|upper|replace('-', ' ')|title }}
+                    {% elif manifest.package_type == 'orf' %}
                     Oral Reading Fluency - Formative
                     {% else %}
                     {{ manifest.package_type|capitalize }}
@@ -212,16 +225,29 @@
                     {{ manifest.genre|capitalize }}
                 </div>
                 {% endif %}
-                {% if manifest.statistics and manifest.statistics.passage_word_count %}
+                {% if manifest.statistics %}
+                {% if manifest.statistics.total_items %}
+                <div class="metadata-item">
+                    <strong>Total Items</strong>
+                    {{ manifest.statistics.total_items }}
+                </div>
+                {% elif manifest.statistics.passage_word_count %}
                 <div class="metadata-item">
                     <strong>Word Count</strong>
                     {{ manifest.statistics.passage_word_count }}
                 </div>
                 {% endif %}
+                {% endif %}
                 {% if manifest.total_questions %}
                 <div class="metadata-item">
                     <strong>Total Questions</strong>
                     {{ manifest.total_questions }}
+                </div>
+                {% endif %}
+                {% if manifest.form_number %}
+                <div class="metadata-item">
+                    <strong>Form Number</strong>
+                    {{ manifest.form_number }}
                 </div>
                 {% endif %}
             </div>
@@ -231,9 +257,13 @@
         <div class="section">
             <div class="tabs">
                 <button class="tab active" onclick="showTab('overview')">Overview</button>
+                {% if sample.get('items') %}
+                <button class="tab" onclick="showTab('items')">Items</button>
+                {% else %}
                 <button class="tab" onclick="showTab('passage')">Passage</button>
                 <button class="tab" onclick="showTab('questions')">Questions</button>
                 <button class="tab" onclick="showTab('recall')">Recall</button>
+                {% endif %}
                 <button class="tab" onclick="showTab('json')">Raw JSON</button>
             </div>
 
@@ -241,7 +271,35 @@
                 <h2>📋 Assessment Overview</h2>
                 <p>This section shows a summary of the entire assessment package.</p>
 
-                {% if sample.passage %}
+                {% if sample.get('items') %}
+                {# Simple Assessment (items-based) #}
+                <h3 style="margin-top: 30px;">Assessment Items</h3>
+                <div class="metadata-grid">
+                    <div class="metadata-item">
+                        <strong>Assessment ID</strong>
+                        {{ sample.assessment_id or sample.metadata.assessment_id }}
+                    </div>
+                    <div class="metadata-item">
+                        <strong>Form ID</strong>
+                        {{ sample.form_id or sample.metadata.form_id }}
+                    </div>
+                    <div class="metadata-item">
+                        <strong>Total Items</strong>
+                        {{ sample.get('items', [])|length }}
+                    </div>
+                    <div class="metadata-item">
+                        <strong>Grade</strong>
+                        {{ sample.grade or sample.metadata.grade }}
+                    </div>
+                    {% if sample.metadata.assessment_name %}
+                    <div class="metadata-item">
+                        <strong>Assessment Name</strong>
+                        {{ sample.metadata.assessment_name }}
+                    </div>
+                    {% endif %}
+                </div>
+                {% elif sample.passage %}
+                {# Comprehension Assessment (passage-based) #}
                 <h3 style="margin-top: 30px;">Passage Summary</h3>
                 <div class="metadata-grid">
                     <div class="metadata-item">
@@ -260,6 +318,53 @@
                     </div>
                     {% endif %}
                 </div>
+                {% endif %}
+            </div>
+
+            <div id="items" class="tab-content">
+                <h2>📝 Assessment Items ({{ sample.get('items', [])|length }})</h2>
+                
+                {% if sample.get('items') %}
+                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 15px; margin-top: 20px;">
+                    {% for item in sample.get('items', []) %}
+                    <div style="padding: 15px; border: 1px solid #ddd; border-radius: 8px; background: #f9f9f9;">
+                        <div style="font-weight: 600; color: #667eea; margin-bottom: 8px;">
+                            Item {{ item.item_number }}
+                        </div>
+                        {% if item.letter %}
+                        <div style="font-size: 24px; font-weight: bold; text-align: center; padding: 10px; background: white; border-radius: 4px; margin: 8px 0;">
+                            {{ item.letter }}
+                        </div>
+                        {% if item.is_uppercase is defined %}
+                        <div style="font-size: 0.9em; color: #666; text-align: center;">
+                            {% if item.is_uppercase %}Uppercase{% else %}Lowercase{% endif %}
+                        </div>
+                        {% endif %}
+                        {% elif item.word %}
+                        <div style="font-size: 18px; font-weight: bold; text-align: center; padding: 10px; background: white; border-radius: 4px; margin: 8px 0;">
+                            {{ item.word }}
+                        </div>
+                        {% elif item.word_pair %}
+                        <div style="text-align: center; padding: 10px; background: white; border-radius: 4px; margin: 8px 0;">
+                            <div style="font-size: 16px; margin: 4px 0;">{{ item.word_pair[0] }}</div>
+                            <div style="font-size: 16px; margin: 4px 0;">{{ item.word_pair[1] }}</div>
+                        </div>
+                        {% elif item.onset_rime %}
+                        <div style="text-align: center; padding: 10px; background: white; border-radius: 4px; margin: 8px 0;">
+                            <div style="font-size: 14px; color: #666;">Onset: <strong>{{ item.onset_rime.onset }}</strong></div>
+                            <div style="font-size: 14px; color: #666;">Rime: <strong>{{ item.onset_rime.rime }}</strong></div>
+                            <div style="font-size: 12px; color: #999; margin-top: 4px;">→ {{ item.onset_rime.onset }}{{ item.onset_rime.rime }}</div>
+                        </div>
+                        {% elif item.consonant %}
+                        <div style="font-size: 18px; font-weight: bold; text-align: center; padding: 10px; background: white; border-radius: 4px; margin: 8px 0;">
+                            {{ item.consonant }}
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <p>No items available.</p>
                 {% endif %}
             </div>
 
